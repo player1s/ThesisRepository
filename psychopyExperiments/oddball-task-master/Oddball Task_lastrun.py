@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on September 22, 2023, at 13:35
+    on September 22, 2023, at 14:27
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -14,7 +14,8 @@ If you publish work using this script the most relevant publication is:
 # --- Import packages ---
 from psychopy import locale_setup
 from psychopy import prefs
-prefs.hardware['audioLib'] = 'sounddevice'
+prefs.hardware['audioLib'] = 'ptb'
+prefs.hardware['audioLatencyMode'] = '4'
 from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
@@ -59,7 +60,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\elpid\\Downloads\\oddball-task-master\\oddball-task-master\\Oddball Task_lastrun.py',
+    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\oddball-task-master\\Oddball Task_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -142,7 +143,7 @@ feedback_text = visual.TextStim(win=win, name='feedback_text',
     languageStyle='LTR',
     depth=-1.0);
 
-# --- Initialize components for Routine "Instructions_2" ---
+# --- Initialize components for Routine "Instructions_3" ---
 instructions_2 = visual.TextStim(win=win, name='instructions_2',
     text="This is the end of practice trials and start of experimental trials. Feedback will not be provided anymore. \nPress 's' for the standard tone (1000 Hz) and 't' for the target tone (1200 Hz). Press 'space' to continue.",
     font='Arial',
@@ -367,6 +368,8 @@ for thisTrial in trials:
                     response.corr = 1
                 else:
                     response.corr = 0
+                # a response ends the routine
+                continueRoutine = False
         # start/stop sound_1
         if sound_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
@@ -522,7 +525,7 @@ for thisTrial in trials:
 # completed 1 repeats of 'trials'
 
 
-# --- Prepare to start Routine "Instructions_2" ---
+# --- Prepare to start Routine "Instructions_3" ---
 continueRoutine = True
 routineForceEnded = False
 # update component parameters for each repeat
@@ -530,8 +533,8 @@ key_resp_2.keys = []
 key_resp_2.rt = []
 _key_resp_2_allKeys = []
 # keep track of which components have finished
-Instructions_2Components = [instructions_2, key_resp_2]
-for thisComponent in Instructions_2Components:
+Instructions_3Components = [instructions_2, key_resp_2]
+for thisComponent in Instructions_3Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
     thisComponent.tStartRefresh = None
@@ -543,7 +546,7 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
-# --- Run Routine "Instructions_2" ---
+# --- Run Routine "Instructions_3" ---
 while continueRoutine:
     # get current time
     t = routineTimer.getTime()
@@ -596,7 +599,7 @@ while continueRoutine:
         routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Instructions_2Components:
+    for thisComponent in Instructions_3Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -605,8 +608,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# --- Ending Routine "Instructions_2" ---
-for thisComponent in Instructions_2Components:
+# --- Ending Routine "Instructions_3" ---
+for thisComponent in Instructions_3Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
@@ -616,7 +619,7 @@ thisExp.addData('key_resp_2.keys',key_resp_2.keys)
 if key_resp_2.keys != None:  # we had a response
     thisExp.addData('key_resp_2.rt', key_resp_2.rt)
 thisExp.nextEntry()
-# the Routine "Instructions_2" was not non-slip safe, so reset the non-slip timer
+# the Routine "Instructions_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
@@ -710,6 +713,8 @@ for thisTrial_2 in trials_2:
                     response.corr = 1
                 else:
                     response.corr = 0
+                # a response ends the routine
+                continueRoutine = False
         # start/stop sound_1
         if sound_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
