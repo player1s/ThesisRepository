@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.2),
-    on September 21, 2023, at 16:27
+    on September 22, 2023, at 11:29
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -110,7 +110,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Software\\psychopy\\ASSR experiment\\test_lastrun.py',
+        originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\test_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -319,7 +319,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "Intro" ---
     text = visual.TextStim(win=win, name='text',
-        text='Welcome to the experiment.\n\nParticipant: Sit upright, try to relax, and please avoid during data collection: \n- unnecessary movements\n- talking\n- blinking\n\nTester: \n- set volume to 30\n- do impedance and railing checks\n- on labrecorder set the proper session names\n- gather both streams and start labrecorder recording\n\n\npress space to continue',
+        text='Welcome to the experiment.\nParticipant: Sit upright, try to relax, and please avoid during data collection: \n- unnecessary movements\n- talking\n\nTester: \n- set volume to 30\n- do impedance and railing checks\n- on labrecorder set: study root, block/task, run, participant, session\n- gather both streams and start labrecorder recording\n\npress space to continue',
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
