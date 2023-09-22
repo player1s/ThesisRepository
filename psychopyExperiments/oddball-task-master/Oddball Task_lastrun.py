@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on September 22, 2023, at 14:27
+    on September 22, 2023, at 14:47
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -74,7 +74,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1920, 1080], fullscr=False, screen=0, 
+    size=[900, 500], fullscr=False, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -368,8 +368,6 @@ for thisTrial in trials:
                     response.corr = 1
                 else:
                     response.corr = 0
-                # a response ends the routine
-                continueRoutine = False
         # start/stop sound_1
         if sound_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
@@ -713,8 +711,6 @@ for thisTrial_2 in trials_2:
                     response.corr = 1
                 else:
                     response.corr = 0
-                # a response ends the routine
-                continueRoutine = False
         # start/stop sound_1
         if sound_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later

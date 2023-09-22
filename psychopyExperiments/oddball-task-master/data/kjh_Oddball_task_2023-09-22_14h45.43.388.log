@@ -1,0 +1,147 @@
+8.6189 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000298E02BB340>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000298E51EAB50>, multiSample=False, name='window1', numSamples=2, pos=(510, 290), screen=0, size=array([900, 500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.6190 	EXP 	window1: mouseVisible = True
+8.6190 	EXP 	window1: mouseVisible = True
+8.6190 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.6190 	EXP 	window1: recordFrameIntervals = False
+8.7852 	EXP 	window1: recordFrameIntervals = True
+8.9686 	EXP 	Screen (0) actual frame rate measured at 60.02Hz
+8.9686 	EXP 	window1: recordFrameIntervals = False
+9.0076 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+10.8595 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.8678 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+11.0435 	EXP 	Sound sound_1 set volume 0.800
+11.0441 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.0537 	EXP 	Created instructions_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.0551 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+11.0563 	EXP 	Sound sound_1 set volume 0.800
+11.0596 	EXP 	Created thank_you = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='thank_you', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.0691 	EXP 	instructions: autoDraw = True
+12.8865 	EXP 	Imported aud_conditions.xlsx as conditions, 4 conditions, 4 params
+12.8868 	EXP 	Created sequence: fullRandom, trialTypes=4, nReps=1, seed=None
+12.8870 	EXP 	New trial (rep=0, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+12.8894 	DATA 	Keypress: space
+12.8980 	EXP 	instructions: autoDraw = False
+12.8980 	EXP 	fixation: autoDraw = True
+13.8971 	EXP 	Sound sound_1 started
+14.8971 	EXP 	Sound sound_1 reached end of file
+18.1811 	DATA 	Keypress: s
+18.1927 	EXP 	fixation: autoDraw = False
+18.1927 	EXP 	feedback_text: height = 0.05
+18.1927 	EXP 	feedback_text: height = 0.05
+18.1927 	EXP 	feedback_text: height = 0.05
+18.1927 	EXP 	feedback_text: text = 'Correct'
+18.1927 	EXP 	feedback_text: autoDraw = True
+19.1759 	EXP 	New trial (rep=0, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+19.1920 	EXP 	feedback_text: autoDraw = False
+19.1920 	EXP 	feedback_text: autoDraw = False
+19.1920 	EXP 	fixation: autoDraw = True
+20.1913 	EXP 	Sound sound_1 started
+21.1938 	EXP 	Sound sound_1 reached end of file
+22.1743 	DATA 	Keypress: s
+22.1899 	EXP 	fixation: autoDraw = False
+22.1899 	EXP 	feedback_text: text = 'Correct'
+22.1899 	EXP 	feedback_text: autoDraw = True
+23.1887 	EXP 	New trial (rep=0, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+23.2052 	EXP 	feedback_text: autoDraw = False
+23.2052 	EXP 	fixation: autoDraw = True
+24.1872 	EXP 	Sound sound_1 started
+25.1872 	EXP 	Sound sound_1 reached end of file
+28.2522 	DATA 	Keypress: s
+28.2671 	EXP 	fixation: autoDraw = False
+28.2671 	EXP 	feedback_text: text = 'Correct'
+28.2671 	EXP 	feedback_text: autoDraw = True
+29.2503 	EXP 	New trial (rep=0, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 1200}
+29.2658 	EXP 	feedback_text: autoDraw = False
+29.2658 	EXP 	feedback_text: autoDraw = False
+29.2658 	EXP 	fixation: autoDraw = True
+30.2646 	EXP 	Sound sound_1 started
+31.2638 	EXP 	Sound sound_1 stopped
+33.3163 	DATA 	Keypress: s
+33.3285 	EXP 	fixation: autoDraw = False
+33.3285 	EXP 	feedback_text: height = 0.05
+33.3285 	EXP 	feedback_text: height = 0.05
+33.3285 	EXP 	feedback_text: height = 0.05
+33.3285 	EXP 	feedback_text: text = 'Incorrect'
+33.3285 	EXP 	feedback_text: autoDraw = True
+34.3278 	EXP 	feedback_text: autoDraw = False
+34.3278 	EXP 	feedback_text: autoDraw = False
+34.3278 	EXP 	instructions_2: autoDraw = True
+36.0806 	EXP 	Imported aud_conditions.xlsx as conditions, 4 conditions, 4 params
+36.0810 	EXP 	Created sequence: fullRandom, trialTypes=4, nReps=10, seed=None
+36.0812 	EXP 	New trial (rep=0, index=0): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 1200}
+36.0829 	DATA 	Keypress: space
+36.0929 	EXP 	instructions_2: autoDraw = False
+36.0929 	EXP 	fixation: autoDraw = True
+37.0921 	EXP 	Sound sound_1 started
+38.0936 	EXP 	Sound sound_1 reached end of file
+40.1075 	EXP 	New trial (rep=0, index=1): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 1200}
+40.1093 	DATA 	Keypress: s
+40.1225 	EXP 	fixation: autoDraw = False
+40.1225 	EXP 	fixation: autoDraw = True
+41.1212 	EXP 	Sound sound_1 started
+42.1239 	EXP 	Sound sound_1 reached end of file
+44.1195 	EXP 	New trial (rep=0, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+44.1212 	DATA 	Keypress: s
+44.1352 	EXP 	fixation: autoDraw = False
+44.1352 	EXP 	fixation: autoDraw = True
+45.1346 	EXP 	Sound sound_1 started
+45.6039 	EXP 	Sound sound_1 stopped
+45.6041 	EXP 	New trial (rep=0, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+45.6060 	DATA 	Keypress: s
+45.6169 	EXP 	fixation: autoDraw = False
+45.6169 	EXP 	fixation: autoDraw = True
+46.6164 	EXP 	Sound sound_1 started
+47.0036 	EXP 	Sound sound_1 stopped
+47.0038 	EXP 	New trial (rep=1, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+47.0058 	DATA 	Keypress: s
+47.0158 	EXP 	fixation: autoDraw = False
+47.0158 	EXP 	fixation: autoDraw = True
+48.0152 	EXP 	Sound sound_1 started
+48.1340 	EXP 	Sound sound_1 stopped
+48.1343 	EXP 	New trial (rep=1, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+48.1361 	DATA 	Keypress: s
+48.1480 	EXP 	fixation: autoDraw = False
+48.1480 	EXP 	fixation: autoDraw = True
+49.1475 	EXP 	Sound sound_1 started
+49.1488 	DATA 	Keypress: s
+49.4941 	EXP 	Sound sound_1 stopped
+49.4943 	EXP 	New trial (rep=1, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+49.4966 	DATA 	Keypress: s
+49.5132 	EXP 	fixation: autoDraw = False
+49.5132 	EXP 	fixation: autoDraw = True
+50.4957 	EXP 	Sound sound_1 started
+50.4977 	DATA 	Keypress: s
+50.8667 	EXP 	Sound sound_1 stopped
+50.8670 	EXP 	New trial (rep=1, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+50.8688 	DATA 	Keypress: s
+50.8785 	EXP 	fixation: autoDraw = False
+50.8785 	EXP 	fixation: autoDraw = True
+51.8291 	DATA 	Keypress: s
+51.8773 	EXP 	Sound sound_1 started
+52.1441 	EXP 	Sound sound_1 stopped
+52.1443 	EXP 	New trial (rep=2, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+52.1462 	DATA 	Keypress: s
+52.1610 	EXP 	fixation: autoDraw = False
+52.1610 	EXP 	fixation: autoDraw = True
+53.1440 	EXP 	Sound sound_1 started
+53.2744 	EXP 	Sound sound_1 stopped
+53.2747 	EXP 	New trial (rep=2, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+53.2769 	DATA 	Keypress: s
+53.2928 	EXP 	fixation: autoDraw = False
+53.2928 	EXP 	fixation: autoDraw = True
+54.2763 	EXP 	Sound sound_1 started
+54.4239 	EXP 	Sound sound_1 stopped
+54.4242 	EXP 	New trial (rep=2, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+54.4261 	DATA 	Keypress: s
+54.4418 	EXP 	fixation: autoDraw = False
+54.4418 	EXP 	fixation: autoDraw = True
+55.4246 	EXP 	Sound sound_1 started
+55.9939 	EXP 	Sound sound_1 stopped
+55.9941 	EXP 	New trial (rep=2, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+55.9960 	DATA 	Keypress: s
+56.0071 	EXP 	fixation: autoDraw = False
+56.0071 	EXP 	fixation: autoDraw = True
+57.0066 	EXP 	Sound sound_1 started
+58.0063 	EXP 	Sound sound_1 reached end of file
+67.7818 	DATA 	Keypress: escape
+68.2731 	EXP 	window1: mouseVisible = True
