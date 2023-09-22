@@ -1,0 +1,35 @@
+Before experiment, instruction
+
+from pylsl import StreamInfo, StreamOutlet
+import time 
+
+Begin experiment, instruction
+
+#event ids
+start = 0
+end = 1
+
+info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
+                  channel_format='int32', source_id='Psychopy Markers')
+# Initialize the stream.
+outlet = StreamOutlet(info)
+
+Begin routine trial
+
+flag_start = True
+flag_end = True
+
+each frame, routine
+
+if sound_1.status == STARTED and flag_start == True:
+    print('start')
+    flag_start = False
+    outlet.push_sample(x=[start])
+    
+if sound_1.status == FINISHED and flag_end == True:
+    print('end')
+    flag_end = False
+    outlet.push_sample(x=[end])
+
+    print('****')
+
