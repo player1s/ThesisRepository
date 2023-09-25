@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 13 12:53:26 2023
+Created on Mon Sep 25 16:55:24 2023
 
 @author: elpid
 """
@@ -10,31 +10,24 @@ import pyxdf
 import mne
 import numpy as np
 
+path_xdf ="C:/Users/elpid/Downloads/test data/sub-elpida/ses-pilot/eeg/sub-elpida_ses-pilot_task-assr_run-001_eeg.xdf"
 
-#%% LOAD FILE AND EXTRACT EEG DATA & MARKERS
-path_xdf = "C:/Users/elpid/Downloads/test data/sub-elpida/ses-pilot/eeg/sub-elpida_ses-pilot_task-ao_run-001_eeg.xdf"
 data_xdf,header = pyxdf.load_xdf(path_xdf)
-markers = 2
-eeg_sig = 3
+
+markers, eeg_sig = 2, 1 # elpida
 eeg_scale = 1e6     # check the data I am getting
 
 eeg_data = np.transpose(data_xdf[eeg_sig]['time_series'])/eeg_scale
 eeg_ts = data_xdf[eeg_sig]['time_stamps']
 
-ao_markers = data_xdf[markers]['time_series']
-ao_ts = data_xdf[markers]['time_stamps']
+assr_markers = data_xdf[markers]['time_series']
+assr_ts = data_xdf[markers]['time_stamps']
 
 
 # time stamps in seconds
 zero_t = eeg_ts[0]
 eeg_ts = eeg_ts-zero_t
-ao_ts = ao_ts-zero_t
-
-
-
-
-#%% 
-# make raw object and preprocess
+assr_ts = assr_ts-zero_t
 
 fs = 250
 ch_names = ["O1","O2","P3","P4","P5","P6","T7","T8"] #correct the channels
@@ -70,28 +63,32 @@ spect_raw.plot()
 
 spect_filt = data.compute_psd(fmin=0,fmax=fs/2)
 spect_filt.plot(xscale='log')
-data.plot(n_channels=n_channels, scalings=scaling ,title='Filtered Signals')
+data.plot(n_channels=n_channels, scalings='auto' ,title='Filtered Signals')
 
-#%% 
-# bad channels
-data.info["bads"].extend(['O2','T8'])
+data.info["bads"].extend(['O2','P4','T8'])   # elpida
+#data.info["bads"].extend(['T8'])   # levi
+
+
 final_data = mne.pick_types(data.info, eeg=True, exclude='bads')
 
-#%%
-event_dict = {"stim start":0}
+#%% EVENTS
 
-onsets = np.array(ao_ts[0::2]*fs, dtype=np.int32)  #onsets in frames
-duration = np.ones_like(onsets) #1sec duration of stimuli
-ids = np.array(ao_markers[0::2,0])  #ids of events 
+       
+event_dict = {"rest":0, "assr":1}
+
+onsets = np.array(assr_ts*fs, dtype=np.int32)  #onsets in frames
+duration = np.ones_like(onsets)*30*fs #30 sec duration of stimuli
+ids = np.array(assr_markers[:,0])  #start events 
+
+
 
 events = np.c_[onsets,duration,ids]
-
+#%%
 epochs = mne.Epochs(data,events,event_id=event_dict,preload=True)
 fig1 = epochs.plot(events=events)
 
-# # check reject criteria with eeg scale
-# reject_criteria = dict(eeg = 100e-6) # 100uV
-# epochs.drop_bad(reject=reject_criteria)
+epochs['rest'].compute_psd(fmin=0,fmax=fs/2).plot()
+fig2 = epochs['rest'].average().plot()
 
-erps = epochs.average()
-fig2 = erps.plot()
+epochs['assr'].compute_psd(fmin=0,fmax=fs/2).plot()
+
