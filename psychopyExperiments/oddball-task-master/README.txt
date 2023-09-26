@@ -1,6 +1,6 @@
 Oddball Task
 -------------
-last edited by: Elpida Palieraki 19/09/2013
+last edited by: Elpida Palieraki 26/09/2013
 
 
 
@@ -9,7 +9,7 @@ The experiment:
 
 	In this task partcipants are required to sort the presented stimuli based on tone. 
 
-	Participants have to press 's' when 1000 Hz tone is presented and press 't' when a 1200 Hz tone is presented. 
+	Participants have to not press any key when 1000 Hz tone is presented and press 't' when a 1200 Hz tone is presented. 
 
 	To change the number of trials -> click on the loop "trials" and change the number of nReps $.
 

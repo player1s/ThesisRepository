@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on September 22, 2023, at 14:47
+    on September 26, 2023, at 11:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -14,8 +14,7 @@ If you publish work using this script the most relevant publication is:
 # --- Import packages ---
 from psychopy import locale_setup
 from psychopy import prefs
-prefs.hardware['audioLib'] = 'ptb'
-prefs.hardware['audioLatencyMode'] = '4'
+prefs.hardware['audioLib'] = 'sounddevice'
 from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
@@ -60,7 +59,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\oddball-task-master\\Oddball Task_lastrun.py',
+    originPath='C:\\Users\\elpid\\Downloads\\oddball-task-master\\oddball-task-master\\Oddball Task_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -74,7 +73,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[900, 500], fullscr=False, screen=0, 
+    size=[1920, 1080], fullscr=False, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -130,7 +129,7 @@ fixation = visual.TextStim(win=win, name='fixation',
     languageStyle='LTR',
     depth=0.0);
 response = keyboard.Keyboard()
-sound_1 = sound.Sound('A', secs=1, stereo=True, hamming=True,
+sound_1 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
     name='sound_1')
 sound_1.setVolume(0.8)
 
@@ -143,7 +142,7 @@ feedback_text = visual.TextStim(win=win, name='feedback_text',
     languageStyle='LTR',
     depth=-1.0);
 
-# --- Initialize components for Routine "Instructions_3" ---
+# --- Initialize components for Routine "Instructions_2" ---
 instructions_2 = visual.TextStim(win=win, name='instructions_2',
     text="This is the end of practice trials and start of experimental trials. Feedback will not be provided anymore. \nPress 's' for the standard tone (1000 Hz) and 't' for the target tone (1200 Hz). Press 'space' to continue.",
     font='Arial',
@@ -162,7 +161,7 @@ fixation = visual.TextStim(win=win, name='fixation',
     languageStyle='LTR',
     depth=0.0);
 response = keyboard.Keyboard()
-sound_1 = sound.Sound('A', secs=1, stereo=True, hamming=True,
+sound_1 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
     name='sound_1')
 sound_1.setVolume(0.8)
 
@@ -303,7 +302,7 @@ for thisTrial in trials:
     response.keys = []
     response.rt = []
     _response_allKeys = []
-    sound_1.setSound(tone, secs=1, hamming=True)
+    sound_1.setSound(tone, secs=1.5, hamming=True)
     sound_1.setVolume(0.8, log=False)
     # Run 'Begin Routine' code from code_2
     flag_start = True
@@ -323,7 +322,7 @@ for thisTrial in trials:
     frameN = -1
     
     # --- Run Routine "Trial" ---
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 4.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -341,6 +340,15 @@ for thisTrial in trials:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'fixation.started')
             fixation.setAutoDraw(True)
+        if fixation.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > fixation.tStartRefresh + 4-frameTolerance:
+                # keep track of stop time/frame for later
+                fixation.tStop = t  # not accounting for scr refresh
+                fixation.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'fixation.stopped')
+                fixation.setAutoDraw(False)
         
         # *response* updates
         waitOnFlip = False
@@ -357,8 +365,17 @@ for thisTrial in trials:
             waitOnFlip = True
             win.callOnFlip(response.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if response.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > response.tStartRefresh + 3-frameTolerance:
+                # keep track of stop time/frame for later
+                response.tStop = t  # not accounting for scr refresh
+                response.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'response.stopped')
+                response.status = FINISHED
         if response.status == STARTED and not waitOnFlip:
-            theseKeys = response.getKeys(keyList=['s','t'], waitRelease=False)
+            theseKeys = response.getKeys(keyList=['None','t'], waitRelease=False)
             _response_allKeys.extend(theseKeys)
             if len(_response_allKeys):
                 response.keys = _response_allKeys[-1].name  # just the last key pressed
@@ -379,7 +396,7 @@ for thisTrial in trials:
             sound_1.play(when=win)  # sync with win flip
         if sound_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > sound_1.tStartRefresh + 1-frameTolerance:
+            if tThisFlipGlobal > sound_1.tStartRefresh + 1.5-frameTolerance:
                 # keep track of stop time/frame for later
                 sound_1.tStop = t  # not accounting for scr refresh
                 sound_1.frameNStop = frameN  # exact frame index
@@ -435,8 +452,11 @@ for thisTrial in trials:
     if response.keys != None:  # we had a response
         trials.addData('response.rt', response.rt)
     sound_1.stop()  # ensure sound has stopped at end of routine
-    # the Routine "Trial" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-4.000000)
     
     # --- Prepare to start Routine "Feedback" ---
     continueRoutine = True
@@ -523,7 +543,7 @@ for thisTrial in trials:
 # completed 1 repeats of 'trials'
 
 
-# --- Prepare to start Routine "Instructions_3" ---
+# --- Prepare to start Routine "Instructions_2" ---
 continueRoutine = True
 routineForceEnded = False
 # update component parameters for each repeat
@@ -531,8 +551,8 @@ key_resp_2.keys = []
 key_resp_2.rt = []
 _key_resp_2_allKeys = []
 # keep track of which components have finished
-Instructions_3Components = [instructions_2, key_resp_2]
-for thisComponent in Instructions_3Components:
+Instructions_2Components = [instructions_2, key_resp_2]
+for thisComponent in Instructions_2Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
     thisComponent.tStartRefresh = None
@@ -544,7 +564,7 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
-# --- Run Routine "Instructions_3" ---
+# --- Run Routine "Instructions_2" ---
 while continueRoutine:
     # get current time
     t = routineTimer.getTime()
@@ -597,7 +617,7 @@ while continueRoutine:
         routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Instructions_3Components:
+    for thisComponent in Instructions_2Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -606,8 +626,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# --- Ending Routine "Instructions_3" ---
-for thisComponent in Instructions_3Components:
+# --- Ending Routine "Instructions_2" ---
+for thisComponent in Instructions_2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
@@ -617,7 +637,7 @@ thisExp.addData('key_resp_2.keys',key_resp_2.keys)
 if key_resp_2.keys != None:  # we had a response
     thisExp.addData('key_resp_2.rt', key_resp_2.rt)
 thisExp.nextEntry()
-# the Routine "Instructions_3" was not non-slip safe, so reset the non-slip timer
+# the Routine "Instructions_2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
@@ -646,7 +666,7 @@ for thisTrial_2 in trials_2:
     response.keys = []
     response.rt = []
     _response_allKeys = []
-    sound_1.setSound(tone, secs=1, hamming=True)
+    sound_1.setSound(tone, secs=1.5, hamming=True)
     sound_1.setVolume(0.8, log=False)
     # Run 'Begin Routine' code from code_2
     flag_start = True
@@ -666,7 +686,7 @@ for thisTrial_2 in trials_2:
     frameN = -1
     
     # --- Run Routine "Trial" ---
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 4.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -684,6 +704,15 @@ for thisTrial_2 in trials_2:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'fixation.started')
             fixation.setAutoDraw(True)
+        if fixation.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > fixation.tStartRefresh + 4-frameTolerance:
+                # keep track of stop time/frame for later
+                fixation.tStop = t  # not accounting for scr refresh
+                fixation.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'fixation.stopped')
+                fixation.setAutoDraw(False)
         
         # *response* updates
         waitOnFlip = False
@@ -700,8 +729,17 @@ for thisTrial_2 in trials_2:
             waitOnFlip = True
             win.callOnFlip(response.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if response.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > response.tStartRefresh + 3-frameTolerance:
+                # keep track of stop time/frame for later
+                response.tStop = t  # not accounting for scr refresh
+                response.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'response.stopped')
+                response.status = FINISHED
         if response.status == STARTED and not waitOnFlip:
-            theseKeys = response.getKeys(keyList=['s','t'], waitRelease=False)
+            theseKeys = response.getKeys(keyList=['None','t'], waitRelease=False)
             _response_allKeys.extend(theseKeys)
             if len(_response_allKeys):
                 response.keys = _response_allKeys[-1].name  # just the last key pressed
@@ -722,7 +760,7 @@ for thisTrial_2 in trials_2:
             sound_1.play(when=win)  # sync with win flip
         if sound_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > sound_1.tStartRefresh + 1-frameTolerance:
+            if tThisFlipGlobal > sound_1.tStartRefresh + 1.5-frameTolerance:
                 # keep track of stop time/frame for later
                 sound_1.tStop = t  # not accounting for scr refresh
                 sound_1.frameNStop = frameN  # exact frame index
@@ -778,8 +816,11 @@ for thisTrial_2 in trials_2:
     if response.keys != None:  # we had a response
         trials_2.addData('response.rt', response.rt)
     sound_1.stop()  # ensure sound has stopped at end of routine
-    # the Routine "Trial" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-4.000000)
     thisExp.nextEntry()
     
 # completed 10 repeats of 'trials_2'
