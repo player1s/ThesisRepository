@@ -1,0 +1,37 @@
+17.0705 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F00A26BD30>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F00A26BCD0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F00A26BAF0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F00A5234F0>, multiSample=False, name='window1', numSamples=2, pos=(492, 108), screen=0, size=array([936, 864]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+17.0706 	EXP 	window1: mouseVisible = True
+17.0707 	EXP 	window1: backgroundImage = ''
+17.0707 	EXP 	window1: backgroundFit = 'none'
+17.0748 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+17.0749 	EXP 	window1: recordFrameIntervals = False
+17.2329 	EXP 	window1: recordFrameIntervals = True
+17.3380 	WARNING 	t of last frame was 21.64ms (=1/46)
+17.4209 	WARNING 	t of last frame was 20.40ms (=1/49)
+17.4863 	WARNING 	t of last frame was 20.48ms (=1/48)
+17.7864 	WARNING 	t of last frame was 20.16ms (=1/49)
+17.9044 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+18.7323 	EXP 	Screen (0) actual frame rate measured at 60.69Hz
+18.7324 	EXP 	window1: recordFrameIntervals = False
+18.7325 	EXP 	window1: mouseVisible = True
+18.7939 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+23.4837 	EXP 	test: status = STARTED
+23.4852 	EXP 	window1: mouseVisible = True
+23.6334 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+23.6437 	EXP 	window1: mouseVisible = True
+23.6673 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+23.9309 	EXP 	Sound ModulatedTone set volume 1.000
+23.9312 	EXP 	window1: mouseVisible = True
+23.9369 	EXP 	Created Cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+0.0518 	EXP 	text: autoDraw = True
+1.7297 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+1.7302 	EXP 	New trial (rep=0, index=0): None
+1.8256 	DATA 	Keypress: space
+1.8427 	EXP 	text: autoDraw = False
+1.8427 	EXP 	text_2: autoDraw = True
+11.7512 	EXP 	Cross: autoDraw = True
+11.8512 	EXP 	text_2: autoDraw = False
+26.7364 	EXP 	Sound ModulatedTone started
+31.6330 	EXP 	test: status = STOPPED
+31.6551 	EXP 	Cross: autoDraw = False
+31.6553 	EXP 	test: status = STOPPED
+31.7066 	EXP 	window1: mouseVisible = True
