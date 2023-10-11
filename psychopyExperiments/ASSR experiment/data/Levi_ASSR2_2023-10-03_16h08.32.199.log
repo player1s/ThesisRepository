@@ -1,0 +1,844 @@
+16.3814 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000149D2B6B310>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000149D3044C70>, multiSample=False, name='window1', numSamples=2, pos=(492, 108), screen=0, size=array([936, 864]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+16.3817 	EXP 	window1: mouseVisible = True
+16.3826 	EXP 	window1: mouseVisible = True
+16.3826 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+16.3827 	EXP 	window1: recordFrameIntervals = False
+16.5485 	EXP 	window1: recordFrameIntervals = True
+16.8486 	WARNING 	t of last frame was 19.77ms (=1/50)
+17.0640 	EXP 	Screen (0) actual frame rate measured at 60.42Hz
+17.0641 	EXP 	window1: recordFrameIntervals = False
+17.1636 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+20.9322 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+21.1951 	EXP 	Sound ModulatedTone set volume 1.000
+21.1984 	EXP 	Created Cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.2016 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Rest', units='height', win=Window(...), wrapWidth=1)
+21.2155 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+21.2293 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+21.2493 	EXP 	text: autoDraw = True
+35.7660 	EXP 	Created sequence: sequential, trialTypes=1, nReps=4, seed=None
+35.7663 	EXP 	New trial (rep=0, index=0): None
+35.7666 	EXP 	Created sequence: sequential, trialTypes=1, nReps=25, seed=None
+35.7669 	EXP 	New trial (rep=0, index=0): None
+35.8636 	DATA 	Keypress: space
+35.8797 	EXP 	text: autoDraw = False
+35.8797 	EXP 	Cross: autoDraw = True
+35.8797 	EXP 	text_3: autoDraw = True
+38.2776 	EXP 	Sound ModulatedTone started
+38.3993 	EXP 	text_3: autoDraw = False
+48.2933 	EXP 	Sound ModulatedTone stopped
+48.2940 	EXP 	New trial (rep=1, index=0): None
+48.3993 	EXP 	Cross: autoDraw = False
+48.3993 	EXP 	text_3: autoDraw = False
+48.3993 	EXP 	Cross: autoDraw = True
+48.3993 	EXP 	text_3: autoDraw = True
+50.7677 	EXP 	Sound ModulatedTone started
+50.8998 	EXP 	text_3: autoDraw = False
+60.7830 	EXP 	Sound ModulatedTone stopped
+60.8050 	EXP 	New trial (rep=2, index=0): None
+60.9117 	EXP 	Cross: autoDraw = False
+60.9117 	EXP 	text_3: autoDraw = False
+60.9117 	EXP 	Cross: autoDraw = True
+60.9117 	EXP 	text_3: autoDraw = True
+63.2715 	EXP 	Sound ModulatedTone started
+63.4215 	EXP 	text_3: autoDraw = False
+73.2827 	EXP 	Sound ModulatedTone stopped
+73.2929 	EXP 	New trial (rep=3, index=0): None
+73.3767 	EXP 	Cross: autoDraw = False
+73.3767 	EXP 	text_3: autoDraw = False
+73.3767 	EXP 	Cross: autoDraw = True
+73.3767 	EXP 	text_3: autoDraw = True
+75.7789 	EXP 	Sound ModulatedTone started
+75.8924 	EXP 	text_3: autoDraw = False
+85.7923 	EXP 	Sound ModulatedTone stopped
+85.7929 	EXP 	New trial (rep=4, index=0): None
+85.8989 	EXP 	Cross: autoDraw = False
+85.8989 	EXP 	text_3: autoDraw = False
+85.8989 	EXP 	Cross: autoDraw = True
+85.8989 	EXP 	text_3: autoDraw = True
+88.2821 	EXP 	Sound ModulatedTone started
+88.3978 	EXP 	text_3: autoDraw = False
+98.2929 	EXP 	Sound ModulatedTone stopped
+98.2935 	EXP 	New trial (rep=5, index=0): None
+98.4021 	EXP 	Cross: autoDraw = False
+98.4021 	EXP 	text_3: autoDraw = False
+98.4021 	EXP 	Cross: autoDraw = True
+98.4021 	EXP 	text_3: autoDraw = True
+100.7726 	EXP 	Sound ModulatedTone started
+100.9037 	EXP 	text_3: autoDraw = False
+110.7727 	EXP 	Sound ModulatedTone stopped
+110.7918 	EXP 	New trial (rep=6, index=0): None
+110.8934 	EXP 	Cross: autoDraw = False
+110.8934 	EXP 	text_3: autoDraw = False
+110.8934 	EXP 	Cross: autoDraw = True
+110.8934 	EXP 	text_3: autoDraw = True
+113.2746 	EXP 	Sound ModulatedTone started
+113.4068 	EXP 	text_3: autoDraw = False
+123.2832 	EXP 	Sound ModulatedTone stopped
+123.2966 	EXP 	New trial (rep=7, index=0): None
+123.3971 	EXP 	Cross: autoDraw = False
+123.3971 	EXP 	text_3: autoDraw = False
+123.3971 	EXP 	Cross: autoDraw = True
+123.3971 	EXP 	text_3: autoDraw = True
+125.7790 	EXP 	Sound ModulatedTone started
+125.9118 	EXP 	text_3: autoDraw = False
+135.7929 	EXP 	Sound ModulatedTone stopped
+135.7933 	EXP 	New trial (rep=8, index=0): None
+135.9022 	EXP 	Cross: autoDraw = False
+135.9022 	EXP 	text_3: autoDraw = False
+135.9022 	EXP 	Cross: autoDraw = True
+135.9022 	EXP 	text_3: autoDraw = True
+138.2686 	EXP 	Sound ModulatedTone started
+138.4210 	EXP 	text_3: autoDraw = False
+148.2822 	EXP 	Sound ModulatedTone stopped
+148.2957 	EXP 	New trial (rep=9, index=0): None
+148.3929 	EXP 	Cross: autoDraw = False
+148.3929 	EXP 	text_3: autoDraw = False
+148.3929 	EXP 	Cross: autoDraw = True
+148.3929 	EXP 	text_3: autoDraw = True
+150.7740 	EXP 	Sound ModulatedTone started
+150.9055 	EXP 	text_3: autoDraw = False
+160.7824 	EXP 	Sound ModulatedTone stopped
+160.7967 	EXP 	New trial (rep=10, index=0): None
+160.8937 	EXP 	Cross: autoDraw = False
+160.8937 	EXP 	text_3: autoDraw = False
+160.8937 	EXP 	Cross: autoDraw = True
+160.8937 	EXP 	text_3: autoDraw = True
+163.2771 	EXP 	Sound ModulatedTone started
+163.3945 	EXP 	text_3: autoDraw = False
+173.2926 	EXP 	Sound ModulatedTone stopped
+173.2930 	EXP 	New trial (rep=11, index=0): None
+173.3991 	EXP 	Cross: autoDraw = False
+173.3991 	EXP 	text_3: autoDraw = False
+173.3991 	EXP 	Cross: autoDraw = True
+173.3991 	EXP 	text_3: autoDraw = True
+175.7679 	EXP 	Sound ModulatedTone started
+175.8996 	EXP 	text_3: autoDraw = False
+185.7834 	EXP 	Sound ModulatedTone stopped
+185.8075 	EXP 	New trial (rep=12, index=0): None
+185.9038 	EXP 	Cross: autoDraw = False
+185.9038 	EXP 	text_3: autoDraw = False
+185.9038 	EXP 	Cross: autoDraw = True
+185.9038 	EXP 	text_3: autoDraw = True
+188.2720 	EXP 	Sound ModulatedTone started
+188.4063 	EXP 	text_3: autoDraw = False
+198.2824 	EXP 	Sound ModulatedTone stopped
+198.2930 	EXP 	New trial (rep=13, index=0): None
+198.3941 	EXP 	Cross: autoDraw = False
+198.3941 	EXP 	text_3: autoDraw = False
+198.3941 	EXP 	Cross: autoDraw = True
+198.3941 	EXP 	text_3: autoDraw = True
+200.7761 	EXP 	Sound ModulatedTone started
+200.9112 	EXP 	text_3: autoDraw = False
+210.7832 	EXP 	Sound ModulatedTone stopped
+210.7839 	EXP 	New trial (rep=14, index=0): None
+210.8802 	EXP 	Cross: autoDraw = False
+210.8802 	EXP 	text_3: autoDraw = False
+210.8802 	EXP 	Cross: autoDraw = True
+210.8802 	EXP 	text_3: autoDraw = True
+213.2797 	EXP 	Sound ModulatedTone started
+213.3807 	EXP 	text_3: autoDraw = False
+223.2922 	EXP 	Sound ModulatedTone stopped
+223.2927 	EXP 	New trial (rep=15, index=0): None
+223.4030 	EXP 	Cross: autoDraw = False
+223.4030 	EXP 	text_3: autoDraw = False
+223.4030 	EXP 	Cross: autoDraw = True
+223.4030 	EXP 	text_3: autoDraw = True
+225.7695 	EXP 	Sound ModulatedTone started
+225.9047 	EXP 	text_3: autoDraw = False
+235.7727 	EXP 	Sound ModulatedTone stopped
+235.7925 	EXP 	New trial (rep=16, index=0): None
+235.8939 	EXP 	Cross: autoDraw = False
+235.8939 	EXP 	text_3: autoDraw = False
+235.8939 	EXP 	Cross: autoDraw = True
+235.8939 	EXP 	text_3: autoDraw = True
+238.2734 	EXP 	Sound ModulatedTone started
+238.4095 	EXP 	text_3: autoDraw = False
+248.2830 	EXP 	Sound ModulatedTone stopped
+248.2970 	EXP 	New trial (rep=17, index=0): None
+248.3973 	EXP 	Cross: autoDraw = False
+248.3973 	EXP 	text_3: autoDraw = False
+248.3973 	EXP 	Cross: autoDraw = True
+248.3973 	EXP 	text_3: autoDraw = True
+250.7647 	EXP 	Sound ModulatedTone started
+250.8972 	EXP 	text_3: autoDraw = False
+260.7725 	EXP 	Sound ModulatedTone stopped
+260.7846 	EXP 	New trial (rep=18, index=0): None
+260.8850 	EXP 	Cross: autoDraw = False
+260.8850 	EXP 	text_3: autoDraw = False
+260.8850 	EXP 	Cross: autoDraw = True
+260.8850 	EXP 	text_3: autoDraw = True
+263.2678 	EXP 	Sound ModulatedTone started
+263.3844 	EXP 	text_3: autoDraw = False
+273.2825 	EXP 	Sound ModulatedTone stopped
+273.2897 	EXP 	New trial (rep=19, index=0): None
+273.4051 	EXP 	Cross: autoDraw = False
+273.4051 	EXP 	text_3: autoDraw = False
+273.4051 	EXP 	Cross: autoDraw = True
+273.4051 	EXP 	text_3: autoDraw = True
+275.7729 	EXP 	Sound ModulatedTone started
+275.9064 	EXP 	text_3: autoDraw = False
+285.7833 	EXP 	Sound ModulatedTone stopped
+285.7968 	EXP 	New trial (rep=20, index=0): None
+285.9109 	EXP 	Cross: autoDraw = False
+285.9109 	EXP 	text_3: autoDraw = False
+285.9109 	EXP 	Cross: autoDraw = True
+285.9109 	EXP 	text_3: autoDraw = True
+288.2782 	EXP 	Sound ModulatedTone started
+288.4134 	EXP 	text_3: autoDraw = False
+298.2928 	EXP 	Sound ModulatedTone stopped
+298.2932 	EXP 	New trial (rep=21, index=0): None
+298.4013 	EXP 	Cross: autoDraw = False
+298.4013 	EXP 	text_3: autoDraw = False
+298.4013 	EXP 	Cross: autoDraw = True
+298.4013 	EXP 	text_3: autoDraw = True
+300.7667 	EXP 	Sound ModulatedTone started
+300.9159 	EXP 	text_3: autoDraw = False
+310.7830 	EXP 	Sound ModulatedTone stopped
+310.8063 	EXP 	New trial (rep=22, index=0): None
+310.9210 	EXP 	Cross: autoDraw = False
+310.9210 	EXP 	text_3: autoDraw = False
+310.9210 	EXP 	Cross: autoDraw = True
+310.9210 	EXP 	text_3: autoDraw = True
+313.2707 	EXP 	Sound ModulatedTone started
+313.4372 	EXP 	text_3: autoDraw = False
+323.2726 	EXP 	Sound ModulatedTone stopped
+323.2930 	EXP 	New trial (rep=23, index=0): None
+323.3942 	EXP 	Cross: autoDraw = False
+323.3942 	EXP 	text_3: autoDraw = False
+323.3942 	EXP 	Cross: autoDraw = True
+323.3942 	EXP 	text_3: autoDraw = True
+325.7785 	EXP 	Sound ModulatedTone started
+325.9080 	EXP 	text_3: autoDraw = False
+335.7831 	EXP 	Sound ModulatedTone stopped
+335.7835 	EXP 	New trial (rep=24, index=0): None
+335.8806 	EXP 	Cross: autoDraw = False
+335.8806 	EXP 	text_3: autoDraw = False
+335.8806 	EXP 	Cross: autoDraw = True
+335.8806 	EXP 	text_3: autoDraw = True
+338.2793 	EXP 	Sound ModulatedTone started
+338.3995 	EXP 	text_3: autoDraw = False
+348.2934 	EXP 	Sound ModulatedTone stopped
+348.3186 	EXP 	Cross: autoDraw = False
+348.3186 	EXP 	text_3: autoDraw = False
+348.3186 	EXP 	text_2: autoDraw = True
+378.2648 	DATA 	Keypress: space
+378.2835 	EXP 	New trial (rep=1, index=0): None
+378.2839 	EXP 	Created sequence: sequential, trialTypes=1, nReps=25, seed=None
+378.2845 	EXP 	New trial (rep=0, index=0): None
+378.3743 	EXP 	text_2: autoDraw = False
+378.3743 	EXP 	Cross: autoDraw = True
+378.3743 	EXP 	text_3: autoDraw = True
+380.7916 	EXP 	Sound ModulatedTone started
+380.8738 	EXP 	text_3: autoDraw = False
+390.8030 	EXP 	Sound ModulatedTone stopped
+390.8036 	EXP 	New trial (rep=1, index=0): None
+390.8956 	EXP 	Cross: autoDraw = False
+390.8956 	EXP 	text_3: autoDraw = False
+390.8956 	EXP 	Cross: autoDraw = True
+390.8956 	EXP 	text_3: autoDraw = True
+393.2972 	EXP 	Sound ModulatedTone started
+393.3963 	EXP 	text_3: autoDraw = False
+403.3030 	EXP 	Sound ModulatedTone stopped
+403.3036 	EXP 	New trial (rep=2, index=0): None
+403.4010 	EXP 	Cross: autoDraw = False
+403.4010 	EXP 	text_3: autoDraw = False
+403.4010 	EXP 	Cross: autoDraw = True
+403.4010 	EXP 	text_3: autoDraw = True
+405.7834 	EXP 	Sound ModulatedTone started
+405.9015 	EXP 	text_3: autoDraw = False
+415.7934 	EXP 	Sound ModulatedTone stopped
+415.8104 	EXP 	New trial (rep=3, index=0): None
+415.9225 	EXP 	Cross: autoDraw = False
+415.9225 	EXP 	text_3: autoDraw = False
+415.9225 	EXP 	Cross: autoDraw = True
+415.9225 	EXP 	text_3: autoDraw = True
+418.2891 	EXP 	Sound ModulatedTone started
+418.4222 	EXP 	text_3: autoDraw = False
+428.2928 	EXP 	Sound ModulatedTone stopped
+428.3148 	EXP 	New trial (rep=4, index=0): None
+428.4289 	EXP 	Cross: autoDraw = False
+428.4289 	EXP 	text_3: autoDraw = False
+428.4289 	EXP 	Cross: autoDraw = True
+428.4289 	EXP 	text_3: autoDraw = True
+430.7931 	EXP 	Sound ModulatedTone started
+430.9448 	EXP 	text_3: autoDraw = False
+440.8033 	EXP 	Sound ModulatedTone stopped
+440.8174 	EXP 	New trial (rep=5, index=0): None
+440.9186 	EXP 	Cross: autoDraw = False
+440.9186 	EXP 	text_3: autoDraw = False
+440.9186 	EXP 	Cross: autoDraw = True
+440.9186 	EXP 	text_3: autoDraw = True
+443.2874 	EXP 	Sound ModulatedTone started
+443.4341 	EXP 	text_3: autoDraw = False
+453.2927 	EXP 	Sound ModulatedTone stopped
+453.3114 	EXP 	New trial (rep=6, index=0): None
+453.4040 	EXP 	Cross: autoDraw = False
+453.4040 	EXP 	text_3: autoDraw = False
+453.4040 	EXP 	Cross: autoDraw = True
+453.4040 	EXP 	text_3: autoDraw = True
+455.7872 	EXP 	Sound ModulatedTone started
+455.9032 	EXP 	text_3: autoDraw = False
+465.8025 	EXP 	Sound ModulatedTone stopped
+465.8121 	EXP 	New trial (rep=7, index=0): None
+465.9086 	EXP 	Cross: autoDraw = False
+465.9086 	EXP 	text_3: autoDraw = False
+465.9086 	EXP 	Cross: autoDraw = True
+465.9086 	EXP 	text_3: autoDraw = True
+468.2930 	EXP 	Sound ModulatedTone started
+468.4094 	EXP 	text_3: autoDraw = False
+478.3030 	EXP 	Sound ModulatedTone stopped
+478.3034 	EXP 	New trial (rep=8, index=0): None
+478.4138 	EXP 	Cross: autoDraw = False
+478.4138 	EXP 	text_3: autoDraw = False
+478.4138 	EXP 	Cross: autoDraw = True
+478.4138 	EXP 	text_3: autoDraw = True
+480.7890 	EXP 	Sound ModulatedTone started
+480.9168 	EXP 	text_3: autoDraw = False
+490.8030 	EXP 	Sound ModulatedTone stopped
+490.8237 	EXP 	New trial (rep=9, index=0): None
+490.9212 	EXP 	Cross: autoDraw = False
+490.9212 	EXP 	text_3: autoDraw = False
+490.9212 	EXP 	Cross: autoDraw = True
+490.9212 	EXP 	text_3: autoDraw = True
+493.2856 	EXP 	Sound ModulatedTone started
+493.4361 	EXP 	text_3: autoDraw = False
+503.3026 	EXP 	Sound ModulatedTone stopped
+503.3247 	EXP 	New trial (rep=10, index=0): None
+503.4232 	EXP 	Cross: autoDraw = False
+503.4232 	EXP 	text_3: autoDraw = False
+503.4232 	EXP 	Cross: autoDraw = True
+503.4232 	EXP 	text_3: autoDraw = True
+505.7936 	EXP 	Sound ModulatedTone started
+505.9265 	EXP 	text_3: autoDraw = False
+515.7923 	EXP 	Sound ModulatedTone stopped
+515.8130 	EXP 	New trial (rep=11, index=0): None
+515.9323 	EXP 	Cross: autoDraw = False
+515.9323 	EXP 	text_3: autoDraw = False
+515.9323 	EXP 	Cross: autoDraw = True
+515.9323 	EXP 	text_3: autoDraw = True
+518.2944 	EXP 	Sound ModulatedTone started
+518.4442 	EXP 	text_3: autoDraw = False
+528.3032 	EXP 	Sound ModulatedTone stopped
+528.3037 	EXP 	New trial (rep=12, index=0): None
+528.4027 	EXP 	Cross: autoDraw = False
+528.4027 	EXP 	text_3: autoDraw = False
+528.4027 	EXP 	Cross: autoDraw = True
+528.4027 	EXP 	text_3: autoDraw = True
+530.7851 	EXP 	Sound ModulatedTone started
+530.9169 	EXP 	text_3: autoDraw = False
+540.7924 	EXP 	Sound ModulatedTone stopped
+540.8092 	EXP 	New trial (rep=13, index=0): None
+540.9295 	EXP 	Cross: autoDraw = False
+540.9295 	EXP 	text_3: autoDraw = False
+540.9295 	EXP 	Cross: autoDraw = True
+540.9295 	EXP 	text_3: autoDraw = True
+543.2897 	EXP 	Sound ModulatedTone started
+543.4403 	EXP 	text_3: autoDraw = False
+553.3025 	EXP 	Sound ModulatedTone stopped
+553.3116 	EXP 	New trial (rep=14, index=0): None
+553.4135 	EXP 	Cross: autoDraw = False
+553.4135 	EXP 	text_3: autoDraw = False
+553.4135 	EXP 	Cross: autoDraw = True
+553.4135 	EXP 	text_3: autoDraw = True
+555.7955 	EXP 	Sound ModulatedTone started
+555.9269 	EXP 	text_3: autoDraw = False
+565.8123 	EXP 	Sound ModulatedTone stopped
+565.8133 	EXP 	New trial (rep=15, index=0): None
+565.9157 	EXP 	Cross: autoDraw = False
+565.9157 	EXP 	text_3: autoDraw = False
+565.9157 	EXP 	Cross: autoDraw = True
+565.9157 	EXP 	text_3: autoDraw = True
+568.2998 	EXP 	Sound ModulatedTone started
+568.4162 	EXP 	text_3: autoDraw = False
+578.3125 	EXP 	Sound ModulatedTone stopped
+578.3134 	EXP 	New trial (rep=16, index=0): None
+578.4203 	EXP 	Cross: autoDraw = False
+578.4203 	EXP 	text_3: autoDraw = False
+578.4203 	EXP 	Cross: autoDraw = True
+578.4203 	EXP 	text_3: autoDraw = True
+580.7863 	EXP 	Sound ModulatedTone started
+580.9229 	EXP 	text_3: autoDraw = False
+590.8027 	EXP 	Sound ModulatedTone stopped
+590.8256 	EXP 	New trial (rep=17, index=0): None
+590.9250 	EXP 	Cross: autoDraw = False
+590.9250 	EXP 	text_3: autoDraw = False
+590.9250 	EXP 	Cross: autoDraw = True
+590.9250 	EXP 	text_3: autoDraw = True
+593.2926 	EXP 	Sound ModulatedTone started
+593.4247 	EXP 	text_3: autoDraw = False
+603.3026 	EXP 	Sound ModulatedTone stopped
+603.3034 	EXP 	New trial (rep=18, index=0): None
+603.4139 	EXP 	Cross: autoDraw = False
+603.4139 	EXP 	text_3: autoDraw = False
+603.4139 	EXP 	Cross: autoDraw = True
+603.4139 	EXP 	text_3: autoDraw = True
+605.8036 	EXP 	Sound ModulatedTone started
+605.9141 	EXP 	text_3: autoDraw = False
+615.8024 	EXP 	Sound ModulatedTone stopped
+615.8028 	EXP 	New trial (rep=19, index=0): None
+615.9036 	EXP 	Cross: autoDraw = False
+615.9036 	EXP 	text_3: autoDraw = False
+615.9036 	EXP 	Cross: autoDraw = True
+615.9036 	EXP 	text_3: autoDraw = True
+618.2859 	EXP 	Sound ModulatedTone started
+618.4199 	EXP 	text_3: autoDraw = False
+628.2934 	EXP 	Sound ModulatedTone stopped
+628.3075 	EXP 	New trial (rep=20, index=0): None
+628.4101 	EXP 	Cross: autoDraw = False
+628.4101 	EXP 	text_3: autoDraw = False
+628.4101 	EXP 	Cross: autoDraw = True
+628.4101 	EXP 	text_3: autoDraw = True
+630.7909 	EXP 	Sound ModulatedTone started
+630.9234 	EXP 	text_3: autoDraw = False
+640.8026 	EXP 	Sound ModulatedTone stopped
+640.8147 	EXP 	New trial (rep=21, index=0): None
+640.9284 	EXP 	Cross: autoDraw = False
+640.9284 	EXP 	text_3: autoDraw = False
+640.9284 	EXP 	Cross: autoDraw = True
+640.9284 	EXP 	text_3: autoDraw = True
+643.2949 	EXP 	Sound ModulatedTone started
+643.4320 	EXP 	text_3: autoDraw = False
+653.3122 	EXP 	Sound ModulatedTone stopped
+653.3128 	EXP 	New trial (rep=22, index=0): None
+653.4171 	EXP 	Cross: autoDraw = False
+653.4171 	EXP 	text_3: autoDraw = False
+653.4171 	EXP 	Cross: autoDraw = True
+653.4171 	EXP 	text_3: autoDraw = True
+655.7842 	EXP 	Sound ModulatedTone started
+655.9173 	EXP 	text_3: autoDraw = False
+665.7926 	EXP 	Sound ModulatedTone stopped
+665.8061 	EXP 	New trial (rep=23, index=0): None
+665.9063 	EXP 	Cross: autoDraw = False
+665.9063 	EXP 	text_3: autoDraw = False
+665.9063 	EXP 	Cross: autoDraw = True
+665.9063 	EXP 	text_3: autoDraw = True
+668.2915 	EXP 	Sound ModulatedTone started
+668.4081 	EXP 	text_3: autoDraw = False
+678.3027 	EXP 	Sound ModulatedTone stopped
+678.3114 	EXP 	New trial (rep=24, index=0): None
+678.4111 	EXP 	Cross: autoDraw = False
+678.4111 	EXP 	text_3: autoDraw = False
+678.4111 	EXP 	Cross: autoDraw = True
+678.4111 	EXP 	text_3: autoDraw = True
+680.7938 	EXP 	Sound ModulatedTone started
+680.9103 	EXP 	text_3: autoDraw = False
+690.8126 	EXP 	Sound ModulatedTone stopped
+690.8394 	EXP 	Cross: autoDraw = False
+690.8394 	EXP 	text_3: autoDraw = False
+690.8394 	EXP 	text_2: autoDraw = True
+734.3022 	EXP 	New trial (rep=2, index=0): None
+734.3027 	EXP 	Created sequence: sequential, trialTypes=1, nReps=25, seed=None
+734.3030 	EXP 	New trial (rep=0, index=0): None
+734.3933 	DATA 	Keypress: space
+734.4120 	EXP 	text_2: autoDraw = False
+734.4120 	EXP 	Cross: autoDraw = True
+734.4120 	EXP 	text_3: autoDraw = True
+736.8082 	EXP 	Sound ModulatedTone started
+736.9086 	EXP 	text_3: autoDraw = False
+746.8225 	EXP 	Sound ModulatedTone stopped
+746.8300 	EXP 	New trial (rep=1, index=0): None
+746.9305 	EXP 	Cross: autoDraw = False
+746.9305 	EXP 	text_3: autoDraw = False
+746.9305 	EXP 	Cross: autoDraw = True
+746.9305 	EXP 	text_3: autoDraw = True
+749.3142 	EXP 	Sound ModulatedTone started
+749.4469 	EXP 	text_3: autoDraw = False
+759.3224 	EXP 	Sound ModulatedTone stopped
+759.3234 	EXP 	New trial (rep=2, index=0): None
+759.4183 	EXP 	Cross: autoDraw = False
+759.4183 	EXP 	text_3: autoDraw = False
+759.4183 	EXP 	Cross: autoDraw = True
+759.4183 	EXP 	text_3: autoDraw = True
+761.8040 	EXP 	Sound ModulatedTone started
+761.9210 	EXP 	text_3: autoDraw = False
+771.8134 	EXP 	Sound ModulatedTone stopped
+771.8263 	EXP 	New trial (rep=3, index=0): None
+771.9292 	EXP 	Cross: autoDraw = False
+771.9292 	EXP 	text_3: autoDraw = False
+771.9292 	EXP 	Cross: autoDraw = True
+771.9292 	EXP 	text_3: autoDraw = True
+774.3065 	EXP 	Sound ModulatedTone started
+774.4390 	EXP 	text_3: autoDraw = False
+784.3223 	EXP 	Sound ModulatedTone stopped
+784.3466 	EXP 	New trial (rep=4, index=0): None
+784.4477 	EXP 	Cross: autoDraw = False
+784.4477 	EXP 	text_3: autoDraw = False
+784.4477 	EXP 	Cross: autoDraw = True
+784.4477 	EXP 	text_3: autoDraw = True
+786.8125 	EXP 	Sound ModulatedTone started
+786.9644 	EXP 	text_3: autoDraw = False
+796.8226 	EXP 	Sound ModulatedTone stopped
+796.8233 	EXP 	New trial (rep=5, index=0): None
+796.9322 	EXP 	Cross: autoDraw = False
+796.9322 	EXP 	text_3: autoDraw = False
+796.9322 	EXP 	Cross: autoDraw = True
+796.9322 	EXP 	text_3: autoDraw = True
+799.3176 	EXP 	Sound ModulatedTone started
+799.4336 	EXP 	text_3: autoDraw = False
+809.3224 	EXP 	Sound ModulatedTone stopped
+809.3229 	EXP 	New trial (rep=6, index=0): None
+809.4279 	EXP 	Cross: autoDraw = False
+809.4279 	EXP 	text_3: autoDraw = False
+809.4279 	EXP 	Cross: autoDraw = True
+809.4279 	EXP 	text_3: autoDraw = True
+811.8039 	EXP 	Sound ModulatedTone started
+811.9380 	EXP 	text_3: autoDraw = False
+821.8130 	EXP 	Sound ModulatedTone stopped
+821.8301 	EXP 	New trial (rep=7, index=0): None
+821.9415 	EXP 	Cross: autoDraw = False
+821.9415 	EXP 	text_3: autoDraw = False
+821.9415 	EXP 	Cross: autoDraw = True
+821.9415 	EXP 	text_3: autoDraw = True
+824.3126 	EXP 	Sound ModulatedTone started
+824.4429 	EXP 	text_3: autoDraw = False
+834.3223 	EXP 	Sound ModulatedTone stopped
+834.3370 	EXP 	New trial (rep=8, index=0): None
+834.4370 	EXP 	Cross: autoDraw = False
+834.4370 	EXP 	text_3: autoDraw = False
+834.4370 	EXP 	Cross: autoDraw = True
+834.4370 	EXP 	text_3: autoDraw = True
+836.8152 	EXP 	Sound ModulatedTone started
+836.9479 	EXP 	text_3: autoDraw = False
+846.8231 	EXP 	Sound ModulatedTone stopped
+846.8237 	EXP 	New trial (rep=9, index=0): None
+846.9374 	EXP 	Cross: autoDraw = False
+846.9374 	EXP 	text_3: autoDraw = False
+846.9374 	EXP 	Cross: autoDraw = True
+846.9374 	EXP 	text_3: autoDraw = True
+849.3044 	EXP 	Sound ModulatedTone started
+849.4358 	EXP 	text_3: autoDraw = False
+859.3127 	EXP 	Sound ModulatedTone stopped
+859.3274 	EXP 	New trial (rep=10, index=0): None
+859.4416 	EXP 	Cross: autoDraw = False
+859.4416 	EXP 	text_3: autoDraw = False
+859.4416 	EXP 	Cross: autoDraw = True
+859.4416 	EXP 	text_3: autoDraw = True
+861.8082 	EXP 	Sound ModulatedTone started
+861.9425 	EXP 	text_3: autoDraw = False
+871.8227 	EXP 	Sound ModulatedTone stopped
+871.8232 	EXP 	New trial (rep=11, index=0): None
+871.9137 	EXP 	Cross: autoDraw = False
+871.9137 	EXP 	text_3: autoDraw = False
+871.9137 	EXP 	Cross: autoDraw = True
+871.9137 	EXP 	text_3: autoDraw = True
+874.3125 	EXP 	Sound ModulatedTone started
+874.4126 	EXP 	text_3: autoDraw = False
+884.3224 	EXP 	Sound ModulatedTone stopped
+884.3228 	EXP 	New trial (rep=12, index=0): None
+884.4209 	EXP 	Cross: autoDraw = False
+884.4209 	EXP 	text_3: autoDraw = False
+884.4209 	EXP 	Cross: autoDraw = True
+884.4209 	EXP 	text_3: autoDraw = True
+886.8011 	EXP 	Sound ModulatedTone started
+886.9360 	EXP 	text_3: autoDraw = False
+896.8222 	EXP 	Sound ModulatedTone stopped
+896.8472 	EXP 	New trial (rep=13, index=0): None
+896.9401 	EXP 	Cross: autoDraw = False
+896.9401 	EXP 	text_3: autoDraw = False
+896.9401 	EXP 	Cross: autoDraw = True
+896.9401 	EXP 	text_3: autoDraw = True
+899.3065 	EXP 	Sound ModulatedTone started
+899.4411 	EXP 	text_3: autoDraw = False
+909.3224 	EXP 	Sound ModulatedTone stopped
+909.3480 	EXP 	New trial (rep=14, index=0): None
+909.4439 	EXP 	Cross: autoDraw = False
+909.4439 	EXP 	text_3: autoDraw = False
+909.4439 	EXP 	Cross: autoDraw = True
+909.4439 	EXP 	text_3: autoDraw = True
+911.8169 	EXP 	Sound ModulatedTone started
+911.9435 	EXP 	text_3: autoDraw = False
+921.8132 	EXP 	Sound ModulatedTone stopped
+921.8397 	EXP 	New trial (rep=15, index=0): None
+921.9500 	EXP 	Cross: autoDraw = False
+921.9500 	EXP 	text_3: autoDraw = False
+921.9500 	EXP 	Cross: autoDraw = True
+921.9500 	EXP 	text_3: autoDraw = True
+924.3174 	EXP 	Sound ModulatedTone started
+924.4510 	EXP 	text_3: autoDraw = False
+934.3227 	EXP 	Sound ModulatedTone stopped
+934.3231 	EXP 	New trial (rep=16, index=0): None
+934.4255 	EXP 	Cross: autoDraw = False
+934.4255 	EXP 	text_3: autoDraw = False
+934.4255 	EXP 	Cross: autoDraw = True
+934.4255 	EXP 	text_3: autoDraw = True
+936.8053 	EXP 	Sound ModulatedTone started
+936.9363 	EXP 	text_3: autoDraw = False
+946.8129 	EXP 	Sound ModulatedTone stopped
+946.8274 	EXP 	New trial (rep=17, index=0): None
+946.9301 	EXP 	Cross: autoDraw = False
+946.9301 	EXP 	text_3: autoDraw = False
+946.9301 	EXP 	Cross: autoDraw = True
+946.9301 	EXP 	text_3: autoDraw = True
+949.3096 	EXP 	Sound ModulatedTone started
+949.4426 	EXP 	text_3: autoDraw = False
+959.3227 	EXP 	Sound ModulatedTone stopped
+959.3327 	EXP 	New trial (rep=18, index=0): None
+959.4324 	EXP 	Cross: autoDraw = False
+959.4324 	EXP 	text_3: autoDraw = False
+959.4324 	EXP 	Cross: autoDraw = True
+959.4324 	EXP 	text_3: autoDraw = True
+961.8146 	EXP 	Sound ModulatedTone started
+961.9302 	EXP 	text_3: autoDraw = False
+971.8327 	EXP 	Sound ModulatedTone stopped
+971.8331 	EXP 	New trial (rep=19, index=0): None
+971.9375 	EXP 	Cross: autoDraw = False
+971.9375 	EXP 	text_3: autoDraw = False
+971.9375 	EXP 	Cross: autoDraw = True
+971.9375 	EXP 	text_3: autoDraw = True
+974.3025 	EXP 	Sound ModulatedTone started
+974.4531 	EXP 	text_3: autoDraw = False
+984.3128 	EXP 	Sound ModulatedTone stopped
+984.3249 	EXP 	New trial (rep=20, index=0): None
+984.4261 	EXP 	Cross: autoDraw = False
+984.4261 	EXP 	text_3: autoDraw = False
+984.4261 	EXP 	Cross: autoDraw = True
+984.4261 	EXP 	text_3: autoDraw = True
+986.8081 	EXP 	Sound ModulatedTone started
+986.9416 	EXP 	text_3: autoDraw = False
+996.8227 	EXP 	Sound ModulatedTone stopped
+996.8323 	EXP 	New trial (rep=21, index=0): None
+996.9298 	EXP 	Cross: autoDraw = False
+996.9298 	EXP 	text_3: autoDraw = False
+996.9298 	EXP 	Cross: autoDraw = True
+996.9298 	EXP 	text_3: autoDraw = True
+999.3183 	EXP 	Sound ModulatedTone started
+999.4296 	EXP 	text_3: autoDraw = False
+1009.3332 	EXP 	Sound ModulatedTone stopped
+1009.3336 	EXP 	New trial (rep=22, index=0): None
+1009.4349 	EXP 	Cross: autoDraw = False
+1009.4349 	EXP 	text_3: autoDraw = False
+1009.4349 	EXP 	Cross: autoDraw = True
+1009.4349 	EXP 	text_3: autoDraw = True
+1011.8179 	EXP 	Sound ModulatedTone started
+1011.9352 	EXP 	text_3: autoDraw = False
+1021.8232 	EXP 	Sound ModulatedTone stopped
+1021.8241 	EXP 	New trial (rep=23, index=0): None
+1021.9223 	EXP 	Cross: autoDraw = False
+1021.9223 	EXP 	text_3: autoDraw = False
+1021.9223 	EXP 	Cross: autoDraw = True
+1021.9223 	EXP 	text_3: autoDraw = True
+1024.3103 	EXP 	Sound ModulatedTone started
+1024.4227 	EXP 	text_3: autoDraw = False
+1034.3128 	EXP 	Sound ModulatedTone stopped
+1034.3275 	EXP 	New trial (rep=24, index=0): None
+1034.4293 	EXP 	Cross: autoDraw = False
+1034.4293 	EXP 	text_3: autoDraw = False
+1034.4293 	EXP 	Cross: autoDraw = True
+1034.4293 	EXP 	text_3: autoDraw = True
+1036.8103 	EXP 	Sound ModulatedTone started
+1036.9267 	EXP 	text_3: autoDraw = False
+1046.8224 	EXP 	Sound ModulatedTone stopped
+1046.8329 	EXP 	Cross: autoDraw = False
+1046.8329 	EXP 	text_3: autoDraw = False
+1046.8329 	EXP 	text_2: autoDraw = True
+1093.3468 	EXP 	New trial (rep=3, index=0): None
+1093.3474 	EXP 	Created sequence: sequential, trialTypes=1, nReps=25, seed=None
+1093.3478 	EXP 	New trial (rep=0, index=0): None
+1093.4356 	DATA 	Keypress: space
+1093.4551 	EXP 	text_2: autoDraw = False
+1093.4551 	EXP 	Cross: autoDraw = True
+1093.4551 	EXP 	text_3: autoDraw = True
+1095.8568 	EXP 	Sound ModulatedTone started
+1095.9629 	EXP 	text_3: autoDraw = False
+1105.8630 	EXP 	Sound ModulatedTone stopped
+1105.8635 	EXP 	New trial (rep=1, index=0): None
+1105.9607 	EXP 	Cross: autoDraw = False
+1105.9607 	EXP 	text_3: autoDraw = False
+1105.9607 	EXP 	Cross: autoDraw = True
+1105.9607 	EXP 	text_3: autoDraw = True
+1108.3606 	EXP 	Sound ModulatedTone started
+1108.4602 	EXP 	text_3: autoDraw = False
+1118.3728 	EXP 	Sound ModulatedTone stopped
+1118.3733 	EXP 	New trial (rep=2, index=0): None
+1118.4680 	EXP 	Cross: autoDraw = False
+1118.4680 	EXP 	text_3: autoDraw = False
+1118.4680 	EXP 	Cross: autoDraw = True
+1118.4680 	EXP 	text_3: autoDraw = True
+1120.8500 	EXP 	Sound ModulatedTone started
+1120.9826 	EXP 	text_3: autoDraw = False
+1130.8530 	EXP 	Sound ModulatedTone stopped
+1130.8718 	EXP 	New trial (rep=3, index=0): None
+1130.9707 	EXP 	Cross: autoDraw = False
+1130.9707 	EXP 	text_3: autoDraw = False
+1130.9707 	EXP 	Cross: autoDraw = True
+1130.9707 	EXP 	text_3: autoDraw = True
+1133.3532 	EXP 	Sound ModulatedTone started
+1133.4706 	EXP 	text_3: autoDraw = False
+1143.3633 	EXP 	Sound ModulatedTone stopped
+1143.3758 	EXP 	New trial (rep=4, index=0): None
+1143.4754 	EXP 	Cross: autoDraw = False
+1143.4754 	EXP 	text_3: autoDraw = False
+1143.4754 	EXP 	Cross: autoDraw = True
+1143.4754 	EXP 	text_3: autoDraw = True
+1145.8579 	EXP 	Sound ModulatedTone started
+1145.9767 	EXP 	text_3: autoDraw = False
+1155.8726 	EXP 	Sound ModulatedTone stopped
+1155.8731 	EXP 	New trial (rep=5, index=0): None
+1155.9794 	EXP 	Cross: autoDraw = False
+1155.9794 	EXP 	text_3: autoDraw = False
+1155.9794 	EXP 	Cross: autoDraw = True
+1155.9794 	EXP 	text_3: autoDraw = True
+1158.3524 	EXP 	Sound ModulatedTone started
+1158.4806 	EXP 	text_3: autoDraw = False
+1168.3629 	EXP 	Sound ModulatedTone stopped
+1168.3867 	EXP 	New trial (rep=6, index=0): None
+1168.5097 	EXP 	Cross: autoDraw = False
+1168.5097 	EXP 	text_3: autoDraw = False
+1168.5097 	EXP 	Cross: autoDraw = True
+1168.5097 	EXP 	text_3: autoDraw = True
+1170.8530 	EXP 	Sound ModulatedTone started
+1171.0199 	EXP 	text_3: autoDraw = False
+1180.8729 	EXP 	Sound ModulatedTone stopped
+1180.8734 	EXP 	New trial (rep=7, index=0): None
+1180.9738 	EXP 	Cross: autoDraw = False
+1180.9738 	EXP 	text_3: autoDraw = False
+1180.9738 	EXP 	Cross: autoDraw = True
+1180.9738 	EXP 	text_3: autoDraw = True
+1183.3578 	EXP 	Sound ModulatedTone started
+1183.4739 	EXP 	text_3: autoDraw = False
+1193.3732 	EXP 	Sound ModulatedTone stopped
+1193.3736 	EXP 	New trial (rep=8, index=0): None
+1193.4629 	EXP 	Cross: autoDraw = False
+1193.4629 	EXP 	text_3: autoDraw = False
+1193.4629 	EXP 	Cross: autoDraw = True
+1193.4629 	EXP 	text_3: autoDraw = True
+1195.8683 	EXP 	Sound ModulatedTone started
+1195.9642 	EXP 	text_3: autoDraw = False
+1205.8729 	EXP 	Sound ModulatedTone stopped
+1205.8735 	EXP 	New trial (rep=9, index=0): None
+1205.9857 	EXP 	Cross: autoDraw = False
+1205.9857 	EXP 	text_3: autoDraw = False
+1205.9857 	EXP 	Cross: autoDraw = True
+1205.9857 	EXP 	text_3: autoDraw = True
+1208.3520 	EXP 	Sound ModulatedTone started
+1208.5009 	EXP 	text_3: autoDraw = False
+1218.3622 	EXP 	Sound ModulatedTone stopped
+1218.3723 	EXP 	New trial (rep=10, index=0): None
+1218.4734 	EXP 	Cross: autoDraw = False
+1218.4734 	EXP 	text_3: autoDraw = False
+1218.4734 	EXP 	Cross: autoDraw = True
+1218.4734 	EXP 	text_3: autoDraw = True
+1220.8549 	EXP 	Sound ModulatedTone started
+1220.9729 	EXP 	text_3: autoDraw = False
+1230.8630 	EXP 	Sound ModulatedTone stopped
+1230.8846 	EXP 	New trial (rep=11, index=0): None
+1230.9779 	EXP 	Cross: autoDraw = False
+1230.9779 	EXP 	text_3: autoDraw = False
+1230.9779 	EXP 	Cross: autoDraw = True
+1230.9779 	EXP 	text_3: autoDraw = True
+1233.3601 	EXP 	Sound ModulatedTone started
+1233.4768 	EXP 	text_3: autoDraw = False
+1243.3723 	EXP 	Sound ModulatedTone stopped
+1243.3728 	EXP 	New trial (rep=12, index=0): None
+1243.4682 	EXP 	Cross: autoDraw = False
+1243.4682 	EXP 	text_3: autoDraw = False
+1243.4682 	EXP 	Cross: autoDraw = True
+1243.4682 	EXP 	text_3: autoDraw = True
+1245.8497 	EXP 	Sound ModulatedTone started
+1245.9826 	EXP 	text_3: autoDraw = False
+1255.8637 	EXP 	Sound ModulatedTone stopped
+1255.8897 	EXP 	New trial (rep=13, index=0): None
+1256.0058 	EXP 	Cross: autoDraw = False
+1256.0058 	EXP 	text_3: autoDraw = False
+1256.0058 	EXP 	Cross: autoDraw = True
+1256.0058 	EXP 	text_3: autoDraw = True
+1258.3535 	EXP 	Sound ModulatedTone started
+1258.5044 	EXP 	text_3: autoDraw = False
+1268.3630 	EXP 	Sound ModulatedTone stopped
+1268.3768 	EXP 	New trial (rep=14, index=0): None
+1268.4795 	EXP 	Cross: autoDraw = False
+1268.4795 	EXP 	text_3: autoDraw = False
+1268.4795 	EXP 	Cross: autoDraw = True
+1268.4795 	EXP 	text_3: autoDraw = True
+1270.8488 	EXP 	Sound ModulatedTone started
+1270.9927 	EXP 	text_3: autoDraw = False
+1280.8531 	EXP 	Sound ModulatedTone stopped
+1280.8644 	EXP 	New trial (rep=15, index=0): None
+1280.9640 	EXP 	Cross: autoDraw = False
+1280.9640 	EXP 	text_3: autoDraw = False
+1280.9640 	EXP 	Cross: autoDraw = True
+1280.9640 	EXP 	text_3: autoDraw = True
+1283.3469 	EXP 	Sound ModulatedTone started
+1283.4644 	EXP 	text_3: autoDraw = False
+1293.3625 	EXP 	Sound ModulatedTone stopped
+1293.3875 	EXP 	New trial (rep=16, index=0): None
+1293.4856 	EXP 	Cross: autoDraw = False
+1293.4856 	EXP 	text_3: autoDraw = False
+1293.4856 	EXP 	Cross: autoDraw = True
+1293.4856 	EXP 	text_3: autoDraw = True
+1295.8551 	EXP 	Sound ModulatedTone started
+1295.9851 	EXP 	text_3: autoDraw = False
+1305.8631 	EXP 	Sound ModulatedTone stopped
+1305.8741 	EXP 	New trial (rep=17, index=0): None
+1305.9742 	EXP 	Cross: autoDraw = False
+1305.9742 	EXP 	text_3: autoDraw = False
+1305.9742 	EXP 	Cross: autoDraw = True
+1305.9742 	EXP 	text_3: autoDraw = True
+1308.3572 	EXP 	Sound ModulatedTone started
+1308.4733 	EXP 	text_3: autoDraw = False
+1318.3630 	EXP 	Sound ModulatedTone stopped
+1318.3640 	EXP 	New trial (rep=18, index=0): None
+1318.4623 	EXP 	Cross: autoDraw = False
+1318.4623 	EXP 	text_3: autoDraw = False
+1318.4623 	EXP 	Cross: autoDraw = True
+1318.4623 	EXP 	text_3: autoDraw = True
+1320.8463 	EXP 	Sound ModulatedTone started
+1320.9624 	EXP 	text_3: autoDraw = False
+1330.8533 	EXP 	Sound ModulatedTone stopped
+1330.8676 	EXP 	New trial (rep=19, index=0): None
+1330.9757 	EXP 	Cross: autoDraw = False
+1330.9757 	EXP 	text_3: autoDraw = False
+1330.9757 	EXP 	Cross: autoDraw = True
+1330.9757 	EXP 	text_3: autoDraw = True
+1333.3507 	EXP 	Sound ModulatedTone started
+1333.4838 	EXP 	text_3: autoDraw = False
+1343.3627 	EXP 	Sound ModulatedTone stopped
+1343.3721 	EXP 	New trial (rep=20, index=0): None
+1343.4742 	EXP 	Cross: autoDraw = False
+1343.4742 	EXP 	text_3: autoDraw = False
+1343.4742 	EXP 	Cross: autoDraw = True
+1343.4742 	EXP 	text_3: autoDraw = True
+1345.8531 	EXP 	Sound ModulatedTone started
+1345.9922 	EXP 	text_3: autoDraw = False
+1355.8630 	EXP 	Sound ModulatedTone stopped
+1355.8773 	EXP 	New trial (rep=21, index=0): None
+1355.9802 	EXP 	Cross: autoDraw = False
+1355.9802 	EXP 	text_3: autoDraw = False
+1355.9802 	EXP 	Cross: autoDraw = True
+1355.9802 	EXP 	text_3: autoDraw = True
+1358.3603 	EXP 	Sound ModulatedTone started
+1358.4942 	EXP 	text_3: autoDraw = False
+1368.3727 	EXP 	Sound ModulatedTone stopped
+1368.3731 	EXP 	New trial (rep=22, index=0): None
+1368.4673 	EXP 	Cross: autoDraw = False
+1368.4673 	EXP 	text_3: autoDraw = False
+1368.4673 	EXP 	Cross: autoDraw = True
+1368.4673 	EXP 	text_3: autoDraw = True
+1370.8484 	EXP 	Sound ModulatedTone started
+1370.9811 	EXP 	text_3: autoDraw = False
+1380.8629 	EXP 	Sound ModulatedTone stopped
+1380.8705 	EXP 	New trial (rep=23, index=0): None
+1380.9710 	EXP 	Cross: autoDraw = False
+1380.9710 	EXP 	text_3: autoDraw = False
+1380.9710 	EXP 	Cross: autoDraw = True
+1380.9710 	EXP 	text_3: autoDraw = True
+1383.3551 	EXP 	Sound ModulatedTone started
+1383.4707 	EXP 	text_3: autoDraw = False
+1393.3727 	EXP 	Sound ModulatedTone stopped
+1393.3950 	EXP 	New trial (rep=24, index=0): None
+1393.4915 	EXP 	Cross: autoDraw = False
+1393.4915 	EXP 	text_3: autoDraw = False
+1393.4915 	EXP 	Cross: autoDraw = True
+1393.4915 	EXP 	text_3: autoDraw = True
+1395.8588 	EXP 	Sound ModulatedTone started
+1395.9933 	EXP 	text_3: autoDraw = False
+1405.8626 	EXP 	Sound ModulatedTone stopped
+1405.8798 	EXP 	Cross: autoDraw = False
+1405.8798 	EXP 	text_3: autoDraw = False
+1405.8798 	EXP 	text_2: autoDraw = True
+1413.8785 	DATA 	Keypress: space
+1413.8934 	EXP 	text_2: autoDraw = False
+1413.8934 	EXP 	text_4: autoDraw = True
+1425.0872 	DATA 	Keypress: space
+1425.1032 	EXP 	text_4: autoDraw = False
+1425.1793 	EXP 	window1: mouseVisible = True
