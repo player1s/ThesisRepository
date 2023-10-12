@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on September 26, 2023, at 11:37
+    on October 06, 2023, at 17:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -59,7 +59,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\elpid\\Downloads\\oddball-task-master\\oddball-task-master\\Oddball Task_lastrun.py',
+    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\oddball-task-master\\Oddball Task_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -102,7 +102,7 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "Instructions" ---
 instructions = visual.TextStim(win=win, name='instructions',
-    text="In this task you will be required to categorise the presented stimuli depending on the tone. Press 's' for the standard tone (1000 Hz) and 't' for the target tone (1200 Hz). This is a practice trail and feedback will be provided. Press 'space' to continue. Press 'esc' to exit the experiment.",
+    text="In this task you will be required to categorise the presented stimuli depending on the tone. Don't press any key for the standard tone (1000 Hz) and press 't' for the target tone (1200 Hz). This is a practice trail and feedback will be provided. Press 'space' to continue. Press 'esc' to exit the experiment.",
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -129,7 +129,7 @@ fixation = visual.TextStim(win=win, name='fixation',
     languageStyle='LTR',
     depth=0.0);
 response = keyboard.Keyboard()
-sound_1 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
+sound_1 = sound.Sound('A', secs=1, stereo=True, hamming=True,
     name='sound_1')
 sound_1.setVolume(0.8)
 
@@ -144,7 +144,7 @@ feedback_text = visual.TextStim(win=win, name='feedback_text',
 
 # --- Initialize components for Routine "Instructions_2" ---
 instructions_2 = visual.TextStim(win=win, name='instructions_2',
-    text="This is the end of practice trials and start of experimental trials. Feedback will not be provided anymore. \nPress 's' for the standard tone (1000 Hz) and 't' for the target tone (1200 Hz). Press 'space' to continue.",
+    text="This is the end of practice trials and start of experimental trials. Feedback will not be provided anymore. \nDon't press any key for the standard tone (1000 Hz) and press 't' for the target tone (1200 Hz). Press 'space' to continue.",
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -161,7 +161,7 @@ fixation = visual.TextStim(win=win, name='fixation',
     languageStyle='LTR',
     depth=0.0);
 response = keyboard.Keyboard()
-sound_1 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
+sound_1 = sound.Sound('A', secs=1, stereo=True, hamming=True,
     name='sound_1')
 sound_1.setVolume(0.8)
 
@@ -277,7 +277,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1, method='fullRandom', 
+trials = data.TrialHandler(nReps=2, method='fullRandom', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('aud_conditions.xlsx'),
     seed=None, name='trials')
@@ -302,7 +302,7 @@ for thisTrial in trials:
     response.keys = []
     response.rt = []
     _response_allKeys = []
-    sound_1.setSound(tone, secs=1.5, hamming=True)
+    sound_1.setSound(tone, secs=1, hamming=True)
     sound_1.setVolume(0.8, log=False)
     # Run 'Begin Routine' code from code_2
     flag_start = True
@@ -322,7 +322,7 @@ for thisTrial in trials:
     frameN = -1
     
     # --- Run Routine "Trial" ---
-    while continueRoutine and routineTimer.getTime() < 4.0:
+    while continueRoutine and routineTimer.getTime() < 3.5:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -342,7 +342,7 @@ for thisTrial in trials:
             fixation.setAutoDraw(True)
         if fixation.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixation.tStartRefresh + 4-frameTolerance:
+            if tThisFlipGlobal > fixation.tStartRefresh + 3.5-frameTolerance:
                 # keep track of stop time/frame for later
                 fixation.tStop = t  # not accounting for scr refresh
                 fixation.frameNStop = frameN  # exact frame index
@@ -367,7 +367,7 @@ for thisTrial in trials:
             win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if response.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > response.tStartRefresh + 3-frameTolerance:
+            if tThisFlipGlobal > response.tStartRefresh + 2.5-frameTolerance:
                 # keep track of stop time/frame for later
                 response.tStop = t  # not accounting for scr refresh
                 response.frameNStop = frameN  # exact frame index
@@ -396,7 +396,7 @@ for thisTrial in trials:
             sound_1.play(when=win)  # sync with win flip
         if sound_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > sound_1.tStartRefresh + 1.5-frameTolerance:
+            if tThisFlipGlobal > sound_1.tStartRefresh + 1-frameTolerance:
                 # keep track of stop time/frame for later
                 sound_1.tStop = t  # not accounting for scr refresh
                 sound_1.frameNStop = frameN  # exact frame index
@@ -456,7 +456,7 @@ for thisTrial in trials:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-4.000000)
+        routineTimer.addTime(-3.500000)
     
     # --- Prepare to start Routine "Feedback" ---
     continueRoutine = True
@@ -540,7 +540,7 @@ for thisTrial in trials:
         routineTimer.addTime(-1.000000)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials'
+# completed 2 repeats of 'trials'
 
 
 # --- Prepare to start Routine "Instructions_2" ---
@@ -666,7 +666,7 @@ for thisTrial_2 in trials_2:
     response.keys = []
     response.rt = []
     _response_allKeys = []
-    sound_1.setSound(tone, secs=1.5, hamming=True)
+    sound_1.setSound(tone, secs=1, hamming=True)
     sound_1.setVolume(0.8, log=False)
     # Run 'Begin Routine' code from code_2
     flag_start = True
@@ -686,7 +686,7 @@ for thisTrial_2 in trials_2:
     frameN = -1
     
     # --- Run Routine "Trial" ---
-    while continueRoutine and routineTimer.getTime() < 4.0:
+    while continueRoutine and routineTimer.getTime() < 3.5:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -706,7 +706,7 @@ for thisTrial_2 in trials_2:
             fixation.setAutoDraw(True)
         if fixation.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixation.tStartRefresh + 4-frameTolerance:
+            if tThisFlipGlobal > fixation.tStartRefresh + 3.5-frameTolerance:
                 # keep track of stop time/frame for later
                 fixation.tStop = t  # not accounting for scr refresh
                 fixation.frameNStop = frameN  # exact frame index
@@ -731,7 +731,7 @@ for thisTrial_2 in trials_2:
             win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if response.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > response.tStartRefresh + 3-frameTolerance:
+            if tThisFlipGlobal > response.tStartRefresh + 2.5-frameTolerance:
                 # keep track of stop time/frame for later
                 response.tStop = t  # not accounting for scr refresh
                 response.frameNStop = frameN  # exact frame index
@@ -760,7 +760,7 @@ for thisTrial_2 in trials_2:
             sound_1.play(when=win)  # sync with win flip
         if sound_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > sound_1.tStartRefresh + 1.5-frameTolerance:
+            if tThisFlipGlobal > sound_1.tStartRefresh + 1-frameTolerance:
                 # keep track of stop time/frame for later
                 sound_1.tStop = t  # not accounting for scr refresh
                 sound_1.frameNStop = frameN  # exact frame index
@@ -820,7 +820,7 @@ for thisTrial_2 in trials_2:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-4.000000)
+        routineTimer.addTime(-3.500000)
     thisExp.nextEntry()
     
 # completed 10 repeats of 'trials_2'

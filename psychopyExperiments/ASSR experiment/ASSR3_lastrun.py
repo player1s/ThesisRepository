@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 11, 2023, at 14:25
+    on October 11, 2023, at 15:41
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -32,6 +32,7 @@ from psychopy.hardware import keyboard
 
 # Run 'Before Experiment' code from code
 from pylsl import StreamInfo, StreamOutlet
+from psychopy import event
 import time 
 
 
@@ -40,7 +41,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2022.2.5'
-expName = 'ASSR2'  # from the Builder filename that created this script
+expName = 'ASSR3'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
     'session': '001',
@@ -59,7 +60,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\elpid\\Downloads\\thesis\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\ASSR2_lastrun.py',
+    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\ASSR3_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -73,7 +74,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[736, 664], fullscr=False, screen=0, 
+    size=[936, 864], fullscr=False, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -102,7 +103,7 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "Intro" ---
 text = visual.TextStim(win=win, name='text',
-    text='Welcome to the experiment.\nParticipant: Sit upright, try to relax, and please avoid during data collection: \n- unnecessary movements\n- talking\n\nTester: \n- set volume to 30\n- do impedance and railing checks\n- on labrecorder set: study root, block/task, run, participant, session\n- gather both streams and start labrecorder recording\n- this version of the test measures at: F8, F7 (original paper), T3, T4 (closeness to headset measurement locations), T6, T5 (many papers point to temporal / parietal regions), C3, C4 (closest location to primary auditory cortex, which is said to be the source of assr)  Reference at: Fz, Ground at: Oz\npress space to continue',
+    text='Welcome to the experiment.\nParticipant: Sit upright, try to relax, and please avoid during data collection: \n- unnecessary movements\n- talking\n\nTester: \n- set volume to 40\n- on labrecorder set: study root, task, participant name, session, run, device, electrode layout, psychopy experiment version\npress space to continue',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -110,11 +111,9 @@ text = visual.TextStim(win=win, name='text',
     depth=0.0);
 # Run 'Begin Experiment' code from code
 #event ids
-startRest = 0
-endRest = 1
+startRest = 1
 startASSR = 2
-endASSR = 3
-artifact = 4
+artifact = 3
 
 info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
                   channel_format='int32', source_id='Psychopy Markers')
@@ -123,7 +122,7 @@ outlet = StreamOutlet(info)
 key_resp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "ASSR" ---
-ModulatedTone = sound.Sound('C:/Users/elpid/Downloads/oddball-task-master/amplitude_modulated_noise.wav', secs=-1, stereo=True, hamming=True,
+ModulatedTone = sound.Sound('1kHzAmplitudeModulated40Hz.wav', secs=-1, stereo=True, hamming=True,
     name='ModulatedTone')
 ModulatedTone.setVolume(1.0)
 Cross = visual.ShapeStim(
@@ -141,14 +140,13 @@ text_3 = visual.TextStim(win=win, name='text_3',
     depth=-3.0);
 
 # --- Initialize components for Routine "Impedance_check" ---
-key_resp_3 = keyboard.Keyboard()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='20 more trials are done. \nCheck and note impedances.',
+    text='10 more trials are done. \nCheck and note impedances.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
-    depth=-1.0);
+    depth=0.0);
 
 # --- Initialize components for Routine "Outro" ---
 text_4 = visual.TextStim(win=win, name='text_4',
@@ -262,7 +260,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=4.0, method='sequential', 
+trials = data.TrialHandler(nReps=5.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials')
@@ -281,7 +279,7 @@ for thisTrial in trials:
             exec('{} = thisTrial[paramName]'.format(paramName))
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=10.0, method='random', 
+    trials_2 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_2')
@@ -303,13 +301,12 @@ for thisTrial in trials:
         continueRoutine = True
         routineForceEnded = False
         # update component parameters for each repeat
-        ModulatedTone.setSound('C:/Users/elpid/Downloads/oddball-task-master/amplitude_modulated_noise.wav', secs=10, hamming=True)
+        ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=5, hamming=True)
         ModulatedTone.setVolume(1.0, log=False)
         # Run 'Begin Routine' code from code_2
-        flag_rest_start = True
-        flag_rest_end = True
-        flag_ASSR_start = True
-        flag_ASSR_end = True
+        print('start')
+        flag_start = True
+        outlet.push_sample(x=[startRest])
         # keep track of which components have finished
         ASSRComponents = [ModulatedTone, Cross, text_3]
         for thisComponent in ASSRComponents:
@@ -325,7 +322,7 @@ for thisTrial in trials:
         frameN = -1
         
         # --- Run Routine "ASSR" ---
-        while continueRoutine and routineTimer.getTime() < 12.5:
+        while continueRoutine and routineTimer.getTime() < 7.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -333,7 +330,7 @@ for thisTrial in trials:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # start/stop ModulatedTone
-            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
+            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
                 # keep track of start time/frame for later
                 ModulatedTone.frameNStart = frameN  # exact frame index
                 ModulatedTone.tStart = t  # local t and not account for scr refresh
@@ -343,7 +340,7 @@ for thisTrial in trials:
                 ModulatedTone.play(when=win)  # sync with win flip
             if ModulatedTone.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 10-frameTolerance:
+                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 5-frameTolerance:
                     # keep track of stop time/frame for later
                     ModulatedTone.tStop = t  # not accounting for scr refresh
                     ModulatedTone.frameNStop = frameN  # exact frame index
@@ -363,7 +360,7 @@ for thisTrial in trials:
                 Cross.setAutoDraw(True)
             if Cross.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > Cross.tStartRefresh + 12.5-frameTolerance:
+                if tThisFlipGlobal > Cross.tStartRefresh + 7-frameTolerance:
                     # keep track of stop time/frame for later
                     Cross.tStop = t  # not accounting for scr refresh
                     Cross.frameNStop = frameN  # exact frame index
@@ -371,27 +368,15 @@ for thisTrial in trials:
                     thisExp.timestampOnFlip(win, 'Cross.stopped')
                     Cross.setAutoDraw(False)
             # Run 'Each Frame' code from code_2
-            if ModulatedTone.status == STARTED and flag_ASSR_start == True:
-                print('ASSR start')
-                flag_ASSR_start = False
+            if ModulatedTone.status == STARTED and flag_start == True:
+                print('start')
+                flag_start = False
                 outlet.push_sample(x=[startASSR])
-                
-            if ModulatedTone.status == FINISHED and flag_ASSR_end == True:
-                print('ASSR end')
-                flag_ASSR_end = False
-                outlet.push_sample(x=[endASSR])
             
-            if text_3.status == STARTED and flag_rest_start == True:
-                print('Rest start')
-                flag_rest_start = False
-                outlet.push_sample(x=[startRest])
-            
-            if text_3.status == FINISHED and flag_rest_end == True:
-                print('Rest end')
-                flag_rest_end = False
-                outlet.push_sample(x=[endRest])
-            
-                print('****')
+            keys = event.getKeys()
+            if 'a' in keys:  # Change 'space' to the actual button you want to use
+                outlet.push_sample(x=[artifact])  # Push the sample to the LSL stream
+                print('artifact')
             
             # *text_3* updates
             if text_3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -405,7 +390,7 @@ for thisTrial in trials:
                 text_3.setAutoDraw(True)
             if text_3.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_3.tStartRefresh + 2.5-frameTolerance:
+                if tThisFlipGlobal > text_3.tStartRefresh + 2-frameTolerance:
                     # keep track of stop time/frame for later
                     text_3.tStop = t  # not accounting for scr refresh
                     text_3.frameNStop = frameN  # exact frame index
@@ -440,7 +425,7 @@ for thisTrial in trials:
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-12.500000)
+            routineTimer.addTime(-7.000000)
         thisExp.nextEntry()
         
     # completed 10.0 repeats of 'trials_2'
@@ -450,11 +435,8 @@ for thisTrial in trials:
     continueRoutine = True
     routineForceEnded = False
     # update component parameters for each repeat
-    key_resp_3.keys = []
-    key_resp_3.rt = []
-    _key_resp_3_allKeys = []
     # keep track of which components have finished
-    Impedance_checkComponents = [key_resp_3, text_2]
+    Impedance_checkComponents = [text_2]
     for thisComponent in Impedance_checkComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -468,37 +450,13 @@ for thisTrial in trials:
     frameN = -1
     
     # --- Run Routine "Impedance_check" ---
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 5.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
-        # *key_resp_3* updates
-        waitOnFlip = False
-        if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_3.frameNStart = frameN  # exact frame index
-            key_resp_3.tStart = t  # local t and not account for scr refresh
-            key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp_3.started')
-            key_resp_3.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_3.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_3.getKeys(keyList=['space'], waitRelease=False)
-            _key_resp_3_allKeys.extend(theseKeys)
-            if len(_key_resp_3_allKeys):
-                key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
-                key_resp_3.rt = _key_resp_3_allKeys[-1].rt
-                # a response ends the routine
-                continueRoutine = False
         
         # *text_2* updates
         if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -510,6 +468,15 @@ for thisTrial in trials:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'text_2.started')
             text_2.setAutoDraw(True)
+        if text_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_2.tStartRefresh + 5-frameTolerance:
+                # keep track of stop time/frame for later
+                text_2.tStop = t  # not accounting for scr refresh
+                text_2.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text_2.stopped')
+                text_2.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -533,17 +500,14 @@ for thisTrial in trials:
     for thisComponent in Impedance_checkComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    # check responses
-    if key_resp_3.keys in ['', [], None]:  # No response was made
-        key_resp_3.keys = None
-    trials.addData('key_resp_3.keys',key_resp_3.keys)
-    if key_resp_3.keys != None:  # we had a response
-        trials.addData('key_resp_3.rt', key_resp_3.rt)
-    # the Routine "Impedance_check" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-5.000000)
     thisExp.nextEntry()
     
-# completed 4.0 repeats of 'trials'
+# completed 5.0 repeats of 'trials'
 
 
 # --- Prepare to start Routine "Outro" ---

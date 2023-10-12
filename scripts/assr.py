@@ -10,7 +10,7 @@ import pyxdf
 import mne
 import numpy as np
 
-path_xdf ="C:/Users/elpid/Downloads/test data/sub-elpida/ses-pilot/eeg/sub-elpida_ses-pilot_task-assr_run-001_eeg.xdf"
+path_xdf ="C:\mindenJoSHasztalan\UniversityAndStuff\DTU\Semester 6\Thesis\External Software\MNE\Tutorial\sub-LeviShield_ses-S002_task-DefaultASSR_acq-assrV3Layout1Ultracortex_run-002_eeg.xdf"
 
 data_xdf,header = pyxdf.load_xdf(path_xdf)
 
