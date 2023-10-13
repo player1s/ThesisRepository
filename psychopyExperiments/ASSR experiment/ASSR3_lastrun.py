@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 11, 2023, at 15:41
+    on October 13, 2023, at 14:54
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -260,7 +260,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=5.0, method='sequential', 
+trials = data.TrialHandler(nReps=1.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials')
@@ -301,7 +301,7 @@ for thisTrial in trials:
         continueRoutine = True
         routineForceEnded = False
         # update component parameters for each repeat
-        ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=5, hamming=True)
+        ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=60, hamming=True)
         ModulatedTone.setVolume(1.0, log=False)
         # Run 'Begin Routine' code from code_2
         print('start')
@@ -322,7 +322,7 @@ for thisTrial in trials:
         frameN = -1
         
         # --- Run Routine "ASSR" ---
-        while continueRoutine and routineTimer.getTime() < 7.0:
+        while continueRoutine and routineTimer.getTime() < 70.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -330,7 +330,7 @@ for thisTrial in trials:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # start/stop ModulatedTone
-            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
+            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 10-frameTolerance:
                 # keep track of start time/frame for later
                 ModulatedTone.frameNStart = frameN  # exact frame index
                 ModulatedTone.tStart = t  # local t and not account for scr refresh
@@ -340,7 +340,7 @@ for thisTrial in trials:
                 ModulatedTone.play(when=win)  # sync with win flip
             if ModulatedTone.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 5-frameTolerance:
+                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 60-frameTolerance:
                     # keep track of stop time/frame for later
                     ModulatedTone.tStop = t  # not accounting for scr refresh
                     ModulatedTone.frameNStop = frameN  # exact frame index
@@ -360,7 +360,7 @@ for thisTrial in trials:
                 Cross.setAutoDraw(True)
             if Cross.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > Cross.tStartRefresh + 7-frameTolerance:
+                if tThisFlipGlobal > Cross.tStartRefresh + 70-frameTolerance:
                     # keep track of stop time/frame for later
                     Cross.tStop = t  # not accounting for scr refresh
                     Cross.frameNStop = frameN  # exact frame index
@@ -390,7 +390,7 @@ for thisTrial in trials:
                 text_3.setAutoDraw(True)
             if text_3.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_3.tStartRefresh + 2-frameTolerance:
+                if tThisFlipGlobal > text_3.tStartRefresh + 10-frameTolerance:
                     # keep track of stop time/frame for later
                     text_3.tStop = t  # not accounting for scr refresh
                     text_3.frameNStop = frameN  # exact frame index
@@ -425,7 +425,7 @@ for thisTrial in trials:
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-7.000000)
+            routineTimer.addTime(-70.000000)
         thisExp.nextEntry()
         
     # completed 10.0 repeats of 'trials_2'
@@ -507,7 +507,7 @@ for thisTrial in trials:
         routineTimer.addTime(-5.000000)
     thisExp.nextEntry()
     
-# completed 5.0 repeats of 'trials'
+# completed 1.0 repeats of 'trials'
 
 
 # --- Prepare to start Routine "Outro" ---
