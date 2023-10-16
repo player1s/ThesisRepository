@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 06, 2023, at 17:26
+    on October 13, 2023, at 14:02
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -59,7 +59,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\oddball-task-master\\Oddball Task_lastrun.py',
+    originPath='C:\\Users\\elpid\\Downloads\\thesis\\ThesisRepository\\psychopyExperiments\\oddball-task-master\\Oddball Task_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -73,7 +73,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1920, 1080], fullscr=False, screen=0, 
+    size=[920, 780], fullscr=False, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -641,7 +641,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=10, method='fullRandom', 
+trials_2 = data.TrialHandler(nReps=50, method='fullRandom', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('aud_conditions.xlsx'),
     seed=None, name='trials_2')
@@ -823,7 +823,7 @@ for thisTrial_2 in trials_2:
         routineTimer.addTime(-3.500000)
     thisExp.nextEntry()
     
-# completed 10 repeats of 'trials_2'
+# completed 50 repeats of 'trials_2'
 
 
 # --- Prepare to start Routine "End" ---

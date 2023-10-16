@@ -26,7 +26,7 @@
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
-    <Param val="[1920, 1080]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="[920, 780]" valType="code" updates="None" name="Window size (pixels)"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="$[0,0,0]" valType="str" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
@@ -384,12 +384,12 @@
     <Routine name="Instructions_2"/>
     <LoopInitiator loopType="TrialHandler" name="trials_2">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 's', 'tone': 1000}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 's', 'tone': 1000}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 's', 'tone': 1000}, {'trial': 'target', 'file': &quot;soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 't', 'tone': 1200}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 1000}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 1000}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 1000}, {'trial': 'target', 'file': &quot;soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 't', 'tone': 1200}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="aud_conditions.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="fullRandom" valType="str"/>
-      <Param name="nReps" updates="None" val="10" valType="code"/>
+      <Param name="nReps" updates="None" val="50" valType="code"/>
       <Param name="name" updates="None" val="trials_2" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
