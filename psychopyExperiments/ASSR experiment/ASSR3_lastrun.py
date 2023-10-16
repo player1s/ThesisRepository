@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 13, 2023, at 14:54
+    on October 16, 2023, at 15:56
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -60,7 +60,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\ASSR3_lastrun.py',
+    originPath='C:\\Users\\elpid\\Downloads\\thesis\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\ASSR3_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -74,7 +74,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[936, 864], fullscr=False, screen=0, 
+    size=[936, 864], fullscr=False, screen=1, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -103,7 +103,7 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "Intro" ---
 text = visual.TextStim(win=win, name='text',
-    text='Welcome to the experiment.\nParticipant: Sit upright, try to relax, and please avoid during data collection: \n- unnecessary movements\n- talking\n\nTester: \n- set volume to 40\n- on labrecorder set: study root, task, participant name, session, run, device, electrode layout, psychopy experiment version\npress space to continue',
+    text='Welcome to the experiment.\nParticipant: Sit upright, try to relax, and please avoid during data collection: \n- unnecessary movements\n- talking\n\nTester: \n- set volume to 40\n- on labrecorder set: study root, task, participant name, session, run, device, electrode layout, psychopy experiment version\n- initial impedance test\npress space to continue',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -141,7 +141,7 @@ text_3 = visual.TextStim(win=win, name='text_3',
 
 # --- Initialize components for Routine "Impedance_check" ---
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='10 more trials are done. \nCheck and note impedances.',
+    text='5 second break',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -150,7 +150,7 @@ text_2 = visual.TextStim(win=win, name='text_2',
 
 # --- Initialize components for Routine "Outro" ---
 text_4 = visual.TextStim(win=win, name='text_4',
-    text='This section is over. Todo:\n\n- upload collected data to drive\n- upload device config file to drive',
+    text='This section is over. Todo:\n-check final impedance\n- upload collected data to drive\n- upload device config file to drive',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -260,7 +260,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1.0, method='sequential', 
+trials = data.TrialHandler(nReps=3.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials')
@@ -279,7 +279,7 @@ for thisTrial in trials:
             exec('{} = thisTrial[paramName]'.format(paramName))
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=10.0, method='sequential', 
+    trials_2 = data.TrialHandler(nReps=5.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_2')
@@ -428,7 +428,7 @@ for thisTrial in trials:
             routineTimer.addTime(-70.000000)
         thisExp.nextEntry()
         
-    # completed 10.0 repeats of 'trials_2'
+    # completed 5.0 repeats of 'trials_2'
     
     
     # --- Prepare to start Routine "Impedance_check" ---
@@ -507,7 +507,7 @@ for thisTrial in trials:
         routineTimer.addTime(-5.000000)
     thisExp.nextEntry()
     
-# completed 1.0 repeats of 'trials'
+# completed 3.0 repeats of 'trials'
 
 
 # --- Prepare to start Routine "Outro" ---
