@@ -1,0 +1,7 @@
+﻿trial,file,corrAns,tone,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instructions.started,key_resp_1.started,key_resp_1.keys,key_resp_1.rt,fixation.started,response.started,sound_1.started,response.keys,response.corr,response.rt,feedback_text.started,feedback_text.stopped,instructions_2.started,key_resp_2.started,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,28.136923500000194,28.136923500000194,space,158.78297340000063,,,,,,,,,,,200923levi,001,2023-09-20_15h47.57.723,Oddball_task,2022.2.5,None,
+standard,soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav',s,1000,0,0,0,0,,,,,186.97983209999984,187.95197649999864,187.94698546666612,s,1,8.366587500000605,196.35970519999864,,,,200923levi,001,2023-09-20_15h47.57.723,Oddball_task,2022.2.5,None,
+standard,soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav',s,1000,0,1,1,1,,,,,197.36426459999893,198.34393689999888,198.3456868666656,s,1,7.086873700000069,205.46018209999966,206.4657178999987,,,200923levi,001,2023-09-20_15h47.57.723,Oddball_task,2022.2.5,None,
+target,soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav',t,1200,0,2,2,3,,,,,206.4657178999987,207.46204919999946,207.46374196666537,t,1,1.6987855000006675,209.17859869999847,,,,200923levi,001,2023-09-20_15h47.57.723,Oddball_task,2022.2.5,None,
+standard,soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav',s,1000,0,3,3,2,,,,,210.19519159999982,211.18037379999987,211.17907436666636,s,1,6.561828899999455,217.78256489999876,,,,200923levi,001,2023-09-20_15h47.57.723,Oddball_task,2022.2.5,None,
+,,,,,,,,,,,,,,,,,,,,218.7772963999996,218.7772963999996,,,,,,,

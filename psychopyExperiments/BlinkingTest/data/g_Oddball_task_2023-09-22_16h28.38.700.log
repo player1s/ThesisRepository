@@ -1,0 +1,17 @@
+15.0575 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002C972AEB2B0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002C977A92A90>, multiSample=False, name='window1', numSamples=2, pos=(510, 290), screen=0, size=array([900, 500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.0577 	EXP 	window1: mouseVisible = True
+15.0579 	EXP 	window1: mouseVisible = True
+15.0579 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+15.0580 	EXP 	window1: recordFrameIntervals = False
+15.2244 	EXP 	window1: recordFrameIntervals = True
+15.2585 	WARNING 	t of last frame was 20.85ms (=1/47)
+15.3585 	WARNING 	t of last frame was 21.11ms (=1/47)
+15.4266 	WARNING 	t of last frame was 22.91ms (=1/43)
+15.4608 	WARNING 	t of last frame was 24.49ms (=1/40)
+15.6235 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+15.9042 	EXP 	Screen (0) actual frame rate measured at 59.68Hz
+15.9042 	EXP 	window1: recordFrameIntervals = False
+15.9940 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+19.8228 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+19.8454 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+20.0368 	EXP 	window1: mouseVisible = True
