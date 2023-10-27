@@ -1,0 +1,55 @@
+2.4920 	ERROR 	Support for the `pyo` audio backend is not available this session. Please install `psychopy-pyo` and restart the session to enable support.
+2.4921 	ERROR 	Failed to load any of the audioLibs: ['pyo']. Falling back to PsychToolbox ('ptb') backend for sound. Be sure to add 'ptb' to preferences to avoid seeing this message again.
+2.6158 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['pyo'] (in that order).
+8.0152 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029C864A4BE0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029C864A4B80>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029C864A49A0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000029C8675B6D0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0153 	EXP 	window1: mouseVisible = True
+8.0153 	EXP 	window1: backgroundImage = ''
+8.0153 	EXP 	window1: backgroundFit = 'none'
+8.0166 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.0167 	EXP 	window1: recordFrameIntervals = False
+8.1814 	EXP 	window1: recordFrameIntervals = True
+8.3643 	EXP 	Screen (0) actual frame rate measured at 60.21Hz
+8.3643 	EXP 	window1: recordFrameIntervals = False
+8.3644 	EXP 	window1: mouseVisible = True
+8.3919 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+10.6779 	EXP 	Oddball_task: status = STARTED
+10.6781 	EXP 	window1: mouseVisible = True
+10.7618 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.7676 	EXP 	window1: mouseVisible = True
+10.7712 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+10.9538 	EXP 	Sound sound_1 set volume 0.800
+10.9540 	EXP 	window1: mouseVisible = True
+10.9553 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9554 	EXP 	window1: mouseVisible = True
+10.9654 	EXP 	Created instructions_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.9655 	EXP 	window1: mouseVisible = True
+10.9676 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+10.9688 	EXP 	Sound sound_1 set volume 0.800
+10.9689 	EXP 	window1: mouseVisible = True
+10.9732 	EXP 	Created thank_you = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='thank_you', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0396 	EXP 	instructions: autoDraw = True
+3.1751 	EXP 	Imported aud_conditions.xlsx as conditions, 4 conditions, 4 params
+3.1754 	EXP 	Created sequence: fullRandom, trialTypes=4, nReps=1, seed=None
+3.1756 	EXP 	New trial (rep=0, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+3.1780 	DATA 	Keypress: space
+3.1856 	EXP 	instructions: autoDraw = False
+3.1856 	EXP 	fixation: autoDraw = True
+4.1844 	EXP 	Sound sound_1 started
+4.4531 	DATA 	Keypress: s
+4.4815 	EXP 	Sound sound_1 stopped
+4.4816 	EXP 	Sound sound_1 paused
+4.5012 	EXP 	fixation: autoDraw = False
+4.5012 	EXP 	feedback_text: height = 0.05
+4.5012 	EXP 	feedback_text: height = 0.05
+4.5012 	EXP 	feedback_text: height = 0.05
+4.5012 	EXP 	feedback_text: text = 'Correct'
+4.5012 	EXP 	feedback_text: autoDraw = True
+5.4839 	EXP 	New trial (rep=0, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+5.4848 	EXP 	Sound sound_1 reached end of file
+5.4997 	EXP 	feedback_text: autoDraw = False
+5.4997 	EXP 	fixation: autoDraw = True
+10.7631 	DATA 	Keypress: escape
+10.9458 	EXP 	Oddball_task: status = STOPPED
+10.9613 	EXP 	fixation: autoDraw = False
+10.9614 	EXP 	Oddball_task: status = STOPPED
+11.0629 	EXP 	window1: mouseVisible = True

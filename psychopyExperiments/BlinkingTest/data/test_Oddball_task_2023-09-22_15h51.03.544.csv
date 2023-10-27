@@ -1,0 +1,4 @@
+﻿trial,file,corrAns,tone,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instructions.started,key_resp_1.started,key_resp_1.keys,key_resp_1.rt,fixation.started,response.started,sound_1.started,sound_1.stopped,response.keys,response.corr,response.rt,feedback_text.started,feedback_text.stopped,response.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,13.582263699998293,13.582263699998293,space,2.807197999998607,,,,,,,,,,,test,001,2023-09-22_15h51.03.544,Oddball_task,2022.2.5,59.85052928832993,
+target,soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav',t,1200,0,0,0,3,,,,,16.433739799998875,17.402661399999488,17.40198523999934,17.902467399999296,s,0,1.2248131999986072,18.65324409999812,19.6539907999977,,test,001,2023-09-22_15h51.03.544,Oddball_task,2022.2.5,59.85052928832993,
+,,,,,,,,,,,,19.6539907999977,20.638419399998384,20.638398339998822,21.138507199997548,,,,,,22.63962410000022,,,,,,,

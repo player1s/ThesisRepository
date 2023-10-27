@@ -1,0 +1,72 @@
+2.0845 	WARNING 	Speech-to-text recognition using Google online services is not available (use command `pip install google-api-core google-auth google-cloud google-cloud-speech googleapis-common-protos` to get it). Transcription will be unavailable using that service this session.
+3.9723 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice'] (in that order).
+21.5061 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+21.5067 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000015C69ACC520>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000015C6AADC160>, multiSample=False, name='window1', numSamples=2, pos=(-277, -156), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.5069 	EXP 	window1: mouseVisible = True
+21.5069 	EXP 	window1: mouseVisible = True
+21.5070 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+21.5070 	EXP 	window1: recordFrameIntervals = False
+21.6719 	EXP 	window1: recordFrameIntervals = True
+21.7291 	WARNING 	t of last frame was 22.82ms (=1/43)
+21.7535 	WARNING 	t of last frame was 24.41ms (=1/40)
+21.8099 	WARNING 	t of last frame was 21.34ms (=1/46)
+21.8356 	WARNING 	t of last frame was 25.69ms (=1/38)
+21.8593 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+23.4427 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+23.4932 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+27.9371 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+27.9742 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+28.0673 	EXP 	Sound sound_1 set volume 0.800
+28.0691 	EXP 	Created feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedback_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+28.0936 	EXP 	Created instructions_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+28.0973 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+28.0979 	EXP 	Sound sound_1 set volume 0.800
+28.1086 	EXP 	Created thank_you = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='thank_you', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+28.1369 	EXP 	instructions: autoDraw = True
+32.2303 	DATA 	Mouse: Left button down, pos=(1874,924)
+32.7279 	DATA 	Mouse:  Left button up, pos=(1944,683)
+186.9244 	DATA 	Keypress: space
+186.9641 	EXP 	Imported aud_conditions.xlsx as conditions, 4 conditions, 4 params
+186.9664 	EXP 	Created sequence: fullRandom, trialTypes=4, nReps=1, seed=None
+186.9669 	EXP 	New trial (rep=0, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+186.9798 	EXP 	instructions: autoDraw = False
+186.9798 	EXP 	fixation: autoDraw = True
+196.3506 	DATA 	Keypress: s
+196.3597 	EXP 	fixation: autoDraw = False
+196.3597 	EXP 	feedback_text: height = 0.05
+196.3597 	EXP 	feedback_text: height = 0.05
+196.3597 	EXP 	feedback_text: height = 0.05
+196.3597 	EXP 	feedback_text: text = 'Correct'
+196.3597 	EXP 	feedback_text: autoDraw = True
+197.3460 	EXP 	New trial (rep=0, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+197.3643 	EXP 	feedback_text: autoDraw = False
+197.3643 	EXP 	fixation: autoDraw = True
+205.4516 	DATA 	Keypress: s
+205.4602 	EXP 	fixation: autoDraw = False
+205.4602 	EXP 	feedback_text: text = 'Correct'
+205.4602 	EXP 	feedback_text: autoDraw = True
+206.4449 	EXP 	New trial (rep=0, index=2): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 1200}
+206.4657 	EXP 	feedback_text: autoDraw = False
+206.4657 	EXP 	feedback_text: autoDraw = False
+206.4657 	EXP 	fixation: autoDraw = True
+209.1671 	DATA 	Keypress: t
+209.1786 	EXP 	fixation: autoDraw = False
+209.1786 	EXP 	feedback_text: text = 'Correct'
+209.1786 	EXP 	feedback_text: autoDraw = True
+210.1812 	EXP 	New trial (rep=0, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 's', 'tone': 1000}
+210.1952 	EXP 	feedback_text: autoDraw = False
+210.1952 	EXP 	fixation: autoDraw = True
+217.7653 	DATA 	Keypress: s
+217.7826 	EXP 	fixation: autoDraw = False
+217.7826 	EXP 	feedback_text: text = 'Correct'
+217.7826 	EXP 	feedback_text: autoDraw = True
+218.7773 	EXP 	feedback_text: autoDraw = False
+218.7773 	EXP 	instructions_2: autoDraw = True
+224.0190 	DATA 	Keypress: escape
+225.1630 	EXP 	window1: mouseVisible = True

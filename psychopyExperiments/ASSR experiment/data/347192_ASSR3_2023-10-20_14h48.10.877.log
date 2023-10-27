@@ -1,0 +1,40 @@
+132.0996 	WARNING 	t of last frame was 1531.53ms (=1/0)
+133.5011 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+133.5014 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000017C6A3E0430>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000017C6A93DB80>, multiSample=False, name='window1', numSamples=2, pos=(458, 68), screen=1, size=array([936, 864]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+133.5016 	EXP 	window1: mouseVisible = True
+133.5016 	EXP 	window1: mouseVisible = True
+133.5016 	EXP 	window1: Attempting to measure frame rate of screen (1) ...
+133.5016 	EXP 	window1: recordFrameIntervals = False
+133.6659 	EXP 	window1: recordFrameIntervals = True
+134.5701 	WARNING 	t of last frame was 22.24ms (=1/44)
+135.0346 	WARNING 	t of last frame was 20.36ms (=1/49)
+135.3327 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+135.4161 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+138.5545 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+138.9098 	EXP 	Sound ModulatedTone set volume 1.000
+138.9132 	EXP 	Created Cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+138.9214 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Rest', units='height', win=Window(...), wrapWidth=1)
+138.9287 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='5 second break', units='height', win=Window(...), wrapWidth=1)
+138.9405 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+138.9668 	WARNING 	t of last frame was 3634.37ms (=1/0)
+138.9668 	EXP 	text: autoDraw = True
+139.4144 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+183.4742 	EXP 	Created sequence: sequential, trialTypes=1, nReps=3, seed=None
+183.4745 	EXP 	New trial (rep=0, index=0): None
+183.4748 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+183.4750 	EXP 	New trial (rep=0, index=0): None
+183.5697 	EXP 	text: autoDraw = False
+183.5697 	EXP 	Cross: autoDraw = True
+183.5697 	EXP 	text_3: autoDraw = True
+193.4791 	EXP 	Sound ModulatedTone started
+193.5757 	EXP 	text_3: autoDraw = False
+195.7681 	DATA 	Mouse: Left button down, pos=(572,20)
+195.8168 	DATA 	Mouse:  Left button up, pos=(572,20)
+200.1929 	DATA 	Keypress: escape
+201.0114 	EXP 	window1: mouseVisible = True
