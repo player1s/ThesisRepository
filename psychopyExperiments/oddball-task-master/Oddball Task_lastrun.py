@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 27, 2023, at 14:53
+    on October 31, 2023, at 11:36
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -273,7 +273,7 @@ for thisTrial_2 in trials_2:
     flag_start = True
     flag_end = True
     
-    fixDur = 2 + (4 - 2) * random()
+    fixDur = 2 + (6 - 2) * random()
     response.keys = []
     response.rt = []
     _response_allKeys = []

@@ -176,8 +176,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="flag_start = true;&amp;#10;flag_end = true;&amp;#10;fixDur = (2 + ((4 - 2) * Math.random()));&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="flag_start = True&amp;#10;flag_end = True&amp;#10;&amp;#10;fixDur = 2 + (4 - 2) * random()" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="flag_start = true;&amp;#10;flag_end = true;&amp;#10;fixDur = (2 + ((6 - 2) * Math.random()));&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="flag_start = True&amp;#10;flag_end = True&amp;#10;&amp;#10;fixDur = 2 + (6 - 2) * random()" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="if sound_1.status == STARTED and flag_start == True:&amp;#10;    print(int(sound_1.freq))&amp;#10;    flag_start = False&amp;#10;    outlet.push_sample(x=[int(sound_1.freq)])&amp;#10;    &amp;#10;if sound_1.status == FINISHED and flag_end == True:&amp;#10;    flag_end = False&amp;#10;    outlet.push_sample(x=[end])&amp;#10;    print('****')" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="if (((sound_1.status === PsychoJS.Status.STARTED) &amp;&amp; (flag_start === true))) {&amp;#10;    console.log(Number.parseInt(sound_1.freq));&amp;#10;    flag_start = false;&amp;#10;    outlet.push_sample({&quot;x&quot;: [Number.parseInt(sound_1.freq)]});&amp;#10;}&amp;#10;if (((sound_1.status === PsychoJS.Status.FINISHED) &amp;&amp; (flag_end === true))) {&amp;#10;    flag_end = false;&amp;#10;    outlet.push_sample({&quot;x&quot;: [end]});&amp;#10;    console.log(&quot;****&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
