@@ -1,0 +1,67 @@
+1.8658 	WARNING 	Speech-to-text recognition using Google online services is not available (use command `pip install google-api-core google-auth google-cloud google-cloud-speech googleapis-common-protos` to get it). Transcription will be unavailable using that service this session.
+3.3729 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice'] (in that order).
+20.1209 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000017D3C71D640>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000017D3D72E250>, multiSample=False, name='window1', numSamples=2, pos=(223, -6), screen=0, size=array([920, 780]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+20.1211 	EXP 	window1: mouseVisible = True
+20.1211 	EXP 	window1: mouseVisible = True
+20.1211 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+20.1212 	EXP 	window1: recordFrameIntervals = False
+20.2870 	EXP 	window1: recordFrameIntervals = True
+20.4712 	EXP 	Screen (0) actual frame rate measured at 60.08Hz
+20.4713 	EXP 	window1: recordFrameIntervals = False
+20.5034 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+24.1502 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+24.1734 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='open', units='height', win=Window(...), wrapWidth=1)
+24.1932 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='-----------------Eyes closed----------------', units='height', win=Window(...), wrapWidth=1)
+24.2437 	EXP 	Sound sound_1 set volume 1.000
+24.2531 	EXP 	Created thank_you = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='thank_you', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+24.2721 	EXP 	instructions: autoDraw = True
+39.0688 	DATA 	Mouse: Left button down, pos=(617,694)
+39.1228 	DATA 	Mouse:  Left button up, pos=(617,694)
+44.2576 	DATA 	Mouse: Left button down, pos=(585,214)
+44.4731 	DATA 	Mouse:  Left button up, pos=(585,214)
+48.0242 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+48.0246 	EXP 	New trial (rep=0, index=0): None
+48.0275 	DATA 	Keypress: space
+48.0364 	EXP 	instructions: autoDraw = False
+48.0364 	EXP 	fixation: autoDraw = True
+108.0336 	EXP 	text: autoDraw = True
+108.0532 	EXP 	fixation: autoDraw = False
+168.0474 	EXP 	text: autoDraw = False
+168.9983 	EXP 	New trial (rep=1, index=0): None
+169.0137 	EXP 	fixation: autoDraw = False
+169.0137 	EXP 	text: autoDraw = False
+169.0320 	EXP 	fixation: autoDraw = True
+229.0271 	EXP 	text: autoDraw = True
+229.0446 	EXP 	fixation: autoDraw = False
+289.0410 	EXP 	text: autoDraw = False
+290.0098 	EXP 	New trial (rep=2, index=0): None
+290.0236 	EXP 	fixation: autoDraw = False
+290.0236 	EXP 	text: autoDraw = False
+290.0236 	EXP 	fixation: autoDraw = True
+350.0371 	EXP 	fixation: autoDraw = False
+350.0371 	EXP 	text: autoDraw = True
+410.0504 	EXP 	text: autoDraw = False
+411.0181 	EXP 	New trial (rep=3, index=0): None
+411.0345 	EXP 	fixation: autoDraw = False
+411.0345 	EXP 	text: autoDraw = False
+411.0345 	EXP 	fixation: autoDraw = True
+471.0327 	EXP 	text: autoDraw = True
+471.0484 	EXP 	fixation: autoDraw = False
+531.0450 	EXP 	text: autoDraw = False
+532.0114 	EXP 	New trial (rep=4, index=0): None
+532.0283 	EXP 	fixation: autoDraw = False
+532.0283 	EXP 	text: autoDraw = False
+532.0283 	EXP 	fixation: autoDraw = True
+560.4617 	DATA 	Mouse: Left button down, pos=(688,500)
+560.5290 	DATA 	Mouse:  Left button up, pos=(687,500)
+592.0247 	EXP 	text: autoDraw = True
+592.0422 	EXP 	fixation: autoDraw = False
+652.0372 	EXP 	text: autoDraw = False
+653.0379 	EXP 	fixation: autoDraw = False
+653.0379 	EXP 	text: autoDraw = False
+653.0379 	EXP 	thank_you: autoDraw = True
+656.0369 	EXP 	thank_you: autoDraw = False
+664.7884 	DATA 	Mouse: Left button down, pos=(228,531)
+664.8237 	DATA 	Mouse:  Left button up, pos=(228,531)
+666.4723 	DATA 	Keypress: escape
+667.4307 	EXP 	window1: mouseVisible = True
