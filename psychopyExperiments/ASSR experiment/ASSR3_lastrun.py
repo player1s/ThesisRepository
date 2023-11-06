@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 27, 2023, at 15:21
+    on November 06, 2023, at 15:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -60,7 +60,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\elpid\\Downloads\\thesis\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\ASSR3_lastrun.py',
+    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\ASSR experiment\\ASSR3_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -103,7 +103,7 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "Intro" ---
 text = visual.TextStim(win=win, name='text',
-    text='Welcome to the experiment.\nParticipant: Relax, you dont need to look at the screen. \n- unnecessary movements\n- talking\n\nTester: \n- set gain to 24x\n- set volume to 40\n- on labrecorder set: study root, task, participant name, session, run, device, electrode layout, psychopy experiment version\n- initial impedance test\npress space to continue',
+    text='Welcome to the experiment.\nParticipant: Relax, you dont need to look at the screen. \n- unnecessary movements\n- talking\n\nTester: \n- set gain to 24x\n- set volume to 65\n- on labrecorder set: study root, task, participant name, session, run, device, electrode layout, psychopy experiment version\n- initial impedance test\npress space to continue',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -123,28 +123,29 @@ key_resp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "Break" ---
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='5 second break',
+    text='Close Eyes when you dont hear the sound.\nOpen when you do. \n\n5 second break',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 
-# --- Initialize components for Routine "ASSR" ---
+# --- Initialize components for Routine "ASSRMid" ---
 ModulatedTone = sound.Sound('1kHzAmplitudeModulated40Hz.wav', secs=-1, stereo=True, hamming=True,
     name='ModulatedTone')
 ModulatedTone.setVolume(1.0)
-Cross = visual.ShapeStim(
-    win=win, name='Cross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0.0, pos=(0, 0), anchor='center',
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-    opacity=None, depth=-1.0, interpolate=True)
-Rest = visual.TextStim(win=win, name='Rest',
-    text='Rest',
+CloseEyes = visual.TextStim(win=win, name='CloseEyes',
+    text='---- Close your eyes ----',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
+OpenEyes = visual.TextStim(win=win, name='OpenEyes',
+    text='Open your eyes when you hear the sound',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-3.0);
 
@@ -259,32 +260,113 @@ thisExp.nextEntry()
 # the Routine "Intro" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# --- Prepare to start Routine "Break" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+# keep track of which components have finished
+BreakComponents = [text_2]
+for thisComponent in BreakComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "Break" ---
+while continueRoutine and routineTimer.getTime() < 5.0:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_2* updates
+    if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.tStart = t  # local t and not account for scr refresh
+        text_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'text_2.started')
+        text_2.setAutoDraw(True)
+    if text_2.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > text_2.tStartRefresh + 5-frameTolerance:
+            # keep track of stop time/frame for later
+            text_2.tStop = t  # not accounting for scr refresh
+            text_2.frameNStop = frameN  # exact frame index
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_2.stopped')
+            text_2.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in BreakComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "Break" ---
+for thisComponent in BreakComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+if routineForceEnded:
+    routineTimer.reset()
+else:
+    routineTimer.addTime(-5.000000)
+
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=2.0, method='sequential', 
+trials_2 = data.TrialHandler(nReps=10.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
-    seed=None, name='trials')
-thisExp.addLoop(trials)  # add the loop to the experiment
-thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-if thisTrial != None:
-    for paramName in thisTrial:
-        exec('{} = thisTrial[paramName]'.format(paramName))
+    seed=None, name='trials_2')
+thisExp.addLoop(trials_2)  # add the loop to the experiment
+thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+if thisTrial_2 != None:
+    for paramName in thisTrial_2:
+        exec('{} = thisTrial_2[paramName]'.format(paramName))
 
-for thisTrial in trials:
-    currentLoop = trials
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-    if thisTrial != None:
-        for paramName in thisTrial:
-            exec('{} = thisTrial[paramName]'.format(paramName))
+for thisTrial_2 in trials_2:
+    currentLoop = trials_2
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+    if thisTrial_2 != None:
+        for paramName in thisTrial_2:
+            exec('{} = thisTrial_2[paramName]'.format(paramName))
     
-    # --- Prepare to start Routine "Break" ---
+    # --- Prepare to start Routine "ASSRMid" ---
     continueRoutine = True
     routineForceEnded = False
     # update component parameters for each repeat
+    ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=30, hamming=True)
+    ModulatedTone.setVolume(1.0, log=False)
+    # Run 'Begin Routine' code from code_2
+    print('start')
+    flag_start = True
+    outlet.push_sample(x=[startRest])
     # keep track of which components have finished
-    BreakComponents = [text_2]
-    for thisComponent in BreakComponents:
+    ASSRMidComponents = [ModulatedTone, CloseEyes, OpenEyes]
+    for thisComponent in ASSRMidComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -296,34 +378,82 @@ for thisTrial in trials:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "Break" ---
-    while continueRoutine and routineTimer.getTime() < 5.0:
+    # --- Run Routine "ASSRMid" ---
+    while continueRoutine and routineTimer.getTime() < 60.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
-        # *text_2* updates
-        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # start/stop ModulatedTone
+        if ModulatedTone.status == NOT_STARTED and tThisFlip >= 30-frameTolerance:
             # keep track of start time/frame for later
-            text_2.frameNStart = frameN  # exact frame index
-            text_2.tStart = t  # local t and not account for scr refresh
-            text_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+            ModulatedTone.frameNStart = frameN  # exact frame index
+            ModulatedTone.tStart = t  # local t and not account for scr refresh
+            ModulatedTone.tStartRefresh = tThisFlipGlobal  # on global time
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_2.started')
-            text_2.setAutoDraw(True)
-        if text_2.status == STARTED:
+            thisExp.addData('ModulatedTone.started', tThisFlipGlobal)
+            ModulatedTone.play(when=win)  # sync with win flip
+        if ModulatedTone.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_2.tStartRefresh + 5-frameTolerance:
+            if tThisFlipGlobal > ModulatedTone.tStartRefresh + 30-frameTolerance:
                 # keep track of stop time/frame for later
-                text_2.tStop = t  # not accounting for scr refresh
-                text_2.frameNStop = frameN  # exact frame index
+                ModulatedTone.tStop = t  # not accounting for scr refresh
+                ModulatedTone.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_2.stopped')
-                text_2.setAutoDraw(False)
+                thisExp.timestampOnFlip(win, 'ModulatedTone.stopped')
+                ModulatedTone.stop()
+        # Run 'Each Frame' code from code_2
+        if ModulatedTone.status == STARTED and flag_start == True:
+            print('start')
+            flag_start = False
+            outlet.push_sample(x=[startASSR])
+        
+        keys = event.getKeys()
+        if 'a' in keys:  # Change 'space' to the actual button you want to use
+            outlet.push_sample(x=[artifact])  # Push the sample to the LSL stream
+            print('artifact')
+        
+        # *CloseEyes* updates
+        if CloseEyes.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            CloseEyes.frameNStart = frameN  # exact frame index
+            CloseEyes.tStart = t  # local t and not account for scr refresh
+            CloseEyes.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(CloseEyes, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'CloseEyes.started')
+            CloseEyes.setAutoDraw(True)
+        if CloseEyes.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > CloseEyes.tStartRefresh + 30-frameTolerance:
+                # keep track of stop time/frame for later
+                CloseEyes.tStop = t  # not accounting for scr refresh
+                CloseEyes.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'CloseEyes.stopped')
+                CloseEyes.setAutoDraw(False)
+        
+        # *OpenEyes* updates
+        if OpenEyes.status == NOT_STARTED and tThisFlip >= 30-frameTolerance:
+            # keep track of start time/frame for later
+            OpenEyes.frameNStart = frameN  # exact frame index
+            OpenEyes.tStart = t  # local t and not account for scr refresh
+            OpenEyes.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(OpenEyes, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'OpenEyes.started')
+            OpenEyes.setAutoDraw(True)
+        if OpenEyes.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > OpenEyes.tStartRefresh + 30-frameTolerance:
+                # keep track of stop time/frame for later
+                OpenEyes.tStop = t  # not accounting for scr refresh
+                OpenEyes.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'OpenEyes.stopped')
+                OpenEyes.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -334,7 +464,7 @@ for thisTrial in trials:
             routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in BreakComponents:
+        for thisComponent in ASSRMidComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -343,171 +473,19 @@ for thisTrial in trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "Break" ---
-    for thisComponent in BreakComponents:
+    # --- Ending Routine "ASSRMid" ---
+    for thisComponent in ASSRMidComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    ModulatedTone.stop()  # ensure sound has stopped at end of routine
     # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-5.000000)
-    
-    # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=5.0, method='sequential', 
-        extraInfo=expInfo, originPath=-1,
-        trialList=[None],
-        seed=None, name='trials_2')
-    thisExp.addLoop(trials_2)  # add the loop to the experiment
-    thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
-    if thisTrial_2 != None:
-        for paramName in thisTrial_2:
-            exec('{} = thisTrial_2[paramName]'.format(paramName))
-    
-    for thisTrial_2 in trials_2:
-        currentLoop = trials_2
-        # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
-        if thisTrial_2 != None:
-            for paramName in thisTrial_2:
-                exec('{} = thisTrial_2[paramName]'.format(paramName))
-        
-        # --- Prepare to start Routine "ASSR" ---
-        continueRoutine = True
-        routineForceEnded = False
-        # update component parameters for each repeat
-        ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=60, hamming=True)
-        ModulatedTone.setVolume(1.0, log=False)
-        # Run 'Begin Routine' code from code_2
-        print('start')
-        flag_start = True
-        outlet.push_sample(x=[startRest])
-        # keep track of which components have finished
-        ASSRComponents = [ModulatedTone, Cross, Rest]
-        for thisComponent in ASSRComponents:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
-        
-        # --- Run Routine "ASSR" ---
-        while continueRoutine and routineTimer.getTime() < 70.0:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            # start/stop ModulatedTone
-            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 10-frameTolerance:
-                # keep track of start time/frame for later
-                ModulatedTone.frameNStart = frameN  # exact frame index
-                ModulatedTone.tStart = t  # local t and not account for scr refresh
-                ModulatedTone.tStartRefresh = tThisFlipGlobal  # on global time
-                # add timestamp to datafile
-                thisExp.addData('ModulatedTone.started', tThisFlipGlobal)
-                ModulatedTone.play(when=win)  # sync with win flip
-            if ModulatedTone.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 60-frameTolerance:
-                    # keep track of stop time/frame for later
-                    ModulatedTone.tStop = t  # not accounting for scr refresh
-                    ModulatedTone.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'ModulatedTone.stopped')
-                    ModulatedTone.stop()
-            
-            # *Cross* updates
-            if Cross.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                Cross.frameNStart = frameN  # exact frame index
-                Cross.tStart = t  # local t and not account for scr refresh
-                Cross.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'Cross.started')
-                Cross.setAutoDraw(True)
-            if Cross.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > Cross.tStartRefresh + 70-frameTolerance:
-                    # keep track of stop time/frame for later
-                    Cross.tStop = t  # not accounting for scr refresh
-                    Cross.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'Cross.stopped')
-                    Cross.setAutoDraw(False)
-            # Run 'Each Frame' code from code_2
-            if ModulatedTone.status == STARTED and flag_start == True:
-                print('start')
-                flag_start = False
-                outlet.push_sample(x=[startASSR])
-            
-            keys = event.getKeys()
-            if 'a' in keys:  # Change 'space' to the actual button you want to use
-                outlet.push_sample(x=[artifact])  # Push the sample to the LSL stream
-                print('artifact')
-            
-            # *Rest* updates
-            if Rest.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                Rest.frameNStart = frameN  # exact frame index
-                Rest.tStart = t  # local t and not account for scr refresh
-                Rest.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(Rest, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'Rest.started')
-                Rest.setAutoDraw(True)
-            if Rest.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > Rest.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    Rest.tStop = t  # not accounting for scr refresh
-                    Rest.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'Rest.stopped')
-                    Rest.setAutoDraw(False)
-            
-            # check for quit (typically the Esc key)
-            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in ASSRComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # --- Ending Routine "ASSR" ---
-        for thisComponent in ASSRComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        ModulatedTone.stop()  # ensure sound has stopped at end of routine
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-70.000000)
-        thisExp.nextEntry()
-        
-    # completed 5.0 repeats of 'trials_2'
-    
+        routineTimer.addTime(-60.000000)
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials'
+# completed 10.0 repeats of 'trials_2'
 
 
 # --- Prepare to start Routine "Outro" ---
