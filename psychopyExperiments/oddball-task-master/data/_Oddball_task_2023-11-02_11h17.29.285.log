@@ -1,0 +1,341 @@
+2.6130 	WARNING 	Speech-to-text recognition using Google online services is not available (use command `pip install google-api-core google-auth google-cloud google-cloud-speech googleapis-common-protos` to get it). Transcription will be unavailable using that service this session.
+4.6551 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice'] (in that order).
+14.2979 	WARNING 	Requested an unavailable screen number - using first available.
+14.8457 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F2D2DAD640>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F2D3DBD220>, multiSample=False, name='window1', numSamples=2, pos=(450, 290), screen=1, size=array([1020,  500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+14.8459 	EXP 	window1: mouseVisible = True
+14.8459 	EXP 	window1: mouseVisible = True
+14.8459 	EXP 	window1: Attempting to measure frame rate of screen (1) ...
+14.8459 	EXP 	window1: recordFrameIntervals = False
+15.0116 	EXP 	window1: recordFrameIntervals = True
+15.1962 	EXP 	Screen (1) actual frame rate measured at 59.78Hz
+15.1963 	EXP 	window1: recordFrameIntervals = False
+15.2371 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+19.5100 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+19.5150 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+20.2484 	EXP 	Sound sound_1 set volume 0.800
+20.2738 	EXP 	Created thank_you = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='thank_you', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+20.3448 	EXP 	instructions: autoDraw = True
+198.4839 	DATA 	Mouse: Left button down, pos=(480,354)
+198.5503 	DATA 	Mouse:  Left button up, pos=(480,354)
+199.5833 	DATA 	Keypress: space
+199.6110 	EXP 	Imported aud_conditions3.xlsx as conditions, 4 conditions, 4 params
+199.6138 	EXP 	Created sequence: random, trialTypes=4, nReps=100, seed=None
+199.6152 	EXP 	New trial (rep=0, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+199.6304 	EXP 	instructions: autoDraw = False
+199.6304 	EXP 	fixation: autoDraw = True
+202.0642 	EXP 	fixation: autoDraw = False
+202.6010 	EXP 	New trial (rep=0, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+202.6146 	EXP 	fixation: autoDraw = False
+202.6146 	EXP 	fixation: autoDraw = True
+205.1978 	EXP 	fixation: autoDraw = False
+205.6009 	EXP 	New trial (rep=0, index=2): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+205.6138 	EXP 	fixation: autoDraw = False
+205.6138 	EXP 	fixation: autoDraw = True
+209.6340 	EXP 	New trial (rep=0, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+209.6478 	EXP 	fixation: autoDraw = False
+209.6478 	EXP 	fixation: autoDraw = False
+209.6478 	EXP 	fixation: autoDraw = True
+214.8343 	EXP 	New trial (rep=1, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+214.8507 	EXP 	fixation: autoDraw = False
+214.8507 	EXP 	fixation: autoDraw = False
+214.8507 	EXP 	fixation: autoDraw = True
+218.9503 	EXP 	New trial (rep=1, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+218.9642 	EXP 	fixation: autoDraw = False
+218.9642 	EXP 	fixation: autoDraw = False
+218.9642 	EXP 	fixation: autoDraw = True
+223.3852 	EXP 	New trial (rep=1, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+223.3978 	EXP 	fixation: autoDraw = False
+223.3978 	EXP 	fixation: autoDraw = False
+223.3978 	EXP 	fixation: autoDraw = True
+227.9681 	EXP 	New trial (rep=1, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+227.9833 	EXP 	fixation: autoDraw = False
+227.9833 	EXP 	fixation: autoDraw = False
+227.9833 	EXP 	fixation: autoDraw = True
+233.1341 	EXP 	New trial (rep=2, index=0): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+233.1481 	EXP 	fixation: autoDraw = False
+233.1481 	EXP 	fixation: autoDraw = False
+233.1481 	EXP 	fixation: autoDraw = True
+236.2834 	EXP 	New trial (rep=2, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+236.2977 	EXP 	fixation: autoDraw = False
+236.2977 	EXP 	fixation: autoDraw = False
+236.2977 	EXP 	fixation: autoDraw = True
+238.5321 	EXP 	fixation: autoDraw = False
+239.2843 	EXP 	New trial (rep=2, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+239.2986 	EXP 	fixation: autoDraw = False
+239.2986 	EXP 	fixation: autoDraw = True
+245.0016 	EXP 	New trial (rep=2, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+245.0144 	EXP 	fixation: autoDraw = False
+245.0144 	EXP 	fixation: autoDraw = False
+245.0144 	EXP 	fixation: autoDraw = True
+250.8345 	EXP 	New trial (rep=3, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+250.8483 	EXP 	fixation: autoDraw = False
+250.8483 	EXP 	fixation: autoDraw = False
+250.8483 	EXP 	fixation: autoDraw = True
+256.7513 	EXP 	New trial (rep=3, index=1): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+256.7646 	EXP 	fixation: autoDraw = False
+256.7646 	EXP 	fixation: autoDraw = False
+256.7646 	EXP 	fixation: autoDraw = True
+261.8859 	EXP 	New trial (rep=3, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+261.8984 	EXP 	fixation: autoDraw = False
+261.8984 	EXP 	fixation: autoDraw = False
+261.8984 	EXP 	fixation: autoDraw = True
+267.1296 	EXP 	New trial (rep=3, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+267.1507 	EXP 	fixation: autoDraw = False
+267.1507 	EXP 	fixation: autoDraw = False
+267.1507 	EXP 	fixation: autoDraw = True
+273.0849 	EXP 	New trial (rep=4, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+273.0985 	EXP 	fixation: autoDraw = False
+273.0985 	EXP 	fixation: autoDraw = False
+273.0985 	EXP 	fixation: autoDraw = True
+278.4684 	EXP 	New trial (rep=4, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+278.4818 	EXP 	fixation: autoDraw = False
+278.4818 	EXP 	fixation: autoDraw = False
+278.4818 	EXP 	fixation: autoDraw = True
+281.8183 	EXP 	New trial (rep=4, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+281.8314 	EXP 	fixation: autoDraw = False
+281.8314 	EXP 	fixation: autoDraw = False
+281.8314 	EXP 	fixation: autoDraw = True
+287.3187 	EXP 	New trial (rep=4, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+287.3325 	EXP 	fixation: autoDraw = False
+287.3325 	EXP 	fixation: autoDraw = False
+287.3325 	EXP 	fixation: autoDraw = True
+292.9848 	EXP 	New trial (rep=5, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+292.9985 	EXP 	fixation: autoDraw = False
+292.9985 	EXP 	fixation: autoDraw = False
+292.9985 	EXP 	fixation: autoDraw = True
+297.9515 	EXP 	New trial (rep=5, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+297.9650 	EXP 	fixation: autoDraw = False
+297.9650 	EXP 	fixation: autoDraw = False
+297.9650 	EXP 	fixation: autoDraw = True
+303.7516 	EXP 	New trial (rep=5, index=2): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+303.7648 	EXP 	fixation: autoDraw = False
+303.7648 	EXP 	fixation: autoDraw = False
+303.7648 	EXP 	fixation: autoDraw = True
+307.1040 	EXP 	New trial (rep=5, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+307.1167 	EXP 	fixation: autoDraw = False
+307.1167 	EXP 	fixation: autoDraw = False
+307.1167 	EXP 	fixation: autoDraw = True
+310.8342 	EXP 	New trial (rep=6, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+310.8488 	EXP 	fixation: autoDraw = False
+310.8488 	EXP 	fixation: autoDraw = False
+310.8488 	EXP 	fixation: autoDraw = True
+316.2858 	EXP 	New trial (rep=6, index=1): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+316.2985 	EXP 	fixation: autoDraw = False
+316.2985 	EXP 	fixation: autoDraw = False
+316.2985 	EXP 	fixation: autoDraw = True
+318.7821 	EXP 	fixation: autoDraw = False
+319.2862 	EXP 	New trial (rep=6, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+319.2984 	EXP 	fixation: autoDraw = False
+319.2984 	EXP 	fixation: autoDraw = True
+323.4352 	EXP 	New trial (rep=6, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+323.4489 	EXP 	fixation: autoDraw = False
+323.4489 	EXP 	fixation: autoDraw = False
+323.4489 	EXP 	fixation: autoDraw = True
+329.1192 	EXP 	New trial (rep=7, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+329.1320 	EXP 	fixation: autoDraw = False
+329.1320 	EXP 	fixation: autoDraw = False
+329.1320 	EXP 	fixation: autoDraw = True
+332.7688 	EXP 	New trial (rep=7, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+332.7820 	EXP 	fixation: autoDraw = False
+332.7820 	EXP 	fixation: autoDraw = False
+332.7820 	EXP 	fixation: autoDraw = True
+337.2855 	EXP 	New trial (rep=7, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+337.2988 	EXP 	fixation: autoDraw = False
+337.2988 	EXP 	fixation: autoDraw = False
+337.2988 	EXP 	fixation: autoDraw = True
+340.5853 	EXP 	New trial (rep=7, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+340.5989 	EXP 	fixation: autoDraw = False
+340.5989 	EXP 	fixation: autoDraw = False
+340.5989 	EXP 	fixation: autoDraw = True
+346.5384 	EXP 	New trial (rep=8, index=0): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+346.5498 	EXP 	fixation: autoDraw = False
+346.5498 	EXP 	fixation: autoDraw = False
+346.5498 	EXP 	fixation: autoDraw = True
+350.3028 	EXP 	New trial (rep=8, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+350.3163 	EXP 	fixation: autoDraw = False
+350.3163 	EXP 	fixation: autoDraw = False
+350.3163 	EXP 	fixation: autoDraw = True
+355.9352 	EXP 	New trial (rep=8, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+355.9488 	EXP 	fixation: autoDraw = False
+355.9488 	EXP 	fixation: autoDraw = False
+355.9488 	EXP 	fixation: autoDraw = True
+359.4029 	EXP 	New trial (rep=8, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+359.4156 	EXP 	fixation: autoDraw = False
+359.4156 	EXP 	fixation: autoDraw = False
+359.4156 	EXP 	fixation: autoDraw = True
+361.5019 	EXP 	fixation: autoDraw = False
+362.4024 	EXP 	New trial (rep=9, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+362.4170 	EXP 	fixation: autoDraw = False
+362.4170 	EXP 	fixation: autoDraw = True
+367.6694 	EXP 	New trial (rep=9, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+367.6821 	EXP 	fixation: autoDraw = False
+367.6821 	EXP 	fixation: autoDraw = False
+367.6821 	EXP 	fixation: autoDraw = True
+373.2194 	EXP 	New trial (rep=9, index=2): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+373.2323 	EXP 	fixation: autoDraw = False
+373.2323 	EXP 	fixation: autoDraw = False
+373.2323 	EXP 	fixation: autoDraw = True
+378.5197 	EXP 	New trial (rep=9, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+378.5325 	EXP 	fixation: autoDraw = False
+378.5325 	EXP 	fixation: autoDraw = False
+378.5325 	EXP 	fixation: autoDraw = True
+381.9697 	EXP 	New trial (rep=10, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+381.9824 	EXP 	fixation: autoDraw = False
+381.9824 	EXP 	fixation: autoDraw = False
+381.9824 	EXP 	fixation: autoDraw = True
+387.4360 	EXP 	New trial (rep=10, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+387.4493 	EXP 	fixation: autoDraw = False
+387.4493 	EXP 	fixation: autoDraw = False
+387.4493 	EXP 	fixation: autoDraw = True
+390.3663 	EXP 	fixation: autoDraw = False
+390.4357 	EXP 	New trial (rep=10, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+390.4492 	EXP 	fixation: autoDraw = False
+390.4492 	EXP 	fixation: autoDraw = True
+395.2030 	EXP 	New trial (rep=10, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+395.2170 	EXP 	fixation: autoDraw = False
+395.2170 	EXP 	fixation: autoDraw = False
+395.2170 	EXP 	fixation: autoDraw = True
+397.5995 	EXP 	fixation: autoDraw = False
+398.2026 	EXP 	New trial (rep=11, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+398.2160 	EXP 	fixation: autoDraw = False
+398.2160 	EXP 	fixation: autoDraw = True
+403.5370 	EXP 	New trial (rep=11, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+403.5497 	EXP 	fixation: autoDraw = False
+403.5497 	EXP 	fixation: autoDraw = False
+403.5497 	EXP 	fixation: autoDraw = True
+407.6534 	EXP 	New trial (rep=11, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+407.6665 	EXP 	fixation: autoDraw = False
+407.6665 	EXP 	fixation: autoDraw = False
+407.6665 	EXP 	fixation: autoDraw = True
+412.5530 	EXP 	New trial (rep=11, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+412.5663 	EXP 	fixation: autoDraw = False
+412.5663 	EXP 	fixation: autoDraw = False
+412.5663 	EXP 	fixation: autoDraw = True
+417.7191 	EXP 	New trial (rep=12, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+417.7331 	EXP 	fixation: autoDraw = False
+417.7331 	EXP 	fixation: autoDraw = False
+417.7331 	EXP 	fixation: autoDraw = True
+421.9717 	EXP 	New trial (rep=12, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+421.9837 	EXP 	fixation: autoDraw = False
+421.9837 	EXP 	fixation: autoDraw = False
+421.9837 	EXP 	fixation: autoDraw = True
+426.0882 	EXP 	New trial (rep=12, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+426.1007 	EXP 	fixation: autoDraw = False
+426.1007 	EXP 	fixation: autoDraw = False
+426.1007 	EXP 	fixation: autoDraw = True
+431.8200 	EXP 	New trial (rep=12, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+431.8333 	EXP 	fixation: autoDraw = False
+431.8333 	EXP 	fixation: autoDraw = False
+431.8333 	EXP 	fixation: autoDraw = True
+435.6862 	EXP 	New trial (rep=13, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+435.6999 	EXP 	fixation: autoDraw = False
+435.6999 	EXP 	fixation: autoDraw = False
+435.6999 	EXP 	fixation: autoDraw = True
+438.2834 	EXP 	fixation: autoDraw = False
+438.6855 	EXP 	New trial (rep=13, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+438.6999 	EXP 	fixation: autoDraw = False
+438.6999 	EXP 	fixation: autoDraw = True
+442.3024 	EXP 	New trial (rep=13, index=2): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+442.3172 	EXP 	fixation: autoDraw = False
+442.3172 	EXP 	fixation: autoDraw = False
+442.3172 	EXP 	fixation: autoDraw = True
+447.6701 	EXP 	New trial (rep=13, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+447.6830 	EXP 	fixation: autoDraw = False
+447.6830 	EXP 	fixation: autoDraw = False
+447.6830 	EXP 	fixation: autoDraw = True
+451.7365 	EXP 	New trial (rep=14, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+451.7499 	EXP 	fixation: autoDraw = False
+451.7499 	EXP 	fixation: autoDraw = False
+451.7499 	EXP 	fixation: autoDraw = True
+456.8034 	EXP 	New trial (rep=14, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+456.8167 	EXP 	fixation: autoDraw = False
+456.8167 	EXP 	fixation: autoDraw = False
+456.8167 	EXP 	fixation: autoDraw = True
+460.5032 	EXP 	New trial (rep=14, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+460.5164 	EXP 	fixation: autoDraw = False
+460.5164 	EXP 	fixation: autoDraw = False
+460.5164 	EXP 	fixation: autoDraw = True
+465.5703 	EXP 	New trial (rep=14, index=3): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+465.5837 	EXP 	fixation: autoDraw = False
+465.5837 	EXP 	fixation: autoDraw = False
+465.5837 	EXP 	fixation: autoDraw = True
+470.4037 	EXP 	New trial (rep=15, index=0): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+470.4168 	EXP 	fixation: autoDraw = False
+470.4168 	EXP 	fixation: autoDraw = False
+470.4168 	EXP 	fixation: autoDraw = True
+475.4210 	EXP 	New trial (rep=15, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+475.4336 	EXP 	fixation: autoDraw = False
+475.4336 	EXP 	fixation: autoDraw = False
+475.4336 	EXP 	fixation: autoDraw = True
+477.6503 	EXP 	fixation: autoDraw = False
+478.4192 	EXP 	New trial (rep=15, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+478.4332 	EXP 	fixation: autoDraw = False
+478.4332 	EXP 	fixation: autoDraw = True
+483.7204 	EXP 	New trial (rep=15, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+483.7336 	EXP 	fixation: autoDraw = False
+483.7336 	EXP 	fixation: autoDraw = False
+483.7336 	EXP 	fixation: autoDraw = True
+486.4671 	EXP 	fixation: autoDraw = False
+486.7205 	EXP 	New trial (rep=16, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+486.7336 	EXP 	fixation: autoDraw = False
+486.7336 	EXP 	fixation: autoDraw = True
+491.3032 	EXP 	New trial (rep=16, index=1): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+491.3171 	EXP 	fixation: autoDraw = False
+491.3171 	EXP 	fixation: autoDraw = False
+491.3171 	EXP 	fixation: autoDraw = True
+496.7373 	EXP 	New trial (rep=16, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+496.7502 	EXP 	fixation: autoDraw = False
+496.7502 	EXP 	fixation: autoDraw = False
+496.7502 	EXP 	fixation: autoDraw = True
+499.4170 	EXP 	fixation: autoDraw = False
+499.7375 	EXP 	New trial (rep=16, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+499.7507 	EXP 	fixation: autoDraw = False
+499.7507 	EXP 	fixation: autoDraw = True
+502.5675 	EXP 	fixation: autoDraw = False
+502.7381 	EXP 	New trial (rep=17, index=0): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+502.7505 	EXP 	fixation: autoDraw = False
+502.7505 	EXP 	fixation: autoDraw = True
+505.6172 	EXP 	fixation: autoDraw = False
+505.7379 	EXP 	New trial (rep=17, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+505.7506 	EXP 	fixation: autoDraw = False
+505.7506 	EXP 	fixation: autoDraw = True
+511.7043 	EXP 	New trial (rep=17, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+511.7176 	EXP 	fixation: autoDraw = False
+511.7176 	EXP 	fixation: autoDraw = False
+511.7176 	EXP 	fixation: autoDraw = True
+513.7506 	EXP 	fixation: autoDraw = False
+514.7042 	EXP 	New trial (rep=17, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+514.7217 	EXP 	fixation: autoDraw = False
+514.7217 	EXP 	fixation: autoDraw = True
+516.9846 	EXP 	fixation: autoDraw = False
+517.7033 	EXP 	New trial (rep=18, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+517.7170 	EXP 	fixation: autoDraw = False
+517.7170 	EXP 	fixation: autoDraw = True
+522.9710 	EXP 	New trial (rep=18, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+522.9841 	EXP 	fixation: autoDraw = False
+522.9841 	EXP 	fixation: autoDraw = False
+522.9841 	EXP 	fixation: autoDraw = True
+527.0747 	EXP 	New trial (rep=18, index=2): {'trial': 'target', 'file': "soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 't', 'tone': 60}
+527.0851 	EXP 	fixation: autoDraw = False
+527.0851 	EXP 	fixation: autoDraw = False
+527.0851 	EXP 	fixation: autoDraw = True
+532.2714 	EXP 	New trial (rep=18, index=3): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+532.2852 	EXP 	fixation: autoDraw = False
+532.2852 	EXP 	fixation: autoDraw = False
+532.2852 	EXP 	fixation: autoDraw = True
+535.5370 	EXP 	New trial (rep=19, index=0): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+535.5516 	EXP 	fixation: autoDraw = False
+535.5516 	EXP 	fixation: autoDraw = False
+535.5516 	EXP 	fixation: autoDraw = True
+538.2502 	EXP 	fixation: autoDraw = False
+538.5360 	EXP 	New trial (rep=19, index=1): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+538.5501 	EXP 	fixation: autoDraw = False
+538.5501 	EXP 	fixation: autoDraw = True
+540.5425 	DATA 	Mouse: Left button down, pos=(469,273)
+540.6027 	DATA 	Mouse:  Left button up, pos=(469,273)
+540.7837 	EXP 	fixation: autoDraw = False
+541.5362 	EXP 	New trial (rep=19, index=2): {'trial': 'standard', 'file': "soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'", 'corrAns': 'None', 'tone': 40}
+541.5501 	EXP 	fixation: autoDraw = False
+541.5501 	EXP 	fixation: autoDraw = True
+543.4693 	DATA 	Keypress: escape
+544.1780 	EXP 	window1: mouseVisible = True

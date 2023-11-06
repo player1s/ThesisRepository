@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 31, 2023, at 11:36
+    on November 02, 2023, at 11:17
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -73,7 +73,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[920, 780], fullscr=False, screen=0, 
+    size=[1020, 500], fullscr=False, screen=1, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -274,10 +274,11 @@ for thisTrial_2 in trials_2:
     flag_end = True
     
     fixDur = 2 + (6 - 2) * random()
+    
     response.keys = []
     response.rt = []
     _response_allKeys = []
-    sound_1.setSound(tone, secs=1, hamming=True)
+    sound_1.setSound('C:/Users/elpid/Downloads/40hz_tone.wav', secs=1, hamming=True)
     sound_1.setVolume(0.8, log=False)
     # keep track of which components have finished
     TrialComponents = [fixation, response, sound_1]

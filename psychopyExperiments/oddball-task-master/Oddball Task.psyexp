@@ -21,12 +21,12 @@
     <Param val="True" valType="bool" updates="None" name="Save log file"/>
     <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
     <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
-    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="2" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
-    <Param val="[920, 780]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="[1020, 500]" valType="code" updates="None" name="Window size (pixels)"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="$[0,0,0]" valType="str" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
@@ -177,7 +177,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="flag_start = true;&amp;#10;flag_end = true;&amp;#10;fixDur = (2 + ((6 - 2) * Math.random()));&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="flag_start = True&amp;#10;flag_end = True&amp;#10;&amp;#10;fixDur = 2 + (6 - 2) * random()" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="flag_start = True&amp;#10;flag_end = True&amp;#10;&amp;#10;fixDur = 2 + (6 - 2) * random()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="if sound_1.status == STARTED and flag_start == True:&amp;#10;    print(int(sound_1.freq))&amp;#10;    flag_start = False&amp;#10;    outlet.push_sample(x=[int(sound_1.freq)])&amp;#10;    &amp;#10;if sound_1.status == FINISHED and flag_end == True:&amp;#10;    flag_end = False&amp;#10;    outlet.push_sample(x=[end])&amp;#10;    print('****')" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="if (((sound_1.status === PsychoJS.Status.STARTED) &amp;&amp; (flag_start === true))) {&amp;#10;    console.log(Number.parseInt(sound_1.freq));&amp;#10;    flag_start = false;&amp;#10;    outlet.push_sample({&quot;x&quot;: [Number.parseInt(sound_1.freq)]});&amp;#10;}&amp;#10;if (((sound_1.status === PsychoJS.Status.FINISHED) &amp;&amp; (flag_end === true))) {&amp;#10;    flag_end = false;&amp;#10;    outlet.push_sample({&quot;x&quot;: [end]});&amp;#10;    console.log(&quot;****&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -264,7 +264,7 @@
         <Param val="True" valType="bool" updates="constant" name="hamming"/>
         <Param val="sound_1" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="$tone" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="C:/Users/elpid/Downloads/40hz_tone.wav" valType="str" updates="set every repeat" name="sound"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="1.0" valType="code" updates="None" name="startVal"/>
@@ -396,7 +396,7 @@
     <Routine name="Instructions"/>
     <LoopInitiator loopType="TrialHandler" name="trials_2">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 1000}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 1000}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 1000}, {'trial': 'target', 'file': &quot;soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 't', 'tone': 2000}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 40}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 40}, {'trial': 'standard', 'file': &quot;soundFiles/1000Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 'None', 'tone': 40}, {'trial': 'target', 'file': &quot;soundFiles/1200Hz_-3dBFS_3s_44.1kHz.wav'&quot;, 'corrAns': 't', 'tone': 60}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="aud_conditions3.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>

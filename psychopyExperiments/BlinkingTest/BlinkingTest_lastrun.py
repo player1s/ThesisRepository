@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on October 27, 2023, at 15:40
+    on November 01, 2023, at 12:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -250,7 +250,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=5, method='sequential', 
+trials_2 = data.TrialHandler(nReps=2, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials_2')
@@ -387,7 +387,7 @@ for thisTrial_2 in trials_2:
         routineTimer.addTime(-121.000000)
     thisExp.nextEntry()
     
-# completed 5 repeats of 'trials_2'
+# completed 2 repeats of 'trials_2'
 
 
 # --- Prepare to start Routine "End" ---
