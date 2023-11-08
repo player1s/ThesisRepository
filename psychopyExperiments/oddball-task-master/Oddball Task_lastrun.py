@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on November 02, 2023, at 11:17
+    on November 08, 2023, at 14:00
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -73,7 +73,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1020, 500], fullscr=False, screen=1, 
+    size=[1020, 800], fullscr=False, screen=1, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -123,13 +123,12 @@ instructions = visual.TextStim(win=win, name='instructions',
 key_resp_1 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "Trial" ---
-fixation = visual.TextStim(win=win, name='fixation',
-    text='+',
-    font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-1.0);
+fixation_cross = visual.ShapeStim(
+    win=win, name='fixation_cross', vertices='cross',
+    size=(0.25, 0.25),
+    ori=0.0, pos=(0, 0), anchor='center',
+    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    opacity=None, depth=-1.0, interpolate=True)
 response = keyboard.Keyboard()
 sound_1 = sound.Sound('A', secs=1, stereo=True, hamming=True,
     name='sound_1')
@@ -247,7 +246,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=100, method='random', 
+trials_2 = data.TrialHandler(nReps=50, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('aud_conditions3.xlsx'),
     seed=None, name='trials_2')
@@ -273,15 +272,15 @@ for thisTrial_2 in trials_2:
     flag_start = True
     flag_end = True
     
-    fixDur = 2 + (6 - 2) * random()
+    fixDur = 2 + (5 - 2) * random()
     
     response.keys = []
     response.rt = []
     _response_allKeys = []
-    sound_1.setSound('C:/Users/elpid/Downloads/40hz_tone.wav', secs=1, hamming=True)
+    sound_1.setSound(tone, secs=1, hamming=True)
     sound_1.setVolume(0.8, log=False)
     # keep track of which components have finished
-    TrialComponents = [fixation, response, sound_1]
+    TrialComponents = [fixation_cross, response, sound_1]
     for thisComponent in TrialComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -313,25 +312,25 @@ for thisTrial_2 in trials_2:
             outlet.push_sample(x=[end])
             print('****')
         
-        # *fixation* updates
-        if fixation.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *fixation_cross* updates
+        if fixation_cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            fixation.frameNStart = frameN  # exact frame index
-            fixation.tStart = t  # local t and not account for scr refresh
-            fixation.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(fixation, 'tStartRefresh')  # time at next scr refresh
+            fixation_cross.frameNStart = frameN  # exact frame index
+            fixation_cross.tStart = t  # local t and not account for scr refresh
+            fixation_cross.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(fixation_cross, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'fixation.started')
-            fixation.setAutoDraw(True)
-        if fixation.status == STARTED:
+            thisExp.timestampOnFlip(win, 'fixation_cross.started')
+            fixation_cross.setAutoDraw(True)
+        if fixation_cross.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixation.tStartRefresh + fixDur-frameTolerance:
+            if tThisFlipGlobal > fixation_cross.tStartRefresh + fixDur-frameTolerance:
                 # keep track of stop time/frame for later
-                fixation.tStop = t  # not accounting for scr refresh
-                fixation.frameNStop = frameN  # exact frame index
+                fixation_cross.tStop = t  # not accounting for scr refresh
+                fixation_cross.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'fixation.stopped')
-                fixation.setAutoDraw(False)
+                thisExp.timestampOnFlip(win, 'fixation_cross.stopped')
+                fixation_cross.setAutoDraw(False)
         
         # *response* updates
         waitOnFlip = False
@@ -429,7 +428,7 @@ for thisTrial_2 in trials_2:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 100 repeats of 'trials_2'
+# completed 50 repeats of 'trials_2'
 
 
 # --- Prepare to start Routine "End" ---
