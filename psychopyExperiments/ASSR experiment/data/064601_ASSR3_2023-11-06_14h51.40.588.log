@@ -1,0 +1,37 @@
+45.8476 	WARNING 	Requested an unavailable screen number - using first available.
+48.5008 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020146ECF460>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000201473A7C70>, multiSample=False, name='window1', numSamples=2, pos=(492, 108), screen=1, size=array([936, 864]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+48.5012 	EXP 	window1: mouseVisible = True
+48.5012 	EXP 	window1: mouseVisible = True
+48.5012 	EXP 	window1: Attempting to measure frame rate of screen (1) ...
+48.5012 	EXP 	window1: recordFrameIntervals = False
+48.6658 	EXP 	window1: recordFrameIntervals = True
+48.8496 	EXP 	Screen (1) actual frame rate measured at 60.11Hz
+48.8496 	EXP 	window1: recordFrameIntervals = False
+48.9269 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+52.2399 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+52.2667 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+52.6431 	EXP 	Sound ModulatedTone set volume 1.000
+52.6498 	EXP 	Created CloseEyes = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='CloseEyes', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='---- Close your eyes ----', units='height', win=Window(...), wrapWidth=1)
+52.6587 	EXP 	Created OpenEyes = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='OpenEyes', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Open your eyes when you hear the sound', units='height', win=Window(...), wrapWidth=1)
+52.6723 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+52.7018 	EXP 	text: autoDraw = True
+81.7202 	DATA 	Mouse: Left button down, pos=(880,826)
+81.8400 	DATA 	Mouse:  Left button up, pos=(880,826)
+82.8083 	DATA 	Keypress: space
+82.8192 	EXP 	text: autoDraw = False
+82.8192 	EXP 	text_2: autoDraw = True
+87.8154 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+87.8156 	EXP 	New trial (rep=0, index=0): None
+87.9144 	EXP 	text_2: autoDraw = False
+87.9144 	EXP 	CloseEyes: autoDraw = True
+117.8049 	EXP 	Sound ModulatedTone started
+117.8026 	EXP 	OpenEyes: autoDraw = True
+117.9197 	EXP 	CloseEyes: autoDraw = False
+147.8130 	EXP 	Sound ModulatedTone stopped
+147.8139 	EXP 	New trial (rep=1, index=0): None
+147.9087 	EXP 	OpenEyes: autoDraw = False
+147.9087 	EXP 	CloseEyes: autoDraw = False
+147.9087 	EXP 	OpenEyes: autoDraw = False
+147.9087 	EXP 	CloseEyes: autoDraw = True
+159.3663 	DATA 	Keypress: escape
+160.2149 	EXP 	window1: mouseVisible = True

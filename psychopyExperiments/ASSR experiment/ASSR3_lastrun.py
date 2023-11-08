@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on November 01, 2023, at 11:51
+    on November 07, 2023, at 16:45
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -74,7 +74,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1020, 780], fullscr=False, screen=1, 
+    size=[820, 680], fullscr=False, screen=1, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -260,7 +260,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=2.0, method='sequential', 
+trials = data.TrialHandler(nReps=3.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials')
@@ -376,7 +376,7 @@ for thisTrial in trials:
         continueRoutine = True
         routineForceEnded = False
         # update component parameters for each repeat
-        ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=60, hamming=True)
+        ModulatedTone.setSound('1kHzAmplitudeModulated40Hz.wav', secs=30, hamming=True)
         ModulatedTone.setVolume(1.0, log=False)
         # Run 'Begin Routine' code from code_2
         print('start')
@@ -397,7 +397,7 @@ for thisTrial in trials:
         frameN = -1
         
         # --- Run Routine "ASSR" ---
-        while continueRoutine and routineTimer.getTime() < 70.0:
+        while continueRoutine and routineTimer.getTime() < 60.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -405,7 +405,7 @@ for thisTrial in trials:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # start/stop ModulatedTone
-            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 10-frameTolerance:
+            if ModulatedTone.status == NOT_STARTED and tThisFlip >= 30-frameTolerance:
                 # keep track of start time/frame for later
                 ModulatedTone.frameNStart = frameN  # exact frame index
                 ModulatedTone.tStart = t  # local t and not account for scr refresh
@@ -415,7 +415,7 @@ for thisTrial in trials:
                 ModulatedTone.play(when=win)  # sync with win flip
             if ModulatedTone.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 60-frameTolerance:
+                if tThisFlipGlobal > ModulatedTone.tStartRefresh + 30-frameTolerance:
                     # keep track of stop time/frame for later
                     ModulatedTone.tStop = t  # not accounting for scr refresh
                     ModulatedTone.frameNStop = frameN  # exact frame index
@@ -424,7 +424,7 @@ for thisTrial in trials:
                     ModulatedTone.stop()
             
             # *Cross* updates
-            if Cross.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            if Cross.status == NOT_STARTED and tThisFlip >= 30-frameTolerance:
                 # keep track of start time/frame for later
                 Cross.frameNStart = frameN  # exact frame index
                 Cross.tStart = t  # local t and not account for scr refresh
@@ -435,7 +435,7 @@ for thisTrial in trials:
                 Cross.setAutoDraw(True)
             if Cross.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > Cross.tStartRefresh + 70-frameTolerance:
+                if tThisFlipGlobal > Cross.tStartRefresh + 30-frameTolerance:
                     # keep track of stop time/frame for later
                     Cross.tStop = t  # not accounting for scr refresh
                     Cross.frameNStop = frameN  # exact frame index
@@ -465,7 +465,7 @@ for thisTrial in trials:
                 Rest.setAutoDraw(True)
             if Rest.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > Rest.tStartRefresh + 10-frameTolerance:
+                if tThisFlipGlobal > Rest.tStartRefresh + 30-frameTolerance:
                     # keep track of stop time/frame for later
                     Rest.tStop = t  # not accounting for scr refresh
                     Rest.frameNStop = frameN  # exact frame index
@@ -500,14 +500,14 @@ for thisTrial in trials:
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-70.000000)
+            routineTimer.addTime(-60.000000)
         thisExp.nextEntry()
         
     # completed 5.0 repeats of 'trials_2'
     
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials'
+# completed 3.0 repeats of 'trials'
 
 
 # --- Prepare to start Routine "Outro" ---
