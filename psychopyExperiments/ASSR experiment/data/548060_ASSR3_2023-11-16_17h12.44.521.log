@@ -1,0 +1,167 @@
+2.4478 	WARNING 	Speech-to-text recognition using Google online services is not available (use command `pip install google-api-core google-auth google-cloud google-cloud-speech googleapis-common-protos` to get it). Transcription will be unavailable using that service this session.
+10.9880 	WARNING 	Requested an unavailable screen number - using first available.
+11.7407 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002566F7B64C0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000256707B60A0>, multiSample=False, name='window1', numSamples=2, pos=(273, 44), screen=1, size=array([820, 680]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.7414 	EXP 	window1: mouseVisible = True
+11.7414 	EXP 	window1: mouseVisible = True
+11.7415 	EXP 	window1: Attempting to measure frame rate of screen (1) ...
+11.7415 	EXP 	window1: recordFrameIntervals = False
+11.9050 	EXP 	window1: recordFrameIntervals = True
+12.0895 	EXP 	Screen (1) actual frame rate measured at 59.78Hz
+12.0896 	EXP 	window1: recordFrameIntervals = False
+12.1600 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+18.3371 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+18.3827 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='5 second break', units='height', win=Window(...), wrapWidth=1)
+19.2762 	EXP 	Sound ModulatedTone set volume 1.000
+19.2884 	EXP 	Created Cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.2972 	EXP 	Created Rest = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Rest', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Rest', units='height', win=Window(...), wrapWidth=1)
+19.3195 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+19.3704 	EXP 	text: autoDraw = True
+23.1865 	DATA 	Mouse: Left button down, pos=(564,54)
+23.3417 	DATA 	Mouse:  Left button up, pos=(564,54)
+42.8867 	DATA 	Mouse: Left button down, pos=(172,395)
+43.0906 	DATA 	Mouse:  Left button up, pos=(172,395)
+184.9838 	EXP 	Created sequence: sequential, trialTypes=1, nReps=3, seed=None
+184.9843 	EXP 	New trial (rep=0, index=0): None
+184.9881 	DATA 	Keypress: space
+184.9957 	EXP 	text: autoDraw = False
+184.9957 	EXP 	text_2: autoDraw = True
+189.9805 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+189.9810 	EXP 	New trial (rep=0, index=0): None
+190.0771 	EXP 	text_2: autoDraw = False
+190.0771 	EXP 	text_2: autoDraw = False
+190.0771 	EXP 	Rest: autoDraw = True
+219.9933 	EXP 	Sound ModulatedTone started
+220.0087 	EXP 	Cross: autoDraw = True
+220.0768 	EXP 	Rest: autoDraw = False
+250.0074 	EXP 	Sound ModulatedTone stopped
+250.0081 	EXP 	New trial (rep=1, index=0): None
+250.1077 	EXP 	Cross: autoDraw = False
+250.1077 	EXP 	Rest: autoDraw = False
+250.1077 	EXP 	Rest: autoDraw = True
+279.9899 	EXP 	Sound ModulatedTone started
+279.9913 	EXP 	Cross: autoDraw = True
+280.1233 	EXP 	Rest: autoDraw = False
+310.0065 	EXP 	Sound ModulatedTone stopped
+310.0072 	EXP 	New trial (rep=2, index=0): None
+310.1206 	EXP 	Cross: autoDraw = False
+310.1206 	EXP 	Rest: autoDraw = False
+310.1206 	EXP 	Rest: autoDraw = True
+339.9868 	EXP 	Sound ModulatedTone started
+339.9865 	EXP 	Cross: autoDraw = True
+340.1199 	EXP 	Rest: autoDraw = False
+370.0063 	EXP 	Sound ModulatedTone stopped
+370.0070 	EXP 	New trial (rep=3, index=0): None
+370.1007 	EXP 	Cross: autoDraw = False
+370.1007 	EXP 	Rest: autoDraw = False
+370.1007 	EXP 	Rest: autoDraw = True
+399.9833 	EXP 	Sound ModulatedTone started
+399.9833 	EXP 	Cross: autoDraw = True
+400.0998 	EXP 	Rest: autoDraw = False
+430.0074 	EXP 	Sound ModulatedTone stopped
+430.0080 	EXP 	New trial (rep=4, index=0): None
+430.1145 	EXP 	Cross: autoDraw = False
+430.1145 	EXP 	Rest: autoDraw = False
+430.1145 	EXP 	Rest: autoDraw = True
+459.9802 	EXP 	Sound ModulatedTone started
+459.9803 	EXP 	Cross: autoDraw = True
+460.1139 	EXP 	Rest: autoDraw = False
+489.9969 	EXP 	Sound ModulatedTone stopped
+489.9992 	EXP 	New trial (rep=1, index=0): None
+490.0107 	EXP 	Cross: autoDraw = False
+490.0107 	EXP 	Cross: autoDraw = False
+490.0107 	EXP 	Rest: autoDraw = False
+490.0107 	EXP 	text_2: autoDraw = True
+494.9963 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+494.9968 	EXP 	New trial (rep=0, index=0): None
+495.1108 	EXP 	text_2: autoDraw = False
+495.1108 	EXP 	Rest: autoDraw = True
+524.9931 	EXP 	Sound ModulatedTone started
+524.9929 	EXP 	Cross: autoDraw = True
+525.1097 	EXP 	Rest: autoDraw = False
+554.9918 	EXP 	Cross: autoDraw = False
+555.0068 	EXP 	Sound ModulatedTone stopped
+555.0077 	EXP 	New trial (rep=1, index=0): None
+555.1076 	EXP 	Cross: autoDraw = False
+555.1076 	EXP 	Rest: autoDraw = False
+555.1076 	EXP 	Rest: autoDraw = True
+584.9899 	EXP 	Sound ModulatedTone started
+584.9896 	EXP 	Cross: autoDraw = True
+585.1063 	EXP 	Rest: autoDraw = False
+615.0064 	EXP 	Sound ModulatedTone stopped
+615.0070 	EXP 	New trial (rep=2, index=0): None
+615.1209 	EXP 	Cross: autoDraw = False
+615.1209 	EXP 	Rest: autoDraw = False
+615.1209 	EXP 	Rest: autoDraw = True
+644.9865 	EXP 	Sound ModulatedTone started
+644.9878 	EXP 	Cross: autoDraw = True
+645.1198 	EXP 	Rest: autoDraw = False
+674.9868 	EXP 	Sound ModulatedTone stopped
+675.0018 	EXP 	New trial (rep=3, index=0): None
+675.1171 	EXP 	Cross: autoDraw = False
+675.1171 	EXP 	Rest: autoDraw = False
+675.1171 	EXP 	Rest: autoDraw = True
+704.9850 	EXP 	Sound ModulatedTone started
+704.9851 	EXP 	Cross: autoDraw = True
+705.1184 	EXP 	Rest: autoDraw = False
+735.0073 	EXP 	Sound ModulatedTone stopped
+735.0081 	EXP 	New trial (rep=4, index=0): None
+735.1145 	EXP 	Cross: autoDraw = False
+735.1145 	EXP 	Rest: autoDraw = False
+735.1145 	EXP 	Rest: autoDraw = True
+764.9801 	EXP 	Sound ModulatedTone started
+764.9801 	EXP 	Cross: autoDraw = True
+765.1307 	EXP 	Rest: autoDraw = False
+794.9972 	EXP 	Sound ModulatedTone stopped
+794.9995 	EXP 	New trial (rep=2, index=0): None
+795.0115 	EXP 	Cross: autoDraw = False
+795.0115 	EXP 	Cross: autoDraw = False
+795.0115 	EXP 	Rest: autoDraw = False
+795.0115 	EXP 	text_2: autoDraw = True
+799.9954 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+799.9961 	EXP 	New trial (rep=0, index=0): None
+800.0936 	EXP 	text_2: autoDraw = False
+800.0936 	EXP 	Rest: autoDraw = True
+829.9936 	EXP 	Sound ModulatedTone started
+829.9930 	EXP 	Cross: autoDraw = True
+830.0926 	EXP 	Rest: autoDraw = False
+860.0169 	EXP 	Sound ModulatedTone stopped
+860.0175 	EXP 	New trial (rep=1, index=0): None
+860.1243 	EXP 	Cross: autoDraw = False
+860.1243 	EXP 	Rest: autoDraw = False
+860.1243 	EXP 	Rest: autoDraw = True
+889.9897 	EXP 	Sound ModulatedTone started
+889.9899 	EXP 	Cross: autoDraw = True
+890.1405 	EXP 	Rest: autoDraw = False
+920.0069 	EXP 	Sound ModulatedTone stopped
+920.0075 	EXP 	New trial (rep=2, index=0): None
+920.1205 	EXP 	Cross: autoDraw = False
+920.1205 	EXP 	Rest: autoDraw = False
+920.1205 	EXP 	Rest: autoDraw = True
+949.9869 	EXP 	Sound ModulatedTone started
+949.9868 	EXP 	Cross: autoDraw = True
+950.1202 	EXP 	Rest: autoDraw = False
+979.9967 	EXP 	Sound ModulatedTone stopped
+979.9975 	EXP 	New trial (rep=3, index=0): None
+980.1010 	EXP 	Cross: autoDraw = False
+980.1010 	EXP 	Rest: autoDraw = False
+980.1010 	EXP 	Rest: autoDraw = True
+1009.9833 	EXP 	Sound ModulatedTone started
+1009.9835 	EXP 	Cross: autoDraw = True
+1010.1007 	EXP 	Rest: autoDraw = False
+1040.0067 	EXP 	Sound ModulatedTone stopped
+1040.0077 	EXP 	New trial (rep=4, index=0): None
+1040.1308 	EXP 	Cross: autoDraw = False
+1040.1308 	EXP 	Rest: autoDraw = False
+1040.1308 	EXP 	Rest: autoDraw = True
+1069.9801 	EXP 	Sound ModulatedTone started
+1069.9800 	EXP 	Cross: autoDraw = True
+1070.1296 	EXP 	Rest: autoDraw = False
+1099.9770 	EXP 	Sound ModulatedTone stopped
+1099.9941 	EXP 	Cross: autoDraw = False
+1099.9941 	EXP 	Cross: autoDraw = False
+1099.9941 	EXP 	Rest: autoDraw = False
+1100.0119 	EXP 	text_4: autoDraw = True
+1219.4698 	DATA 	Mouse: Left button down, pos=(730,640)
+1219.6755 	DATA 	Mouse:  Left button up, pos=(730,640)
+1220.5280 	DATA 	Keypress: escape
+1221.6812 	EXP 	window1: mouseVisible = True
