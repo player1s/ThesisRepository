@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on December 04, 2023, at 15:53
+    on December 04, 2023, at 17:21
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -28,6 +28,10 @@ import sys  # to get file system encoding
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
+# Run 'Before Experiment' code from code_2
+from pylsl import StreamInfo, StreamOutlet
+from psychopy import event
+import time 
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -104,6 +108,16 @@ text_2 = visual.TextStim(win=win, name='text_2',
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
+# Run 'Begin Experiment' code from code_2
+#event ids
+startRest = 1
+startASSR = 2
+artifact = 3
+
+info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
+                  channel_format='int32', source_id='Psychopy Markers')
+# Initialize the stream.
+outlet = StreamOutlet(info)
 
 # --- Initialize components for Routine "trial" ---
 text = visual.TextStim(win=win, name='text',
@@ -221,6 +235,10 @@ thisExp.addData('key_resp.keys',key_resp.keys)
 if key_resp.keys != None:  # we had a response
     thisExp.addData('key_resp.rt', key_resp.rt)
 thisExp.nextEntry()
+# Run 'End Routine' code from code_2
+print('start')
+flag_start = True
+outlet.push_sample(x=[startRest])
 # the Routine "Starter" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -243,6 +261,7 @@ Created on Thu Nov 30 10:29:55 2023
 @author: elpid
 """
 
+gameTimeInSeconds = 60
 
 import random, time, pygame, sys
 from pygame.locals import *
@@ -407,14 +426,15 @@ def main():
 
     showTextScreen('Tetromino')
     while True: # game loop
-        if random.randint(0, 1) == 0:
-            pygame.mixer.music.load('tetrisb.mid')
-        else:
-            pygame.mixer.music.load('tetrisc.mid')
-        pygame.mixer.music.play(-1, 0.0)
+        #if random.randint(0, 1) == 0:
+        #    pygame.mixer.music.load('tetrisb.mid')
+        #else:
+        #    pygame.mixer.music.load('tetrisc.mid')
+        #pygame.mixer.music.play(-1, 0.0)
         runGame()
-        pygame.mixer.music.stop()
-        showTextScreen('Game Over')
+        #pygame.mixer.music.stop()
+        showTextScreen('Done')
+        return
 
 
 def runGame():
@@ -428,11 +448,17 @@ def runGame():
     movingRight = False
     score = 0
     level, fallFreq = calculateLevelAndFallFreq(score)
+    playTime = time.time()
 
     fallingPiece = getNewPiece()
     nextPiece = getNewPiece()
 
     while True: # game loop
+        nowTime = time.time()
+
+        if nowTime > playTime + gameTimeInSeconds:
+            return
+        
         if fallingPiece == None:
             # No falling piece in play, so start a new piece at the top
             fallingPiece = nextPiece
@@ -578,7 +604,7 @@ def showTextScreen(text):
     DISPLAYSURF.blit(titleSurf, titleRect)
 
     # Draw the additional "Press a key to play." text.
-    pressKeySurf, pressKeyRect = makeTextObjs('Press a key to play.', BASICFONT, TEXTCOLOR)
+    pressKeySurf, pressKeyRect = makeTextObjs('Press space to continue.', BASICFONT, TEXTCOLOR)
     pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
     DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
 
@@ -600,7 +626,7 @@ def calculateLevelAndFallFreq(score):
     # Based on the score, return the level the player is on and
     # how many seconds pass until a falling piece falls one space.
     level = int(score / 10) + 1
-    fallFreq = 0.4 - (level * 0.02)
+    fallFreq = 0.3 - (level * 0.02)
     return level, fallFreq
 
 def getNewPiece():
