@@ -1,0 +1,113 @@
+9.2135 	WARNING 	Requested an unavailable screen number - using first available.
+11.1899 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B9F03EF430>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B9F094FC70>, multiSample=False, name='window1', numSamples=2, pos=(492, 108), screen=1, size=array([936, 864]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.1906 	EXP 	window1: mouseVisible = True
+11.1907 	EXP 	window1: mouseVisible = True
+11.1908 	EXP 	window1: Attempting to measure frame rate of screen (1) ...
+11.1908 	EXP 	window1: recordFrameIntervals = False
+11.3559 	EXP 	window1: recordFrameIntervals = True
+11.5420 	WARNING 	t of last frame was 20.24ms (=1/49)
+11.7554 	EXP 	Screen (1) actual frame rate measured at 61.16Hz
+11.7554 	EXP 	window1: recordFrameIntervals = False
+11.8348 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+15.1379 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.1631 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.4484 	EXP 	Sound ModulatedTone set volume 1.000
+15.4540 	EXP 	Created CloseEyes = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='CloseEyes', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='---- Close your eyes ----', units='height', win=Window(...), wrapWidth=1)
+15.4597 	EXP 	Created OpenEyes = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='OpenEyes', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Open your eyes when you hear the sound', units='height', win=Window(...), wrapWidth=1)
+15.4763 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.5107 	EXP 	text: autoDraw = True
+79.5124 	DATA 	Keypress: space
+79.5258 	EXP 	text: autoDraw = False
+79.5258 	EXP 	text_2: autoDraw = True
+84.5229 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+84.5232 	EXP 	New trial (rep=0, index=0): None
+84.6041 	EXP 	text_2: autoDraw = False
+84.6041 	EXP 	CloseEyes: autoDraw = True
+114.5259 	EXP 	Sound ModulatedTone started
+114.5252 	EXP 	OpenEyes: autoDraw = True
+114.6090 	EXP 	CloseEyes: autoDraw = False
+144.5433 	EXP 	Sound ModulatedTone stopped
+144.5437 	EXP 	New trial (rep=1, index=0): None
+144.6319 	EXP 	CloseEyes: autoDraw = False
+144.6319 	EXP 	OpenEyes: autoDraw = False
+144.6319 	EXP 	CloseEyes: autoDraw = True
+174.5197 	EXP 	Sound ModulatedTone started
+174.5194 	EXP 	OpenEyes: autoDraw = True
+174.6362 	EXP 	CloseEyes: autoDraw = False
+204.5331 	EXP 	Sound ModulatedTone stopped
+204.5340 	EXP 	New trial (rep=2, index=0): None
+204.6241 	EXP 	OpenEyes: autoDraw = False
+204.6241 	EXP 	CloseEyes: autoDraw = False
+204.6241 	EXP 	OpenEyes: autoDraw = False
+204.6241 	EXP 	CloseEyes: autoDraw = True
+234.5131 	EXP 	Sound ModulatedTone started
+234.5146 	EXP 	OpenEyes: autoDraw = True
+234.6307 	EXP 	CloseEyes: autoDraw = False
+264.5231 	EXP 	Sound ModulatedTone stopped
+264.5239 	EXP 	New trial (rep=3, index=0): None
+264.6018 	EXP 	OpenEyes: autoDraw = False
+264.6018 	EXP 	CloseEyes: autoDraw = False
+264.6018 	EXP 	OpenEyes: autoDraw = False
+264.6018 	EXP 	CloseEyes: autoDraw = True
+294.5239 	EXP 	Sound ModulatedTone started
+294.5290 	EXP 	OpenEyes: autoDraw = True
+294.6085 	EXP 	CloseEyes: autoDraw = False
+324.5431 	EXP 	Sound ModulatedTone stopped
+324.5441 	EXP 	New trial (rep=4, index=0): None
+324.6281 	EXP 	CloseEyes: autoDraw = False
+324.6281 	EXP 	OpenEyes: autoDraw = False
+324.6281 	EXP 	CloseEyes: autoDraw = True
+354.5184 	EXP 	Sound ModulatedTone started
+354.5177 	EXP 	OpenEyes: autoDraw = True
+354.6340 	EXP 	CloseEyes: autoDraw = False
+384.5332 	EXP 	Sound ModulatedTone stopped
+384.5345 	EXP 	New trial (rep=5, index=0): None
+384.6221 	EXP 	OpenEyes: autoDraw = False
+384.6221 	EXP 	CloseEyes: autoDraw = False
+384.6221 	EXP 	OpenEyes: autoDraw = False
+384.6221 	EXP 	CloseEyes: autoDraw = True
+414.5119 	EXP 	Sound ModulatedTone started
+414.5127 	EXP 	OpenEyes: autoDraw = True
+414.6281 	EXP 	CloseEyes: autoDraw = False
+444.5226 	EXP 	Sound ModulatedTone stopped
+444.5235 	EXP 	New trial (rep=6, index=0): None
+444.6010 	EXP 	OpenEyes: autoDraw = False
+444.6010 	EXP 	CloseEyes: autoDraw = False
+444.6010 	EXP 	OpenEyes: autoDraw = False
+444.6010 	EXP 	CloseEyes: autoDraw = True
+474.5229 	EXP 	Sound ModulatedTone started
+474.5245 	EXP 	OpenEyes: autoDraw = True
+474.6063 	EXP 	CloseEyes: autoDraw = False
+504.5327 	EXP 	Sound ModulatedTone stopped
+504.5331 	EXP 	New trial (rep=7, index=0): None
+504.6271 	EXP 	CloseEyes: autoDraw = False
+504.6271 	EXP 	OpenEyes: autoDraw = False
+504.6271 	EXP 	CloseEyes: autoDraw = True
+534.5160 	EXP 	Sound ModulatedTone started
+534.5165 	EXP 	OpenEyes: autoDraw = True
+534.6343 	EXP 	CloseEyes: autoDraw = False
+564.5329 	EXP 	Sound ModulatedTone stopped
+564.5337 	EXP 	New trial (rep=8, index=0): None
+564.6204 	EXP 	OpenEyes: autoDraw = False
+564.6204 	EXP 	CloseEyes: autoDraw = False
+564.6204 	EXP 	OpenEyes: autoDraw = False
+564.6204 	EXP 	CloseEyes: autoDraw = True
+594.5101 	EXP 	Sound ModulatedTone started
+594.5107 	EXP 	OpenEyes: autoDraw = True
+594.6276 	EXP 	CloseEyes: autoDraw = False
+624.5229 	EXP 	Sound ModulatedTone stopped
+624.5243 	EXP 	New trial (rep=9, index=0): None
+624.6493 	EXP 	OpenEyes: autoDraw = False
+624.6493 	EXP 	CloseEyes: autoDraw = False
+624.6493 	EXP 	OpenEyes: autoDraw = False
+624.6493 	EXP 	CloseEyes: autoDraw = True
+654.5126 	EXP 	Sound ModulatedTone started
+654.5045 	EXP 	OpenEyes: autoDraw = True
+654.6546 	EXP 	CloseEyes: autoDraw = False
+684.5101 	EXP 	OpenEyes: autoDraw = False
+684.5327 	EXP 	Sound ModulatedTone stopped
+684.5434 	EXP 	CloseEyes: autoDraw = False
+684.5434 	EXP 	OpenEyes: autoDraw = False
+684.5434 	EXP 	text_4: autoDraw = True
+1058.7135 	DATA 	Keypress: escape
+1059.3394 	EXP 	window1: mouseVisible = True
