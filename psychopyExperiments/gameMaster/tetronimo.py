@@ -218,7 +218,6 @@ def runGame():
 
             if not isValidPosition(board, fallingPiece):
                 board = getBlankBoard() # return for original functionlity: end game on fail. Here though we clear the board and decrease the score by 20 which decreases the level by 2.
-                score = score - 20
                 #return # can't fit a new piece on the board, so game over
 
         checkForQuit()
