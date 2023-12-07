@@ -228,7 +228,7 @@ def runGame():
                     DISPLAYSURF.fill(BGCOLOR)
                     pygame.mixer.music.stop()
                     showTextScreen('Paused') # pause until a key press
-                    pygame.mixer.music.play(-1, 0.0)
+                    #pygame.mixer.music.play(-1, 0.0) # we dont have music thankfully
                     lastFallTime = time.time()
                     lastMoveDownTime = time.time()
                     lastMoveSidewaysTime = time.time()
