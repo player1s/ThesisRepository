@@ -12,6 +12,7 @@ Created on Thu Nov 30 10:29:55 2023
 @author: elpid
 """
 
+gameTimeInSeconds = 60
 
 import random, time, pygame, sys
 from pygame.locals import *
@@ -183,7 +184,7 @@ def main():
         #pygame.mixer.music.play(-1, 0.0)
         runGame()
         #pygame.mixer.music.stop()
-        showTextScreen('Press space to continue')
+        showTextScreen('Done')
         return
 
 
@@ -206,8 +207,8 @@ def runGame():
     while True: # game loop
         nowTime = time.time()
 
-        #if nowTime > playTime + 10:
-        #    return
+        if nowTime > playTime + gameTimeInSeconds:
+            return
         
         if fallingPiece == None:
             # No falling piece in play, so start a new piece at the top
@@ -217,7 +218,6 @@ def runGame():
 
             if not isValidPosition(board, fallingPiece):
                 board = getBlankBoard() # return for original functionlity: end game on fail. Here though we clear the board and decrease the score by 20 which decreases the level by 2.
-                score = score - 20
                 #return # can't fit a new piece on the board, so game over
 
         checkForQuit()
@@ -354,7 +354,7 @@ def showTextScreen(text):
     DISPLAYSURF.blit(titleSurf, titleRect)
 
     # Draw the additional "Press a key to play." text.
-    pressKeySurf, pressKeyRect = makeTextObjs('Press a key to play.', BASICFONT, TEXTCOLOR)
+    pressKeySurf, pressKeyRect = makeTextObjs('Press space to continue.', BASICFONT, TEXTCOLOR)
     pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
     DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
 
