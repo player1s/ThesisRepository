@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on December 11, 2023, at 12:32
+    on December 11, 2023, at 13:48
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -140,6 +140,26 @@ info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
 outlet = StreamOutlet(info)
 
 
+# --- Initialize components for Routine "VAS_F" ---
+text_11 = visual.TextStim(win=win, name='text_11',
+    text=None,
+    font='Open Sans',
+    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+# Run 'Begin Experiment' code from code_12
+fatigueAssessmentInventoryString = ''
+fatigueAssessmentInventoryCounter = 0
+questionAmount = 18
+slider_3 = visual.Slider(win=win, name='slider_3',
+    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
+    labels=("not at all: " + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + str(10)), ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), granularity=1.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.03,
+    flip=False, ori=0.0, depth=-2, readOnly=False)
+
 # --- Initialize components for Routine "Fatigue_Assessment_Inventory" ---
 text_5 = visual.TextStim(win=win, name='text_5',
     text=None,
@@ -151,7 +171,7 @@ text_5 = visual.TextStim(win=win, name='text_5',
 # Run 'Begin Experiment' code from code_10
 fatigueAssessmentInventoryString = ''
 fatigueAssessmentInventoryCounter = 0
-questionAmount = 2
+questionAmount = 29
 slider = visual.Slider(win=win, name='slider',
     startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
     labels=("Disagree: " + str(1), 2, 3, 4, 5, 6, "Agree: " + str(7)), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
@@ -160,9 +180,49 @@ slider = visual.Slider(win=win, name='slider',
     font='Open Sans', labelHeight=0.03,
     flip=False, ori=0.0, depth=-2, readOnly=False)
 
+# --- Initialize components for Routine "Stanford_sleepiness_scale" ---
+text_10 = visual.TextStim(win=win, name='text_10',
+    text=None,
+    font='Open Sans',
+    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+# Run 'Begin Experiment' code from code_11
+fatigueAssessmentInventoryString = ''
+fatigueAssessmentInventoryCounter = 0
+questionAmount = 29
+slider_2 = visual.Slider(win=win, name='slider_2',
+    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
+    labels=("Disagree: " + str(1), 2, 3, 4, 5, 6, "Agree: " + str(7)), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.03,
+    flip=False, ori=0.0, depth=-2, readOnly=False)
+
+# --- Initialize components for Routine "VAS_F" ---
+text_11 = visual.TextStim(win=win, name='text_11',
+    text=None,
+    font='Open Sans',
+    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+# Run 'Begin Experiment' code from code_12
+fatigueAssessmentInventoryString = ''
+fatigueAssessmentInventoryCounter = 0
+questionAmount = 18
+slider_3 = visual.Slider(win=win, name='slider_3',
+    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
+    labels=("not at all: " + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + str(10)), ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), granularity=1.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.03,
+    flip=False, ori=0.0, depth=-2, readOnly=False)
+
 # --- Initialize components for Routine "Baseline" ---
 text_4 = visual.TextStim(win=win, name='text_4',
-    text='5 seconds of rest, please stay still. (raise to 30 later for baseline)',
+    text='Wait until the impedances are good. \nCollect baseline measurements.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -171,7 +231,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 
 # --- Initialize components for Routine "InstructionsPVT" ---
 InstructionsText = visual.TextStim(win=win, name='InstructionsText',
-    text='Welcome!\n\n\nIn this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
+    text='In this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -251,7 +311,7 @@ text_7 = visual.TextStim(win=win, name='text_7',
 
 # --- Initialize components for Routine "InstructionsPVT" ---
 InstructionsText = visual.TextStim(win=win, name='InstructionsText',
-    text='Welcome!\n\n\nIn this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
+    text='In this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -331,7 +391,7 @@ text_7 = visual.TextStim(win=win, name='text_7',
 
 # --- Initialize components for Routine "InstructionsPVT" ---
 InstructionsText = visual.TextStim(win=win, name='InstructionsText',
-    text='Welcome!\n\n\nIn this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
+    text='In this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -418,7 +478,7 @@ text_5 = visual.TextStim(win=win, name='text_5',
 # Run 'Begin Experiment' code from code_10
 fatigueAssessmentInventoryString = ''
 fatigueAssessmentInventoryCounter = 0
-questionAmount = 2
+questionAmount = 29
 slider = visual.Slider(win=win, name='slider',
     startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
     labels=("Disagree: " + str(1), 2, 3, 4, 5, 6, "Agree: " + str(7)), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
@@ -538,6 +598,152 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
+trials_9 = data.TrialHandler(nReps=questionAmount, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=[None],
+    seed=None, name='trials_9')
+thisExp.addLoop(trials_9)  # add the loop to the experiment
+thisTrial_9 = trials_9.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_9.rgb)
+if thisTrial_9 != None:
+    for paramName in thisTrial_9:
+        exec('{} = thisTrial_9[paramName]'.format(paramName))
+
+for thisTrial_9 in trials_9:
+    currentLoop = trials_9
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_9.rgb)
+    if thisTrial_9 != None:
+        for paramName in thisTrial_9:
+            exec('{} = thisTrial_9[paramName]'.format(paramName))
+    
+    # --- Prepare to start Routine "VAS_F" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    text_11.setText('')
+    # Run 'Begin Routine' code from code_12
+    fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
+    word = ""
+    
+    if fatigueAssessmentInventoryCounter == 1:
+        word = "tired"
+    elif fatigueAssessmentInventoryCounter == 2:
+        word = "sleepy"
+    elif fatigueAssessmentInventoryCounter == 3:
+        word = "drowsy"
+    elif fatigueAssessmentInventoryCounter == 4:
+        word = "fatigued"
+    elif fatigueAssessmentInventoryCounter == 5:
+        word = "worn out"
+    elif fatigueAssessmentInventoryCounter == 6:
+        word = "energetic"
+    elif fatigueAssessmentInventoryCounter == 7:
+        word = "active"
+    elif fatigueAssessmentInventoryCounter == 8:
+        word = "vigorous"
+    elif fatigueAssessmentInventoryCounter == 9:
+        word = "efficient"
+    elif fatigueAssessmentInventoryCounter == 10:
+        word = "lively"
+    elif fatigueAssessmentInventoryCounter == 11:
+        word = "bushed"
+    elif fatigueAssessmentInventoryCounter == 12:
+        word = "exhausted"
+    elif fatigueAssessmentInventoryCounter == 13:
+        word = "easy to keep my eyes open"
+    elif fatigueAssessmentInventoryCounter == 14:
+        word = "easy to move my body"
+    elif fatigueAssessmentInventoryCounter == 15:
+        word = "easy to concentrate"
+    elif fatigueAssessmentInventoryCounter == 16:
+        word = "easy to talk"
+    elif fatigueAssessmentInventoryCounter == 17:
+        word = "desired to close my eyes"
+    elif fatigueAssessmentInventoryCounter == 18:
+        word = "desired to lie down"
+    slider_3.labe = ("not " + word + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + word + str(10))
+    slider_3.reset()
+    # keep track of which components have finished
+    VAS_FComponents = [text_11, slider_3]
+    for thisComponent in VAS_FComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "VAS_F" ---
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_11* updates
+        if text_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_11.frameNStart = frameN  # exact frame index
+            text_11.tStart = t  # local t and not account for scr refresh
+            text_11.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_11, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_11.started')
+            text_11.setAutoDraw(True)
+        
+        # *slider_3* updates
+        if slider_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            slider_3.frameNStart = frameN  # exact frame index
+            slider_3.tStart = t  # local t and not account for scr refresh
+            slider_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(slider_3, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'slider_3.started')
+            slider_3.setAutoDraw(True)
+        
+        # Check slider_3 for response to end routine
+        if slider_3.getRating() is not None and slider_3.status == STARTED:
+            continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in VAS_FComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "VAS_F" ---
+    for thisComponent in VAS_FComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_9.addData('slider_3.response', slider_3.getRating())
+    trials_9.addData('slider_3.rt', slider_3.getRT())
+    # the Routine "VAS_F" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    thisExp.nextEntry()
+    
+# completed questionAmount repeats of 'trials_9'
+
+
+# set up handler to look after randomisation of conditions etc
 trials_7 = data.TrialHandler(nReps=questionAmount, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
@@ -568,6 +774,60 @@ for thisTrial_7 in trials_7:
         text_5.text = "I feel drowsy when I am fatigued"
     elif fatigueAssessmentInventoryCounter == 2:
         text_5.text = "When I am fatigued, I lose my patience"
+    elif fatigueAssessmentInventoryCounter == 3:
+        text_5.text = "My motivation is lower when I am fatigued"
+    elif fatigueAssessmentInventoryCounter == 4:
+        text_5.text = "When I am fatigued, I have difficulty concentrating"
+    elif fatigueAssessmentInventoryCounter == 5:
+        text_5.text = "Exercise brings on my fatigue"
+    elif fatigueAssessmentInventoryCounter == 6:
+        text_5.text = "Heat brings on my fatigue"
+    elif fatigueAssessmentInventoryCounter == 7:
+        text_5.text = "Long periods of inactivity bring on my fatigue"
+    elif fatigueAssessmentInventoryCounter == 8:
+        text_5.text = "Stress brings on my fatigue"
+    elif fatigueAssessmentInventoryCounter == 9:
+        text_5.text = "Depression brings on my fatigue"
+    elif fatigueAssessmentInventoryCounter == 10:
+        text_5.text = "Work brings on my fatigue"
+    elif fatigueAssessmentInventoryCounter == 11:
+        text_5.text = "My fatigue is worse in the afternoon"
+    elif fatigueAssessmentInventoryCounter == 12:
+        text_5.text = "My fatigue is worse in the morning"
+    elif fatigueAssessmentInventoryCounter == 13:
+        text_5.text = "Performance of routine daily activities increases my fatigue"
+    elif fatigueAssessmentInventoryCounter == 14:
+        text_5.text = "Resting lessens my fatigue"
+    elif fatigueAssessmentInventoryCounter == 15:
+        text_5.text = "Sleeping lessens my fatigue"
+    elif fatigueAssessmentInventoryCounter == 16:
+        text_5.text = "Cool temperatures lessen my fatiuge"
+    elif fatigueAssessmentInventoryCounter == 17:
+        text_5.text = "Positive experiences lessen my fatigue"
+    elif fatigueAssessmentInventoryCounter == 18:
+        text_5.text = "I am easily fatigued"
+    elif fatigueAssessmentInventoryCounter == 19:
+        text_5.text = "Fatigue interferes with my physical functioning"
+    elif fatigueAssessmentInventoryCounter == 20:
+        text_5.text = "Fatiuge causes frequent problems for me"
+    elif fatigueAssessmentInventoryCounter == 21:
+        text_5.text = "My fatigue prevents sustained physical functioning"
+    elif fatigueAssessmentInventoryCounter == 22:
+        text_5.text = "Fatigues interferes with carrying out certain duties and responsibilities"
+    elif fatigueAssessmentInventoryCounter == 23:
+        text_5.text = "Fatiuge predated other symptoms of my condition"
+    elif fatigueAssessmentInventoryCounter == 24:
+        text_5.text = "Fatigue is my most disabling symptom"
+    elif fatigueAssessmentInventoryCounter == 25:
+        text_5.text = "Fatiuge is among my 3 most disabling symptoms"
+    elif fatigueAssessmentInventoryCounter == 26:
+        text_5.text = "Fatigue interferes with my work, family or social life"
+    elif fatigueAssessmentInventoryCounter == 27:
+        text_5.text = "Fatigue makes other symptoms worse"
+    elif fatigueAssessmentInventoryCounter == 28:
+        text_5.text = "Fatigue that i now experience is different in quality or severity than the fatigue i experienced before i developed this condition"
+    elif fatigueAssessmentInventoryCounter == 29:
+        text_5.text = "I experienced prolonged fatigue after exercise"
     slider.reset()
     # keep track of which components have finished
     Fatigue_Assessment_InventoryComponents = [text_5, slider]
@@ -602,13 +862,6 @@ for thisTrial_7 in trials_7:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'text_5.started')
             text_5.setAutoDraw(True)
-        # Run 'Each Frame' code from code_10
-        keys = key_resp_4.getKeys(['1','2','3','4','5','6','7'], waitRelease=True)
-        
-        for key in keys:
-            if not key == "":
-                thisExp.addData('FAI' + str(fatigueAssessmentInventoryCounter), key)
-                continueRoutine = False
         
         # *slider* updates
         if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -654,6 +907,295 @@ for thisTrial_7 in trials_7:
     thisExp.nextEntry()
     
 # completed questionAmount repeats of 'trials_7'
+
+
+# --- Prepare to start Routine "Stanford_sleepiness_scale" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+text_10.setText('')
+# Run 'Begin Routine' code from code_11
+fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
+
+if fatigueAssessmentInventoryCounter == 1:
+    text_5.text = "I feel drowsy when I am fatigued"
+elif fatigueAssessmentInventoryCounter == 2:
+    text_5.text = "When I am fatigued, I lose my patience"
+elif fatigueAssessmentInventoryCounter == 3:
+    text_5.text = "My motivation is lower when I am fatigued"
+elif fatigueAssessmentInventoryCounter == 4:
+    text_5.text = "When I am fatigued, I have difficulty concentrating"
+elif fatigueAssessmentInventoryCounter == 5:
+    text_5.text = "Exercise brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 6:
+    text_5.text = "Heat brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 7:
+    text_5.text = "Long periods of inactivity bring on my fatigue"
+elif fatigueAssessmentInventoryCounter == 8:
+    text_5.text = "Stress brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 9:
+    text_5.text = "Depression brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 10:
+    text_5.text = "Work brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 11:
+    text_5.text = "My fatigue is worse in the afternoon"
+elif fatigueAssessmentInventoryCounter == 12:
+    text_5.text = "My fatigue is worse in the morning"
+elif fatigueAssessmentInventoryCounter == 13:
+    text_5.text = "Performance of routine daily activities increases my fatigue"
+elif fatigueAssessmentInventoryCounter == 14:
+    text_5.text = "Resting lessens my fatigue"
+elif fatigueAssessmentInventoryCounter == 15:
+    text_5.text = "Sleeping lessens my fatigue"
+elif fatigueAssessmentInventoryCounter == 16:
+    text_5.text = "Cool temperatures lessen my fatiuge"
+elif fatigueAssessmentInventoryCounter == 17:
+    text_5.text = "Positive experiences lessen my fatigue"
+elif fatigueAssessmentInventoryCounter == 18:
+    text_5.text = "I am easily fatigued"
+elif fatigueAssessmentInventoryCounter == 19:
+    text_5.text = "Fatigue interferes with my physical functioning"
+elif fatigueAssessmentInventoryCounter == 20:
+    text_5.text = "Fatiuge causes frequent problems for me"
+elif fatigueAssessmentInventoryCounter == 21:
+    text_5.text = "My fatigue prevents sustained physical functioning"
+elif fatigueAssessmentInventoryCounter == 22:
+    text_5.text = "Fatigues interferes with carrying out certain duties and responsibilities"
+elif fatigueAssessmentInventoryCounter == 23:
+    text_5.text = "Fatiuge predated other symptoms of my condition"
+elif fatigueAssessmentInventoryCounter == 24:
+    text_5.text = "Fatigue is my most disabling symptom"
+elif fatigueAssessmentInventoryCounter == 25:
+    text_5.text = "Fatiuge is among my 3 most disabling symptoms"
+elif fatigueAssessmentInventoryCounter == 26:
+    text_5.text = "Fatigue interferes with my work, family or social life"
+elif fatigueAssessmentInventoryCounter == 27:
+    text_5.text = "Fatigue makes other symptoms worse"
+elif fatigueAssessmentInventoryCounter == 28:
+    text_5.text = "Fatigue that i now experience is different in quality or severity than the fatigue i experienced before i developed this condition"
+elif fatigueAssessmentInventoryCounter == 29:
+    text_5.text = "I experienced prolonged fatigue after exercise"
+slider_2.reset()
+# keep track of which components have finished
+Stanford_sleepiness_scaleComponents = [text_10, slider_2]
+for thisComponent in Stanford_sleepiness_scaleComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "Stanford_sleepiness_scale" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_10* updates
+    if text_10.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_10.frameNStart = frameN  # exact frame index
+        text_10.tStart = t  # local t and not account for scr refresh
+        text_10.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_10, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'text_10.started')
+        text_10.setAutoDraw(True)
+    
+    # *slider_2* updates
+    if slider_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        slider_2.frameNStart = frameN  # exact frame index
+        slider_2.tStart = t  # local t and not account for scr refresh
+        slider_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(slider_2, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'slider_2.started')
+        slider_2.setAutoDraw(True)
+    
+    # Check slider_2 for response to end routine
+    if slider_2.getRating() is not None and slider_2.status == STARTED:
+        continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in Stanford_sleepiness_scaleComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "Stanford_sleepiness_scale" ---
+for thisComponent in Stanford_sleepiness_scaleComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('slider_2.response', slider_2.getRating())
+thisExp.addData('slider_2.rt', slider_2.getRT())
+# the Routine "Stanford_sleepiness_scale" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# set up handler to look after randomisation of conditions etc
+trials_8 = data.TrialHandler(nReps=questionAmount, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=[None],
+    seed=None, name='trials_8')
+thisExp.addLoop(trials_8)  # add the loop to the experiment
+thisTrial_8 = trials_8.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_8.rgb)
+if thisTrial_8 != None:
+    for paramName in thisTrial_8:
+        exec('{} = thisTrial_8[paramName]'.format(paramName))
+
+for thisTrial_8 in trials_8:
+    currentLoop = trials_8
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_8.rgb)
+    if thisTrial_8 != None:
+        for paramName in thisTrial_8:
+            exec('{} = thisTrial_8[paramName]'.format(paramName))
+    
+    # --- Prepare to start Routine "VAS_F" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    text_11.setText('')
+    # Run 'Begin Routine' code from code_12
+    fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
+    word = ""
+    
+    if fatigueAssessmentInventoryCounter == 1:
+        word = "tired"
+    elif fatigueAssessmentInventoryCounter == 2:
+        word = "sleepy"
+    elif fatigueAssessmentInventoryCounter == 3:
+        word = "drowsy"
+    elif fatigueAssessmentInventoryCounter == 4:
+        word = "fatigued"
+    elif fatigueAssessmentInventoryCounter == 5:
+        word = "worn out"
+    elif fatigueAssessmentInventoryCounter == 6:
+        word = "energetic"
+    elif fatigueAssessmentInventoryCounter == 7:
+        word = "active"
+    elif fatigueAssessmentInventoryCounter == 8:
+        word = "vigorous"
+    elif fatigueAssessmentInventoryCounter == 9:
+        word = "efficient"
+    elif fatigueAssessmentInventoryCounter == 10:
+        word = "lively"
+    elif fatigueAssessmentInventoryCounter == 11:
+        word = "bushed"
+    elif fatigueAssessmentInventoryCounter == 12:
+        word = "exhausted"
+    elif fatigueAssessmentInventoryCounter == 13:
+        word = "easy to keep my eyes open"
+    elif fatigueAssessmentInventoryCounter == 14:
+        word = "easy to move my body"
+    elif fatigueAssessmentInventoryCounter == 15:
+        word = "easy to concentrate"
+    elif fatigueAssessmentInventoryCounter == 16:
+        word = "easy to talk"
+    elif fatigueAssessmentInventoryCounter == 17:
+        word = "desired to close my eyes"
+    elif fatigueAssessmentInventoryCounter == 18:
+        word = "desired to lie down"
+    slider_3.labe = ("not " + word + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + word + str(10))
+    slider_3.reset()
+    # keep track of which components have finished
+    VAS_FComponents = [text_11, slider_3]
+    for thisComponent in VAS_FComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "VAS_F" ---
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_11* updates
+        if text_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_11.frameNStart = frameN  # exact frame index
+            text_11.tStart = t  # local t and not account for scr refresh
+            text_11.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_11, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_11.started')
+            text_11.setAutoDraw(True)
+        
+        # *slider_3* updates
+        if slider_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            slider_3.frameNStart = frameN  # exact frame index
+            slider_3.tStart = t  # local t and not account for scr refresh
+            slider_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(slider_3, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'slider_3.started')
+            slider_3.setAutoDraw(True)
+        
+        # Check slider_3 for response to end routine
+        if slider_3.getRating() is not None and slider_3.status == STARTED:
+            continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in VAS_FComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "VAS_F" ---
+    for thisComponent in VAS_FComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_8.addData('slider_3.response', slider_3.getRating())
+    trials_8.addData('slider_3.rt', slider_3.getRT())
+    # the Routine "VAS_F" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    thisExp.nextEntry()
+    
+# completed questionAmount repeats of 'trials_8'
 
 
 # --- Prepare to start Routine "Baseline" ---
@@ -4315,6 +4857,60 @@ if fatigueAssessmentInventoryCounter == 1:
     text_5.text = "I feel drowsy when I am fatigued"
 elif fatigueAssessmentInventoryCounter == 2:
     text_5.text = "When I am fatigued, I lose my patience"
+elif fatigueAssessmentInventoryCounter == 3:
+    text_5.text = "My motivation is lower when I am fatigued"
+elif fatigueAssessmentInventoryCounter == 4:
+    text_5.text = "When I am fatigued, I have difficulty concentrating"
+elif fatigueAssessmentInventoryCounter == 5:
+    text_5.text = "Exercise brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 6:
+    text_5.text = "Heat brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 7:
+    text_5.text = "Long periods of inactivity bring on my fatigue"
+elif fatigueAssessmentInventoryCounter == 8:
+    text_5.text = "Stress brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 9:
+    text_5.text = "Depression brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 10:
+    text_5.text = "Work brings on my fatigue"
+elif fatigueAssessmentInventoryCounter == 11:
+    text_5.text = "My fatigue is worse in the afternoon"
+elif fatigueAssessmentInventoryCounter == 12:
+    text_5.text = "My fatigue is worse in the morning"
+elif fatigueAssessmentInventoryCounter == 13:
+    text_5.text = "Performance of routine daily activities increases my fatigue"
+elif fatigueAssessmentInventoryCounter == 14:
+    text_5.text = "Resting lessens my fatigue"
+elif fatigueAssessmentInventoryCounter == 15:
+    text_5.text = "Sleeping lessens my fatigue"
+elif fatigueAssessmentInventoryCounter == 16:
+    text_5.text = "Cool temperatures lessen my fatiuge"
+elif fatigueAssessmentInventoryCounter == 17:
+    text_5.text = "Positive experiences lessen my fatigue"
+elif fatigueAssessmentInventoryCounter == 18:
+    text_5.text = "I am easily fatigued"
+elif fatigueAssessmentInventoryCounter == 19:
+    text_5.text = "Fatigue interferes with my physical functioning"
+elif fatigueAssessmentInventoryCounter == 20:
+    text_5.text = "Fatiuge causes frequent problems for me"
+elif fatigueAssessmentInventoryCounter == 21:
+    text_5.text = "My fatigue prevents sustained physical functioning"
+elif fatigueAssessmentInventoryCounter == 22:
+    text_5.text = "Fatigues interferes with carrying out certain duties and responsibilities"
+elif fatigueAssessmentInventoryCounter == 23:
+    text_5.text = "Fatiuge predated other symptoms of my condition"
+elif fatigueAssessmentInventoryCounter == 24:
+    text_5.text = "Fatigue is my most disabling symptom"
+elif fatigueAssessmentInventoryCounter == 25:
+    text_5.text = "Fatiuge is among my 3 most disabling symptoms"
+elif fatigueAssessmentInventoryCounter == 26:
+    text_5.text = "Fatigue interferes with my work, family or social life"
+elif fatigueAssessmentInventoryCounter == 27:
+    text_5.text = "Fatigue makes other symptoms worse"
+elif fatigueAssessmentInventoryCounter == 28:
+    text_5.text = "Fatigue that i now experience is different in quality or severity than the fatigue i experienced before i developed this condition"
+elif fatigueAssessmentInventoryCounter == 29:
+    text_5.text = "I experienced prolonged fatigue after exercise"
 slider.reset()
 # keep track of which components have finished
 Fatigue_Assessment_InventoryComponents = [text_5, slider]
@@ -4349,13 +4945,6 @@ while continueRoutine:
         # add timestamp to datafile
         thisExp.timestampOnFlip(win, 'text_5.started')
         text_5.setAutoDraw(True)
-    # Run 'Each Frame' code from code_10
-    keys = key_resp_4.getKeys(['1','2','3','4','5','6','7'], waitRelease=True)
-    
-    for key in keys:
-        if not key == "":
-            thisExp.addData('FAI' + str(fatigueAssessmentInventoryCounter), key)
-            continueRoutine = False
     
     # *slider* updates
     if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
