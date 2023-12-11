@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on November 08, 2023, at 16:36
+    on December 08, 2023, at 15:20
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -246,7 +246,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=50, method='random', 
+trials_2 = data.TrialHandler(nReps=2, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('aud_conditions3.xlsx'),
     seed=None, name='trials_2')
@@ -428,7 +428,7 @@ for thisTrial_2 in trials_2:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 50 repeats of 'trials_2'
+# completed 2 repeats of 'trials_2'
 
 
 # --- Prepare to start Routine "End" ---

@@ -1,0 +1,5 @@
+﻿trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,text_2.started,key_resp.started,key_resp.keys,key_resp.rt,text_5.started,FAI1,FAI2,text_4.started,text_4.stopped,InstructionsText.started,InstrucKey.started,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,27.34499330003746,27.34499330003746,space,3.9172491000499576,,,,,,,,948150,001,2023-12-11_10h57.37.567,game,2022.2.5,61.15418741564903,
+0,0,0,0,,,,,31.288606600021012,<psychopy.hardware.keyboard.KeyPress object at 0x000001A4C400A8E0>,,,,,,948150,001,2023-12-11_10h57.37.567,game,2022.2.5,61.15418741564903,
+1,0,1,0,,,,,33.736110000056215,,<psychopy.hardware.keyboard.KeyPress object at 0x000001A4C400A040>,,,,,948150,001,2023-12-11_10h57.37.567,game,2022.2.5,61.15418741564903,
+,,,,,,,,,,,34.3522290000692,35.35167840006761,35.35167840006761,35.35167840006761,,,,,,,
