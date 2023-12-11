@@ -2,21 +2,21 @@ Gigantic game experiment!!44!!
 
 dont forget to modify: 
     
-    pvt length in total
+    pvt length in total: 3 min
     
     pvt amount of trials
     
     maths amount of trials
     
-    maths overall length
+    maths overall length 5 min
     
-    tetris overall time
+    tetris overall time 30 min
     
     tetris time until break
     
     tetris amount of breaks
     
-    snake overall time
+    snake overall time 30 min
     
     snake time until break
     
@@ -32,7 +32,7 @@ dont forget to modify:
         - 1: startBaseline
 - 2: startPvt
     - 3: pvt itemAppears
-    - reaction time
+    - reaction time (this code saves the data: thisExp.addData('RTms', Response.rt * 1000)) 
 - 4: startMaths
     - 5: correct answer
     - amount of submitted answers

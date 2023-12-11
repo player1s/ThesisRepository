@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on December 11, 2023, at 13:48
+    on December 11, 2023, at 16:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -113,7 +113,7 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "Starter" ---
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='to start, press space',
+    text='Self evaluation: \n- Stanford sleepiness scale\n- VAS-F\n- Fatigue Assessment Inventory\nto start, press space',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -130,9 +130,13 @@ correctAnswer = 5
 startTetris = 6
 tetrisFail = 7
 tetrisLvlUp = 8
-startSnake = 9
-snakeFail = 10
-snakeLvlUp = 11
+pauseTetris = 9
+startSnake = 10
+snakeFail = 11
+snakeLvlUp = 12
+pauseSnake = 13
+
+minuteOrSecond = 1 #1: test. 60: measurement. multiplies experiment durations (seconds). 
 
 info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
                   channel_format='int32', source_id='Psychopy Markers')
@@ -140,85 +144,7 @@ info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
 outlet = StreamOutlet(info)
 
 
-# --- Initialize components for Routine "VAS_F" ---
-text_11 = visual.TextStim(win=win, name='text_11',
-    text=None,
-    font='Open Sans',
-    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-# Run 'Begin Experiment' code from code_12
-fatigueAssessmentInventoryString = ''
-fatigueAssessmentInventoryCounter = 0
-questionAmount = 18
-slider_3 = visual.Slider(win=win, name='slider_3',
-    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
-    labels=("not at all: " + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + str(10)), ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), granularity=1.0,
-    style='rating', styleTweaks=(), opacity=None,
-    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-    font='Open Sans', labelHeight=0.03,
-    flip=False, ori=0.0, depth=-2, readOnly=False)
-
-# --- Initialize components for Routine "Fatigue_Assessment_Inventory" ---
-text_5 = visual.TextStim(win=win, name='text_5',
-    text=None,
-    font='Open Sans',
-    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-# Run 'Begin Experiment' code from code_10
-fatigueAssessmentInventoryString = ''
-fatigueAssessmentInventoryCounter = 0
-questionAmount = 29
-slider = visual.Slider(win=win, name='slider',
-    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
-    labels=("Disagree: " + str(1), 2, 3, 4, 5, 6, "Agree: " + str(7)), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
-    style='rating', styleTweaks=(), opacity=None,
-    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-    font='Open Sans', labelHeight=0.03,
-    flip=False, ori=0.0, depth=-2, readOnly=False)
-
-# --- Initialize components for Routine "Stanford_sleepiness_scale" ---
-text_10 = visual.TextStim(win=win, name='text_10',
-    text=None,
-    font='Open Sans',
-    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-# Run 'Begin Experiment' code from code_11
-fatigueAssessmentInventoryString = ''
-fatigueAssessmentInventoryCounter = 0
-questionAmount = 29
-slider_2 = visual.Slider(win=win, name='slider_2',
-    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
-    labels=("Disagree: " + str(1), 2, 3, 4, 5, 6, "Agree: " + str(7)), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
-    style='rating', styleTweaks=(), opacity=None,
-    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-    font='Open Sans', labelHeight=0.03,
-    flip=False, ori=0.0, depth=-2, readOnly=False)
-
-# --- Initialize components for Routine "VAS_F" ---
-text_11 = visual.TextStim(win=win, name='text_11',
-    text=None,
-    font='Open Sans',
-    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-# Run 'Begin Experiment' code from code_12
-fatigueAssessmentInventoryString = ''
-fatigueAssessmentInventoryCounter = 0
-questionAmount = 18
-slider_3 = visual.Slider(win=win, name='slider_3',
-    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
-    labels=("not at all: " + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + str(10)), ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), granularity=1.0,
-    style='rating', styleTweaks=(), opacity=None,
-    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-    font='Open Sans', labelHeight=0.03,
-    flip=False, ori=0.0, depth=-2, readOnly=False)
+# --- Initialize components for Routine "Snake" ---
 
 # --- Initialize components for Routine "Baseline" ---
 text_4 = visual.TextStim(win=win, name='text_4',
@@ -247,7 +173,7 @@ minISI = 1
 maxISI = 4
 
 # Task duration
-length_of_task = 180
+length_of_task = 10 * minuteOrSecond
 
 # Feedback duration 
 feed = 0.5
@@ -327,7 +253,7 @@ minISI = 1
 maxISI = 4
 
 # Task duration
-length_of_task = 180
+length_of_task = 10 * minuteOrSecond
 
 # Feedback duration 
 feed = 0.5
@@ -407,7 +333,7 @@ minISI = 1
 maxISI = 4
 
 # Task duration
-length_of_task = 180
+length_of_task = 10 * minuteOrSecond
 
 # Feedback duration 
 feed = 0.5
@@ -466,26 +392,6 @@ text_7 = visual.TextStim(win=win, name='text_7',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-2.0);
-
-# --- Initialize components for Routine "Fatigue_Assessment_Inventory" ---
-text_5 = visual.TextStim(win=win, name='text_5',
-    text=None,
-    font='Open Sans',
-    pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-# Run 'Begin Experiment' code from code_10
-fatigueAssessmentInventoryString = ''
-fatigueAssessmentInventoryCounter = 0
-questionAmount = 29
-slider = visual.Slider(win=win, name='slider',
-    startValue=4, size=(1.0, 0.1), pos=(0,-0.1), units=None,
-    labels=("Disagree: " + str(1), 2, 3, 4, 5, 6, "Agree: " + str(7)), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
-    style='rating', styleTweaks=(), opacity=None,
-    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-    font='Open Sans', labelHeight=0.03,
-    flip=False, ori=0.0, depth=-2, readOnly=False)
 
 # --- Initialize components for Routine "Ender" ---
 text_3 = visual.TextStim(win=win, name='text_3',
@@ -597,388 +503,300 @@ thisExp.nextEntry()
 # the Routine "Starter" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# set up handler to look after randomisation of conditions etc
-trials_9 = data.TrialHandler(nReps=questionAmount, method='random', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=[None],
-    seed=None, name='trials_9')
-thisExp.addLoop(trials_9)  # add the loop to the experiment
-thisTrial_9 = trials_9.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial_9.rgb)
-if thisTrial_9 != None:
-    for paramName in thisTrial_9:
-        exec('{} = thisTrial_9[paramName]'.format(paramName))
-
-for thisTrial_9 in trials_9:
-    currentLoop = trials_9
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_9.rgb)
-    if thisTrial_9 != None:
-        for paramName in thisTrial_9:
-            exec('{} = thisTrial_9[paramName]'.format(paramName))
-    
-    # --- Prepare to start Routine "VAS_F" ---
-    continueRoutine = True
-    routineForceEnded = False
-    # update component parameters for each repeat
-    text_11.setText('')
-    # Run 'Begin Routine' code from code_12
-    fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
-    word = ""
-    
-    if fatigueAssessmentInventoryCounter == 1:
-        word = "tired"
-    elif fatigueAssessmentInventoryCounter == 2:
-        word = "sleepy"
-    elif fatigueAssessmentInventoryCounter == 3:
-        word = "drowsy"
-    elif fatigueAssessmentInventoryCounter == 4:
-        word = "fatigued"
-    elif fatigueAssessmentInventoryCounter == 5:
-        word = "worn out"
-    elif fatigueAssessmentInventoryCounter == 6:
-        word = "energetic"
-    elif fatigueAssessmentInventoryCounter == 7:
-        word = "active"
-    elif fatigueAssessmentInventoryCounter == 8:
-        word = "vigorous"
-    elif fatigueAssessmentInventoryCounter == 9:
-        word = "efficient"
-    elif fatigueAssessmentInventoryCounter == 10:
-        word = "lively"
-    elif fatigueAssessmentInventoryCounter == 11:
-        word = "bushed"
-    elif fatigueAssessmentInventoryCounter == 12:
-        word = "exhausted"
-    elif fatigueAssessmentInventoryCounter == 13:
-        word = "easy to keep my eyes open"
-    elif fatigueAssessmentInventoryCounter == 14:
-        word = "easy to move my body"
-    elif fatigueAssessmentInventoryCounter == 15:
-        word = "easy to concentrate"
-    elif fatigueAssessmentInventoryCounter == 16:
-        word = "easy to talk"
-    elif fatigueAssessmentInventoryCounter == 17:
-        word = "desired to close my eyes"
-    elif fatigueAssessmentInventoryCounter == 18:
-        word = "desired to lie down"
-    slider_3.labe = ("not " + word + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + word + str(10))
-    slider_3.reset()
-    # keep track of which components have finished
-    VAS_FComponents = [text_11, slider_3]
-    for thisComponent in VAS_FComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "VAS_F" ---
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *text_11* updates
-        if text_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_11.frameNStart = frameN  # exact frame index
-            text_11.tStart = t  # local t and not account for scr refresh
-            text_11.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_11, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_11.started')
-            text_11.setAutoDraw(True)
-        
-        # *slider_3* updates
-        if slider_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            slider_3.frameNStart = frameN  # exact frame index
-            slider_3.tStart = t  # local t and not account for scr refresh
-            slider_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(slider_3, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'slider_3.started')
-            slider_3.setAutoDraw(True)
-        
-        # Check slider_3 for response to end routine
-        if slider_3.getRating() is not None and slider_3.status == STARTED:
-            continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in VAS_FComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "VAS_F" ---
-    for thisComponent in VAS_FComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials_9.addData('slider_3.response', slider_3.getRating())
-    trials_9.addData('slider_3.rt', slider_3.getRT())
-    # the Routine "VAS_F" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed questionAmount repeats of 'trials_9'
-
-
-# set up handler to look after randomisation of conditions etc
-trials_7 = data.TrialHandler(nReps=questionAmount, method='sequential', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=[None],
-    seed=None, name='trials_7')
-thisExp.addLoop(trials_7)  # add the loop to the experiment
-thisTrial_7 = trials_7.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial_7.rgb)
-if thisTrial_7 != None:
-    for paramName in thisTrial_7:
-        exec('{} = thisTrial_7[paramName]'.format(paramName))
-
-for thisTrial_7 in trials_7:
-    currentLoop = trials_7
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_7.rgb)
-    if thisTrial_7 != None:
-        for paramName in thisTrial_7:
-            exec('{} = thisTrial_7[paramName]'.format(paramName))
-    
-    # --- Prepare to start Routine "Fatigue_Assessment_Inventory" ---
-    continueRoutine = True
-    routineForceEnded = False
-    # update component parameters for each repeat
-    text_5.setText('')
-    # Run 'Begin Routine' code from code_10
-    fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
-    
-    if fatigueAssessmentInventoryCounter == 1:
-        text_5.text = "I feel drowsy when I am fatigued"
-    elif fatigueAssessmentInventoryCounter == 2:
-        text_5.text = "When I am fatigued, I lose my patience"
-    elif fatigueAssessmentInventoryCounter == 3:
-        text_5.text = "My motivation is lower when I am fatigued"
-    elif fatigueAssessmentInventoryCounter == 4:
-        text_5.text = "When I am fatigued, I have difficulty concentrating"
-    elif fatigueAssessmentInventoryCounter == 5:
-        text_5.text = "Exercise brings on my fatigue"
-    elif fatigueAssessmentInventoryCounter == 6:
-        text_5.text = "Heat brings on my fatigue"
-    elif fatigueAssessmentInventoryCounter == 7:
-        text_5.text = "Long periods of inactivity bring on my fatigue"
-    elif fatigueAssessmentInventoryCounter == 8:
-        text_5.text = "Stress brings on my fatigue"
-    elif fatigueAssessmentInventoryCounter == 9:
-        text_5.text = "Depression brings on my fatigue"
-    elif fatigueAssessmentInventoryCounter == 10:
-        text_5.text = "Work brings on my fatigue"
-    elif fatigueAssessmentInventoryCounter == 11:
-        text_5.text = "My fatigue is worse in the afternoon"
-    elif fatigueAssessmentInventoryCounter == 12:
-        text_5.text = "My fatigue is worse in the morning"
-    elif fatigueAssessmentInventoryCounter == 13:
-        text_5.text = "Performance of routine daily activities increases my fatigue"
-    elif fatigueAssessmentInventoryCounter == 14:
-        text_5.text = "Resting lessens my fatigue"
-    elif fatigueAssessmentInventoryCounter == 15:
-        text_5.text = "Sleeping lessens my fatigue"
-    elif fatigueAssessmentInventoryCounter == 16:
-        text_5.text = "Cool temperatures lessen my fatiuge"
-    elif fatigueAssessmentInventoryCounter == 17:
-        text_5.text = "Positive experiences lessen my fatigue"
-    elif fatigueAssessmentInventoryCounter == 18:
-        text_5.text = "I am easily fatigued"
-    elif fatigueAssessmentInventoryCounter == 19:
-        text_5.text = "Fatigue interferes with my physical functioning"
-    elif fatigueAssessmentInventoryCounter == 20:
-        text_5.text = "Fatiuge causes frequent problems for me"
-    elif fatigueAssessmentInventoryCounter == 21:
-        text_5.text = "My fatigue prevents sustained physical functioning"
-    elif fatigueAssessmentInventoryCounter == 22:
-        text_5.text = "Fatigues interferes with carrying out certain duties and responsibilities"
-    elif fatigueAssessmentInventoryCounter == 23:
-        text_5.text = "Fatiuge predated other symptoms of my condition"
-    elif fatigueAssessmentInventoryCounter == 24:
-        text_5.text = "Fatigue is my most disabling symptom"
-    elif fatigueAssessmentInventoryCounter == 25:
-        text_5.text = "Fatiuge is among my 3 most disabling symptoms"
-    elif fatigueAssessmentInventoryCounter == 26:
-        text_5.text = "Fatigue interferes with my work, family or social life"
-    elif fatigueAssessmentInventoryCounter == 27:
-        text_5.text = "Fatigue makes other symptoms worse"
-    elif fatigueAssessmentInventoryCounter == 28:
-        text_5.text = "Fatigue that i now experience is different in quality or severity than the fatigue i experienced before i developed this condition"
-    elif fatigueAssessmentInventoryCounter == 29:
-        text_5.text = "I experienced prolonged fatigue after exercise"
-    slider.reset()
-    # keep track of which components have finished
-    Fatigue_Assessment_InventoryComponents = [text_5, slider]
-    for thisComponent in Fatigue_Assessment_InventoryComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "Fatigue_Assessment_Inventory" ---
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *text_5* updates
-        if text_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_5.frameNStart = frameN  # exact frame index
-            text_5.tStart = t  # local t and not account for scr refresh
-            text_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_5.started')
-            text_5.setAutoDraw(True)
-        
-        # *slider* updates
-        if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            slider.frameNStart = frameN  # exact frame index
-            slider.tStart = t  # local t and not account for scr refresh
-            slider.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(slider, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'slider.started')
-            slider.setAutoDraw(True)
-        
-        # Check slider for response to end routine
-        if slider.getRating() is not None and slider.status == STARTED:
-            continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in Fatigue_Assessment_InventoryComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "Fatigue_Assessment_Inventory" ---
-    for thisComponent in Fatigue_Assessment_InventoryComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials_7.addData('slider.response', slider.getRating())
-    trials_7.addData('slider.rt', slider.getRT())
-    # the Routine "Fatigue_Assessment_Inventory" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed questionAmount repeats of 'trials_7'
-
-
-# --- Prepare to start Routine "Stanford_sleepiness_scale" ---
+# --- Prepare to start Routine "Snake" ---
 continueRoutine = True
 routineForceEnded = False
 # update component parameters for each repeat
-text_10.setText('')
-# Run 'Begin Routine' code from code_11
-fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
+# Run 'Begin Routine' code from code_4
+# Wormy (a Nibbles clone)
+# By Al Sweigart al@inventwithpython.com
+# http://inventwithpython.com/pygame
+# Released under a "Simplified BSD" license
 
-if fatigueAssessmentInventoryCounter == 1:
-    text_5.text = "I feel drowsy when I am fatigued"
-elif fatigueAssessmentInventoryCounter == 2:
-    text_5.text = "When I am fatigued, I lose my patience"
-elif fatigueAssessmentInventoryCounter == 3:
-    text_5.text = "My motivation is lower when I am fatigued"
-elif fatigueAssessmentInventoryCounter == 4:
-    text_5.text = "When I am fatigued, I have difficulty concentrating"
-elif fatigueAssessmentInventoryCounter == 5:
-    text_5.text = "Exercise brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 6:
-    text_5.text = "Heat brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 7:
-    text_5.text = "Long periods of inactivity bring on my fatigue"
-elif fatigueAssessmentInventoryCounter == 8:
-    text_5.text = "Stress brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 9:
-    text_5.text = "Depression brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 10:
-    text_5.text = "Work brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 11:
-    text_5.text = "My fatigue is worse in the afternoon"
-elif fatigueAssessmentInventoryCounter == 12:
-    text_5.text = "My fatigue is worse in the morning"
-elif fatigueAssessmentInventoryCounter == 13:
-    text_5.text = "Performance of routine daily activities increases my fatigue"
-elif fatigueAssessmentInventoryCounter == 14:
-    text_5.text = "Resting lessens my fatigue"
-elif fatigueAssessmentInventoryCounter == 15:
-    text_5.text = "Sleeping lessens my fatigue"
-elif fatigueAssessmentInventoryCounter == 16:
-    text_5.text = "Cool temperatures lessen my fatiuge"
-elif fatigueAssessmentInventoryCounter == 17:
-    text_5.text = "Positive experiences lessen my fatigue"
-elif fatigueAssessmentInventoryCounter == 18:
-    text_5.text = "I am easily fatigued"
-elif fatigueAssessmentInventoryCounter == 19:
-    text_5.text = "Fatigue interferes with my physical functioning"
-elif fatigueAssessmentInventoryCounter == 20:
-    text_5.text = "Fatiuge causes frequent problems for me"
-elif fatigueAssessmentInventoryCounter == 21:
-    text_5.text = "My fatigue prevents sustained physical functioning"
-elif fatigueAssessmentInventoryCounter == 22:
-    text_5.text = "Fatigues interferes with carrying out certain duties and responsibilities"
-elif fatigueAssessmentInventoryCounter == 23:
-    text_5.text = "Fatiuge predated other symptoms of my condition"
-elif fatigueAssessmentInventoryCounter == 24:
-    text_5.text = "Fatigue is my most disabling symptom"
-elif fatigueAssessmentInventoryCounter == 25:
-    text_5.text = "Fatiuge is among my 3 most disabling symptoms"
-elif fatigueAssessmentInventoryCounter == 26:
-    text_5.text = "Fatigue interferes with my work, family or social life"
-elif fatigueAssessmentInventoryCounter == 27:
-    text_5.text = "Fatigue makes other symptoms worse"
-elif fatigueAssessmentInventoryCounter == 28:
-    text_5.text = "Fatigue that i now experience is different in quality or severity than the fatigue i experienced before i developed this condition"
-elif fatigueAssessmentInventoryCounter == 29:
-    text_5.text = "I experienced prolonged fatigue after exercise"
-slider_2.reset()
+repetitions = 5
+timesUntilBreak = 5 * minuteOrSecond
+
+outlet.push_sample(x=[startSnake])
+print('startSnake')
+
+import random, pygame, sys, time
+from pygame.locals import *
+
+FPS = 15
+WINDOWWIDTH = 640
+WINDOWHEIGHT = 480
+CELLSIZE = 20
+assert WINDOWWIDTH % CELLSIZE == 0, "Window width must be a multiple of cell size."
+assert WINDOWHEIGHT % CELLSIZE == 0, "Window height must be a multiple of cell size."
+CELLWIDTH = int(WINDOWWIDTH / CELLSIZE)
+CELLHEIGHT = int(WINDOWHEIGHT / CELLSIZE)
+
+#             R    G    B
+WHITE     = (255, 255, 255)
+BLACK     = (  0,   0,   0)
+RED       = (255,   0,   0)
+GREEN     = (  0, 255,   0)
+DARKGREEN = (  0, 155,   0)
+DARKGRAY  = ( 40,  40,  40)
+BGCOLOR = BLACK
+
+UP = 'up'
+DOWN = 'down'
+LEFT = 'left'
+RIGHT = 'right'
+
+HEAD = 0 # syntactic sugar: index of the worm's head
+
+def main():
+    counter = 0
+    global FPSCLOCK, DISPLAYSURF, BASICFONT
+
+    pygame.init()
+    FPSCLOCK = pygame.time.Clock()
+    DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
+    BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
+    pygame.display.set_caption('Wormy')
+
+    showStartScreen()
+    breakTime = time.time()
+    while not counter == repetitions:
+        runGame(breakTime, counter)
+    showTextScreen("Done")
+
+
+def runGame(breakTime, counter):
+    # start at top left.
+    startx = 0 #random.randint(5, CELLWIDTH - 6)
+    starty = 0 #random.randint(5, CELLHEIGHT - 6)
+    wormCoords = [{'x': startx,     'y': starty},
+                  {'x': startx - 1, 'y': starty},
+                  {'x': startx - 2, 'y': starty}]
+    direction = RIGHT
+
+    # Start the apple in a random place.
+    apple = getRandomLocation()
+
+    while True: # main game loop
+
+        nowTime = time.time()
+        
+        if nowTime > breakTime + timesUntilBreak:
+            # Pausing the game
+            #pauseMsg() # pause until a key press
+            outlet.push_sample(x=[pauseSnake])
+            print('pauseSnake')
+            showTextScreen("Paused")
+            outlet.push_sample(x=[startSnake])
+            print('startSnake')
+            breakTime = time.time()
+            counter = counter + 1
+
+        for event in pygame.event.get(): # event handling loop
+            if event.type == QUIT:
+                terminate()
+            elif event.type == KEYDOWN:
+                if (event.key == K_LEFT or event.key == K_a) and direction != RIGHT:
+                    direction = LEFT
+                elif (event.key == K_RIGHT or event.key == K_d) and direction != LEFT:
+                    direction = RIGHT
+                elif (event.key == K_UP or event.key == K_w) and direction != DOWN:
+                    direction = UP
+                elif (event.key == K_DOWN or event.key == K_s) and direction != UP:
+                    direction = DOWN
+                elif event.key == K_ESCAPE:
+                    terminate()
+
+        # check if the worm has hit itself or the edge
+        if wormCoords[HEAD]['x'] == -1 or wormCoords[HEAD]['x'] == CELLWIDTH or wormCoords[HEAD]['y'] == -1 or wormCoords[HEAD]['y'] == CELLHEIGHT:
+            outlet.push_sample(x=[snakeFail])
+            print('snakeFail')
+            return # game over
+        for wormBody in wormCoords[1:]:
+            if wormBody['x'] == wormCoords[HEAD]['x'] and wormBody['y'] == wormCoords[HEAD]['y']:
+                outlet.push_sample(x=[snakeFail])
+                print('snakeFail')
+                return # game over
+
+        # check if worm has eaten an apply
+        if wormCoords[HEAD]['x'] == apple['x'] and wormCoords[HEAD]['y'] == apple['y']:
+            # don't remove worm's tail segment
+            outlet.push_sample(x=[snakeLvlUp])
+            print('snakeLvlUp')
+            apple = getRandomLocation() # set a new apple somewhere
+        else:
+            del wormCoords[-1] # remove worm's tail segment
+
+        # move the worm by adding a segment in the direction it is moving
+        if direction == UP:
+            newHead = {'x': wormCoords[HEAD]['x'], 'y': wormCoords[HEAD]['y'] - 1}
+        elif direction == DOWN:
+            newHead = {'x': wormCoords[HEAD]['x'], 'y': wormCoords[HEAD]['y'] + 1}
+        elif direction == LEFT:
+            newHead = {'x': wormCoords[HEAD]['x'] - 1, 'y': wormCoords[HEAD]['y']}
+        elif direction == RIGHT:
+            newHead = {'x': wormCoords[HEAD]['x'] + 1, 'y': wormCoords[HEAD]['y']}
+        wormCoords.insert(0, newHead)
+        DISPLAYSURF.fill(BGCOLOR)
+        drawGrid()
+        drawWorm(wormCoords)
+        drawApple(apple)
+        drawScore(len(wormCoords) - 3)
+        pygame.display.update()
+        FPSCLOCK.tick(FPS)
+
+
+def drawPressKeyMsg():
+    pressKeySurf = BASICFONT.render('Press a key to play.', True, DARKGRAY)
+    pressKeyRect = pressKeySurf.get_rect()
+    pressKeyRect.topleft = (WINDOWWIDTH - 200, WINDOWHEIGHT - 30)
+    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
+
+def pauseMsg():
+    pressKeySurf = BASICFONT.render('Paused, talk to instructor', True, DARKGRAY)
+    pressKeyRect = pressKeySurf.get_rect()
+    pressKeyRect.topleft = (WINDOWWIDTH - 200, WINDOWHEIGHT - 30)
+    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
+
+
+def checkForKeyPress():
+    if len(pygame.event.get(QUIT)) > 0:
+        terminate()
+
+    keyUpEvents = pygame.event.get(KEYUP)
+    if len(keyUpEvents) == 0:
+        return None
+    if keyUpEvents[0].key == K_SPACE:
+        return 1
+    if keyUpEvents[0].key == K_ESCAPE:
+        terminate()
+    return keyUpEvents[0].key
+
+
+def showStartScreen():
+    titleFont = pygame.font.Font('freesansbold.ttf', 100)
+    titleSurf1 = titleFont.render('Wormy!', True, WHITE, DARKGREEN)
+    titleSurf2 = titleFont.render('Wormy!', True, GREEN)
+
+    degrees1 = 0
+    degrees2 = 0
+    while True:
+        DISPLAYSURF.fill(BGCOLOR)
+        rotatedSurf1 = pygame.transform.rotate(titleSurf1, degrees1)
+        rotatedRect1 = rotatedSurf1.get_rect()
+        rotatedRect1.center = (WINDOWWIDTH / 2, WINDOWHEIGHT / 2)
+        DISPLAYSURF.blit(rotatedSurf1, rotatedRect1)
+
+        rotatedSurf2 = pygame.transform.rotate(titleSurf2, degrees2)
+        rotatedRect2 = rotatedSurf2.get_rect()
+        rotatedRect2.center = (WINDOWWIDTH / 2, WINDOWHEIGHT / 2)
+        DISPLAYSURF.blit(rotatedSurf2, rotatedRect2)
+
+        drawPressKeyMsg()
+
+        if checkForKeyPress():
+            pygame.event.get() # clear event queue
+            return
+        pygame.display.update()
+        FPSCLOCK.tick(FPS)
+        degrees1 += 3 # rotate by 3 degrees each frame
+        degrees2 += 7 # rotate by 7 degrees each frame
+
+
+def terminate():
+    pygame.quit()
+    sys.exit()
+
+
+def getRandomLocation():
+    return {'x': random.randint(0, CELLWIDTH - 1), 'y': random.randint(0, CELLHEIGHT - 1)}
+
+def makeTextObjs(text, font, color):
+    surf = font.render(text, True, color)
+    return surf, surf.get_rect()
+
+def showTextScreen(text):
+    BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
+    BIGFONT = pygame.font.Font('freesansbold.ttf', 100)
+    TEXTCOLOR = WHITE
+    TEXTSHADOWCOLOR = GREEN
+    # This function displays large text in the
+    # center of the screen until a key is pressed.
+    # Draw the text drop shadow
+    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTSHADOWCOLOR)
+    titleRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2))
+    DISPLAYSURF.blit(titleSurf, titleRect)
+
+    # Draw the text
+    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTCOLOR)
+    titleRect.center = (int(WINDOWWIDTH / 2) - 3, int(WINDOWHEIGHT / 2) - 3)
+    DISPLAYSURF.blit(titleSurf, titleRect)
+
+    # Draw the additional "Press a key to play." text.
+    pressKeySurf, pressKeyRect = makeTextObjs('Talk to the instructor', BASICFONT, TEXTCOLOR)
+    pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
+    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
+
+    while not (checkForKeyPress() == 1):
+        pygame.display.update()
+        FPSCLOCK.tick()
+
+def showGameOverScreen():
+    gameOverFont = pygame.font.Font('freesansbold.ttf', 150)
+    gameSurf = gameOverFont.render('Game', True, WHITE)
+    overSurf = gameOverFont.render('Over', True, WHITE)
+    gameRect = gameSurf.get_rect()
+    overRect = overSurf.get_rect()
+    gameRect.midtop = (WINDOWWIDTH / 2, 10)
+    overRect.midtop = (WINDOWWIDTH / 2, gameRect.height + 10 + 25)
+
+    DISPLAYSURF.blit(gameSurf, gameRect)
+    DISPLAYSURF.blit(overSurf, overRect)
+    drawPressKeyMsg()
+    pygame.display.update()
+    pygame.time.wait(500)
+    checkForKeyPress() # clear out any key presses in the event queue
+
+    while True:
+        if checkForKeyPress():
+            pygame.event.get() # clear event queue
+            return
+
+def drawScore(score):
+    scoreSurf = BASICFONT.render('Score: %s' % (score), True, WHITE)
+    scoreRect = scoreSurf.get_rect()
+    scoreRect.topleft = (WINDOWWIDTH - 120, 10)
+    DISPLAYSURF.blit(scoreSurf, scoreRect)
+
+
+def drawWorm(wormCoords):
+    for coord in wormCoords:
+        x = coord['x'] * CELLSIZE
+        y = coord['y'] * CELLSIZE
+        wormSegmentRect = pygame.Rect(x, y, CELLSIZE, CELLSIZE)
+        pygame.draw.rect(DISPLAYSURF, DARKGREEN, wormSegmentRect)
+        wormInnerSegmentRect = pygame.Rect(x + 4, y + 4, CELLSIZE - 8, CELLSIZE - 8)
+        pygame.draw.rect(DISPLAYSURF, GREEN, wormInnerSegmentRect)
+
+
+def drawApple(coord):
+    x = coord['x'] * CELLSIZE
+    y = coord['y'] * CELLSIZE
+    appleRect = pygame.Rect(x, y, CELLSIZE, CELLSIZE)
+    pygame.draw.rect(DISPLAYSURF, RED, appleRect)
+
+
+def drawGrid():
+    for x in range(0, WINDOWWIDTH, CELLSIZE): # draw vertical lines
+        pygame.draw.line(DISPLAYSURF, DARKGRAY, (x, 0), (x, WINDOWHEIGHT))
+    for y in range(0, WINDOWHEIGHT, CELLSIZE): # draw horizontal lines
+        pygame.draw.line(DISPLAYSURF, DARKGRAY, (0, y), (WINDOWWIDTH, y))
+
+
+if __name__ == '__main__':
+    main()
 # keep track of which components have finished
-Stanford_sleepiness_scaleComponents = [text_10, slider_2]
-for thisComponent in Stanford_sleepiness_scaleComponents:
+SnakeComponents = []
+for thisComponent in SnakeComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
     thisComponent.tStartRefresh = None
@@ -990,7 +808,7 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
-# --- Run Routine "Stanford_sleepiness_scale" ---
+# --- Run Routine "Snake" ---
 while continueRoutine:
     # get current time
     t = routineTimer.getTime()
@@ -998,32 +816,6 @@ while continueRoutine:
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
-    
-    # *text_10* updates
-    if text_10.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text_10.frameNStart = frameN  # exact frame index
-        text_10.tStart = t  # local t and not account for scr refresh
-        text_10.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_10, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'text_10.started')
-        text_10.setAutoDraw(True)
-    
-    # *slider_2* updates
-    if slider_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        slider_2.frameNStart = frameN  # exact frame index
-        slider_2.tStart = t  # local t and not account for scr refresh
-        slider_2.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(slider_2, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'slider_2.started')
-        slider_2.setAutoDraw(True)
-    
-    # Check slider_2 for response to end routine
-    if slider_2.getRating() is not None and slider_2.status == STARTED:
-        continueRoutine = False
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1034,7 +826,7 @@ while continueRoutine:
         routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Stanford_sleepiness_scaleComponents:
+    for thisComponent in SnakeComponents:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -1043,160 +835,12 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# --- Ending Routine "Stanford_sleepiness_scale" ---
-for thisComponent in Stanford_sleepiness_scaleComponents:
+# --- Ending Routine "Snake" ---
+for thisComponent in SnakeComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('slider_2.response', slider_2.getRating())
-thisExp.addData('slider_2.rt', slider_2.getRT())
-# the Routine "Stanford_sleepiness_scale" was not non-slip safe, so reset the non-slip timer
+# the Routine "Snake" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
-
-# set up handler to look after randomisation of conditions etc
-trials_8 = data.TrialHandler(nReps=questionAmount, method='random', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=[None],
-    seed=None, name='trials_8')
-thisExp.addLoop(trials_8)  # add the loop to the experiment
-thisTrial_8 = trials_8.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial_8.rgb)
-if thisTrial_8 != None:
-    for paramName in thisTrial_8:
-        exec('{} = thisTrial_8[paramName]'.format(paramName))
-
-for thisTrial_8 in trials_8:
-    currentLoop = trials_8
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_8.rgb)
-    if thisTrial_8 != None:
-        for paramName in thisTrial_8:
-            exec('{} = thisTrial_8[paramName]'.format(paramName))
-    
-    # --- Prepare to start Routine "VAS_F" ---
-    continueRoutine = True
-    routineForceEnded = False
-    # update component parameters for each repeat
-    text_11.setText('')
-    # Run 'Begin Routine' code from code_12
-    fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
-    word = ""
-    
-    if fatigueAssessmentInventoryCounter == 1:
-        word = "tired"
-    elif fatigueAssessmentInventoryCounter == 2:
-        word = "sleepy"
-    elif fatigueAssessmentInventoryCounter == 3:
-        word = "drowsy"
-    elif fatigueAssessmentInventoryCounter == 4:
-        word = "fatigued"
-    elif fatigueAssessmentInventoryCounter == 5:
-        word = "worn out"
-    elif fatigueAssessmentInventoryCounter == 6:
-        word = "energetic"
-    elif fatigueAssessmentInventoryCounter == 7:
-        word = "active"
-    elif fatigueAssessmentInventoryCounter == 8:
-        word = "vigorous"
-    elif fatigueAssessmentInventoryCounter == 9:
-        word = "efficient"
-    elif fatigueAssessmentInventoryCounter == 10:
-        word = "lively"
-    elif fatigueAssessmentInventoryCounter == 11:
-        word = "bushed"
-    elif fatigueAssessmentInventoryCounter == 12:
-        word = "exhausted"
-    elif fatigueAssessmentInventoryCounter == 13:
-        word = "easy to keep my eyes open"
-    elif fatigueAssessmentInventoryCounter == 14:
-        word = "easy to move my body"
-    elif fatigueAssessmentInventoryCounter == 15:
-        word = "easy to concentrate"
-    elif fatigueAssessmentInventoryCounter == 16:
-        word = "easy to talk"
-    elif fatigueAssessmentInventoryCounter == 17:
-        word = "desired to close my eyes"
-    elif fatigueAssessmentInventoryCounter == 18:
-        word = "desired to lie down"
-    slider_3.labe = ("not " + word + str(1), 2, 3, 4, 5, 6, 7, 8, 9,  "Very" + word + str(10))
-    slider_3.reset()
-    # keep track of which components have finished
-    VAS_FComponents = [text_11, slider_3]
-    for thisComponent in VAS_FComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "VAS_F" ---
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *text_11* updates
-        if text_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_11.frameNStart = frameN  # exact frame index
-            text_11.tStart = t  # local t and not account for scr refresh
-            text_11.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_11, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_11.started')
-            text_11.setAutoDraw(True)
-        
-        # *slider_3* updates
-        if slider_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            slider_3.frameNStart = frameN  # exact frame index
-            slider_3.tStart = t  # local t and not account for scr refresh
-            slider_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(slider_3, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'slider_3.started')
-            slider_3.setAutoDraw(True)
-        
-        # Check slider_3 for response to end routine
-        if slider_3.getRating() is not None and slider_3.status == STARTED:
-            continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in VAS_FComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "VAS_F" ---
-    for thisComponent in VAS_FComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials_8.addData('slider_3.response', slider_3.getRating())
-    trials_8.addData('slider_3.rt', slider_3.getRT())
-    # the Routine "VAS_F" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed questionAmount repeats of 'trials_8'
-
 
 # --- Prepare to start Routine "Baseline" ---
 continueRoutine = True
@@ -1283,6 +927,9 @@ routineForceEnded = False
 InstrucKey.keys = []
 InstrucKey.rt = []
 _InstrucKey_allKeys = []
+# Run 'Begin Routine' code from code_9
+pvtSectionLength = 3 * minuteOrSecond
+pvtStarter = time.time()
 # keep track of which components have finished
 InstructionsPVTComponents = [InstructionsText, InstrucKey]
 for thisComponent in InstructionsPVTComponents:
@@ -1377,7 +1024,7 @@ outlet.push_sample(x=[startPvt])
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=2.0, method='random', 
+trials = data.TrialHandler(nReps=99.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials')
@@ -1441,7 +1088,7 @@ for thisTrial in trials:
         
         # Append True to list if a key is pressed, clear list if not
         if "space" in keys:
-             message = "Too soon!"
+             message = 'Too soon!'
              continueRoutine = False
             
         
@@ -1565,7 +1212,7 @@ for thisTrial in trials:
     frameN = -1
     
     # --- Run Routine "Target" ---
-    while continueRoutine and routineTimer.getTime() < 30.0:
+    while continueRoutine and routineTimer.getTime() < 5.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1590,7 +1237,7 @@ for thisTrial in trials:
             Targetstim.setAutoDraw(True)
         if Targetstim.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Targetstim.tStartRefresh + 30-frameTolerance:
+            if tThisFlipGlobal > Targetstim.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 Targetstim.tStop = t  # not accounting for scr refresh
                 Targetstim.frameNStop = frameN  # exact frame index
@@ -1617,7 +1264,7 @@ for thisTrial in trials:
             win.callOnFlip(Response.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if Response.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Response.tStartRefresh + 30-frameTolerance:
+            if tThisFlipGlobal > Response.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 Response.tStop = t  # not accounting for scr refresh
                 Response.frameNStop = frameN  # exact frame index
@@ -1662,7 +1309,7 @@ for thisTrial in trials:
         thisExp.addData('RTms', Response.rt * 1000)
         
     # PsychoPy is not running the trial for more than 29.991...
-    if timing.getTime() >= 29.99:
+    if timing.getTime() >= 4.99:
             message = 'No response!'
             Response.rt = timing.getTime()
             thisExp.addData('RTms', np.NAN)
@@ -1678,7 +1325,7 @@ for thisTrial in trials:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-30.000000)
+        routineTimer.addTime(-5.000000)
     
     # --- Prepare to start Routine "Feedback" ---
     continueRoutine = True
@@ -1803,19 +1450,20 @@ for thisTrial in trials:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # Run 'End Routine' code from End_task_2
+    import time
     # Get the time in the task
     time_in_task = overall_timer.getTime()
+    nowtime = time.time()
     
     # If time_in_task corresponds to the duration we set previously we end te task
-    if time_in_task >= length_of_task:
+    if nowtime > pvtStarter + pvtSectionLength:
+        currentLoop.finished = True
         continueRoutine = False
-        PVT_Trials.finished = True
-    
     # the Routine "End_task" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials'
+# completed 99.0 repeats of 'trials'
 
 
 # --- Prepare to start Routine "Maths_Intro" ---
@@ -1916,14 +1564,14 @@ if key_resp_2.keys != None:  # we had a response
 thisExp.nextEntry()
 # Run 'End Routine' code from code_8
 mathStarter = time.time()
-mathSectionLength = 5
+mathSectionLength = 5  * minuteOrSecond
 print('startMaths')
 outlet.push_sample(x=[startMaths])
 # the Routine "Maths_Intro" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_3 = data.TrialHandler(nReps=2.0, method='random', 
+trials_3 = data.TrialHandler(nReps=99.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials_3')
@@ -2054,9 +1702,13 @@ for thisTrial_3 in trials_3:
         # update/draw components on each frame
         # Run 'Each Frame' code from code_7
         nowtime = time.time()
+        msg = ""
         
         if nowtime > mathStarter + mathSectionLength:
+            text_7.text=""
             continueRoutine = False
+            currentLoop.finished = True
+            msg = "time is up"
         
         keys = key_resp_4.getKeys(['1','2','3','4','5','6','7','8','9','0'], waitRelease=True)
         
@@ -2132,9 +1784,10 @@ for thisTrial_3 in trials_3:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # Run 'End Routine' code from code_7
-    print('correctAnswer')
-    outlet.push_sample(x=[correctAnswer])
-    thisExp.addData("MathsFailCounter", failCounter)
+    if not msg == "time is up":
+        print('correctAnswer')
+        outlet.push_sample(x=[correctAnswer])
+        thisExp.addData("MathsFailCounter", failCounter)
     # check responses
     if key_resp_4.keys in ['', [], None]:  # No response was made
         key_resp_4.keys = None
@@ -2145,7 +1798,7 @@ for thisTrial_3 in trials_3:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials_3'
+# completed 99.0 repeats of 'trials_3'
 
 
 # --- Prepare to start Routine "Tetris" ---
@@ -2169,8 +1822,8 @@ Created on Thu Nov 30 10:29:55 2023
 print('startTetris')
 outlet.push_sample(x=[startTetris])
 
-repetitions = 2
-timesUntilBreak = 5
+repetitions = 5
+timesUntilBreak = 5  * minuteOrSecond
 tetrisFailCount = 0
 
 
@@ -2379,7 +2032,11 @@ def runGame():
             # Pausing the game
             DISPLAYSURF.fill(BGCOLOR)
             pygame.mixer.music.stop()
+            print('pauseTetris')
+            outlet.push_sample(x=[pauseTetris])
             showTextScreen('Paused') # pause until a key press
+            print('startTetris')
+            outlet.push_sample(x=[startTetris])
             #pygame.mixer.music.play(-1, 0.0) # we dont have music thankfully
             lastFallTime = time.time()
             lastMoveDownTime = time.time()
@@ -2771,6 +2428,9 @@ routineForceEnded = False
 InstrucKey.keys = []
 InstrucKey.rt = []
 _InstrucKey_allKeys = []
+# Run 'Begin Routine' code from code_9
+pvtSectionLength = 3 * minuteOrSecond
+pvtStarter = time.time()
 # keep track of which components have finished
 InstructionsPVTComponents = [InstructionsText, InstrucKey]
 for thisComponent in InstructionsPVTComponents:
@@ -2865,7 +2525,7 @@ outlet.push_sample(x=[startPvt])
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_6 = data.TrialHandler(nReps=2.0, method='random', 
+trials_6 = data.TrialHandler(nReps=99.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials_6')
@@ -2929,7 +2589,7 @@ for thisTrial_6 in trials_6:
         
         # Append True to list if a key is pressed, clear list if not
         if "space" in keys:
-             message = "Too soon!"
+             message = 'Too soon!'
              continueRoutine = False
             
         
@@ -3053,7 +2713,7 @@ for thisTrial_6 in trials_6:
     frameN = -1
     
     # --- Run Routine "Target" ---
-    while continueRoutine and routineTimer.getTime() < 30.0:
+    while continueRoutine and routineTimer.getTime() < 5.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -3078,7 +2738,7 @@ for thisTrial_6 in trials_6:
             Targetstim.setAutoDraw(True)
         if Targetstim.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Targetstim.tStartRefresh + 30-frameTolerance:
+            if tThisFlipGlobal > Targetstim.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 Targetstim.tStop = t  # not accounting for scr refresh
                 Targetstim.frameNStop = frameN  # exact frame index
@@ -3105,7 +2765,7 @@ for thisTrial_6 in trials_6:
             win.callOnFlip(Response.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if Response.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Response.tStartRefresh + 30-frameTolerance:
+            if tThisFlipGlobal > Response.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 Response.tStop = t  # not accounting for scr refresh
                 Response.frameNStop = frameN  # exact frame index
@@ -3150,7 +2810,7 @@ for thisTrial_6 in trials_6:
         thisExp.addData('RTms', Response.rt * 1000)
         
     # PsychoPy is not running the trial for more than 29.991...
-    if timing.getTime() >= 29.99:
+    if timing.getTime() >= 4.99:
             message = 'No response!'
             Response.rt = timing.getTime()
             thisExp.addData('RTms', np.NAN)
@@ -3166,7 +2826,7 @@ for thisTrial_6 in trials_6:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-30.000000)
+        routineTimer.addTime(-5.000000)
     
     # --- Prepare to start Routine "Feedback" ---
     continueRoutine = True
@@ -3291,19 +2951,20 @@ for thisTrial_6 in trials_6:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # Run 'End Routine' code from End_task_2
+    import time
     # Get the time in the task
     time_in_task = overall_timer.getTime()
+    nowtime = time.time()
     
     # If time_in_task corresponds to the duration we set previously we end te task
-    if time_in_task >= length_of_task:
+    if nowtime > pvtStarter + pvtSectionLength:
+        currentLoop.finished = True
         continueRoutine = False
-        PVT_Trials.finished = True
-    
     # the Routine "End_task" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials_6'
+# completed 99.0 repeats of 'trials_6'
 
 
 # --- Prepare to start Routine "Maths_Intro" ---
@@ -3404,14 +3065,14 @@ if key_resp_2.keys != None:  # we had a response
 thisExp.nextEntry()
 # Run 'End Routine' code from code_8
 mathStarter = time.time()
-mathSectionLength = 5
+mathSectionLength = 5  * minuteOrSecond
 print('startMaths')
 outlet.push_sample(x=[startMaths])
 # the Routine "Maths_Intro" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_5 = data.TrialHandler(nReps=2.0, method='random', 
+trials_5 = data.TrialHandler(nReps=99.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials_5')
@@ -3542,9 +3203,13 @@ for thisTrial_5 in trials_5:
         # update/draw components on each frame
         # Run 'Each Frame' code from code_7
         nowtime = time.time()
+        msg = ""
         
         if nowtime > mathStarter + mathSectionLength:
+            text_7.text=""
             continueRoutine = False
+            currentLoop.finished = True
+            msg = "time is up"
         
         keys = key_resp_4.getKeys(['1','2','3','4','5','6','7','8','9','0'], waitRelease=True)
         
@@ -3620,9 +3285,10 @@ for thisTrial_5 in trials_5:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # Run 'End Routine' code from code_7
-    print('correctAnswer')
-    outlet.push_sample(x=[correctAnswer])
-    thisExp.addData("MathsFailCounter", failCounter)
+    if not msg == "time is up":
+        print('correctAnswer')
+        outlet.push_sample(x=[correctAnswer])
+        thisExp.addData("MathsFailCounter", failCounter)
     # check responses
     if key_resp_4.keys in ['', [], None]:  # No response was made
         key_resp_4.keys = None
@@ -3633,7 +3299,7 @@ for thisTrial_5 in trials_5:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials_5'
+# completed 99.0 repeats of 'trials_5'
 
 
 # --- Prepare to start Routine "Snake" ---
@@ -3646,11 +3312,11 @@ routineForceEnded = False
 # http://inventwithpython.com/pygame
 # Released under a "Simplified BSD" license
 
-repetitions = 2
-timesUntilBreak = 2
+repetitions = 5
+timesUntilBreak = 5 * minuteOrSecond
 
-outlet.push_sample(x=[snakeStart])
-print('snakeStart')
+outlet.push_sample(x=[startSnake])
+print('startSnake')
 
 import random, pygame, sys, time
 from pygame.locals import *
@@ -3691,12 +3357,13 @@ def main():
     pygame.display.set_caption('Wormy')
 
     showStartScreen()
-    runGame(counter)
+    breakTime = time.time()
+    while not counter == repetitions:
+        runGame(breakTime, counter)
     showTextScreen("Done")
 
 
-def runGame(counter):
-    breakTime = time.time()
+def runGame(breakTime, counter):
     # start at top left.
     startx = 0 #random.randint(5, CELLWIDTH - 6)
     starty = 0 #random.randint(5, CELLHEIGHT - 6)
@@ -3711,14 +3378,15 @@ def runGame(counter):
     while True: # main game loop
 
         nowTime = time.time()
-
-        if counter == repetitions:
-            return
         
         if nowTime > breakTime + timesUntilBreak:
             # Pausing the game
             #pauseMsg() # pause until a key press
+            outlet.push_sample(x=[pauseSnake])
+            print('pauseSnake')
             showTextScreen("Paused")
+            outlet.push_sample(x=[startSnake])
+            print('startSnake')
             breakTime = time.time()
             counter = counter + 1
 
@@ -3980,6 +3648,9 @@ routineForceEnded = False
 InstrucKey.keys = []
 InstrucKey.rt = []
 _InstrucKey_allKeys = []
+# Run 'Begin Routine' code from code_9
+pvtSectionLength = 3 * minuteOrSecond
+pvtStarter = time.time()
 # keep track of which components have finished
 InstructionsPVTComponents = [InstructionsText, InstrucKey]
 for thisComponent in InstructionsPVTComponents:
@@ -4074,7 +3745,7 @@ outlet.push_sample(x=[startPvt])
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_4 = data.TrialHandler(nReps=2.0, method='random', 
+trials_4 = data.TrialHandler(nReps=99.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials_4')
@@ -4138,7 +3809,7 @@ for thisTrial_4 in trials_4:
         
         # Append True to list if a key is pressed, clear list if not
         if "space" in keys:
-             message = "Too soon!"
+             message = 'Too soon!'
              continueRoutine = False
             
         
@@ -4262,7 +3933,7 @@ for thisTrial_4 in trials_4:
     frameN = -1
     
     # --- Run Routine "Target" ---
-    while continueRoutine and routineTimer.getTime() < 30.0:
+    while continueRoutine and routineTimer.getTime() < 5.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -4287,7 +3958,7 @@ for thisTrial_4 in trials_4:
             Targetstim.setAutoDraw(True)
         if Targetstim.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Targetstim.tStartRefresh + 30-frameTolerance:
+            if tThisFlipGlobal > Targetstim.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 Targetstim.tStop = t  # not accounting for scr refresh
                 Targetstim.frameNStop = frameN  # exact frame index
@@ -4314,7 +3985,7 @@ for thisTrial_4 in trials_4:
             win.callOnFlip(Response.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if Response.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Response.tStartRefresh + 30-frameTolerance:
+            if tThisFlipGlobal > Response.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 Response.tStop = t  # not accounting for scr refresh
                 Response.frameNStop = frameN  # exact frame index
@@ -4359,7 +4030,7 @@ for thisTrial_4 in trials_4:
         thisExp.addData('RTms', Response.rt * 1000)
         
     # PsychoPy is not running the trial for more than 29.991...
-    if timing.getTime() >= 29.99:
+    if timing.getTime() >= 4.99:
             message = 'No response!'
             Response.rt = timing.getTime()
             thisExp.addData('RTms', np.NAN)
@@ -4375,7 +4046,7 @@ for thisTrial_4 in trials_4:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-30.000000)
+        routineTimer.addTime(-5.000000)
     
     # --- Prepare to start Routine "Feedback" ---
     continueRoutine = True
@@ -4500,19 +4171,20 @@ for thisTrial_4 in trials_4:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # Run 'End Routine' code from End_task_2
+    import time
     # Get the time in the task
     time_in_task = overall_timer.getTime()
+    nowtime = time.time()
     
     # If time_in_task corresponds to the duration we set previously we end te task
-    if time_in_task >= length_of_task:
+    if nowtime > pvtStarter + pvtSectionLength:
+        currentLoop.finished = True
         continueRoutine = False
-        PVT_Trials.finished = True
-    
     # the Routine "End_task" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials_4'
+# completed 99.0 repeats of 'trials_4'
 
 
 # --- Prepare to start Routine "Maths_Intro" ---
@@ -4613,14 +4285,14 @@ if key_resp_2.keys != None:  # we had a response
 thisExp.nextEntry()
 # Run 'End Routine' code from code_8
 mathStarter = time.time()
-mathSectionLength = 5
+mathSectionLength = 5  * minuteOrSecond
 print('startMaths')
 outlet.push_sample(x=[startMaths])
 # the Routine "Maths_Intro" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=2.0, method='random', 
+trials_2 = data.TrialHandler(nReps=99.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials_2')
@@ -4751,9 +4423,13 @@ for thisTrial_2 in trials_2:
         # update/draw components on each frame
         # Run 'Each Frame' code from code_7
         nowtime = time.time()
+        msg = ""
         
         if nowtime > mathStarter + mathSectionLength:
+            text_7.text=""
             continueRoutine = False
+            currentLoop.finished = True
+            msg = "time is up"
         
         keys = key_resp_4.getKeys(['1','2','3','4','5','6','7','8','9','0'], waitRelease=True)
         
@@ -4829,9 +4505,10 @@ for thisTrial_2 in trials_2:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # Run 'End Routine' code from code_7
-    print('correctAnswer')
-    outlet.push_sample(x=[correctAnswer])
-    thisExp.addData("MathsFailCounter", failCounter)
+    if not msg == "time is up":
+        print('correctAnswer')
+        outlet.push_sample(x=[correctAnswer])
+        thisExp.addData("MathsFailCounter", failCounter)
     # check responses
     if key_resp_4.keys in ['', [], None]:  # No response was made
         key_resp_4.keys = None
@@ -4842,151 +4519,8 @@ for thisTrial_2 in trials_2:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 2.0 repeats of 'trials_2'
+# completed 99.0 repeats of 'trials_2'
 
-
-# --- Prepare to start Routine "Fatigue_Assessment_Inventory" ---
-continueRoutine = True
-routineForceEnded = False
-# update component parameters for each repeat
-text_5.setText('')
-# Run 'Begin Routine' code from code_10
-fatigueAssessmentInventoryCounter = fatigueAssessmentInventoryCounter + 1
-
-if fatigueAssessmentInventoryCounter == 1:
-    text_5.text = "I feel drowsy when I am fatigued"
-elif fatigueAssessmentInventoryCounter == 2:
-    text_5.text = "When I am fatigued, I lose my patience"
-elif fatigueAssessmentInventoryCounter == 3:
-    text_5.text = "My motivation is lower when I am fatigued"
-elif fatigueAssessmentInventoryCounter == 4:
-    text_5.text = "When I am fatigued, I have difficulty concentrating"
-elif fatigueAssessmentInventoryCounter == 5:
-    text_5.text = "Exercise brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 6:
-    text_5.text = "Heat brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 7:
-    text_5.text = "Long periods of inactivity bring on my fatigue"
-elif fatigueAssessmentInventoryCounter == 8:
-    text_5.text = "Stress brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 9:
-    text_5.text = "Depression brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 10:
-    text_5.text = "Work brings on my fatigue"
-elif fatigueAssessmentInventoryCounter == 11:
-    text_5.text = "My fatigue is worse in the afternoon"
-elif fatigueAssessmentInventoryCounter == 12:
-    text_5.text = "My fatigue is worse in the morning"
-elif fatigueAssessmentInventoryCounter == 13:
-    text_5.text = "Performance of routine daily activities increases my fatigue"
-elif fatigueAssessmentInventoryCounter == 14:
-    text_5.text = "Resting lessens my fatigue"
-elif fatigueAssessmentInventoryCounter == 15:
-    text_5.text = "Sleeping lessens my fatigue"
-elif fatigueAssessmentInventoryCounter == 16:
-    text_5.text = "Cool temperatures lessen my fatiuge"
-elif fatigueAssessmentInventoryCounter == 17:
-    text_5.text = "Positive experiences lessen my fatigue"
-elif fatigueAssessmentInventoryCounter == 18:
-    text_5.text = "I am easily fatigued"
-elif fatigueAssessmentInventoryCounter == 19:
-    text_5.text = "Fatigue interferes with my physical functioning"
-elif fatigueAssessmentInventoryCounter == 20:
-    text_5.text = "Fatiuge causes frequent problems for me"
-elif fatigueAssessmentInventoryCounter == 21:
-    text_5.text = "My fatigue prevents sustained physical functioning"
-elif fatigueAssessmentInventoryCounter == 22:
-    text_5.text = "Fatigues interferes with carrying out certain duties and responsibilities"
-elif fatigueAssessmentInventoryCounter == 23:
-    text_5.text = "Fatiuge predated other symptoms of my condition"
-elif fatigueAssessmentInventoryCounter == 24:
-    text_5.text = "Fatigue is my most disabling symptom"
-elif fatigueAssessmentInventoryCounter == 25:
-    text_5.text = "Fatiuge is among my 3 most disabling symptoms"
-elif fatigueAssessmentInventoryCounter == 26:
-    text_5.text = "Fatigue interferes with my work, family or social life"
-elif fatigueAssessmentInventoryCounter == 27:
-    text_5.text = "Fatigue makes other symptoms worse"
-elif fatigueAssessmentInventoryCounter == 28:
-    text_5.text = "Fatigue that i now experience is different in quality or severity than the fatigue i experienced before i developed this condition"
-elif fatigueAssessmentInventoryCounter == 29:
-    text_5.text = "I experienced prolonged fatigue after exercise"
-slider.reset()
-# keep track of which components have finished
-Fatigue_Assessment_InventoryComponents = [text_5, slider]
-for thisComponent in Fatigue_Assessment_InventoryComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-frameN = -1
-
-# --- Run Routine "Fatigue_Assessment_Inventory" ---
-while continueRoutine:
-    # get current time
-    t = routineTimer.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *text_5* updates
-    if text_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text_5.frameNStart = frameN  # exact frame index
-        text_5.tStart = t  # local t and not account for scr refresh
-        text_5.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'text_5.started')
-        text_5.setAutoDraw(True)
-    
-    # *slider* updates
-    if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        slider.frameNStart = frameN  # exact frame index
-        slider.tStart = t  # local t and not account for scr refresh
-        slider.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(slider, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'slider.started')
-        slider.setAutoDraw(True)
-    
-    # Check slider for response to end routine
-    if slider.getRating() is not None and slider.status == STARTED:
-        continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        routineForceEnded = True
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Fatigue_Assessment_InventoryComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# --- Ending Routine "Fatigue_Assessment_Inventory" ---
-for thisComponent in Fatigue_Assessment_InventoryComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('slider.response', slider.getRating())
-thisExp.addData('slider.rt', slider.getRT())
-# the Routine "Fatigue_Assessment_Inventory" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # --- Prepare to start Routine "Ender" ---
 continueRoutine = True
