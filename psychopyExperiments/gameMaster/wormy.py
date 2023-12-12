@@ -19,8 +19,8 @@ import random, pygame, sys
 from pygame.locals import *
 import time
 
-T_END = time.time() + 60*1
-
+repetitions = 2
+T_BREAK = 5
 
 FPS = 15
 WINDOWWIDTH = 640
@@ -59,15 +59,20 @@ def main():
     pygame.display.set_caption('Wormy')
     
     showStartScreen()
-    while True:
-        runGame()
-        showGameOverScreen()
+    shouldContinue = True
+    breakTime = time.time()
+    timeAddition = 0
+    loopCounter = 0
+    while shouldContinue:
+        print(timeAddition)
+        shouldContinue, timeAddition, breakTime, loopCounter = runGame(breakTime, timeAddition, loopCounter)
+    showGameOverScreen()
 
 
-def runGame():
+def runGame(breakTime, timeAddition, loopCounter):
     # Set a random start point.
-    startx = random.randint(5, CELLWIDTH - 6)
-    starty = random.randint(5, CELLHEIGHT - 6)
+    startx = 0 #random.randint(5, CELLWIDTH - 6)
+    starty = 0 #random.randint(5, CELLHEIGHT - 6)
     wormCoords = [{'x': startx,     'y': starty},
                   {'x': startx - 1, 'y': starty},
                   {'x': startx - 2, 'y': starty}]
@@ -75,10 +80,19 @@ def runGame():
 
     # Start the apple in a random place.
     apple = getRandomLocation()
-    
 
-    while time.time() < T_END: # main game loop
-        print(time.time())
+    
+    while not loopCounter == repetitions: # main game loop
+
+        if time.time() >  breakTime + T_BREAK:
+            timeAdditionStart = time.time()
+            showTextScreen('Paused')
+            loopCounter = loopCounter + 1
+            timeAdditionFinish = time.time()
+            timeAddition = timeAddition + (timeAdditionFinish - timeAdditionStart)
+            breakTime = time.time()
+
+
 
         for event in pygame.event.get(): # event handling loop
             if event.type == QUIT:
@@ -102,10 +116,10 @@ def runGame():
 
         # check if the worm has hit itself or the edge
         if wormCoords[HEAD]['x'] == -1 or wormCoords[HEAD]['x'] == CELLWIDTH or wormCoords[HEAD]['y'] == -1 or wormCoords[HEAD]['y'] == CELLHEIGHT:
-            return # game over
+            return True, timeAddition, breakTime, loopCounter# game over
         for wormBody in wormCoords[1:]:
             if wormBody['x'] == wormCoords[HEAD]['x'] and wormBody['y'] == wormCoords[HEAD]['y']:
-                return # game over
+                return True, timeAddition, breakTime, loopCounter# game over
 
         # check if worm has eaten an apply
         if wormCoords[HEAD]['x'] == apple['x'] and wormCoords[HEAD]['y'] == apple['y']:
@@ -131,6 +145,9 @@ def runGame():
         drawScore(len(wormCoords) - 3)
         pygame.display.update()
         FPSCLOCK.tick(FPS)
+        nowTime = time.time()
+    print(timeAddition)
+    return False, timeAddition, breakTime, loopCounter
 
 def drawPressKeyMsg():
     pressKeySurf = BASICFONT.render('Press a key to play.', True, DARKGRAY)
