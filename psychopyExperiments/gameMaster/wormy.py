@@ -1,13 +1,26 @@
-# Wormy (a Nibbles clone)
-# By Al Sweigart al@inventwithpython.com
-# http://inventwithpython.com/pygame
-# Released under a "Simplified BSD" license
+"""
+Wormy (a Nibbles clone)
 
-repetitions = 2
-timesUntilBreak = 2
+original author: Al Sweigart (al@inventwithpython.com)
+{Making Games with Python and Pygame (2012)}
+http://inventwithpython.com/pygame
+Released under a "Simplified BSD" license
 
-import random, pygame, sys, time
+Tweeked so that it has a specified duration and it can be paused
+
+Created on Mon Dec  4 17:07:57 2023
+
+@author: elpid
+"""
+
+
+
+import random, pygame, sys
 from pygame.locals import *
+import time
+
+T_END = time.time() + 60*1
+
 
 FPS = 15
 WINDOWWIDTH = 640
@@ -26,6 +39,7 @@ GREEN     = (  0, 255,   0)
 DARKGREEN = (  0, 155,   0)
 DARKGRAY  = ( 40,  40,  40)
 BGCOLOR = BLACK
+TEXTCOLOR = WHITE
 
 UP = 'up'
 DOWN = 'down'
@@ -35,25 +49,25 @@ RIGHT = 'right'
 HEAD = 0 # syntactic sugar: index of the worm's head
 
 def main():
-    counter = 0
-    global FPSCLOCK, DISPLAYSURF, BASICFONT
-
+    global FPSCLOCK, DISPLAYSURF, BASICFONT, BIGFONT
+    
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
     BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
+    BIGFONT = pygame.font.Font('freesansbold.ttf', 100)
     pygame.display.set_caption('Wormy')
-
+    
     showStartScreen()
-    runGame(counter)
-    showGameOverScreen()
+    while True:
+        runGame()
+        showGameOverScreen()
 
 
-def runGame(counter):
-    breakTime = time.time()
-    # start at top left.
-    startx = 0 #random.randint(5, CELLWIDTH - 6)
-    starty = 0 #random.randint(5, CELLHEIGHT - 6)
+def runGame():
+    # Set a random start point.
+    startx = random.randint(5, CELLWIDTH - 6)
+    starty = random.randint(5, CELLHEIGHT - 6)
     wormCoords = [{'x': startx,     'y': starty},
                   {'x': startx - 1, 'y': starty},
                   {'x': startx - 2, 'y': starty}]
@@ -61,20 +75,10 @@ def runGame(counter):
 
     # Start the apple in a random place.
     apple = getRandomLocation()
+    
 
-    while True: # main game loop
-
-        nowTime = time.time()
-
-        if counter == repetitions:
-            return
-        
-        if nowTime > breakTime + timesUntilBreak:
-            # Pausing the game
-            #pauseMsg() # pause until a key press
-            showTextScreen("Paused")
-            breakTime = time.time()
-            counter = counter + 1
+    while time.time() < T_END: # main game loop
+        print(time.time())
 
         for event in pygame.event.get(): # event handling loop
             if event.type == QUIT:
@@ -90,6 +94,11 @@ def runGame(counter):
                     direction = DOWN
                 elif event.key == K_ESCAPE:
                     terminate()
+            elif event.type == KEYUP:
+                if (event.key == K_p):
+                    # Pausing the game
+                    showTextScreen('Paused') # pause until a key press
+ 
 
         # check if the worm has hit itself or the edge
         if wormCoords[HEAD]['x'] == -1 or wormCoords[HEAD]['x'] == CELLWIDTH or wormCoords[HEAD]['y'] == -1 or wormCoords[HEAD]['y'] == CELLHEIGHT:
@@ -129,12 +138,6 @@ def drawPressKeyMsg():
     pressKeyRect.topleft = (WINDOWWIDTH - 200, WINDOWHEIGHT - 30)
     DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
 
-def pauseMsg():
-    pressKeySurf = BASICFONT.render('Paused, talk to instructor', True, DARKGRAY)
-    pressKeyRect = pressKeySurf.get_rect()
-    pressKeyRect.topleft = (WINDOWWIDTH - 200, WINDOWHEIGHT - 30)
-    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
-
 
 def checkForKeyPress():
     if len(pygame.event.get(QUIT)) > 0:
@@ -143,8 +146,6 @@ def checkForKeyPress():
     keyUpEvents = pygame.event.get(KEYUP)
     if len(keyUpEvents) == 0:
         return None
-    if keyUpEvents[0].key == K_SPACE:
-        return 1
     if keyUpEvents[0].key == K_ESCAPE:
         terminate()
     return keyUpEvents[0].key
@@ -188,35 +189,6 @@ def terminate():
 def getRandomLocation():
     return {'x': random.randint(0, CELLWIDTH - 1), 'y': random.randint(0, CELLHEIGHT - 1)}
 
-def makeTextObjs(text, font, color):
-    surf = font.render(text, True, color)
-    return surf, surf.get_rect()
-
-def showTextScreen(text):
-    BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
-    BIGFONT = pygame.font.Font('freesansbold.ttf', 100)
-    TEXTCOLOR = WHITE
-    TEXTSHADOWCOLOR = GREEN
-    # This function displays large text in the
-    # center of the screen until a key is pressed.
-    # Draw the text drop shadow
-    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTSHADOWCOLOR)
-    titleRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2))
-    DISPLAYSURF.blit(titleSurf, titleRect)
-
-    # Draw the text
-    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTCOLOR)
-    titleRect.center = (int(WINDOWWIDTH / 2) - 3, int(WINDOWHEIGHT / 2) - 3)
-    DISPLAYSURF.blit(titleSurf, titleRect)
-
-    # Draw the additional "Press a key to play." text.
-    pressKeySurf, pressKeyRect = makeTextObjs('Talk to the instructor', BASICFONT, TEXTCOLOR)
-    pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
-    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
-
-    while not (checkForKeyPress() == 1):
-        pygame.display.update()
-        FPSCLOCK.tick()
 
 def showGameOverScreen():
     gameOverFont = pygame.font.Font('freesansbold.ttf', 150)
@@ -268,6 +240,30 @@ def drawGrid():
         pygame.draw.line(DISPLAYSURF, DARKGRAY, (x, 0), (x, WINDOWHEIGHT))
     for y in range(0, WINDOWHEIGHT, CELLSIZE): # draw horizontal lines
         pygame.draw.line(DISPLAYSURF, DARKGRAY, (0, y), (WINDOWWIDTH, y))
+
+
+def makeTextObjs(text, font, color):
+    surf = font.render(text, True, color)
+    return surf, surf.get_rect()
+
+
+def showTextScreen(text):
+    # This function displays large text in the
+    # center of the screen until a key is pressed.
+
+    # Draw the text
+    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTCOLOR)
+    titleRect.center = (int(WINDOWWIDTH / 2) - 3, int(WINDOWHEIGHT / 2) - 3)
+    DISPLAYSURF.blit(titleSurf, titleRect)
+
+    # Draw the additional "Press a key to play." text.
+    pressKeySurf, pressKeyRect = makeTextObjs('Press a key to play.', BASICFONT, TEXTCOLOR)
+    pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
+    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
+
+    while checkForKeyPress() == None:
+        pygame.display.update()
+        FPSCLOCK.tick()
 
 
 if __name__ == '__main__':
