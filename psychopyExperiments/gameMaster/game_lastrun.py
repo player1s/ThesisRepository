@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on December 13, 2023, at 13:43
+    on December 13, 2023, at 13:59
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,9 +37,9 @@ BASELINELENGTH = 30
 PVTSECTIONLENGTH = 60
 MATHSECTIONLENGTH = 120
 TETRISSECITONLEENGTH = 300
-TETRISREPETITION = 2
+TETRISREPETITION = 3
 SNAKESECITONLEENGTH = 300
-SNAKEREPETITION = 2
+SNAKEREPETITION = 3
 # Run 'Before Experiment' code from code_5
 import random
 # Run 'Before Experiment' code from code_5
@@ -131,7 +131,7 @@ startMaths = 4
 correctAnswer = 5
 startTetris = 6
 tetrisFail = 7
-tetrisLvlUp = 8
+levelGainTetris = 8
 pauseTetris = 9
 startSnake = 10
 snakeFail = 11
