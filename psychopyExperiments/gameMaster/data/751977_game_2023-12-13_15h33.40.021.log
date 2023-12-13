@@ -1,0 +1,2252 @@
+28.7414 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002121909BA30>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002121C44B2E0>, multiSample=False, name='window1', numSamples=2, pos=(360, 140), screen=0, size=array([1200,  800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+28.7415 	EXP 	window1: mouseVisible = True
+28.7415 	EXP 	window1: mouseVisible = True
+28.7415 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+28.7416 	EXP 	window1: recordFrameIntervals = False
+28.9087 	EXP 	window1: recordFrameIntervals = True
+29.0910 	EXP 	Screen (0) actual frame rate measured at 60.36Hz
+29.0910 	EXP 	window1: recordFrameIntervals = False
+29.1427 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+31.4213 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.4348 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='collect baseline for: 30seconds', units='height', win=Window(...), wrapWidth=1)
+31.4528 	EXP 	Created InstructionsText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='InstructionsText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.4542 	EXP 	Created ISI_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.4550 	EXP 	Created Targetstim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Targetstim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.4559 	EXP 	Created Feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.        ,  0.00392157, -1.        ]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Feedback_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.4729 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.4736 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.4794 	EXP 	Created text_13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_13', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.4883 	EXP 	Created InstructionsText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='InstructionsText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.4898 	EXP 	Created ISI_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.4906 	EXP 	Created Targetstim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Targetstim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.4914 	EXP 	Created Feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.        ,  0.00392157, -1.        ]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Feedback_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5037 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.5046 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5095 	EXP 	Created text_13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_13', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.5230 	EXP 	Created InstructionsText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='InstructionsText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.5241 	EXP 	Created ISI_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5248 	EXP 	Created Targetstim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Targetstim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5255 	EXP 	Created Feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.        ,  0.00392157, -1.        ]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Feedback_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5367 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+31.5376 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+31.5415 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Done', units='height', win=Window(...), wrapWidth=1)
+31.5580 	EXP 	text_2: autoDraw = True
+42.9643 	DATA 	Keypress: space
+42.9773 	EXP 	text_2: autoDraw = False
+42.9773 	EXP 	text_4: autoDraw = True
+72.9839 	EXP 	text_4: autoDraw = False
+72.9839 	EXP 	text_4: autoDraw = False
+72.9839 	EXP 	InstructionsText: autoDraw = True
+76.9149 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+76.9153 	EXP 	New trial (rep=0, index=0): None
+76.9165 	DATA 	Keypress: space
+76.9289 	EXP 	InstructionsText: autoDraw = False
+76.9289 	EXP 	ISI_text: autoDraw = True
+80.9421 	EXP 	ISI_text: autoDraw = False
+80.9421 	EXP 	ISI_text: autoDraw = False
+80.9421 	EXP 	Targetstim: autoDraw = True
+81.2806 	DATA 	Keypress: space
+81.2917 	EXP 	Targetstim: autoDraw = False
+81.2917 	EXP 	Feedback_text: height = 0.05
+81.2917 	EXP 	Feedback_text: height = 0.05
+81.2917 	EXP 	Feedback_text: height = 0.05
+81.2917 	EXP 	Feedback_text: text = '326'
+81.2917 	EXP 	Feedback_text: autoDraw = True
+81.7763 	EXP 	New trial (rep=1, index=0): None
+81.7915 	EXP 	Feedback_text: autoDraw = False
+81.7915 	EXP 	Feedback_text: autoDraw = False
+81.7915 	EXP 	ISI_text: autoDraw = True
+82.7903 	EXP 	ISI_text: autoDraw = False
+82.7903 	EXP 	ISI_text: autoDraw = False
+82.7903 	EXP 	Targetstim: autoDraw = True
+83.2130 	DATA 	Keypress: space
+83.2232 	EXP 	Targetstim: autoDraw = False
+83.2232 	EXP 	Feedback_text: height = 0.05
+83.2232 	EXP 	Feedback_text: height = 0.05
+83.2232 	EXP 	Feedback_text: height = 0.05
+83.2232 	EXP 	Feedback_text: text = '417'
+83.2232 	EXP 	Feedback_text: autoDraw = True
+83.7073 	EXP 	New trial (rep=2, index=0): None
+83.7234 	EXP 	Feedback_text: autoDraw = False
+83.7234 	EXP 	Feedback_text: autoDraw = False
+83.7234 	EXP 	ISI_text: autoDraw = True
+87.7362 	EXP 	ISI_text: autoDraw = False
+87.7362 	EXP 	ISI_text: autoDraw = False
+87.7362 	EXP 	Targetstim: autoDraw = True
+88.1083 	DATA 	Keypress: space
+88.1189 	EXP 	Targetstim: autoDraw = False
+88.1189 	EXP 	Feedback_text: height = 0.05
+88.1189 	EXP 	Feedback_text: height = 0.05
+88.1189 	EXP 	Feedback_text: height = 0.05
+88.1189 	EXP 	Feedback_text: text = '359'
+88.1189 	EXP 	Feedback_text: autoDraw = True
+88.6030 	EXP 	New trial (rep=3, index=0): None
+88.6181 	EXP 	Feedback_text: autoDraw = False
+88.6181 	EXP 	Feedback_text: autoDraw = False
+88.6181 	EXP 	ISI_text: autoDraw = True
+92.6310 	EXP 	ISI_text: autoDraw = False
+92.6310 	EXP 	ISI_text: autoDraw = False
+92.6310 	EXP 	Targetstim: autoDraw = True
+92.9198 	DATA 	Keypress: space
+92.9306 	EXP 	Targetstim: autoDraw = False
+92.9306 	EXP 	Feedback_text: height = 0.05
+92.9306 	EXP 	Feedback_text: height = 0.05
+92.9306 	EXP 	Feedback_text: height = 0.05
+92.9306 	EXP 	Feedback_text: text = '284'
+92.9306 	EXP 	Feedback_text: autoDraw = True
+93.4148 	EXP 	New trial (rep=4, index=0): None
+93.4310 	EXP 	Feedback_text: autoDraw = False
+93.4310 	EXP 	Feedback_text: autoDraw = False
+93.4310 	EXP 	ISI_text: autoDraw = True
+95.4451 	EXP 	ISI_text: autoDraw = False
+95.4451 	EXP 	ISI_text: autoDraw = False
+95.4451 	EXP 	Targetstim: autoDraw = True
+95.7502 	DATA 	Keypress: space
+95.7619 	EXP 	Targetstim: autoDraw = False
+95.7619 	EXP 	Feedback_text: height = 0.05
+95.7619 	EXP 	Feedback_text: height = 0.05
+95.7619 	EXP 	Feedback_text: height = 0.05
+95.7619 	EXP 	Feedback_text: text = '299'
+95.7619 	EXP 	Feedback_text: autoDraw = True
+96.2462 	EXP 	New trial (rep=5, index=0): None
+96.2609 	EXP 	Feedback_text: autoDraw = False
+96.2609 	EXP 	Feedback_text: autoDraw = False
+96.2609 	EXP 	ISI_text: autoDraw = True
+100.2737 	EXP 	ISI_text: autoDraw = False
+100.2737 	EXP 	ISI_text: autoDraw = False
+100.2737 	EXP 	Targetstim: autoDraw = True
+100.5805 	DATA 	Keypress: space
+100.5901 	EXP 	Targetstim: autoDraw = False
+100.5901 	EXP 	Feedback_text: height = 0.05
+100.5901 	EXP 	Feedback_text: height = 0.05
+100.5901 	EXP 	Feedback_text: height = 0.05
+100.5901 	EXP 	Feedback_text: text = '294'
+100.5901 	EXP 	Feedback_text: autoDraw = True
+101.0754 	EXP 	New trial (rep=6, index=0): None
+101.0897 	EXP 	Feedback_text: autoDraw = False
+101.0897 	EXP 	Feedback_text: autoDraw = False
+101.0897 	EXP 	ISI_text: autoDraw = True
+104.1036 	EXP 	ISI_text: autoDraw = False
+104.1036 	EXP 	ISI_text: autoDraw = False
+104.1036 	EXP 	Targetstim: autoDraw = True
+104.3934 	DATA 	Keypress: space
+104.4032 	EXP 	Targetstim: autoDraw = False
+104.4032 	EXP 	Feedback_text: height = 0.05
+104.4032 	EXP 	Feedback_text: height = 0.05
+104.4032 	EXP 	Feedback_text: height = 0.05
+104.4032 	EXP 	Feedback_text: text = '282'
+104.4032 	EXP 	Feedback_text: autoDraw = True
+104.8872 	EXP 	New trial (rep=7, index=0): None
+104.9034 	EXP 	Feedback_text: autoDraw = False
+104.9034 	EXP 	Feedback_text: autoDraw = False
+104.9034 	EXP 	ISI_text: autoDraw = True
+107.9177 	EXP 	ISI_text: autoDraw = False
+107.9177 	EXP 	ISI_text: autoDraw = False
+107.9177 	EXP 	Targetstim: autoDraw = True
+108.2235 	DATA 	Keypress: space
+108.2337 	EXP 	Targetstim: autoDraw = False
+108.2337 	EXP 	Feedback_text: height = 0.05
+108.2337 	EXP 	Feedback_text: height = 0.05
+108.2337 	EXP 	Feedback_text: height = 0.05
+108.2337 	EXP 	Feedback_text: text = '289'
+108.2337 	EXP 	Feedback_text: autoDraw = True
+108.7183 	EXP 	New trial (rep=8, index=0): None
+108.7327 	EXP 	Feedback_text: autoDraw = False
+108.7327 	EXP 	Feedback_text: autoDraw = False
+108.7327 	EXP 	ISI_text: autoDraw = True
+111.7464 	EXP 	ISI_text: autoDraw = False
+111.7464 	EXP 	ISI_text: autoDraw = False
+111.7464 	EXP 	Targetstim: autoDraw = True
+112.0351 	DATA 	Keypress: space
+112.0466 	EXP 	Targetstim: autoDraw = False
+112.0466 	EXP 	Feedback_text: height = 0.05
+112.0466 	EXP 	Feedback_text: height = 0.05
+112.0466 	EXP 	Feedback_text: height = 0.05
+112.0466 	EXP 	Feedback_text: text = '275'
+112.0466 	EXP 	Feedback_text: autoDraw = True
+112.5307 	EXP 	New trial (rep=9, index=0): None
+112.5462 	EXP 	Feedback_text: autoDraw = False
+112.5462 	EXP 	Feedback_text: autoDraw = False
+112.5462 	EXP 	ISI_text: autoDraw = True
+113.5452 	EXP 	ISI_text: autoDraw = False
+113.5452 	EXP 	ISI_text: autoDraw = False
+113.5452 	EXP 	Targetstim: autoDraw = True
+113.9842 	DATA 	Keypress: space
+113.9945 	EXP 	Targetstim: autoDraw = False
+113.9945 	EXP 	Feedback_text: height = 0.05
+113.9945 	EXP 	Feedback_text: height = 0.05
+113.9945 	EXP 	Feedback_text: height = 0.05
+113.9945 	EXP 	Feedback_text: text = '433'
+113.9945 	EXP 	Feedback_text: autoDraw = True
+114.4815 	EXP 	New trial (rep=10, index=0): None
+114.4939 	EXP 	Feedback_text: autoDraw = False
+114.4939 	EXP 	Feedback_text: autoDraw = False
+114.4939 	EXP 	ISI_text: autoDraw = True
+117.5084 	EXP 	ISI_text: autoDraw = False
+117.5084 	EXP 	ISI_text: autoDraw = False
+117.5084 	EXP 	Targetstim: autoDraw = True
+117.8802 	DATA 	Keypress: space
+117.8909 	EXP 	Targetstim: autoDraw = False
+117.8909 	EXP 	Feedback_text: height = 0.05
+117.8909 	EXP 	Feedback_text: height = 0.05
+117.8909 	EXP 	Feedback_text: height = 0.05
+117.8909 	EXP 	Feedback_text: text = '364'
+117.8909 	EXP 	Feedback_text: autoDraw = True
+118.3754 	EXP 	New trial (rep=11, index=0): None
+118.3901 	EXP 	Feedback_text: autoDraw = False
+118.3901 	EXP 	Feedback_text: autoDraw = False
+118.3901 	EXP 	ISI_text: autoDraw = True
+119.3901 	EXP 	ISI_text: autoDraw = False
+119.3901 	EXP 	ISI_text: autoDraw = False
+119.3901 	EXP 	Targetstim: autoDraw = True
+119.7617 	DATA 	Keypress: space
+119.7728 	EXP 	Targetstim: autoDraw = False
+119.7728 	EXP 	Feedback_text: height = 0.05
+119.7728 	EXP 	Feedback_text: height = 0.05
+119.7728 	EXP 	Feedback_text: height = 0.05
+119.7728 	EXP 	Feedback_text: text = '353'
+119.7728 	EXP 	Feedback_text: autoDraw = True
+120.2565 	EXP 	New trial (rep=12, index=0): None
+120.2722 	EXP 	Feedback_text: autoDraw = False
+120.2722 	EXP 	Feedback_text: autoDraw = False
+120.2722 	EXP 	ISI_text: autoDraw = True
+121.2879 	EXP 	ISI_text: autoDraw = False
+121.2879 	EXP 	ISI_text: autoDraw = False
+121.2879 	EXP 	Targetstim: autoDraw = True
+121.5926 	DATA 	Keypress: space
+121.6038 	EXP 	Targetstim: autoDraw = False
+121.6038 	EXP 	Feedback_text: height = 0.05
+121.6038 	EXP 	Feedback_text: height = 0.05
+121.6038 	EXP 	Feedback_text: height = 0.05
+121.6038 	EXP 	Feedback_text: text = '295'
+121.6038 	EXP 	Feedback_text: autoDraw = True
+122.0884 	EXP 	New trial (rep=13, index=0): None
+122.1046 	EXP 	Feedback_text: autoDraw = False
+122.1046 	EXP 	Feedback_text: autoDraw = False
+122.1046 	EXP 	ISI_text: autoDraw = True
+125.1178 	EXP 	ISI_text: autoDraw = False
+125.1178 	EXP 	ISI_text: autoDraw = False
+125.1178 	EXP 	Targetstim: autoDraw = True
+125.4056 	DATA 	Keypress: space
+125.4174 	EXP 	Targetstim: autoDraw = False
+125.4174 	EXP 	Feedback_text: height = 0.05
+125.4174 	EXP 	Feedback_text: height = 0.05
+125.4174 	EXP 	Feedback_text: height = 0.05
+125.4174 	EXP 	Feedback_text: text = '276'
+125.4174 	EXP 	Feedback_text: autoDraw = True
+125.9014 	EXP 	New trial (rep=14, index=0): None
+125.9171 	EXP 	Feedback_text: autoDraw = False
+125.9171 	EXP 	Feedback_text: autoDraw = False
+125.9171 	EXP 	ISI_text: autoDraw = True
+129.9293 	EXP 	ISI_text: autoDraw = False
+129.9293 	EXP 	ISI_text: autoDraw = False
+129.9293 	EXP 	Targetstim: autoDraw = True
+130.3025 	DATA 	Keypress: space
+130.3129 	EXP 	Targetstim: autoDraw = False
+130.3129 	EXP 	Feedback_text: height = 0.05
+130.3129 	EXP 	Feedback_text: height = 0.05
+130.3129 	EXP 	Feedback_text: height = 0.05
+130.3129 	EXP 	Feedback_text: text = '357'
+130.3129 	EXP 	Feedback_text: autoDraw = True
+130.7970 	EXP 	New trial (rep=15, index=0): None
+130.8124 	EXP 	Feedback_text: autoDraw = False
+130.8124 	EXP 	Feedback_text: autoDraw = False
+130.8124 	EXP 	ISI_text: autoDraw = True
+131.8114 	EXP 	ISI_text: autoDraw = False
+131.8114 	EXP 	ISI_text: autoDraw = False
+131.8114 	EXP 	Targetstim: autoDraw = True
+132.2503 	DATA 	Keypress: space
+132.2609 	EXP 	Targetstim: autoDraw = False
+132.2609 	EXP 	Feedback_text: height = 0.05
+132.2609 	EXP 	Feedback_text: height = 0.05
+132.2609 	EXP 	Feedback_text: height = 0.05
+132.2609 	EXP 	Feedback_text: text = '428'
+132.2609 	EXP 	Feedback_text: autoDraw = True
+132.7446 	EXP 	New trial (rep=16, index=0): None
+132.7600 	EXP 	Feedback_text: autoDraw = False
+132.7600 	EXP 	Feedback_text: autoDraw = False
+132.7600 	EXP 	ISI_text: autoDraw = True
+134.7754 	EXP 	ISI_text: autoDraw = False
+134.7754 	EXP 	ISI_text: autoDraw = False
+134.7754 	EXP 	Targetstim: autoDraw = True
+135.0661 	DATA 	Keypress: space
+135.0746 	EXP 	Targetstim: autoDraw = False
+135.0746 	EXP 	Feedback_text: height = 0.05
+135.0746 	EXP 	Feedback_text: height = 0.05
+135.0746 	EXP 	Feedback_text: height = 0.05
+135.0746 	EXP 	Feedback_text: text = '280'
+135.0746 	EXP 	Feedback_text: autoDraw = True
+135.5592 	EXP 	New trial (rep=17, index=0): None
+135.5745 	EXP 	Feedback_text: autoDraw = False
+135.5745 	EXP 	Feedback_text: autoDraw = False
+135.5745 	EXP 	ISI_text: autoDraw = True
+137.5896 	EXP 	ISI_text: autoDraw = False
+137.5896 	EXP 	ISI_text: autoDraw = False
+137.5896 	EXP 	Targetstim: autoDraw = True
+137.8610 	DATA 	Keypress: space
+137.8723 	EXP 	Targetstim: autoDraw = False
+137.8723 	EXP 	Feedback_text: height = 0.05
+137.8723 	EXP 	Feedback_text: height = 0.05
+137.8723 	EXP 	Feedback_text: height = 0.05
+137.8723 	EXP 	Feedback_text: text = '259'
+137.8723 	EXP 	Feedback_text: autoDraw = True
+138.3727 	EXP 	Feedback_text: autoDraw = False
+138.3727 	EXP 	Feedback_text: autoDraw = False
+138.3727 	EXP 	text_6: autoDraw = True
+140.8876 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+140.8879 	EXP 	New trial (rep=0, index=0): None
+140.8933 	DATA 	Keypress: space
+140.9026 	EXP 	text_6: autoDraw = False
+140.9026 	EXP 	text_7: height = 0.05
+140.9026 	EXP 	text_7: height = 0.05
+140.9026 	EXP 	text_7: height = 0.05
+140.9026 	EXP 	text_7: text = '2 + 9'
+140.9026 	EXP 	text_7: autoDraw = True
+143.2190 	DATA 	Keypress: 1
+143.3508 	EXP 	text_7: height = 0.05
+143.3508 	EXP 	text_7: height = 0.05
+143.3508 	EXP 	text_7: height = 0.05
+143.3508 	EXP 	text_7: text = '1'
+143.4024 	DATA 	Keypress: 1
+143.7875 	EXP 	New trial (rep=1, index=0): None
+143.7997 	EXP 	text_7: text = '1'
+143.7997 	EXP 	text_7: text = '1'
+143.7997 	EXP 	text_7: autoDraw = False
+143.7997 	EXP 	text_7: height = 0.05
+143.7997 	EXP 	text_7: height = 0.05
+143.7997 	EXP 	text_7: height = 0.05
+143.7997 	EXP 	text_7: text = 'time is up'
+143.7997 	EXP 	text_7: height = 0.05
+143.7997 	EXP 	text_7: height = 0.05
+143.7997 	EXP 	text_7: height = 0.05
+143.7997 	EXP 	text_7: text = '50 + 30'
+143.7997 	EXP 	text_7: autoDraw = True
+145.4332 	DATA 	Keypress: 8
+145.5319 	EXP 	text_7: height = 0.05
+145.5319 	EXP 	text_7: height = 0.05
+145.5319 	EXP 	text_7: height = 0.05
+145.5319 	EXP 	text_7: text = '8'
+145.8503 	DATA 	Keypress: 0
+146.2218 	EXP 	New trial (rep=2, index=0): None
+146.2275 	DATA 	Keypress: 0
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: text = '0'
+146.2302 	EXP 	text_7: text = '0'
+146.2302 	EXP 	text_7: autoDraw = False
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: text = 'time is up'
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: height = 0.05
+146.2302 	EXP 	text_7: text = '30 + 44'
+146.2302 	EXP 	text_7: autoDraw = True
+152.1769 	DATA 	Keypress: 7
+152.3418 	EXP 	text_7: height = 0.05
+152.3418 	EXP 	text_7: height = 0.05
+152.3418 	EXP 	text_7: height = 0.05
+152.3418 	EXP 	text_7: text = '7'
+152.6441 	DATA 	Keypress: 4
+153.0817 	EXP 	New trial (rep=3, index=0): None
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: text = '4'
+153.0910 	EXP 	text_7: text = '4'
+153.0910 	EXP 	text_7: autoDraw = False
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: text = 'time is up'
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: height = 0.05
+153.0910 	EXP 	text_7: text = '34 - 2'
+153.0910 	EXP 	text_7: autoDraw = True
+156.0567 	DATA 	Keypress: 3
+156.2218 	EXP 	text_7: height = 0.05
+156.2218 	EXP 	text_7: height = 0.05
+156.2218 	EXP 	text_7: height = 0.05
+156.2218 	EXP 	text_7: text = '3'
+156.2902 	DATA 	Keypress: 2
+156.7104 	EXP 	New trial (rep=4, index=0): None
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: text = '2'
+156.7208 	EXP 	text_7: text = '2'
+156.7208 	EXP 	text_7: autoDraw = False
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: text = 'time is up'
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: height = 0.05
+156.7208 	EXP 	text_7: text = '62 + 19'
+156.7208 	EXP 	text_7: autoDraw = True
+162.9010 	DATA 	Keypress: 8
+163.0821 	EXP 	text_7: height = 0.05
+163.0821 	EXP 	text_7: height = 0.05
+163.0821 	EXP 	text_7: height = 0.05
+163.0821 	EXP 	text_7: text = '8'
+163.4674 	DATA 	Keypress: 1
+163.9551 	EXP 	New trial (rep=5, index=0): None
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: text = '1'
+163.9640 	EXP 	text_7: text = '1'
+163.9640 	EXP 	text_7: autoDraw = False
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: text = 'time is up'
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: height = 0.05
+163.9640 	EXP 	text_7: text = '5 + 78'
+163.9640 	EXP 	text_7: autoDraw = True
+170.7103 	DATA 	Keypress: 8
+171.1600 	DATA 	Keypress: 2
+171.3251 	EXP 	text_7: height = 0.05
+171.3251 	EXP 	text_7: height = 0.05
+171.3251 	EXP 	text_7: height = 0.05
+171.3251 	EXP 	text_7: text = '2'
+173.9244 	DATA 	Keypress: 8
+174.1054 	EXP 	text_7: height = 0.05
+174.1054 	EXP 	text_7: height = 0.05
+174.1054 	EXP 	text_7: height = 0.05
+174.1054 	EXP 	text_7: text = '8'
+174.1054 	EXP 	text_7: height = 0.05
+174.1054 	EXP 	text_7: height = 0.05
+174.1054 	EXP 	text_7: height = 0.05
+174.1054 	EXP 	text_7: text = '5 + 78'
+174.5418 	DATA 	Keypress: 8
+174.7379 	EXP 	text_7: height = 0.05
+174.7379 	EXP 	text_7: height = 0.05
+174.7379 	EXP 	text_7: height = 0.05
+174.7379 	EXP 	text_7: text = '8'
+175.0560 	DATA 	Keypress: 2
+175.2208 	EXP 	text_7: height = 0.05
+175.2208 	EXP 	text_7: height = 0.05
+175.2208 	EXP 	text_7: height = 0.05
+175.2208 	EXP 	text_7: text = '2'
+175.2208 	EXP 	text_7: height = 0.05
+175.2208 	EXP 	text_7: height = 0.05
+175.2208 	EXP 	text_7: height = 0.05
+175.2208 	EXP 	text_7: text = '5 + 78'
+178.0855 	DATA 	Keypress: 8
+178.2682 	EXP 	text_7: height = 0.05
+178.2682 	EXP 	text_7: height = 0.05
+178.2682 	EXP 	text_7: height = 0.05
+178.2682 	EXP 	text_7: text = '8'
+178.5192 	DATA 	Keypress: 3
+178.9069 	EXP 	New trial (rep=6, index=0): None
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: text = '3'
+178.9173 	EXP 	text_7: text = '3'
+178.9173 	EXP 	text_7: autoDraw = False
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: text = 'time is up'
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: height = 0.05
+178.9173 	EXP 	text_7: text = '9 + 6'
+178.9173 	EXP 	text_7: autoDraw = True
+180.7338 	DATA 	Keypress: 1
+180.9151 	EXP 	text_7: height = 0.05
+180.9151 	EXP 	text_7: height = 0.05
+180.9151 	EXP 	text_7: height = 0.05
+180.9151 	EXP 	text_7: text = '1'
+181.4167 	DATA 	Keypress: 5
+181.8230 	EXP 	New trial (rep=7, index=0): None
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: text = '5'
+181.8306 	EXP 	text_7: text = '5'
+181.8306 	EXP 	text_7: autoDraw = False
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: text = 'time is up'
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: height = 0.05
+181.8306 	EXP 	text_7: text = '95 - 12'
+181.8306 	EXP 	text_7: autoDraw = True
+188.0124 	DATA 	Keypress: 8
+188.1926 	EXP 	text_7: height = 0.05
+188.1926 	EXP 	text_7: height = 0.05
+188.1926 	EXP 	text_7: height = 0.05
+188.1926 	EXP 	text_7: text = '8'
+188.5612 	DATA 	Keypress: 3
+188.9640 	EXP 	New trial (rep=8, index=0): None
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: text = '3'
+188.9751 	EXP 	text_7: text = '3'
+188.9751 	EXP 	text_7: autoDraw = False
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: text = 'time is up'
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: height = 0.05
+188.9751 	EXP 	text_7: text = '78 - 43'
+188.9751 	EXP 	text_7: autoDraw = True
+197.3024 	DATA 	Keypress: 3
+197.4830 	EXP 	text_7: height = 0.05
+197.4830 	EXP 	text_7: height = 0.05
+197.4830 	EXP 	text_7: height = 0.05
+197.4830 	EXP 	text_7: text = '3'
+198.6504 	DATA 	Keypress: 5
+199.0377 	EXP 	New trial (rep=9, index=0): None
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: text = '5'
+199.0474 	EXP 	text_7: text = '5'
+199.0474 	EXP 	text_7: autoDraw = False
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: text = 'time is up'
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: height = 0.05
+199.0474 	EXP 	text_7: text = '25 + 9'
+199.0474 	EXP 	text_7: autoDraw = True
+202.1474 	DATA 	Keypress: 3
+202.3290 	EXP 	text_7: height = 0.05
+202.3290 	EXP 	text_7: height = 0.05
+202.3290 	EXP 	text_7: height = 0.05
+202.3290 	EXP 	text_7: text = '3'
+202.4137 	DATA 	Keypress: 4
+202.8013 	EXP 	New trial (rep=10, index=0): None
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: text = '4'
+202.8111 	EXP 	text_7: text = '4'
+202.8111 	EXP 	text_7: autoDraw = False
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: text = 'time is up'
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: height = 0.05
+202.8111 	EXP 	text_7: text = '5 + 89'
+202.8111 	EXP 	text_7: autoDraw = True
+204.8449 	DATA 	Keypress: 9
+204.9928 	EXP 	text_7: height = 0.05
+204.9928 	EXP 	text_7: height = 0.05
+204.9928 	EXP 	text_7: height = 0.05
+204.9928 	EXP 	text_7: text = '9'
+205.5772 	DATA 	Keypress: 4
+205.9813 	EXP 	New trial (rep=11, index=0): None
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: text = '4'
+205.9911 	EXP 	text_7: text = '4'
+205.9911 	EXP 	text_7: autoDraw = False
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: text = 'time is up'
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: height = 0.05
+205.9911 	EXP 	text_7: text = '21 + 14'
+205.9911 	EXP 	text_7: autoDraw = True
+213.3039 	DATA 	Keypress: 3
+213.5016 	EXP 	text_7: height = 0.05
+213.5016 	EXP 	text_7: height = 0.05
+213.5016 	EXP 	text_7: height = 0.05
+213.5016 	EXP 	text_7: text = '3'
+213.8700 	DATA 	Keypress: 5
+214.2567 	EXP 	New trial (rep=12, index=0): None
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: text = '5'
+214.2676 	EXP 	text_7: text = '5'
+214.2676 	EXP 	text_7: autoDraw = False
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: text = 'time is up'
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: height = 0.05
+214.2676 	EXP 	text_7: text = '63 - 36'
+214.2676 	EXP 	text_7: autoDraw = True
+230.2872 	DATA 	Keypress: num_2
+231.3700 	DATA 	Keypress: num_2
+231.6696 	DATA 	Keypress: num_2
+231.9358 	DATA 	Keypress: num_2
+232.1864 	DATA 	Keypress: num_2
+232.4354 	DATA 	Keypress: num_2
+237.2977 	DATA 	Keypress: 2
+237.4460 	EXP 	text_7: height = 0.05
+237.4460 	EXP 	text_7: height = 0.05
+237.4460 	EXP 	text_7: height = 0.05
+237.4460 	EXP 	text_7: text = '2'
+238.2975 	DATA 	Keypress: 7
+238.7353 	EXP 	New trial (rep=13, index=0): None
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: text = '7'
+238.7441 	EXP 	text_7: text = '7'
+238.7441 	EXP 	text_7: autoDraw = False
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: text = 'time is up'
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: height = 0.05
+238.7441 	EXP 	text_7: text = '37 + 10'
+238.7441 	EXP 	text_7: autoDraw = True
+241.7436 	DATA 	Keypress: 4
+241.9248 	EXP 	text_7: height = 0.05
+241.9248 	EXP 	text_7: height = 0.05
+241.9248 	EXP 	text_7: height = 0.05
+241.9248 	EXP 	text_7: text = '4'
+242.1937 	DATA 	Keypress: 7
+242.6153 	EXP 	New trial (rep=14, index=0): None
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: text = '7'
+242.6234 	EXP 	text_7: text = '7'
+242.6234 	EXP 	text_7: autoDraw = False
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: text = 'time is up'
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: height = 0.05
+242.6234 	EXP 	text_7: text = '33 - 10'
+242.6234 	EXP 	text_7: autoDraw = True
+244.2580 	DATA 	Keypress: 2
+244.4224 	EXP 	text_7: height = 0.05
+244.4224 	EXP 	text_7: height = 0.05
+244.4224 	EXP 	text_7: height = 0.05
+244.4224 	EXP 	text_7: text = '2'
+244.4915 	DATA 	Keypress: 3
+244.8625 	EXP 	New trial (rep=15, index=0): None
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: text = '3'
+244.8714 	EXP 	text_7: text = '3'
+244.8714 	EXP 	text_7: autoDraw = False
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: text = 'time is up'
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: height = 0.05
+244.8714 	EXP 	text_7: text = '20 + 55'
+244.8714 	EXP 	text_7: autoDraw = True
+247.8880 	DATA 	Keypress: 7
+248.0026 	EXP 	text_7: height = 0.05
+248.0026 	EXP 	text_7: height = 0.05
+248.0026 	EXP 	text_7: height = 0.05
+248.0026 	EXP 	text_7: text = '7'
+248.2546 	DATA 	Keypress: 5
+248.5911 	EXP 	New trial (rep=16, index=0): None
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: text = '5'
+248.6012 	EXP 	text_7: text = '5'
+248.6012 	EXP 	text_7: autoDraw = False
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: text = 'time is up'
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: height = 0.05
+248.6012 	EXP 	text_7: text = '73 - 43'
+248.6012 	EXP 	text_7: autoDraw = True
+252.3000 	DATA 	Keypress: 3
+252.4321 	EXP 	text_7: height = 0.05
+252.4321 	EXP 	text_7: height = 0.05
+252.4321 	EXP 	text_7: height = 0.05
+252.4321 	EXP 	text_7: text = '3'
+253.4494 	DATA 	Keypress: 0
+253.8206 	EXP 	New trial (rep=17, index=0): None
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: text = '0'
+253.8301 	EXP 	text_7: text = '0'
+253.8301 	EXP 	text_7: autoDraw = False
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: text = 'time is up'
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: height = 0.05
+253.8301 	EXP 	text_7: text = '71 - 60'
+253.8301 	EXP 	text_7: autoDraw = True
+256.8795 	DATA 	Keypress: 1
+257.0115 	EXP 	text_7: height = 0.05
+257.0115 	EXP 	text_7: height = 0.05
+257.0115 	EXP 	text_7: height = 0.05
+257.0115 	EXP 	text_7: text = '1'
+257.1295 	DATA 	Keypress: 1
+257.4803 	EXP 	New trial (rep=18, index=0): None
+257.4928 	EXP 	text_7: text = '1'
+257.4928 	EXP 	text_7: text = '1'
+257.4928 	EXP 	text_7: autoDraw = False
+257.4928 	EXP 	text_7: height = 0.05
+257.4928 	EXP 	text_7: height = 0.05
+257.4928 	EXP 	text_7: height = 0.05
+257.4928 	EXP 	text_7: text = 'time is up'
+257.4928 	EXP 	text_7: height = 0.05
+257.4928 	EXP 	text_7: height = 0.05
+257.4928 	EXP 	text_7: height = 0.05
+257.4928 	EXP 	text_7: text = '82 - 6'
+257.4928 	EXP 	text_7: autoDraw = True
+1631.6930 	EXP 	text_7: height = 0.05
+1631.6930 	EXP 	text_7: height = 0.05
+1631.6930 	EXP 	text_7: height = 0.05
+1631.6930 	EXP 	text_7: text = 'time is up'
+1631.6930 	EXP 	text_7: autoDraw = False
+1631.6930 	EXP 	text_7: text = 'time is up'
+1631.6930 	EXP 	text_13: autoDraw = True
+1633.7601 	DATA 	Keypress: space
+1633.7751 	EXP 	text_13: autoDraw = False
+1633.7751 	EXP 	InstructionsText: autoDraw = True
+1636.1077 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+1636.1081 	EXP 	New trial (rep=0, index=0): None
+1636.1092 	DATA 	Keypress: space
+1636.1220 	EXP 	InstructionsText: autoDraw = False
+1636.1220 	EXP 	ISI_text: autoDraw = True
+1640.1350 	EXP 	ISI_text: autoDraw = False
+1640.1350 	EXP 	ISI_text: autoDraw = False
+1640.1350 	EXP 	Targetstim: autoDraw = True
+1640.4916 	DATA 	Keypress: space
+1640.5018 	EXP 	Targetstim: autoDraw = False
+1640.5018 	EXP 	Feedback_text: height = 0.05
+1640.5018 	EXP 	Feedback_text: height = 0.05
+1640.5018 	EXP 	Feedback_text: height = 0.05
+1640.5018 	EXP 	Feedback_text: text = '344'
+1640.5018 	EXP 	Feedback_text: autoDraw = True
+1640.9857 	EXP 	New trial (rep=1, index=0): None
+1641.0016 	EXP 	Feedback_text: autoDraw = False
+1641.0016 	EXP 	Feedback_text: autoDraw = False
+1641.0016 	EXP 	ISI_text: autoDraw = True
+1645.0145 	EXP 	ISI_text: autoDraw = False
+1645.0145 	EXP 	ISI_text: autoDraw = False
+1645.0145 	EXP 	Targetstim: autoDraw = True
+1645.3190 	DATA 	Keypress: space
+1645.3310 	EXP 	Targetstim: autoDraw = False
+1645.3310 	EXP 	Feedback_text: height = 0.05
+1645.3310 	EXP 	Feedback_text: height = 0.05
+1645.3310 	EXP 	Feedback_text: height = 0.05
+1645.3310 	EXP 	Feedback_text: text = '291'
+1645.3310 	EXP 	Feedback_text: autoDraw = True
+1645.8317 	EXP 	New trial (rep=2, index=0): None
+1645.8467 	EXP 	Feedback_text: autoDraw = False
+1645.8467 	EXP 	Feedback_text: autoDraw = False
+1645.8467 	EXP 	ISI_text: autoDraw = True
+1646.8624 	EXP 	ISI_text: autoDraw = False
+1646.8624 	EXP 	ISI_text: autoDraw = False
+1646.8624 	EXP 	Targetstim: autoDraw = True
+1647.2844 	DATA 	Keypress: space
+1647.2957 	EXP 	Targetstim: autoDraw = False
+1647.2957 	EXP 	Feedback_text: height = 0.05
+1647.2957 	EXP 	Feedback_text: height = 0.05
+1647.2957 	EXP 	Feedback_text: height = 0.05
+1647.2957 	EXP 	Feedback_text: text = '412'
+1647.2957 	EXP 	Feedback_text: autoDraw = True
+1647.7980 	EXP 	New trial (rep=3, index=0): None
+1647.8116 	EXP 	Feedback_text: autoDraw = False
+1647.8116 	EXP 	Feedback_text: autoDraw = False
+1647.8116 	EXP 	ISI_text: autoDraw = True
+1648.8107 	EXP 	ISI_text: autoDraw = False
+1648.8107 	EXP 	ISI_text: autoDraw = False
+1648.8107 	EXP 	Targetstim: autoDraw = True
+1649.1824 	DATA 	Keypress: space
+1649.1933 	EXP 	Targetstim: autoDraw = False
+1649.1933 	EXP 	Feedback_text: height = 0.05
+1649.1933 	EXP 	Feedback_text: height = 0.05
+1649.1933 	EXP 	Feedback_text: height = 0.05
+1649.1933 	EXP 	Feedback_text: text = '367'
+1649.1933 	EXP 	Feedback_text: autoDraw = True
+1649.6774 	EXP 	New trial (rep=4, index=0): None
+1649.6930 	EXP 	Feedback_text: autoDraw = False
+1649.6930 	EXP 	Feedback_text: autoDraw = False
+1649.6930 	EXP 	ISI_text: autoDraw = True
+1651.7082 	EXP 	ISI_text: autoDraw = False
+1651.7082 	EXP 	ISI_text: autoDraw = False
+1651.7082 	EXP 	Targetstim: autoDraw = True
+1651.9800 	DATA 	Keypress: space
+1651.9913 	EXP 	Targetstim: autoDraw = False
+1651.9913 	EXP 	Feedback_text: height = 0.05
+1651.9913 	EXP 	Feedback_text: height = 0.05
+1651.9913 	EXP 	Feedback_text: height = 0.05
+1651.9913 	EXP 	Feedback_text: text = '266'
+1651.9913 	EXP 	Feedback_text: autoDraw = True
+1652.4754 	EXP 	New trial (rep=5, index=0): None
+1652.4903 	EXP 	Feedback_text: autoDraw = False
+1652.4903 	EXP 	Feedback_text: autoDraw = False
+1652.4903 	EXP 	ISI_text: autoDraw = True
+1654.5054 	EXP 	ISI_text: autoDraw = False
+1654.5054 	EXP 	ISI_text: autoDraw = False
+1654.5054 	EXP 	Targetstim: autoDraw = True
+1654.7765 	DATA 	Keypress: space
+1654.7880 	EXP 	Targetstim: autoDraw = False
+1654.7880 	EXP 	Feedback_text: text = '266'
+1654.7880 	EXP 	Feedback_text: autoDraw = True
+1655.2726 	EXP 	New trial (rep=6, index=0): None
+1655.2875 	EXP 	Feedback_text: autoDraw = False
+1655.2875 	EXP 	Feedback_text: autoDraw = False
+1655.2875 	EXP 	ISI_text: autoDraw = True
+1658.0109 	DATA 	Keypress: space
+1658.0183 	EXP 	ISI_text: autoDraw = False
+1658.0183 	EXP 	Targetstim: autoDraw = False
+1658.0183 	EXP 	Feedback_text: height = 0.05
+1658.0183 	EXP 	Feedback_text: height = 0.05
+1658.0183 	EXP 	Feedback_text: height = 0.05
+1658.0183 	EXP 	Feedback_text: text = 'Too soon!'
+1663.0141 	EXP 	Feedback_text: autoDraw = True
+1663.4983 	EXP 	New trial (rep=7, index=0): None
+1663.5135 	EXP 	Feedback_text: autoDraw = False
+1663.5135 	EXP 	Feedback_text: autoDraw = False
+1663.5135 	EXP 	ISI_text: autoDraw = True
+1665.5284 	EXP 	ISI_text: autoDraw = False
+1665.5284 	EXP 	ISI_text: autoDraw = False
+1665.5284 	EXP 	Targetstim: autoDraw = True
+1665.9509 	DATA 	Keypress: space
+1665.9613 	EXP 	Targetstim: autoDraw = False
+1665.9613 	EXP 	Feedback_text: height = 0.05
+1665.9613 	EXP 	Feedback_text: height = 0.05
+1665.9613 	EXP 	Feedback_text: height = 0.05
+1665.9613 	EXP 	Feedback_text: text = '411'
+1665.9613 	EXP 	Feedback_text: autoDraw = True
+1666.4453 	EXP 	New trial (rep=8, index=0): None
+1666.4610 	EXP 	Feedback_text: autoDraw = False
+1666.4610 	EXP 	Feedback_text: autoDraw = False
+1666.4610 	EXP 	ISI_text: autoDraw = True
+1667.4765 	EXP 	ISI_text: autoDraw = False
+1667.4765 	EXP 	ISI_text: autoDraw = False
+1667.4765 	EXP 	Targetstim: autoDraw = True
+1667.9146 	DATA 	Keypress: space
+1667.9257 	EXP 	Targetstim: autoDraw = False
+1667.9257 	EXP 	Feedback_text: height = 0.05
+1667.9257 	EXP 	Feedback_text: height = 0.05
+1667.9257 	EXP 	Feedback_text: height = 0.05
+1667.9257 	EXP 	Feedback_text: text = '420'
+1667.9257 	EXP 	Feedback_text: autoDraw = True
+1668.4103 	EXP 	New trial (rep=9, index=0): None
+1668.4256 	EXP 	Feedback_text: autoDraw = False
+1668.4256 	EXP 	Feedback_text: autoDraw = False
+1668.4256 	EXP 	ISI_text: autoDraw = True
+1671.4397 	EXP 	ISI_text: autoDraw = False
+1671.4397 	EXP 	ISI_text: autoDraw = False
+1671.4397 	EXP 	Targetstim: autoDraw = True
+1671.7444 	DATA 	Keypress: space
+1671.7555 	EXP 	Targetstim: autoDraw = False
+1671.7555 	EXP 	Feedback_text: height = 0.05
+1671.7555 	EXP 	Feedback_text: height = 0.05
+1671.7555 	EXP 	Feedback_text: height = 0.05
+1671.7555 	EXP 	Feedback_text: text = '289'
+1671.7555 	EXP 	Feedback_text: autoDraw = True
+1672.2399 	EXP 	New trial (rep=10, index=0): None
+1672.2555 	EXP 	Feedback_text: autoDraw = False
+1672.2555 	EXP 	Feedback_text: autoDraw = False
+1672.2555 	EXP 	ISI_text: autoDraw = True
+1674.2699 	EXP 	ISI_text: autoDraw = False
+1674.2699 	EXP 	ISI_text: autoDraw = False
+1674.2699 	EXP 	Targetstim: autoDraw = True
+1674.5768 	DATA 	Keypress: space
+1674.5862 	EXP 	Targetstim: autoDraw = False
+1674.5862 	EXP 	Feedback_text: height = 0.05
+1674.5862 	EXP 	Feedback_text: height = 0.05
+1674.5862 	EXP 	Feedback_text: height = 0.05
+1674.5862 	EXP 	Feedback_text: text = '291'
+1674.5862 	EXP 	Feedback_text: autoDraw = True
+1675.0705 	EXP 	New trial (rep=11, index=0): None
+1675.0857 	EXP 	Feedback_text: autoDraw = False
+1675.0857 	EXP 	Feedback_text: autoDraw = False
+1675.0857 	EXP 	ISI_text: autoDraw = True
+1679.0986 	EXP 	ISI_text: autoDraw = False
+1679.0986 	EXP 	ISI_text: autoDraw = False
+1679.0986 	EXP 	Targetstim: autoDraw = True
+1679.3555 	DATA 	Keypress: space
+1679.3651 	EXP 	Targetstim: autoDraw = False
+1679.3651 	EXP 	Feedback_text: height = 0.05
+1679.3651 	EXP 	Feedback_text: height = 0.05
+1679.3651 	EXP 	Feedback_text: height = 0.05
+1679.3651 	EXP 	Feedback_text: text = '251'
+1679.3651 	EXP 	Feedback_text: autoDraw = True
+1679.8501 	EXP 	New trial (rep=12, index=0): None
+1679.8652 	EXP 	Feedback_text: autoDraw = False
+1679.8652 	EXP 	Feedback_text: autoDraw = False
+1679.8652 	EXP 	ISI_text: autoDraw = True
+1682.8792 	EXP 	ISI_text: autoDraw = False
+1682.8792 	EXP 	ISI_text: autoDraw = False
+1682.8792 	EXP 	Targetstim: autoDraw = True
+1683.1329 	DATA 	Keypress: space
+1683.1452 	EXP 	Targetstim: autoDraw = False
+1683.1452 	EXP 	Feedback_text: text = '251'
+1683.1452 	EXP 	Feedback_text: autoDraw = True
+1683.6294 	EXP 	New trial (rep=13, index=0): None
+1683.6443 	EXP 	Feedback_text: autoDraw = False
+1683.6443 	EXP 	Feedback_text: autoDraw = False
+1683.6443 	EXP 	ISI_text: autoDraw = True
+1687.6580 	EXP 	ISI_text: autoDraw = False
+1687.6580 	EXP 	ISI_text: autoDraw = False
+1687.6580 	EXP 	Targetstim: autoDraw = True
+1687.9465 	DATA 	Keypress: space
+1687.9570 	EXP 	Targetstim: autoDraw = False
+1687.9570 	EXP 	Feedback_text: height = 0.05
+1687.9570 	EXP 	Feedback_text: height = 0.05
+1687.9570 	EXP 	Feedback_text: height = 0.05
+1687.9570 	EXP 	Feedback_text: text = '269'
+1687.9570 	EXP 	Feedback_text: autoDraw = True
+1688.4419 	EXP 	New trial (rep=14, index=0): None
+1688.4565 	EXP 	Feedback_text: autoDraw = False
+1688.4565 	EXP 	Feedback_text: autoDraw = False
+1688.4565 	EXP 	ISI_text: autoDraw = True
+1691.4711 	EXP 	ISI_text: autoDraw = False
+1691.4711 	EXP 	ISI_text: autoDraw = False
+1691.4711 	EXP 	Targetstim: autoDraw = True
+1691.7600 	DATA 	Keypress: space
+1691.7701 	EXP 	Targetstim: autoDraw = False
+1691.7701 	EXP 	Feedback_text: height = 0.05
+1691.7701 	EXP 	Feedback_text: height = 0.05
+1691.7701 	EXP 	Feedback_text: height = 0.05
+1691.7701 	EXP 	Feedback_text: text = '283'
+1691.7701 	EXP 	Feedback_text: autoDraw = True
+1692.2545 	EXP 	New trial (rep=15, index=0): None
+1692.2702 	EXP 	Feedback_text: autoDraw = False
+1692.2702 	EXP 	Feedback_text: autoDraw = False
+1692.2702 	EXP 	ISI_text: autoDraw = True
+1695.2841 	EXP 	ISI_text: autoDraw = False
+1695.2841 	EXP 	ISI_text: autoDraw = False
+1695.2841 	EXP 	Targetstim: autoDraw = True
+1695.6062 	DATA 	Keypress: space
+1695.6170 	EXP 	Targetstim: autoDraw = False
+1695.6170 	EXP 	Feedback_text: height = 0.05
+1695.6170 	EXP 	Feedback_text: height = 0.05
+1695.6170 	EXP 	Feedback_text: height = 0.05
+1695.6170 	EXP 	Feedback_text: text = '314'
+1695.6170 	EXP 	Feedback_text: autoDraw = True
+1696.1011 	EXP 	New trial (rep=16, index=0): None
+1696.1163 	EXP 	Feedback_text: autoDraw = False
+1696.1163 	EXP 	Feedback_text: autoDraw = False
+1696.1163 	EXP 	ISI_text: autoDraw = True
+1699.1301 	EXP 	ISI_text: autoDraw = False
+1699.1301 	EXP 	ISI_text: autoDraw = False
+1699.1301 	EXP 	Targetstim: autoDraw = True
+1699.4044 	DATA 	Keypress: space
+1699.4133 	EXP 	Targetstim: autoDraw = False
+1699.4133 	EXP 	Feedback_text: height = 0.05
+1699.4133 	EXP 	Feedback_text: height = 0.05
+1699.4133 	EXP 	Feedback_text: height = 0.05
+1699.4133 	EXP 	Feedback_text: text = '265'
+1699.4133 	EXP 	Feedback_text: autoDraw = True
+1699.9136 	EXP 	Feedback_text: autoDraw = False
+1699.9136 	EXP 	Feedback_text: autoDraw = False
+1699.9136 	EXP 	text_6: autoDraw = True
+1701.2007 	EXP 	Created sequence: random, trialTypes=1, nReps=99, seed=None
+1701.2014 	EXP 	New trial (rep=0, index=0): None
+1701.2078 	DATA 	Keypress: space
+1701.2116 	EXP 	text_6: autoDraw = False
+1701.2116 	EXP 	text_7: height = 0.05
+1701.2116 	EXP 	text_7: height = 0.05
+1701.2116 	EXP 	text_7: height = 0.05
+1701.2116 	EXP 	text_7: text = '68 + 16'
+1701.2116 	EXP 	text_7: autoDraw = True
+1710.9878 	DATA 	Keypress: 8
+1711.1190 	EXP 	text_7: height = 0.05
+1711.1190 	EXP 	text_7: height = 0.05
+1711.1190 	EXP 	text_7: height = 0.05
+1711.1190 	EXP 	text_7: text = '8'
+1711.2712 	DATA 	Keypress: 4
+1711.6420 	EXP 	New trial (rep=1, index=0): None
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: text = '4'
+1711.6515 	EXP 	text_7: text = '4'
+1711.6515 	EXP 	text_7: autoDraw = False
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: text = 'time is up'
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: height = 0.05
+1711.6515 	EXP 	text_7: text = '64 + 30'
+1711.6515 	EXP 	text_7: autoDraw = True
+1714.1343 	DATA 	Keypress: 9
+1714.2495 	EXP 	text_7: height = 0.05
+1714.2495 	EXP 	text_7: height = 0.05
+1714.2495 	EXP 	text_7: height = 0.05
+1714.2495 	EXP 	text_7: text = '9'
+1714.4677 	DATA 	Keypress: 4
+1714.8390 	EXP 	New trial (rep=2, index=0): None
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: text = '4'
+1714.8481 	EXP 	text_7: text = '4'
+1714.8481 	EXP 	text_7: autoDraw = False
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: text = 'time is up'
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: height = 0.05
+1714.8481 	EXP 	text_7: text = '30 + 2'
+1714.8481 	EXP 	text_7: autoDraw = True
+1716.2001 	DATA 	Keypress: 3
+1716.3473 	EXP 	text_7: height = 0.05
+1716.3473 	EXP 	text_7: height = 0.05
+1716.3473 	EXP 	text_7: height = 0.05
+1716.3473 	EXP 	text_7: text = '3'
+1716.4493 	DATA 	Keypress: 2
+1716.8541 	EXP 	New trial (rep=3, index=0): None
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: text = '2'
+1716.8631 	EXP 	text_7: text = '2'
+1716.8631 	EXP 	text_7: autoDraw = False
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: text = 'time is up'
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: height = 0.05
+1716.8631 	EXP 	text_7: text = '17 - 3'
+1716.8631 	EXP 	text_7: autoDraw = True
+1719.4302 	DATA 	Keypress: 1
+1719.6275 	EXP 	text_7: height = 0.05
+1719.6275 	EXP 	text_7: height = 0.05
+1719.6275 	EXP 	text_7: height = 0.05
+1719.6275 	EXP 	text_7: text = '1'
+1719.7961 	DATA 	Keypress: 4
+1720.2179 	EXP 	New trial (rep=4, index=0): None
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: text = '4'
+1720.2434 	EXP 	text_7: text = '4'
+1720.2434 	EXP 	text_7: autoDraw = False
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: text = 'time is up'
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: height = 0.05
+1720.2434 	EXP 	text_7: text = '9 + 36'
+1720.2434 	EXP 	text_7: autoDraw = True
+1723.2603 	DATA 	Keypress: 4
+1723.4406 	EXP 	text_7: height = 0.05
+1723.4406 	EXP 	text_7: height = 0.05
+1723.4406 	EXP 	text_7: height = 0.05
+1723.4406 	EXP 	text_7: text = '4'
+1723.4760 	DATA 	Keypress: 5
+1723.8800 	EXP 	New trial (rep=5, index=0): None
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: text = '5'
+1723.8898 	EXP 	text_7: text = '5'
+1723.8898 	EXP 	text_7: autoDraw = False
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: text = 'time is up'
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: height = 0.05
+1723.8898 	EXP 	text_7: text = '20 + 17'
+1723.8898 	EXP 	text_7: autoDraw = True
+1726.5396 	DATA 	Keypress: 3
+1726.7215 	EXP 	text_7: height = 0.05
+1726.7215 	EXP 	text_7: height = 0.05
+1726.7215 	EXP 	text_7: height = 0.05
+1726.7215 	EXP 	text_7: text = '3'
+1726.7571 	DATA 	Keypress: 7
+1727.1278 	EXP 	New trial (rep=6, index=0): None
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: text = '7'
+1727.1366 	EXP 	text_7: text = '7'
+1727.1366 	EXP 	text_7: autoDraw = False
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: text = 'time is up'
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: height = 0.05
+1727.1366 	EXP 	text_7: text = '11 + 79'
+1727.1366 	EXP 	text_7: autoDraw = True
+1729.7203 	DATA 	Keypress: 9
+1729.8686 	EXP 	text_7: height = 0.05
+1729.8686 	EXP 	text_7: height = 0.05
+1729.8686 	EXP 	text_7: height = 0.05
+1729.8686 	EXP 	text_7: text = '9'
+1729.9369 	DATA 	Keypress: 0
+1730.3270 	EXP 	New trial (rep=7, index=0): None
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: text = '0'
+1730.3506 	EXP 	text_7: text = '0'
+1730.3506 	EXP 	text_7: autoDraw = False
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: text = 'time is up'
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: height = 0.05
+1730.3506 	EXP 	text_7: text = '15 + 61'
+1730.3506 	EXP 	text_7: autoDraw = True
+1735.1481 	DATA 	Keypress: 7
+1735.2963 	EXP 	text_7: height = 0.05
+1735.2963 	EXP 	text_7: height = 0.05
+1735.2963 	EXP 	text_7: height = 0.05
+1735.2963 	EXP 	text_7: text = '7'
+1735.4483 	DATA 	Keypress: 6
+1735.8357 	EXP 	New trial (rep=8, index=0): None
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: text = '6'
+1735.8454 	EXP 	text_7: text = '6'
+1735.8454 	EXP 	text_7: autoDraw = False
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: text = 'time is up'
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: height = 0.05
+1735.8454 	EXP 	text_7: text = '48 + 39'
+1735.8454 	EXP 	text_7: autoDraw = True
+1742.0915 	DATA 	Keypress: 8
+1742.2235 	EXP 	text_7: height = 0.05
+1742.2235 	EXP 	text_7: height = 0.05
+1742.2235 	EXP 	text_7: height = 0.05
+1742.2235 	EXP 	text_7: text = '8'
+1742.2923 	DATA 	Keypress: 7
+1742.6630 	EXP 	New trial (rep=9, index=0): None
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: text = '7'
+1742.6718 	EXP 	text_7: text = '7'
+1742.6718 	EXP 	text_7: autoDraw = False
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: text = 'time is up'
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: height = 0.05
+1742.6718 	EXP 	text_7: text = '46 + 52'
+1742.6718 	EXP 	text_7: autoDraw = True
+1748.2869 	DATA 	Keypress: 9
+1748.4176 	EXP 	text_7: height = 0.05
+1748.4176 	EXP 	text_7: height = 0.05
+1748.4176 	EXP 	text_7: height = 0.05
+1748.4176 	EXP 	text_7: text = '9'
+1748.5856 	DATA 	Keypress: 8
+1748.9567 	EXP 	New trial (rep=10, index=0): None
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: text = '8'
+1748.9662 	EXP 	text_7: text = '8'
+1748.9662 	EXP 	text_7: autoDraw = False
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: text = 'time is up'
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: height = 0.05
+1748.9662 	EXP 	text_7: text = '72 - 45'
+1748.9662 	EXP 	text_7: autoDraw = True
+1763.5382 	DATA 	Keypress: 2
+1763.7197 	EXP 	text_7: height = 0.05
+1763.7197 	EXP 	text_7: height = 0.05
+1763.7197 	EXP 	text_7: height = 0.05
+1763.7197 	EXP 	text_7: text = '2'
+1764.0879 	DATA 	Keypress: 7
+1764.4586 	EXP 	New trial (rep=11, index=0): None
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: text = '7'
+1764.4682 	EXP 	text_7: text = '7'
+1764.4682 	EXP 	text_7: autoDraw = False
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: text = 'time is up'
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: height = 0.05
+1764.4682 	EXP 	text_7: text = '77 - 17'
+1764.4682 	EXP 	text_7: autoDraw = True
+1766.3530 	DATA 	Keypress: 6
+1767.0025 	DATA 	Keypress: 0
+1767.1500 	EXP 	text_7: height = 0.05
+1767.1500 	EXP 	text_7: height = 0.05
+1767.1500 	EXP 	text_7: height = 0.05
+1767.1500 	EXP 	text_7: text = '0'
+1768.6170 	DATA 	Keypress: 6
+1768.7650 	EXP 	text_7: height = 0.05
+1768.7650 	EXP 	text_7: height = 0.05
+1768.7650 	EXP 	text_7: height = 0.05
+1768.7650 	EXP 	text_7: text = '6'
+1768.7650 	EXP 	text_7: height = 0.05
+1768.7650 	EXP 	text_7: height = 0.05
+1768.7650 	EXP 	text_7: height = 0.05
+1768.7650 	EXP 	text_7: text = '77 - 17'
+1769.4665 	DATA 	Keypress: 6
+1769.5982 	EXP 	text_7: height = 0.05
+1769.5982 	EXP 	text_7: height = 0.05
+1769.5982 	EXP 	text_7: height = 0.05
+1769.5982 	EXP 	text_7: text = '6'
+1770.4817 	DATA 	Keypress: 0
+1770.8365 	EXP 	New trial (rep=12, index=0): None
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: text = '0'
+1770.8460 	EXP 	text_7: text = '0'
+1770.8460 	EXP 	text_7: autoDraw = False
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: text = 'time is up'
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: height = 0.05
+1770.8460 	EXP 	text_7: text = '2 + 96'
+1770.8460 	EXP 	text_7: autoDraw = True
+1774.5284 	DATA 	Keypress: 9
+1774.6598 	EXP 	text_7: height = 0.05
+1774.6598 	EXP 	text_7: height = 0.05
+1774.6598 	EXP 	text_7: height = 0.05
+1774.6598 	EXP 	text_7: text = '9'
+1774.8613 	DATA 	Keypress: 8
+1775.2153 	EXP 	New trial (rep=13, index=0): None
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: text = '8'
+1775.2251 	EXP 	text_7: text = '8'
+1775.2251 	EXP 	text_7: autoDraw = False
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: text = 'time is up'
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: height = 0.05
+1775.2251 	EXP 	text_7: text = '16 + 34'
+1775.2251 	EXP 	text_7: autoDraw = True
+1781.3718 	DATA 	Keypress: 5
+1781.5534 	EXP 	text_7: height = 0.05
+1781.5534 	EXP 	text_7: height = 0.05
+1781.5534 	EXP 	text_7: height = 0.05
+1781.5534 	EXP 	text_7: text = '5'
+1781.9381 	DATA 	Keypress: 0
+1782.3588 	EXP 	New trial (rep=14, index=0): None
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: text = '0'
+1782.3687 	EXP 	text_7: text = '0'
+1782.3687 	EXP 	text_7: autoDraw = False
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: text = 'time is up'
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: height = 0.05
+1782.3687 	EXP 	text_7: text = '51 + 37'
+1782.3687 	EXP 	text_7: autoDraw = True
+1788.8818 	DATA 	Keypress: 8
+1788.9961 	EXP 	text_7: height = 0.05
+1788.9961 	EXP 	text_7: height = 0.05
+1788.9961 	EXP 	text_7: height = 0.05
+1788.9961 	EXP 	text_7: text = '8'
+1789.1149 	DATA 	Keypress: 8
+1789.9635 	DATA 	Keypress: 8
+1790.3183 	EXP 	New trial (rep=15, index=0): None
+1790.3276 	EXP 	text_7: text = '8'
+1790.3276 	EXP 	text_7: text = '8'
+1790.3276 	EXP 	text_7: autoDraw = False
+1790.3276 	EXP 	text_7: height = 0.05
+1790.3276 	EXP 	text_7: height = 0.05
+1790.3276 	EXP 	text_7: height = 0.05
+1790.3276 	EXP 	text_7: text = 'time is up'
+1790.3276 	EXP 	text_7: height = 0.05
+1790.3276 	EXP 	text_7: height = 0.05
+1790.3276 	EXP 	text_7: height = 0.05
+1790.3276 	EXP 	text_7: text = '21 + 69'
+1790.3276 	EXP 	text_7: autoDraw = True
+1793.3771 	DATA 	Keypress: 9
+1793.5088 	EXP 	text_7: height = 0.05
+1793.5088 	EXP 	text_7: height = 0.05
+1793.5088 	EXP 	text_7: height = 0.05
+1793.5088 	EXP 	text_7: text = '9'
+1793.6771 	DATA 	Keypress: 0
+1794.0992 	EXP 	New trial (rep=16, index=0): None
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: text = '0'
+1794.1073 	EXP 	text_7: text = '0'
+1794.1073 	EXP 	text_7: autoDraw = False
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: text = 'time is up'
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: height = 0.05
+1794.1073 	EXP 	text_7: text = '75 - 10'
+1794.1073 	EXP 	text_7: autoDraw = True
+1797.9734 	DATA 	Keypress: 6
+1798.1213 	EXP 	text_7: height = 0.05
+1798.1213 	EXP 	text_7: height = 0.05
+1798.1213 	EXP 	text_7: height = 0.05
+1798.1213 	EXP 	text_7: text = '6'
+1798.3557 	DATA 	Keypress: 5
+1798.7603 	EXP 	New trial (rep=17, index=0): None
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: text = '5'
+1798.7701 	EXP 	text_7: text = '5'
+1798.7701 	EXP 	text_7: autoDraw = False
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: text = 'time is up'
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: height = 0.05
+1798.7701 	EXP 	text_7: text = '32 + 32'
+1798.7701 	EXP 	text_7: autoDraw = True
+1803.3017 	DATA 	Keypress: 6
+1803.4330 	EXP 	text_7: height = 0.05
+1803.4330 	EXP 	text_7: height = 0.05
+1803.4330 	EXP 	text_7: height = 0.05
+1803.4330 	EXP 	text_7: text = '6'
+1803.6342 	DATA 	Keypress: 4
+1804.0221 	EXP 	New trial (rep=18, index=0): None
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: text = '4'
+1804.0316 	EXP 	text_7: text = '4'
+1804.0316 	EXP 	text_7: autoDraw = False
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: text = 'time is up'
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: height = 0.05
+1804.0316 	EXP 	text_7: text = '34 + 42'
+1804.0316 	EXP 	text_7: autoDraw = True
+1817.6710 	DATA 	Keypress: 7
+1817.7865 	EXP 	text_7: height = 0.05
+1817.7865 	EXP 	text_7: height = 0.05
+1817.7865 	EXP 	text_7: height = 0.05
+1817.7865 	EXP 	text_7: text = '7'
+1817.9528 	DATA 	Keypress: 6
+1818.2590 	EXP 	New trial (rep=19, index=0): None
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: text = '6'
+1818.2683 	EXP 	text_7: text = '6'
+1818.2683 	EXP 	text_7: autoDraw = False
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: text = 'time is up'
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: height = 0.05
+1818.2683 	EXP 	text_7: text = '71 - 7'
+1818.2683 	EXP 	text_7: autoDraw = True
+1820.3190 	DATA 	Keypress: 6
+1820.4168 	EXP 	text_7: height = 0.05
+1820.4168 	EXP 	text_7: height = 0.05
+1820.4168 	EXP 	text_7: height = 0.05
+1820.4168 	EXP 	text_7: text = '6'
+2882.7910 	EXP 	text_7: height = 0.05
+2882.7910 	EXP 	text_7: height = 0.05
+2882.7910 	EXP 	text_7: height = 0.05
+2882.7910 	EXP 	text_7: text = 'time is up'
+2882.7910 	EXP 	text_7: autoDraw = False
+2882.7910 	EXP 	text_7: text = 'time is up'
+2882.7910 	EXP 	text_13: autoDraw = True
+2979.0697 	DATA 	Keypress: space
+2979.0849 	EXP 	text_13: autoDraw = False
+2979.0849 	EXP 	InstructionsText: autoDraw = True
+2980.3027 	EXP 	Created sequence: random, trialTypes=1, nReps=99, seed=None
+2980.3031 	EXP 	New trial (rep=0, index=0): None
+2980.3042 	DATA 	Keypress: space
+2980.3172 	EXP 	InstructionsText: autoDraw = False
+2980.3172 	EXP 	ISI_text: autoDraw = True
+2983.3310 	EXP 	ISI_text: autoDraw = False
+2983.3310 	EXP 	ISI_text: autoDraw = False
+2983.3310 	EXP 	Targetstim: autoDraw = True
+2983.6857 	DATA 	Keypress: space
+2983.6969 	EXP 	Targetstim: autoDraw = False
+2983.6969 	EXP 	Feedback_text: height = 0.05
+2983.6969 	EXP 	Feedback_text: height = 0.05
+2983.6969 	EXP 	Feedback_text: height = 0.05
+2983.6969 	EXP 	Feedback_text: text = '340'
+2983.6969 	EXP 	Feedback_text: autoDraw = True
+2984.1815 	EXP 	New trial (rep=1, index=0): None
+2984.1960 	EXP 	Feedback_text: autoDraw = False
+2984.1960 	EXP 	Feedback_text: autoDraw = False
+2984.1960 	EXP 	ISI_text: autoDraw = True
+2987.2099 	EXP 	ISI_text: autoDraw = False
+2987.2099 	EXP 	ISI_text: autoDraw = False
+2987.2099 	EXP 	Targetstim: autoDraw = True
+2987.4979 	DATA 	Keypress: space
+2987.5097 	EXP 	Targetstim: autoDraw = False
+2987.5097 	EXP 	Feedback_text: height = 0.05
+2987.5097 	EXP 	Feedback_text: height = 0.05
+2987.5097 	EXP 	Feedback_text: height = 0.05
+2987.5097 	EXP 	Feedback_text: text = '284'
+2987.5097 	EXP 	Feedback_text: autoDraw = True
+2987.9955 	EXP 	New trial (rep=2, index=0): None
+2988.0097 	EXP 	Feedback_text: autoDraw = False
+2988.0097 	EXP 	Feedback_text: autoDraw = False
+2988.0097 	EXP 	ISI_text: autoDraw = True
+2989.0254 	EXP 	ISI_text: autoDraw = False
+2989.0254 	EXP 	ISI_text: autoDraw = False
+2989.0254 	EXP 	Targetstim: autoDraw = True
+2989.3801 	DATA 	Keypress: space
+2989.3914 	EXP 	Targetstim: autoDraw = False
+2989.3914 	EXP 	Feedback_text: height = 0.05
+2989.3914 	EXP 	Feedback_text: height = 0.05
+2989.3914 	EXP 	Feedback_text: height = 0.05
+2989.3914 	EXP 	Feedback_text: text = '349'
+2989.3914 	EXP 	Feedback_text: autoDraw = True
+2989.8756 	EXP 	New trial (rep=3, index=0): None
+2989.8908 	EXP 	Feedback_text: autoDraw = False
+2989.8908 	EXP 	Feedback_text: autoDraw = False
+2989.8908 	EXP 	ISI_text: autoDraw = True
+2993.9040 	EXP 	ISI_text: autoDraw = False
+2993.9040 	EXP 	ISI_text: autoDraw = False
+2993.9040 	EXP 	Targetstim: autoDraw = True
+2994.2094 	DATA 	Keypress: space
+2994.2206 	EXP 	Targetstim: autoDraw = False
+2994.2206 	EXP 	Feedback_text: height = 0.05
+2994.2206 	EXP 	Feedback_text: height = 0.05
+2994.2206 	EXP 	Feedback_text: height = 0.05
+2994.2206 	EXP 	Feedback_text: text = '301'
+2994.2206 	EXP 	Feedback_text: autoDraw = True
+2994.7211 	EXP 	New trial (rep=4, index=0): None
+2994.7365 	EXP 	Feedback_text: autoDraw = False
+2994.7365 	EXP 	Feedback_text: autoDraw = False
+2994.7365 	EXP 	ISI_text: autoDraw = True
+2995.7361 	EXP 	ISI_text: autoDraw = False
+2995.7361 	EXP 	ISI_text: autoDraw = False
+2995.7361 	EXP 	Targetstim: autoDraw = True
+2996.1575 	DATA 	Keypress: space
+2996.1689 	EXP 	Targetstim: autoDraw = False
+2996.1689 	EXP 	Feedback_text: height = 0.05
+2996.1689 	EXP 	Feedback_text: height = 0.05
+2996.1689 	EXP 	Feedback_text: height = 0.05
+2996.1689 	EXP 	Feedback_text: text = '417'
+2996.1689 	EXP 	Feedback_text: autoDraw = True
+2996.6531 	EXP 	New trial (rep=5, index=0): None
+2996.6681 	EXP 	Feedback_text: autoDraw = False
+2996.6681 	EXP 	Feedback_text: autoDraw = False
+2996.6681 	EXP 	ISI_text: autoDraw = True
+2997.6843 	EXP 	ISI_text: autoDraw = False
+2997.6843 	EXP 	ISI_text: autoDraw = False
+2997.6843 	EXP 	Targetstim: autoDraw = True
+2998.0555 	DATA 	Keypress: space
+2998.0663 	EXP 	Targetstim: autoDraw = False
+2998.0663 	EXP 	Feedback_text: height = 0.05
+2998.0663 	EXP 	Feedback_text: height = 0.05
+2998.0663 	EXP 	Feedback_text: height = 0.05
+2998.0663 	EXP 	Feedback_text: text = '358'
+2998.0663 	EXP 	Feedback_text: autoDraw = True
+2998.5512 	EXP 	New trial (rep=6, index=0): None
+2998.5673 	EXP 	Feedback_text: autoDraw = False
+2998.5673 	EXP 	Feedback_text: autoDraw = False
+2998.5673 	EXP 	ISI_text: autoDraw = True
+3000.5814 	EXP 	ISI_text: autoDraw = False
+3000.5814 	EXP 	ISI_text: autoDraw = False
+3000.5814 	EXP 	Targetstim: autoDraw = True
+3000.8699 	DATA 	Keypress: space
+3000.8811 	EXP 	Targetstim: autoDraw = False
+3000.8811 	EXP 	Feedback_text: height = 0.05
+3000.8811 	EXP 	Feedback_text: height = 0.05
+3000.8811 	EXP 	Feedback_text: height = 0.05
+3000.8811 	EXP 	Feedback_text: text = '273'
+3000.8811 	EXP 	Feedback_text: autoDraw = True
+3001.3821 	EXP 	New trial (rep=7, index=0): None
+3001.3966 	EXP 	Feedback_text: autoDraw = False
+3001.3966 	EXP 	Feedback_text: autoDraw = False
+3001.3966 	EXP 	ISI_text: autoDraw = True
+3004.4107 	EXP 	ISI_text: autoDraw = False
+3004.4107 	EXP 	ISI_text: autoDraw = False
+3004.4107 	EXP 	Targetstim: autoDraw = True
+3004.7162 	DATA 	Keypress: space
+3004.7270 	EXP 	Targetstim: autoDraw = False
+3004.7270 	EXP 	Feedback_text: height = 0.05
+3004.7270 	EXP 	Feedback_text: height = 0.05
+3004.7270 	EXP 	Feedback_text: height = 0.05
+3004.7270 	EXP 	Feedback_text: text = '289'
+3004.7270 	EXP 	Feedback_text: autoDraw = True
+3005.2116 	EXP 	New trial (rep=8, index=0): None
+3005.2272 	EXP 	Feedback_text: autoDraw = False
+3005.2272 	EXP 	Feedback_text: autoDraw = False
+3005.2272 	EXP 	ISI_text: autoDraw = True
+3006.2422 	EXP 	ISI_text: autoDraw = False
+3006.2422 	EXP 	ISI_text: autoDraw = False
+3006.2422 	EXP 	Targetstim: autoDraw = True
+3006.5656 	DATA 	Keypress: space
+3006.5754 	EXP 	Targetstim: autoDraw = False
+3006.5754 	EXP 	Feedback_text: height = 0.05
+3006.5754 	EXP 	Feedback_text: height = 0.05
+3006.5754 	EXP 	Feedback_text: height = 0.05
+3006.5754 	EXP 	Feedback_text: text = '303'
+3006.5754 	EXP 	Feedback_text: autoDraw = True
+3007.0599 	EXP 	New trial (rep=9, index=0): None
+3007.0750 	EXP 	Feedback_text: autoDraw = False
+3007.0750 	EXP 	Feedback_text: autoDraw = False
+3007.0750 	EXP 	ISI_text: autoDraw = True
+3010.0885 	EXP 	ISI_text: autoDraw = False
+3010.0885 	EXP 	ISI_text: autoDraw = False
+3010.0885 	EXP 	Targetstim: autoDraw = True
+3010.3791 	DATA 	Keypress: space
+3010.3888 	EXP 	Targetstim: autoDraw = False
+3010.3888 	EXP 	Feedback_text: height = 0.05
+3010.3888 	EXP 	Feedback_text: height = 0.05
+3010.3888 	EXP 	Feedback_text: height = 0.05
+3010.3888 	EXP 	Feedback_text: text = '281'
+3010.3888 	EXP 	Feedback_text: autoDraw = True
+3010.8730 	EXP 	New trial (rep=10, index=0): None
+3010.8882 	EXP 	Feedback_text: autoDraw = False
+3010.8882 	EXP 	Feedback_text: autoDraw = False
+3010.8882 	EXP 	ISI_text: autoDraw = True
+3011.8870 	EXP 	ISI_text: autoDraw = False
+3011.8870 	EXP 	ISI_text: autoDraw = False
+3011.8870 	EXP 	Targetstim: autoDraw = True
+3012.2076 	DATA 	Keypress: space
+3012.2375 	EXP 	Targetstim: autoDraw = False
+3012.2375 	EXP 	Feedback_text: height = 0.05
+3012.2375 	EXP 	Feedback_text: height = 0.05
+3012.2375 	EXP 	Feedback_text: height = 0.05
+3012.2375 	EXP 	Feedback_text: text = '320'
+3012.2375 	EXP 	Feedback_text: autoDraw = True
+3012.7378 	EXP 	New trial (rep=11, index=0): None
+3012.7537 	EXP 	Feedback_text: autoDraw = False
+3012.7537 	EXP 	Feedback_text: autoDraw = False
+3012.7537 	EXP 	ISI_text: autoDraw = True
+3014.7684 	EXP 	ISI_text: autoDraw = False
+3014.7684 	EXP 	ISI_text: autoDraw = False
+3014.7684 	EXP 	Targetstim: autoDraw = True
+3015.0897 	DATA 	Keypress: space
+3015.1005 	EXP 	Targetstim: autoDraw = False
+3015.1005 	EXP 	Feedback_text: height = 0.05
+3015.1005 	EXP 	Feedback_text: height = 0.05
+3015.1005 	EXP 	Feedback_text: height = 0.05
+3015.1005 	EXP 	Feedback_text: text = '304'
+3015.1005 	EXP 	Feedback_text: autoDraw = True
+3015.5855 	EXP 	New trial (rep=12, index=0): None
+3015.6006 	EXP 	Feedback_text: autoDraw = False
+3015.6006 	EXP 	Feedback_text: autoDraw = False
+3015.6006 	EXP 	ISI_text: autoDraw = True
+3018.6143 	EXP 	ISI_text: autoDraw = False
+3018.6143 	EXP 	ISI_text: autoDraw = False
+3018.6143 	EXP 	Targetstim: autoDraw = True
+3018.8858 	DATA 	Keypress: space
+3018.8977 	EXP 	Targetstim: autoDraw = False
+3018.8977 	EXP 	Feedback_text: height = 0.05
+3018.8977 	EXP 	Feedback_text: height = 0.05
+3018.8977 	EXP 	Feedback_text: height = 0.05
+3018.8977 	EXP 	Feedback_text: text = '259'
+3018.8977 	EXP 	Feedback_text: autoDraw = True
+3019.3824 	EXP 	New trial (rep=13, index=0): None
+3019.3965 	EXP 	Feedback_text: autoDraw = False
+3019.3965 	EXP 	Feedback_text: autoDraw = False
+3019.3965 	EXP 	ISI_text: autoDraw = True
+3022.4105 	EXP 	ISI_text: autoDraw = False
+3022.4105 	EXP 	ISI_text: autoDraw = False
+3022.4105 	EXP 	Targetstim: autoDraw = True
+3022.6842 	DATA 	Keypress: space
+3022.6940 	EXP 	Targetstim: autoDraw = False
+3022.6940 	EXP 	Feedback_text: height = 0.05
+3022.6940 	EXP 	Feedback_text: height = 0.05
+3022.6940 	EXP 	Feedback_text: height = 0.05
+3022.6940 	EXP 	Feedback_text: text = '253'
+3022.6940 	EXP 	Feedback_text: autoDraw = True
+3023.1778 	EXP 	New trial (rep=14, index=0): None
+3023.1937 	EXP 	Feedback_text: autoDraw = False
+3023.1937 	EXP 	Feedback_text: autoDraw = False
+3023.1937 	EXP 	ISI_text: autoDraw = True
+3026.2067 	EXP 	ISI_text: autoDraw = False
+3026.2067 	EXP 	ISI_text: autoDraw = False
+3026.2067 	EXP 	Targetstim: autoDraw = True
+3026.4960 	DATA 	Keypress: space
+3026.5072 	EXP 	Targetstim: autoDraw = False
+3026.5072 	EXP 	Feedback_text: height = 0.05
+3026.5072 	EXP 	Feedback_text: height = 0.05
+3026.5072 	EXP 	Feedback_text: height = 0.05
+3026.5072 	EXP 	Feedback_text: text = '280'
+3026.5072 	EXP 	Feedback_text: autoDraw = True
+3026.9930 	EXP 	New trial (rep=15, index=0): None
+3027.0061 	EXP 	Feedback_text: autoDraw = False
+3027.0061 	EXP 	Feedback_text: autoDraw = False
+3027.0061 	EXP 	ISI_text: autoDraw = True
+3029.0049 	EXP 	ISI_text: autoDraw = False
+3029.0049 	EXP 	ISI_text: autoDraw = False
+3029.0049 	EXP 	Targetstim: autoDraw = True
+3029.2927 	DATA 	Keypress: space
+3029.3040 	EXP 	Targetstim: autoDraw = False
+3029.3040 	EXP 	Feedback_text: height = 0.05
+3029.3040 	EXP 	Feedback_text: height = 0.05
+3029.3040 	EXP 	Feedback_text: height = 0.05
+3029.3040 	EXP 	Feedback_text: text = '279'
+3029.3040 	EXP 	Feedback_text: autoDraw = True
+3029.7882 	EXP 	New trial (rep=16, index=0): None
+3029.8043 	EXP 	Feedback_text: autoDraw = False
+3029.8043 	EXP 	Feedback_text: autoDraw = False
+3029.8043 	EXP 	ISI_text: autoDraw = True
+3032.8181 	EXP 	ISI_text: autoDraw = False
+3032.8181 	EXP 	ISI_text: autoDraw = False
+3032.8181 	EXP 	Targetstim: autoDraw = True
+3033.0893 	DATA 	Keypress: space
+3033.1007 	EXP 	Targetstim: autoDraw = False
+3033.1007 	EXP 	Feedback_text: height = 0.05
+3033.1007 	EXP 	Feedback_text: height = 0.05
+3033.1007 	EXP 	Feedback_text: height = 0.05
+3033.1007 	EXP 	Feedback_text: text = '258'
+3033.1007 	EXP 	Feedback_text: autoDraw = True
+3033.5851 	EXP 	New trial (rep=17, index=0): None
+3033.6001 	EXP 	Feedback_text: autoDraw = False
+3033.6001 	EXP 	Feedback_text: autoDraw = False
+3033.6001 	EXP 	ISI_text: autoDraw = True
+3037.6133 	EXP 	ISI_text: autoDraw = False
+3037.6133 	EXP 	ISI_text: autoDraw = False
+3037.6133 	EXP 	Targetstim: autoDraw = True
+3037.9200 	DATA 	Keypress: space
+3037.9293 	EXP 	Targetstim: autoDraw = False
+3037.9293 	EXP 	Feedback_text: height = 0.05
+3037.9293 	EXP 	Feedback_text: height = 0.05
+3037.9293 	EXP 	Feedback_text: height = 0.05
+3037.9293 	EXP 	Feedback_text: text = '286'
+3037.9293 	EXP 	Feedback_text: autoDraw = True
+3038.4133 	EXP 	New trial (rep=18, index=0): None
+3038.4298 	EXP 	Feedback_text: autoDraw = False
+3038.4298 	EXP 	Feedback_text: autoDraw = False
+3038.4298 	EXP 	ISI_text: autoDraw = True
+3040.4442 	EXP 	ISI_text: autoDraw = False
+3040.4442 	EXP 	ISI_text: autoDraw = False
+3040.4442 	EXP 	Targetstim: autoDraw = True
+3040.7485 	DATA 	Keypress: space
+3040.7602 	EXP 	Targetstim: autoDraw = False
+3040.7602 	EXP 	Feedback_text: height = 0.05
+3040.7602 	EXP 	Feedback_text: height = 0.05
+3040.7602 	EXP 	Feedback_text: height = 0.05
+3040.7602 	EXP 	Feedback_text: text = '293'
+3040.7602 	EXP 	Feedback_text: autoDraw = True
+3041.2606 	EXP 	Feedback_text: autoDraw = False
+3041.2606 	EXP 	Feedback_text: autoDraw = False
+3041.2606 	EXP 	text_6: autoDraw = True
+3042.5275 	DATA 	Keypress: space
+3042.5450 	EXP 	Created sequence: random, trialTypes=1, nReps=99, seed=None
+3042.5455 	EXP 	New trial (rep=0, index=0): None
+3042.5584 	EXP 	text_6: autoDraw = False
+3042.5584 	EXP 	text_7: height = 0.05
+3042.5584 	EXP 	text_7: height = 0.05
+3042.5584 	EXP 	text_7: height = 0.05
+3042.5584 	EXP 	text_7: text = '84 - 11'
+3042.5584 	EXP 	text_7: autoDraw = True
+3046.1404 	DATA 	Keypress: 7
+3046.2547 	EXP 	text_7: height = 0.05
+3046.2547 	EXP 	text_7: height = 0.05
+3046.2547 	EXP 	text_7: height = 0.05
+3046.2547 	EXP 	text_7: text = '7'
+3046.4235 	DATA 	Keypress: 3
+3046.7965 	EXP 	New trial (rep=1, index=0): None
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: text = '3'
+3046.8035 	EXP 	text_7: text = '3'
+3046.8035 	EXP 	text_7: autoDraw = False
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: text = 'time is up'
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: height = 0.05
+3046.8035 	EXP 	text_7: text = '54 - 23'
+3046.8035 	EXP 	text_7: autoDraw = True
+3049.8209 	DATA 	Keypress: 3
+3049.9855 	EXP 	text_7: height = 0.05
+3049.9855 	EXP 	text_7: height = 0.05
+3049.9855 	EXP 	text_7: height = 0.05
+3049.9855 	EXP 	text_7: text = '3'
+3050.4539 	DATA 	Keypress: 1
+3050.8738 	EXP 	New trial (rep=2, index=0): None
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: text = '1'
+3050.8845 	EXP 	text_7: text = '1'
+3050.8845 	EXP 	text_7: autoDraw = False
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: text = 'time is up'
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: height = 0.05
+3050.8845 	EXP 	text_7: text = '78 - 66'
+3050.8845 	EXP 	text_7: autoDraw = True
+3056.4641 	DATA 	Keypress: 1
+3056.6620 	EXP 	text_7: height = 0.05
+3056.6620 	EXP 	text_7: height = 0.05
+3056.6620 	EXP 	text_7: height = 0.05
+3056.6620 	EXP 	text_7: text = '1'
+3056.7803 	DATA 	Keypress: 2
+3057.2181 	EXP 	New trial (rep=3, index=0): None
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: text = '2'
+3057.2275 	EXP 	text_7: text = '2'
+3057.2275 	EXP 	text_7: autoDraw = False
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: text = 'time is up'
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: height = 0.05
+3057.2275 	EXP 	text_7: text = '53 - 1'
+3057.2275 	EXP 	text_7: autoDraw = True
+3058.7121 	DATA 	Keypress: 5
+3058.8264 	EXP 	text_7: height = 0.05
+3058.8264 	EXP 	text_7: height = 0.05
+3058.8264 	EXP 	text_7: height = 0.05
+3058.8264 	EXP 	text_7: text = '5'
+3058.9612 	DATA 	Keypress: 2
+3059.3651 	EXP 	New trial (rep=4, index=0): None
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: text = '2'
+3059.3751 	EXP 	text_7: text = '2'
+3059.3751 	EXP 	text_7: autoDraw = False
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: text = 'time is up'
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: height = 0.05
+3059.3751 	EXP 	text_7: text = '44 + 11'
+3059.3751 	EXP 	text_7: autoDraw = True
+3060.8264 	DATA 	Keypress: 5
+3060.9748 	EXP 	text_7: height = 0.05
+3060.9748 	EXP 	text_7: height = 0.05
+3060.9748 	EXP 	text_7: height = 0.05
+3060.9748 	EXP 	text_7: text = '5'
+3061.1260 	DATA 	Keypress: 5
+3061.5121 	EXP 	New trial (rep=5, index=0): None
+3061.5232 	EXP 	text_7: text = '5'
+3061.5232 	EXP 	text_7: text = '5'
+3061.5232 	EXP 	text_7: autoDraw = False
+3061.5232 	EXP 	text_7: height = 0.05
+3061.5232 	EXP 	text_7: height = 0.05
+3061.5232 	EXP 	text_7: height = 0.05
+3061.5232 	EXP 	text_7: text = 'time is up'
+3061.5232 	EXP 	text_7: height = 0.05
+3061.5232 	EXP 	text_7: height = 0.05
+3061.5232 	EXP 	text_7: height = 0.05
+3061.5232 	EXP 	text_7: text = '29 + 38'
+3061.5232 	EXP 	text_7: autoDraw = True
+3066.8376 	DATA 	Keypress: 6
+3066.9358 	EXP 	text_7: height = 0.05
+3066.9358 	EXP 	text_7: height = 0.05
+3066.9358 	EXP 	text_7: height = 0.05
+3066.9358 	EXP 	text_7: text = '6'
+3067.0541 	DATA 	Keypress: 7
+3067.3917 	EXP 	New trial (rep=6, index=0): None
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: text = '7'
+3067.4010 	EXP 	text_7: text = '7'
+3067.4010 	EXP 	text_7: autoDraw = False
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: text = 'time is up'
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: height = 0.05
+3067.4010 	EXP 	text_7: text = '63 - 28'
+3067.4010 	EXP 	text_7: autoDraw = True
+3073.2312 	DATA 	Keypress: 3
+3073.4295 	EXP 	text_7: height = 0.05
+3073.4295 	EXP 	text_7: height = 0.05
+3073.4295 	EXP 	text_7: height = 0.05
+3073.4295 	EXP 	text_7: text = '3'
+3073.5485 	DATA 	Keypress: 5
+3073.9528 	EXP 	New trial (rep=7, index=0): None
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: text = '5'
+3073.9619 	EXP 	text_7: text = '5'
+3073.9619 	EXP 	text_7: autoDraw = False
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: text = 'time is up'
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: height = 0.05
+3073.9619 	EXP 	text_7: text = '47 + 16'
+3073.9619 	EXP 	text_7: autoDraw = True
+3078.1437 	DATA 	Keypress: 6
+3078.2920 	EXP 	text_7: height = 0.05
+3078.2920 	EXP 	text_7: height = 0.05
+3078.2920 	EXP 	text_7: height = 0.05
+3078.2920 	EXP 	text_7: text = '6'
+3078.6432 	DATA 	Keypress: 3
+3079.0473 	EXP 	New trial (rep=8, index=0): None
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: text = '3'
+3079.0574 	EXP 	text_7: text = '3'
+3079.0574 	EXP 	text_7: autoDraw = False
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: text = 'time is up'
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: height = 0.05
+3079.0574 	EXP 	text_7: text = '57 + 32'
+3079.0574 	EXP 	text_7: autoDraw = True
+3083.9378 	DATA 	Keypress: 8
+3084.1032 	EXP 	text_7: height = 0.05
+3084.1032 	EXP 	text_7: height = 0.05
+3084.1032 	EXP 	text_7: height = 0.05
+3084.1032 	EXP 	text_7: text = '8'
+3084.2719 	DATA 	Keypress: 9
+3084.6592 	EXP 	New trial (rep=9, index=0): None
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: text = '9'
+3084.6685 	EXP 	text_7: text = '9'
+3084.6685 	EXP 	text_7: autoDraw = False
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: text = 'time is up'
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: height = 0.05
+3084.6685 	EXP 	text_7: text = '2 + 15'
+3084.6685 	EXP 	text_7: autoDraw = True
+3086.1026 	DATA 	Keypress: 2
+3086.2842 	EXP 	text_7: height = 0.05
+3086.2842 	EXP 	text_7: height = 0.05
+3086.2842 	EXP 	text_7: height = 0.05
+3086.2842 	EXP 	text_7: text = '2'
+3086.4543 	DATA 	Keypress: 7
+3086.5843 	EXP 	text_7: height = 0.05
+3086.5843 	EXP 	text_7: height = 0.05
+3086.5843 	EXP 	text_7: height = 0.05
+3086.5843 	EXP 	text_7: text = '7'
+3086.5843 	EXP 	text_7: height = 0.05
+3086.5843 	EXP 	text_7: height = 0.05
+3086.5843 	EXP 	text_7: height = 0.05
+3086.5843 	EXP 	text_7: text = '2 + 15'
+3088.5173 	DATA 	Keypress: 1
+3088.7321 	EXP 	text_7: height = 0.05
+3088.7321 	EXP 	text_7: height = 0.05
+3088.7321 	EXP 	text_7: height = 0.05
+3088.7321 	EXP 	text_7: text = '1'
+3088.7843 	DATA 	Keypress: 7
+3089.1554 	EXP 	New trial (rep=10, index=0): None
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: text = '7'
+3089.1644 	EXP 	text_7: text = '7'
+3089.1644 	EXP 	text_7: autoDraw = False
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: text = 'time is up'
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: height = 0.05
+3089.1644 	EXP 	text_7: text = '9 + 46'
+3089.1644 	EXP 	text_7: autoDraw = True
+3091.5318 	DATA 	Keypress: 5
+3091.6793 	EXP 	text_7: height = 0.05
+3091.6793 	EXP 	text_7: height = 0.05
+3091.6793 	EXP 	text_7: height = 0.05
+3091.6793 	EXP 	text_7: text = '5'
+3091.7649 	DATA 	Keypress: 5
+3092.1510 	EXP 	New trial (rep=11, index=0): None
+3092.1618 	EXP 	text_7: text = '5'
+3092.1618 	EXP 	text_7: text = '5'
+3092.1618 	EXP 	text_7: autoDraw = False
+3092.1618 	EXP 	text_7: height = 0.05
+3092.1618 	EXP 	text_7: height = 0.05
+3092.1618 	EXP 	text_7: height = 0.05
+3092.1618 	EXP 	text_7: text = 'time is up'
+3092.1618 	EXP 	text_7: height = 0.05
+3092.1618 	EXP 	text_7: height = 0.05
+3092.1618 	EXP 	text_7: height = 0.05
+3092.1618 	EXP 	text_7: text = '53 - 20'
+3092.1618 	EXP 	text_7: autoDraw = True
+3093.9120 	DATA 	Keypress: 3
+3094.0445 	EXP 	text_7: height = 0.05
+3094.0445 	EXP 	text_7: height = 0.05
+3094.0445 	EXP 	text_7: height = 0.05
+3094.0445 	EXP 	text_7: text = '3'
+3094.1795 	DATA 	Keypress: 3
+3094.5321 	EXP 	New trial (rep=12, index=0): None
+3094.5424 	EXP 	text_7: text = '3'
+3094.5424 	EXP 	text_7: text = '3'
+3094.5424 	EXP 	text_7: autoDraw = False
+3094.5424 	EXP 	text_7: height = 0.05
+3094.5424 	EXP 	text_7: height = 0.05
+3094.5424 	EXP 	text_7: height = 0.05
+3094.5424 	EXP 	text_7: text = 'time is up'
+3094.5424 	EXP 	text_7: height = 0.05
+3094.5424 	EXP 	text_7: height = 0.05
+3094.5424 	EXP 	text_7: height = 0.05
+3094.5424 	EXP 	text_7: text = '26 + 17'
+3094.5424 	EXP 	text_7: autoDraw = True
+3100.2736 	DATA 	Keypress: 4
+3100.4211 	EXP 	text_7: height = 0.05
+3100.4211 	EXP 	text_7: height = 0.05
+3100.4211 	EXP 	text_7: height = 0.05
+3100.4211 	EXP 	text_7: text = '4'
+3100.5399 	DATA 	Keypress: 2
+3100.7048 	EXP 	text_7: height = 0.05
+3100.7048 	EXP 	text_7: height = 0.05
+3100.7048 	EXP 	text_7: height = 0.05
+3100.7048 	EXP 	text_7: text = '2'
+3100.7048 	EXP 	text_7: height = 0.05
+3100.7048 	EXP 	text_7: height = 0.05
+3100.7048 	EXP 	text_7: height = 0.05
+3100.7048 	EXP 	text_7: text = '26 + 17'
+3101.5555 	DATA 	Keypress: 4
+3101.7197 	EXP 	text_7: height = 0.05
+3101.7197 	EXP 	text_7: height = 0.05
+3101.7197 	EXP 	text_7: height = 0.05
+3101.7197 	EXP 	text_7: text = '4'
+3101.8047 	DATA 	Keypress: 3
+3102.7873 	DATA 	Keypress: 3
+3103.1929 	EXP 	New trial (rep=13, index=0): None
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: text = '3'
+3103.2009 	EXP 	text_7: text = '3'
+3103.2009 	EXP 	text_7: autoDraw = False
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: text = 'time is up'
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: height = 0.05
+3103.2009 	EXP 	text_7: text = '22 + 33'
+3103.2009 	EXP 	text_7: autoDraw = True
+3104.8692 	DATA 	Keypress: 5
+3104.9999 	EXP 	text_7: height = 0.05
+3104.9999 	EXP 	text_7: height = 0.05
+3104.9999 	EXP 	text_7: height = 0.05
+3104.9999 	EXP 	text_7: text = '5'
+3105.1185 	DATA 	Keypress: 5
+3105.4546 	EXP 	New trial (rep=14, index=0): None
+3105.4654 	EXP 	text_7: text = '5'
+3105.4654 	EXP 	text_7: text = '5'
+3105.4654 	EXP 	text_7: autoDraw = False
+3105.4654 	EXP 	text_7: height = 0.05
+3105.4654 	EXP 	text_7: height = 0.05
+3105.4654 	EXP 	text_7: height = 0.05
+3105.4654 	EXP 	text_7: text = 'time is up'
+3105.4654 	EXP 	text_7: height = 0.05
+3105.4654 	EXP 	text_7: height = 0.05
+3105.4654 	EXP 	text_7: height = 0.05
+3105.4654 	EXP 	text_7: text = '40 + 52'
+3105.4654 	EXP 	text_7: autoDraw = True
+3107.5991 	DATA 	Keypress: 9
+3107.7639 	EXP 	text_7: height = 0.05
+3107.7639 	EXP 	text_7: height = 0.05
+3107.7639 	EXP 	text_7: height = 0.05
+3107.7639 	EXP 	text_7: text = '9'
+3107.9663 	DATA 	Keypress: 2
+3108.3694 	EXP 	New trial (rep=15, index=0): None
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: text = '2'
+3108.3797 	EXP 	text_7: text = '2'
+3108.3797 	EXP 	text_7: autoDraw = False
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: text = 'time is up'
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: height = 0.05
+3108.3797 	EXP 	text_7: text = '63 + 5'
+3108.3797 	EXP 	text_7: autoDraw = True
+3110.1481 	DATA 	Keypress: 6
+3110.2952 	EXP 	text_7: height = 0.05
+3110.2952 	EXP 	text_7: height = 0.05
+3110.2952 	EXP 	text_7: height = 0.05
+3110.2952 	EXP 	text_7: text = '6'
+3111.3628 	DATA 	Keypress: 8
+3111.7527 	EXP 	New trial (rep=16, index=0): None
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: text = '8'
+3111.7768 	EXP 	text_7: text = '8'
+3111.7768 	EXP 	text_7: autoDraw = False
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: text = 'time is up'
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: height = 0.05
+3111.7768 	EXP 	text_7: text = '28 + 70'
+3111.7768 	EXP 	text_7: autoDraw = True
+3113.7776 	DATA 	Keypress: 2
+3113.9748 	EXP 	text_7: height = 0.05
+3113.9748 	EXP 	text_7: height = 0.05
+3113.9748 	EXP 	text_7: height = 0.05
+3113.9748 	EXP 	text_7: text = '2'
+3114.7593 	DATA 	Keypress: 7
+3114.9073 	EXP 	text_7: height = 0.05
+3114.9073 	EXP 	text_7: height = 0.05
+3114.9073 	EXP 	text_7: height = 0.05
+3114.9073 	EXP 	text_7: text = '7'
+3114.9073 	EXP 	text_7: height = 0.05
+3114.9073 	EXP 	text_7: height = 0.05
+3114.9073 	EXP 	text_7: height = 0.05
+3114.9073 	EXP 	text_7: text = '28 + 70'
+3118.3058 	DATA 	Keypress: 9
+3118.4205 	EXP 	text_7: height = 0.05
+3118.4205 	EXP 	text_7: height = 0.05
+3118.4205 	EXP 	text_7: height = 0.05
+3118.4205 	EXP 	text_7: text = '9'
+3118.5564 	DATA 	Keypress: 8
+3118.8764 	EXP 	New trial (rep=17, index=0): None
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: text = '8'
+3118.8867 	EXP 	text_7: text = '8'
+3118.8867 	EXP 	text_7: autoDraw = False
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: text = 'time is up'
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: height = 0.05
+3118.8867 	EXP 	text_7: text = '98 - 58'
+3118.8867 	EXP 	text_7: autoDraw = True
+3123.8672 	DATA 	Keypress: 4
+3123.9991 	EXP 	text_7: height = 0.05
+3123.9991 	EXP 	text_7: height = 0.05
+3123.9991 	EXP 	text_7: height = 0.05
+3123.9991 	EXP 	text_7: text = '4'
+3124.6331 	DATA 	Keypress: 0
+3124.9711 	EXP 	New trial (rep=18, index=0): None
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: text = '0'
+3124.9808 	EXP 	text_7: text = '0'
+3124.9808 	EXP 	text_7: autoDraw = False
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: text = 'time is up'
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: height = 0.05
+3124.9808 	EXP 	text_7: text = '8 + 36'
+3124.9808 	EXP 	text_7: autoDraw = True
+3131.3944 	DATA 	Keypress: 4
+3131.5757 	EXP 	text_7: height = 0.05
+3131.5757 	EXP 	text_7: height = 0.05
+3131.5757 	EXP 	text_7: height = 0.05
+3131.5757 	EXP 	text_7: text = '4'
+3131.7433 	DATA 	Keypress: 3
+3131.9416 	EXP 	text_7: height = 0.05
+3131.9416 	EXP 	text_7: height = 0.05
+3131.9416 	EXP 	text_7: height = 0.05
+3131.9416 	EXP 	text_7: text = '3'
+3131.9416 	EXP 	text_7: height = 0.05
+3131.9416 	EXP 	text_7: height = 0.05
+3131.9416 	EXP 	text_7: height = 0.05
+3131.9416 	EXP 	text_7: text = '8 + 36'
+3132.5454 	DATA 	Keypress: 4
+3132.7405 	EXP 	text_7: height = 0.05
+3132.7405 	EXP 	text_7: height = 0.05
+3132.7405 	EXP 	text_7: height = 0.05
+3132.7405 	EXP 	text_7: text = '4'
+3132.9752 	DATA 	Keypress: 4
+3133.3781 	EXP 	New trial (rep=19, index=0): None
+3133.3892 	EXP 	text_7: text = '4'
+3133.3892 	EXP 	text_7: text = '4'
+3133.3892 	EXP 	text_7: autoDraw = False
+3133.3892 	EXP 	text_7: height = 0.05
+3133.3892 	EXP 	text_7: height = 0.05
+3133.3892 	EXP 	text_7: height = 0.05
+3133.3892 	EXP 	text_7: text = 'time is up'
+3133.3892 	EXP 	text_7: height = 0.05
+3133.3892 	EXP 	text_7: height = 0.05
+3133.3892 	EXP 	text_7: height = 0.05
+3133.3892 	EXP 	text_7: text = '18 + 67'
+3133.3892 	EXP 	text_7: autoDraw = True
+3137.0056 	DATA 	Keypress: 8
+3137.1364 	EXP 	text_7: height = 0.05
+3137.1364 	EXP 	text_7: height = 0.05
+3137.1364 	EXP 	text_7: height = 0.05
+3137.1364 	EXP 	text_7: text = '8'
+3137.5725 	DATA 	Keypress: 5
+3138.0085 	EXP 	New trial (rep=20, index=0): None
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: text = '5'
+3138.0188 	EXP 	text_7: text = '5'
+3138.0188 	EXP 	text_7: autoDraw = False
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: text = 'time is up'
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: height = 0.05
+3138.0188 	EXP 	text_7: text = '66 - 43'
+3138.0188 	EXP 	text_7: autoDraw = True
+3147.8284 	DATA 	Keypress: 3
+3148.0100 	EXP 	text_7: height = 0.05
+3148.0100 	EXP 	text_7: height = 0.05
+3148.0100 	EXP 	text_7: height = 0.05
+3148.0100 	EXP 	text_7: text = '3'
+3148.6773 	DATA 	Keypress: 2
+3148.8589 	EXP 	text_7: height = 0.05
+3148.8589 	EXP 	text_7: height = 0.05
+3148.8589 	EXP 	text_7: height = 0.05
+3148.8589 	EXP 	text_7: text = '2'
+3148.8589 	EXP 	text_7: height = 0.05
+3148.8589 	EXP 	text_7: height = 0.05
+3148.8589 	EXP 	text_7: height = 0.05
+3148.8589 	EXP 	text_7: text = '66 - 43'
+3149.1773 	DATA 	Keypress: 2
+3149.3924 	EXP 	text_7: height = 0.05
+3149.3924 	EXP 	text_7: height = 0.05
+3149.3924 	EXP 	text_7: height = 0.05
+3149.3924 	EXP 	text_7: text = '2'
+3149.5104 	DATA 	Keypress: 3
+3149.9480 	EXP 	New trial (rep=21, index=0): None
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: text = '3'
+3149.9575 	EXP 	text_7: text = '3'
+3149.9575 	EXP 	text_7: autoDraw = False
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: text = 'time is up'
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: height = 0.05
+3149.9575 	EXP 	text_7: text = '34 - 15'
+3149.9575 	EXP 	text_7: autoDraw = True
+3157.8364 	DATA 	Keypress: 2
+3158.0343 	EXP 	text_7: height = 0.05
+3158.0343 	EXP 	text_7: height = 0.05
+3158.0343 	EXP 	text_7: height = 0.05
+3158.0343 	EXP 	text_7: text = '2'
+3158.2855 	DATA 	Keypress: 9
+3158.4333 	EXP 	text_7: height = 0.05
+3158.4333 	EXP 	text_7: height = 0.05
+3158.4333 	EXP 	text_7: height = 0.05
+3158.4333 	EXP 	text_7: text = '9'
+3158.4333 	EXP 	text_7: height = 0.05
+3158.4333 	EXP 	text_7: height = 0.05
+3158.4333 	EXP 	text_7: height = 0.05
+3158.4333 	EXP 	text_7: text = '34 - 15'
+3162.5632 	EXP 	text_7: height = 0.05
+3162.5632 	EXP 	text_7: height = 0.05
+3162.5632 	EXP 	text_7: height = 0.05
+3162.5632 	EXP 	text_7: text = 'time is up'
+3162.5632 	EXP 	text_7: autoDraw = False
+3162.5632 	EXP 	text_7: text = 'time is up'
+3162.5632 	EXP 	text_3: autoDraw = True
+3179.5820 	DATA 	Keypress: space
+3191.6878 	DATA 	Mouse: Left button down, pos=(556,392)
+3192.3213 	DATA 	Mouse:  Left button up, pos=(670,405)
+3195.4837 	DATA 	Keypress: escape
+3196.2038 	EXP 	window1: mouseVisible = True
