@@ -1,0 +1,151 @@
+7.1446 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016CAB90BA00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000016CB0B921F0>, multiSample=False, name='window1', numSamples=2, pos=(360, 140), screen=0, size=array([1200,  800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.1447 	EXP 	window1: mouseVisible = True
+7.1447 	EXP 	window1: mouseVisible = True
+7.1447 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.1447 	EXP 	window1: recordFrameIntervals = False
+7.3109 	EXP 	window1: recordFrameIntervals = True
+7.4947 	EXP 	Screen (0) actual frame rate measured at 59.70Hz
+7.4948 	EXP 	window1: recordFrameIntervals = False
+7.5395 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+9.4887 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5017 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5122 	EXP 	Created InstructionsText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='InstructionsText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5130 	EXP 	Created ISI_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5135 	EXP 	Created Targetstim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Targetstim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5140 	EXP 	Created Feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Feedback_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5248 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5253 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5315 	EXP 	Created InstructionsText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='InstructionsText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5323 	EXP 	Created ISI_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5328 	EXP 	Created Targetstim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Targetstim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5333 	EXP 	Created Feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Feedback_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5406 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5412 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5476 	EXP 	Created InstructionsText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='InstructionsText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5485 	EXP 	Created ISI_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5491 	EXP 	Created Targetstim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Targetstim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5496 	EXP 	Created Feedback_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Feedback_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5575 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5581 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5610 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Done', units='height', win=Window(...), wrapWidth=1)
+9.5778 	EXP 	text_2: autoDraw = True
+11.3594 	DATA 	Keypress: space
+11.3731 	EXP 	text_2: autoDraw = False
+11.3731 	EXP 	text_4: autoDraw = True
+12.3722 	EXP 	text_4: autoDraw = False
+12.3722 	EXP 	text_4: autoDraw = False
+12.3722 	EXP 	InstructionsText: autoDraw = True
+12.8735 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+12.8739 	EXP 	New trial (rep=0, index=0): None
+12.8750 	DATA 	Keypress: space
+12.8884 	EXP 	InstructionsText: autoDraw = False
+12.8884 	EXP 	ISI_text: autoDraw = True
+15.9019 	EXP 	ISI_text: autoDraw = False
+15.9019 	EXP 	ISI_text: autoDraw = False
+15.9019 	EXP 	Targetstim: autoDraw = True
+16.7070 	DATA 	Keypress: space
+16.7182 	EXP 	Targetstim: autoDraw = False
+16.7182 	EXP 	Feedback_text: height = 0.05
+16.7182 	EXP 	Feedback_text: height = 0.05
+16.7182 	EXP 	Feedback_text: height = 0.05
+16.7182 	EXP 	Feedback_text: text = '787'
+16.7182 	EXP 	Feedback_text: autoDraw = True
+17.2027 	EXP 	New trial (rep=1, index=0): None
+17.2177 	EXP 	Feedback_text: autoDraw = False
+17.2177 	EXP 	Feedback_text: autoDraw = False
+17.2177 	EXP 	ISI_text: autoDraw = True
+21.2306 	EXP 	ISI_text: autoDraw = False
+21.2306 	EXP 	ISI_text: autoDraw = False
+21.2306 	EXP 	Targetstim: autoDraw = True
+21.5183 	DATA 	Keypress: space
+21.5304 	EXP 	Targetstim: autoDraw = False
+21.5304 	EXP 	Feedback_text: height = 0.05
+21.5304 	EXP 	Feedback_text: height = 0.05
+21.5304 	EXP 	Feedback_text: height = 0.05
+21.5304 	EXP 	Feedback_text: text = '271'
+21.5304 	EXP 	Feedback_text: autoDraw = True
+22.0145 	EXP 	New trial (rep=2, index=0): None
+22.0300 	EXP 	Feedback_text: autoDraw = False
+22.0300 	EXP 	Feedback_text: autoDraw = False
+22.0300 	EXP 	ISI_text: autoDraw = True
+26.0431 	EXP 	ISI_text: autoDraw = False
+26.0431 	EXP 	ISI_text: autoDraw = False
+26.0431 	EXP 	Targetstim: autoDraw = True
+26.3145 	DATA 	Keypress: space
+26.3259 	EXP 	Targetstim: autoDraw = False
+26.3259 	EXP 	Feedback_text: height = 0.05
+26.3259 	EXP 	Feedback_text: height = 0.05
+26.3259 	EXP 	Feedback_text: height = 0.05
+26.3259 	EXP 	Feedback_text: text = '256'
+26.3259 	EXP 	Feedback_text: autoDraw = True
+26.8260 	EXP 	Feedback_text: autoDraw = False
+26.8260 	EXP 	Feedback_text: autoDraw = False
+26.8260 	EXP 	text_6: autoDraw = True
+32.2386 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+32.2389 	EXP 	New trial (rep=0, index=0): None
+32.2426 	DATA 	Keypress: space
+32.2536 	EXP 	text_6: autoDraw = False
+32.2536 	EXP 	text_7: height = 0.05
+32.2536 	EXP 	text_7: height = 0.05
+32.2536 	EXP 	text_7: height = 0.05
+32.2536 	EXP 	text_7: text = '68 - 8'
+32.2536 	EXP 	text_7: autoDraw = True
+59.8947 	EXP 	text_7: height = 0.05
+59.8947 	EXP 	text_7: height = 0.05
+59.8947 	EXP 	text_7: height = 0.05
+59.8947 	EXP 	text_7: text = ''
+59.8947 	EXP 	text_7: autoDraw = False
+59.8947 	EXP 	InstructionsText: autoDraw = True
+68.7209 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+68.7213 	EXP 	New trial (rep=0, index=0): None
+68.7222 	DATA 	Keypress: space
+68.7361 	EXP 	InstructionsText: autoDraw = False
+68.7361 	EXP 	ISI_text: autoDraw = True
+69.7518 	EXP 	ISI_text: autoDraw = False
+69.7518 	EXP 	ISI_text: autoDraw = False
+69.7518 	EXP 	Targetstim: autoDraw = True
+70.3411 	DATA 	Keypress: space
+70.3511 	EXP 	Targetstim: autoDraw = False
+70.3511 	EXP 	Feedback_text: height = 0.05
+70.3511 	EXP 	Feedback_text: height = 0.05
+70.3511 	EXP 	Feedback_text: height = 0.05
+70.3511 	EXP 	Feedback_text: text = '578'
+70.3511 	EXP 	Feedback_text: autoDraw = True
+70.8510 	EXP 	Feedback_text: autoDraw = False
+70.8510 	EXP 	Feedback_text: autoDraw = False
+70.8510 	EXP 	text_6: autoDraw = True
+84.4900 	EXP 	Created sequence: random, trialTypes=1, nReps=99, seed=None
+84.4903 	EXP 	New trial (rep=0, index=0): None
+84.4968 	DATA 	Keypress: space
+84.5045 	EXP 	text_6: autoDraw = False
+84.5045 	EXP 	text_7: height = 0.05
+84.5045 	EXP 	text_7: height = 0.05
+84.5045 	EXP 	text_7: height = 0.05
+84.5045 	EXP 	text_7: text = '61 + 22'
+84.5045 	EXP 	text_7: autoDraw = True
+125.6138 	DATA 	Mouse:  Left button up, pos=(633,685)
+125.6310 	DATA 	Mouse:  Left button up, pos=(694,789)
+125.6485 	EXP 	text_7: height = 0.05
+125.6485 	EXP 	text_7: height = 0.05
+125.6485 	EXP 	text_7: height = 0.05
+125.6485 	EXP 	text_7: text = ''
+125.6485 	EXP 	text_7: autoDraw = False
+125.6485 	EXP 	InstructionsText: autoDraw = True
+130.0143 	EXP 	Created sequence: random, trialTypes=1, nReps=99, seed=None
+130.0146 	EXP 	New trial (rep=0, index=0): None
+130.0292 	EXP 	InstructionsText: autoDraw = False
+130.0292 	EXP 	ISI_text: autoDraw = True
+134.0422 	EXP 	ISI_text: autoDraw = False
+134.0422 	EXP 	ISI_text: autoDraw = False
+134.0422 	EXP 	Targetstim: autoDraw = True
+139.0536 	EXP 	Targetstim: autoDraw = False
+139.0536 	EXP 	Feedback_text: height = 0.05
+139.0536 	EXP 	Feedback_text: height = 0.05
+139.0536 	EXP 	Feedback_text: height = 0.05
+139.0536 	EXP 	Feedback_text: text = 'No response!'
+139.0536 	EXP 	Feedback_text: autoDraw = True
+139.5540 	EXP 	Feedback_text: autoDraw = False
+139.5540 	EXP 	Feedback_text: autoDraw = False
+139.5540 	EXP 	text_6: autoDraw = True
+147.0814 	DATA 	Keypress: escape
+147.4874 	EXP 	window1: mouseVisible = True
