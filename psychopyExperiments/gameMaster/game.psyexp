@@ -108,8 +108,8 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
       <CodeComponent name="code_2">
-        <Param val="from pylsl import StreamInfo, StreamOutlet&amp;#10;from psychopy import event&amp;#10;import time " valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="import {StreamInfo, StreamOutlet} from 'pylsl';&amp;#10;import {event} from 'psychopy';&amp;#10;import * as time from 'time';&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="from pylsl import StreamInfo, StreamOutlet&amp;#10;from psychopy import event&amp;#10;import time &amp;#10;&amp;#10;PVTSECTIONLENGTH = 60&amp;#10;MATHSECTIONLENGTH = 120&amp;#10;TETRISSECITONLEENGTH = 300&amp;#10;TETRISREPETITION = 2&amp;#10;SNAKESECITONLEENGTH = 300&amp;#10;SNAKEREPETITION = 2" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="import {StreamInfo, StreamOutlet} from 'pylsl';&amp;#10;import {event} from 'psychopy';&amp;#10;import * as time from 'time';&amp;#10;var MATHSECTIONLENGTH, PVTSECTIONLENGTH, SNAKEREPETITION, SNAKESECITONLEENGTH, TETRISREPETITION, TETRISSECITONLEENGTH;&amp;#10;PVTSECTIONLENGTH = 60;&amp;#10;MATHSECTIONLENGTH = 120;&amp;#10;TETRISSECITONLEENGTH = 300;&amp;#10;TETRISREPETITION = 2;&amp;#10;SNAKESECITONLEENGTH = 300;&amp;#10;SNAKEREPETITION = 2;&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="#event ids&amp;#10;startBaseline = 1&amp;#10;startPvt = 2&amp;#10;pvtItemAppears = 3&amp;#10;startMaths = 4&amp;#10;correctAnswer = 5&amp;#10;startTetris = 6&amp;#10;tetrisFail = 7&amp;#10;tetrisLvlUp = 8&amp;#10;pauseTetris = 9&amp;#10;startSnake = 10&amp;#10;snakeFail = 11&amp;#10;snakeLvlUp = 12&amp;#10;pauseSnake = 13&amp;#10;&amp;#10;minuteOrSecond = 1 #1: test. 60: measurement. multiplies experiment durations (seconds). &amp;#10;&amp;#10;info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,&amp;#10;                  channel_format='int32', source_id='Psychopy Markers')&amp;#10;# Initialize the stream.&amp;#10;outlet = StreamOutlet(info)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="startBaseline = 1;&amp;#10;startPvt = 2;&amp;#10;pvtItemAppears = 3;&amp;#10;startMaths = 4;&amp;#10;correctAnswer = 5;&amp;#10;startTetris = 6;&amp;#10;tetrisFail = 7;&amp;#10;tetrisLvlUp = 8;&amp;#10;pauseTetris = 9;&amp;#10;startSnake = 10;&amp;#10;snakeFail = 11;&amp;#10;snakeLvlUp = 12;&amp;#10;pauseSnake = 13;&amp;#10;minuteOrSecond = 1;&amp;#10;info = new StreamInfo({&quot;name&quot;: &quot;LSL_Markers&quot;, &quot;type&quot;: &quot;Markers&quot;, &quot;channel_count&quot;: 1, &quot;channel_format&quot;: &quot;int32&quot;, &quot;source_id&quot;: &quot;Psychopy Markers&quot;});&amp;#10;outlet = new StreamOutlet(info);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
@@ -1011,6 +1011,51 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="PVT1Finish"/>
+    <Routine name="NasaTLX">
+      <TextComponent name="text_13">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_13" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Please fill the nasa tlx test.&amp;#10;&amp;#10;Press space to continue" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_6">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_6" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="Starter"/>
@@ -1048,6 +1093,7 @@
     <Routine name="mathsTaskNew"/>
     <LoopTerminator name="trials_3"/>
     <Routine name="Tetris"/>
+    <Routine name="NasaTLX"/>
     <Routine name="InstructionsPVT"/>
     <LoopInitiator loopType="TrialHandler" name="trials_6">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
@@ -1081,6 +1127,7 @@
     <Routine name="mathsTaskNew"/>
     <LoopTerminator name="trials_5"/>
     <Routine name="Snake"/>
+    <Routine name="NasaTLX"/>
     <Routine name="InstructionsPVT"/>
     <LoopInitiator loopType="TrialHandler" name="trials_4">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
