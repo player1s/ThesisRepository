@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on December 13, 2023, at 13:58
+    on December 13, 2023, at 14:33
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -38,7 +38,7 @@ PVTSECTIONLENGTH = 60
 MATHSECTIONLENGTH = 120
 TETRISSECITONLEENGTH = 300
 TETRISREPETITION = 3
-SNAKESECITONLEENGTH = 300
+SNAKESECITONLEENGTH = 2
 SNAKEREPETITION = 3
 # Run 'Before Experiment' code from code_5
 import random
@@ -72,7 +72,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\elpid\\Downloads\\thesis\\ThesisRepository\\psychopyExperiments\\gameMaster\\game_lastrun.py',
+    originPath='C:\\mindenJoSHasztalan\\UniversityAndStuff\\DTU\\Semester 6\\Thesis\\Code\\ThesisRepository\\psychopyExperiments\\gameMaster\\game_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -131,7 +131,7 @@ startMaths = 4
 correctAnswer = 5
 startTetris = 6
 tetrisFail = 7
-tetrisLvlUp = 8
+levelGainTetris = 8
 pauseTetris = 9
 startSnake = 10
 snakeFail = 11
@@ -145,6 +145,8 @@ info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
 # Initialize the stream.
 outlet = StreamOutlet(info)
 
+
+# --- Initialize components for Routine "Snake" ---
 
 # --- Initialize components for Routine "Baseline" ---
 text_4 = visual.TextStim(win=win, name='text_4',
@@ -194,7 +196,7 @@ Feedback_text = visual.TextStim(win=win, name='Feedback_text',
     text='',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color='red', colorSpace='rgb', opacity=None, 
+    color='green', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 
@@ -272,7 +274,7 @@ Feedback_text = visual.TextStim(win=win, name='Feedback_text',
     text='',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color='red', colorSpace='rgb', opacity=None, 
+    color='green', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 
@@ -350,7 +352,7 @@ Feedback_text = visual.TextStim(win=win, name='Feedback_text',
     text='',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color='red', colorSpace='rgb', opacity=None, 
+    color='green', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 
@@ -486,6 +488,360 @@ if key_resp.keys != None:  # we had a response
     thisExp.addData('key_resp.rt', key_resp.rt)
 thisExp.nextEntry()
 # the Routine "Starter" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "Snake" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+# Run 'Begin Routine' code from code_4
+"""
+Wormy (a Nibbles clone)
+
+original author: Al Sweigart (al@inventwithpython.com)
+{Making Games with Python and Pygame (2012)}
+http://inventwithpython.com/pygame
+Released under a "Simplified BSD" license
+
+Tweeked so that it has a specified duration and it can be paused
+
+Created on Mon Dec  4 17:07:57 2023
+
+@author: elpid
+"""
+
+
+
+import random, pygame, sys
+from pygame.locals import *
+import time
+
+repetitions = SNAKEREPETITION
+T_BREAK = SNAKESECITONLEENGTH * minuteOrSecond
+outlet.push_sample(x=[startSnake])
+print('startSnake')
+
+FPS = 15
+WINDOWWIDTH = 640
+WINDOWHEIGHT = 480
+CELLSIZE = 20
+assert WINDOWWIDTH % CELLSIZE == 0, "Window width must be a multiple of cell size."
+assert WINDOWHEIGHT % CELLSIZE == 0, "Window height must be a multiple of cell size."
+CELLWIDTH = int(WINDOWWIDTH / CELLSIZE)
+CELLHEIGHT = int(WINDOWHEIGHT / CELLSIZE)
+
+#             R    G    B
+WHITE     = (255, 255, 255)
+BLACK     = (  0,   0,   0)
+RED       = (255,   0,   0)
+GREEN     = (  0, 255,   0)
+DARKGREEN = (  0, 155,   0)
+DARKGRAY  = ( 40,  40,  40)
+BGCOLOR = BLACK
+TEXTCOLOR = WHITE
+
+UP = 'up'
+DOWN = 'down'
+LEFT = 'left'
+RIGHT = 'right'
+
+HEAD = 0 # syntactic sugar: index of the worm's head
+
+def main():
+    global FPSCLOCK, DISPLAYSURF, BASICFONT, BIGFONT
+    
+    pygame.init()
+    FPSCLOCK = pygame.time.Clock()
+    DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
+    BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
+    BIGFONT = pygame.font.Font('freesansbold.ttf', 100)
+    pygame.display.set_caption('Wormy')
+    
+    showStartScreen()
+    shouldContinue = True
+    breakTime = time.time()
+    timeAddition = 0
+    loopCounter = 0
+    while shouldContinue:
+        print(timeAddition)
+        shouldContinue, timeAddition, breakTime, loopCounter = runGame(breakTime, timeAddition, loopCounter)
+    showGameOverScreen()
+
+
+def runGame(breakTime, timeAddition, loopCounter):
+    # Set a random start point.
+    startx = 0 #random.randint(5, CELLWIDTH - 6)
+    starty = 0 #random.randint(5, CELLHEIGHT - 6)
+    wormCoords = [{'x': startx,     'y': starty},
+                  {'x': startx - 1, 'y': starty},
+                  {'x': startx - 2, 'y': starty}]
+    direction = RIGHT
+
+    # Start the apple in a random place.
+    apple = getRandomLocation()
+
+    
+    while not loopCounter == repetitions: # main game loop
+
+        if time.time() >  breakTime + T_BREAK:
+            timeAdditionStart = time.time()
+            outlet.push_sample(x=[pauseSnake])
+            print('pauseSnake')
+            showTextScreen('Paused')
+            loopCounter = loopCounter + 1
+            timeAdditionFinish = time.time()
+            timeAddition = timeAddition + (timeAdditionFinish - timeAdditionStart)
+            breakTime = time.time()
+            outlet.push_sample(x=[startSnake])
+            print('startSnake')
+
+
+
+        for event in pygame.event.get(): # event handling loop
+            if event.type == QUIT:
+                terminate()
+            elif event.type == KEYDOWN:
+                if (event.key == K_LEFT or event.key == K_a) and direction != RIGHT:
+                    direction = LEFT
+                elif (event.key == K_RIGHT or event.key == K_d) and direction != LEFT:
+                    direction = RIGHT
+                elif (event.key == K_UP or event.key == K_w) and direction != DOWN:
+                    direction = UP
+                elif (event.key == K_DOWN or event.key == K_s) and direction != UP:
+                    direction = DOWN
+                elif event.key == K_ESCAPE:
+                    terminate()
+            elif event.type == KEYUP:
+                if (event.key == K_p):
+                    # Pausing the game
+                    showTextScreen('Paused') # pause until a key press
+ 
+
+        # check if the worm has hit itself or the edge
+        if wormCoords[HEAD]['x'] == -1 or wormCoords[HEAD]['x'] == CELLWIDTH or wormCoords[HEAD]['y'] == -1 or wormCoords[HEAD]['y'] == CELLHEIGHT:
+            outlet.push_sample(x=[snakeFail])
+            print('snakeFail')
+            return True, timeAddition, breakTime, loopCounter# game over
+        for wormBody in wormCoords[1:]:
+            if wormBody['x'] == wormCoords[HEAD]['x'] and wormBody['y'] == wormCoords[HEAD]['y']:
+                outlet.push_sample(x=[snakeFail])
+                print('snakeFail')
+                return True, timeAddition, breakTime, loopCounter# game over
+
+        # check if worm has eaten an apply
+        if wormCoords[HEAD]['x'] == apple['x'] and wormCoords[HEAD]['y'] == apple['y']:
+            # don't remove worm's tail segment
+            apple = getRandomLocation() # set a new apple somewhere
+        else:
+            del wormCoords[-1] # remove worm's tail segment
+
+        # move the worm by adding a segment in the direction it is moving
+        if direction == UP:
+            newHead = {'x': wormCoords[HEAD]['x'], 'y': wormCoords[HEAD]['y'] - 1}
+        elif direction == DOWN:
+            newHead = {'x': wormCoords[HEAD]['x'], 'y': wormCoords[HEAD]['y'] + 1}
+        elif direction == LEFT:
+            newHead = {'x': wormCoords[HEAD]['x'] - 1, 'y': wormCoords[HEAD]['y']}
+        elif direction == RIGHT:
+            newHead = {'x': wormCoords[HEAD]['x'] + 1, 'y': wormCoords[HEAD]['y']}
+        wormCoords.insert(0, newHead)
+        DISPLAYSURF.fill(BGCOLOR)
+        drawGrid()
+        drawWorm(wormCoords)
+        drawApple(apple)
+        drawScore(len(wormCoords) - 3)
+        pygame.display.update()
+        FPSCLOCK.tick(FPS)
+        nowTime = time.time()
+    return False, timeAddition, breakTime, loopCounter
+
+def drawPressKeyMsg():
+    pressKeySurf = BASICFONT.render('Press a key to play.', True, DARKGRAY)
+    pressKeyRect = pressKeySurf.get_rect()
+    pressKeyRect.topleft = (WINDOWWIDTH - 200, WINDOWHEIGHT - 30)
+    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
+
+
+def checkForKeyPress():
+    if len(pygame.event.get(QUIT)) > 0:
+        terminate()
+
+    keyUpEvents = pygame.event.get(KEYUP)
+    
+
+    for event in keyUpEvents: # get all the KEYUP events
+        if event.key == K_SPACE:
+            return 1
+    if len(keyUpEvents) == 0:
+        return None
+    if keyUpEvents[0].key == K_ESCAPE:
+        terminate()
+    return keyUpEvents[0].key
+
+
+def showStartScreen():
+    titleFont = pygame.font.Font('freesansbold.ttf', 100)
+    titleSurf1 = titleFont.render('Wormy!', True, WHITE, DARKGREEN)
+    titleSurf2 = titleFont.render('Wormy!', True, GREEN)
+
+    degrees1 = 0
+    degrees2 = 0
+    while True:
+        DISPLAYSURF.fill(BGCOLOR)
+        rotatedSurf1 = pygame.transform.rotate(titleSurf1, degrees1)
+        rotatedRect1 = rotatedSurf1.get_rect()
+        rotatedRect1.center = (WINDOWWIDTH / 2, WINDOWHEIGHT / 2)
+        DISPLAYSURF.blit(rotatedSurf1, rotatedRect1)
+
+        rotatedSurf2 = pygame.transform.rotate(titleSurf2, degrees2)
+        rotatedRect2 = rotatedSurf2.get_rect()
+        rotatedRect2.center = (WINDOWWIDTH / 2, WINDOWHEIGHT / 2)
+        DISPLAYSURF.blit(rotatedSurf2, rotatedRect2)
+
+        drawPressKeyMsg()
+
+        if checkForKeyPress():
+            pygame.event.get() # clear event queue
+            return
+        pygame.display.update()
+        FPSCLOCK.tick(FPS)
+        degrees1 += 3 # rotate by 3 degrees each frame
+        degrees2 += 7 # rotate by 7 degrees each frame
+
+
+def terminate():
+    pygame.quit()
+    sys.exit()
+
+
+def getRandomLocation():
+    return {'x': random.randint(0, CELLWIDTH - 1), 'y': random.randint(0, CELLHEIGHT - 1)}
+
+
+def showGameOverScreen():
+    gameOverFont = pygame.font.Font('freesansbold.ttf', 150)
+    gameSurf = gameOverFont.render('Game', True, WHITE)
+    overSurf = gameOverFont.render('Over', True, WHITE)
+    gameRect = gameSurf.get_rect()
+    overRect = overSurf.get_rect()
+    gameRect.midtop = (WINDOWWIDTH / 2, 10)
+    overRect.midtop = (WINDOWWIDTH / 2, gameRect.height + 10 + 25)
+
+    DISPLAYSURF.blit(gameSurf, gameRect)
+    DISPLAYSURF.blit(overSurf, overRect)
+    drawPressKeyMsg()
+    pygame.display.update()
+    pygame.time.wait(500)
+    checkForKeyPress() # clear out any key presses in the event queue
+
+    while True:
+        if checkForKeyPress():
+            pygame.event.get() # clear event queue
+            return
+
+def drawScore(score):
+    scoreSurf = BASICFONT.render('Score: %s' % (score), True, WHITE)
+    scoreRect = scoreSurf.get_rect()
+    scoreRect.topleft = (WINDOWWIDTH - 120, 10)
+    DISPLAYSURF.blit(scoreSurf, scoreRect)
+
+
+def drawWorm(wormCoords):
+    for coord in wormCoords:
+        x = coord['x'] * CELLSIZE
+        y = coord['y'] * CELLSIZE
+        wormSegmentRect = pygame.Rect(x, y, CELLSIZE, CELLSIZE)
+        pygame.draw.rect(DISPLAYSURF, DARKGREEN, wormSegmentRect)
+        wormInnerSegmentRect = pygame.Rect(x + 4, y + 4, CELLSIZE - 8, CELLSIZE - 8)
+        pygame.draw.rect(DISPLAYSURF, GREEN, wormInnerSegmentRect)
+
+
+def drawApple(coord):
+    x = coord['x'] * CELLSIZE
+    y = coord['y'] * CELLSIZE
+    appleRect = pygame.Rect(x, y, CELLSIZE, CELLSIZE)
+    pygame.draw.rect(DISPLAYSURF, RED, appleRect)
+
+
+def drawGrid():
+    for x in range(0, WINDOWWIDTH, CELLSIZE): # draw vertical lines
+        pygame.draw.line(DISPLAYSURF, DARKGRAY, (x, 0), (x, WINDOWHEIGHT))
+    for y in range(0, WINDOWHEIGHT, CELLSIZE): # draw horizontal lines
+        pygame.draw.line(DISPLAYSURF, DARKGRAY, (0, y), (WINDOWWIDTH, y))
+
+
+def makeTextObjs(text, font, color):
+    surf = font.render(text, True, color)
+    return surf, surf.get_rect()
+
+
+def showTextScreen(text):
+    # This function displays large text in the
+    # center of the screen until a key is pressed.
+
+    # Draw the text
+    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTCOLOR)
+    titleRect.center = (int(WINDOWWIDTH / 2) - 3, int(WINDOWHEIGHT / 2) - 3)
+    DISPLAYSURF.blit(titleSurf, titleRect)
+
+    # Draw the additional "Press a key to play." text.
+    pressKeySurf, pressKeyRect = makeTextObjs('Press space to continue.', BASICFONT, TEXTCOLOR)
+    pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
+    DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
+
+    while not (checkForKeyPress() == 1):
+        pygame.display.update()
+        FPSCLOCK.tick()
+
+
+if __name__ == '__main__':
+    main()
+# keep track of which components have finished
+SnakeComponents = []
+for thisComponent in SnakeComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "Snake" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in SnakeComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "Snake" ---
+for thisComponent in SnakeComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# the Routine "Snake" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # --- Prepare to start Routine "Baseline" ---
@@ -880,7 +1236,14 @@ for thisTrial in trials:
         # counter in seconds
         time = int(round(timing.getTime(), 3) * 1000)
         
-        
+            
+        # PsychoPy is not running the trial for more than 29.991...
+        if timing.getTime() >= 4.99:
+                message = 'No response!'
+                Response.rt = timing.getTime()
+                thisExp.addData('RTms', np.NAN)
+                thisExp.addData('Accuracy', 0)
+                continueRoutine = False
         
         # *Targetstim* updates
         if Targetstim.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -964,14 +1327,7 @@ for thisTrial in trials:
         message = str(round(Response.rt * 1000))
         thisExp.addData('Accuracy', 1)
         thisExp.addData('RTms', Response.rt * 1000)
-        
-    # PsychoPy is not running the trial for more than 29.991...
-    if timing.getTime() >= 4.99:
-            message = 'No response!'
-            Response.rt = timing.getTime()
-            thisExp.addData('RTms', np.NAN)
-            thisExp.addData('Accuracy', 0)
-            continueRoutine = False
+    
     # check responses
     if Response.keys in ['', [], None]:  # No response was made
         Response.keys = None
@@ -2493,7 +2849,14 @@ for thisTrial_6 in trials_6:
         # counter in seconds
         time = int(round(timing.getTime(), 3) * 1000)
         
-        
+            
+        # PsychoPy is not running the trial for more than 29.991...
+        if timing.getTime() >= 4.99:
+                message = 'No response!'
+                Response.rt = timing.getTime()
+                thisExp.addData('RTms', np.NAN)
+                thisExp.addData('Accuracy', 0)
+                continueRoutine = False
         
         # *Targetstim* updates
         if Targetstim.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2577,14 +2940,7 @@ for thisTrial_6 in trials_6:
         message = str(round(Response.rt * 1000))
         thisExp.addData('Accuracy', 1)
         thisExp.addData('RTms', Response.rt * 1000)
-        
-    # PsychoPy is not running the trial for more than 29.991...
-    if timing.getTime() >= 4.99:
-            message = 'No response!'
-            Response.rt = timing.getTime()
-            thisExp.addData('RTms', np.NAN)
-            thisExp.addData('Accuracy', 0)
-            continueRoutine = False
+    
     # check responses
     if Response.keys in ['', [], None]:  # No response was made
         Response.keys = None
@@ -3251,6 +3607,11 @@ def checkForKeyPress():
         terminate()
 
     keyUpEvents = pygame.event.get(KEYUP)
+    
+
+    for event in keyUpEvents: # get all the KEYUP events
+        if event.key == K_SPACE:
+            return 1
     if len(keyUpEvents) == 0:
         return None
     if keyUpEvents[0].key == K_ESCAPE:
@@ -3364,11 +3725,11 @@ def showTextScreen(text):
     DISPLAYSURF.blit(titleSurf, titleRect)
 
     # Draw the additional "Press a key to play." text.
-    pressKeySurf, pressKeyRect = makeTextObjs('Press a key to play.', BASICFONT, TEXTCOLOR)
+    pressKeySurf, pressKeyRect = makeTextObjs('Press space to continue.', BASICFONT, TEXTCOLOR)
     pressKeyRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2) + 100)
     DISPLAYSURF.blit(pressKeySurf, pressKeyRect)
 
-    while checkForKeyPress() == None:
+    while not (checkForKeyPress() == 1):
         pygame.display.update()
         FPSCLOCK.tick()
 
@@ -3837,7 +4198,14 @@ for thisTrial_4 in trials_4:
         # counter in seconds
         time = int(round(timing.getTime(), 3) * 1000)
         
-        
+            
+        # PsychoPy is not running the trial for more than 29.991...
+        if timing.getTime() >= 4.99:
+                message = 'No response!'
+                Response.rt = timing.getTime()
+                thisExp.addData('RTms', np.NAN)
+                thisExp.addData('Accuracy', 0)
+                continueRoutine = False
         
         # *Targetstim* updates
         if Targetstim.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -3921,14 +4289,7 @@ for thisTrial_4 in trials_4:
         message = str(round(Response.rt * 1000))
         thisExp.addData('Accuracy', 1)
         thisExp.addData('RTms', Response.rt * 1000)
-        
-    # PsychoPy is not running the trial for more than 29.991...
-    if timing.getTime() >= 4.99:
-            message = 'No response!'
-            Response.rt = timing.getTime()
-            thisExp.addData('RTms', np.NAN)
-            thisExp.addData('Accuracy', 0)
-            continueRoutine = False
+    
     # check responses
     if Response.keys in ['', [], None]:  # No response was made
         Response.keys = None
