@@ -1059,6 +1059,7 @@
   </Routines>
   <Flow>
     <Routine name="Starter"/>
+    <Routine name="Tetris"/>
     <Routine name="Baseline"/>
     <Routine name="InstructionsPVT"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
