@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on December 15, 2023, at 14:13
+    on December 20, 2023, at 16:06
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -147,16 +147,6 @@ info = StreamInfo(name='LSL_Markers', type='Markers', channel_count=1,
 outlet = StreamOutlet(info)
 
 
-# --- Initialize components for Routine "Baseline" ---
-text_4 = visual.TextStim(win=win, name='text_4',
-    text="collect baseline for: " + str(BASELINELENGTH) + "seconds" 
-,
-    font='Open Sans',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-
 # --- Initialize components for Routine "InstructionsPVT" ---
 InstructionsText = visual.TextStim(win=win, name='InstructionsText',
     text='In this task, you are to press the SPACEBAR as quick as possible after a red counter appears\non screen.\n\n\nStart the task by pressing the  SPACEBAR.',
@@ -222,6 +212,16 @@ text_7 = visual.TextStim(win=win, name='text_7',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-2.0);
+
+# --- Initialize components for Routine "MathEnd" ---
+text_14 = visual.TextStim(win=win, name='text_14',
+    text='Press space to continue',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_7 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "Tetris" ---
 
@@ -300,6 +300,16 @@ text_7 = visual.TextStim(win=win, name='text_7',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-2.0);
+
+# --- Initialize components for Routine "MathEnd" ---
+text_14 = visual.TextStim(win=win, name='text_14',
+    text='Press space to continue',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_7 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "Snake" ---
 
@@ -487,81 +497,6 @@ if key_resp.keys != None:  # we had a response
     thisExp.addData('key_resp.rt', key_resp.rt)
 thisExp.nextEntry()
 # the Routine "Starter" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# --- Prepare to start Routine "Baseline" ---
-continueRoutine = True
-routineForceEnded = False
-# update component parameters for each repeat
-# Run 'Begin Routine' code from code_3
-print('startBaseline')
-outlet.push_sample(x=[startBaseline])
-# keep track of which components have finished
-BaselineComponents = [text_4]
-for thisComponent in BaselineComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-frameN = -1
-
-# --- Run Routine "Baseline" ---
-while continueRoutine:
-    # get current time
-    t = routineTimer.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *text_4* updates
-    if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text_4.frameNStart = frameN  # exact frame index
-        text_4.tStart = t  # local t and not account for scr refresh
-        text_4.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'text_4.started')
-        text_4.setAutoDraw(True)
-    if text_4.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text_4.tStartRefresh + BASELINELENGTH-frameTolerance:
-            # keep track of stop time/frame for later
-            text_4.tStop = t  # not accounting for scr refresh
-            text_4.frameNStop = frameN  # exact frame index
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_4.stopped')
-            text_4.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        routineForceEnded = True
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in BaselineComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# --- Ending Routine "Baseline" ---
-for thisComponent in BaselineComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# the Routine "Baseline" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # --- Prepare to start Routine "InstructionsPVT" ---
@@ -1463,6 +1398,103 @@ for thisTrial_3 in trials_3:
     
 # completed 99.0 repeats of 'trials_3'
 
+
+# --- Prepare to start Routine "MathEnd" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_7.keys = []
+key_resp_7.rt = []
+_key_resp_7_allKeys = []
+# keep track of which components have finished
+MathEndComponents = [text_14, key_resp_7]
+for thisComponent in MathEndComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "MathEnd" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_14* updates
+    if text_14.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_14.frameNStart = frameN  # exact frame index
+        text_14.tStart = t  # local t and not account for scr refresh
+        text_14.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_14, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'text_14.started')
+        text_14.setAutoDraw(True)
+    
+    # *key_resp_7* updates
+    waitOnFlip = False
+    if key_resp_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_7.frameNStart = frameN  # exact frame index
+        key_resp_7.tStart = t  # local t and not account for scr refresh
+        key_resp_7.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_7, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_7.started')
+        key_resp_7.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_7.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_7.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_7.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_7_allKeys.extend(theseKeys)
+        if len(_key_resp_7_allKeys):
+            key_resp_7.keys = _key_resp_7_allKeys[-1].name  # just the last key pressed
+            key_resp_7.rt = _key_resp_7_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in MathEndComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "MathEnd" ---
+for thisComponent in MathEndComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_7.keys in ['', [], None]:  # No response was made
+    key_resp_7.keys = None
+thisExp.addData('key_resp_7.keys',key_resp_7.keys)
+if key_resp_7.keys != None:  # we had a response
+    thisExp.addData('key_resp_7.rt', key_resp_7.rt)
+thisExp.nextEntry()
+# the Routine "MathEnd" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # --- Prepare to start Routine "Tetris" ---
 continueRoutine = True
@@ -3078,6 +3110,103 @@ for thisTrial_5 in trials_5:
     
 # completed 99.0 repeats of 'trials_5'
 
+
+# --- Prepare to start Routine "MathEnd" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_7.keys = []
+key_resp_7.rt = []
+_key_resp_7_allKeys = []
+# keep track of which components have finished
+MathEndComponents = [text_14, key_resp_7]
+for thisComponent in MathEndComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "MathEnd" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_14* updates
+    if text_14.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_14.frameNStart = frameN  # exact frame index
+        text_14.tStart = t  # local t and not account for scr refresh
+        text_14.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_14, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'text_14.started')
+        text_14.setAutoDraw(True)
+    
+    # *key_resp_7* updates
+    waitOnFlip = False
+    if key_resp_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_7.frameNStart = frameN  # exact frame index
+        key_resp_7.tStart = t  # local t and not account for scr refresh
+        key_resp_7.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_7, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_7.started')
+        key_resp_7.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_7.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_7.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_7.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_7_allKeys.extend(theseKeys)
+        if len(_key_resp_7_allKeys):
+            key_resp_7.keys = _key_resp_7_allKeys[-1].name  # just the last key pressed
+            key_resp_7.rt = _key_resp_7_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in MathEndComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "MathEnd" ---
+for thisComponent in MathEndComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_7.keys in ['', [], None]:  # No response was made
+    key_resp_7.keys = None
+thisExp.addData('key_resp_7.keys',key_resp_7.keys)
+if key_resp_7.keys != None:  # we had a response
+    thisExp.addData('key_resp_7.rt', key_resp_7.rt)
+thisExp.nextEntry()
+# the Routine "MathEnd" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # --- Prepare to start Routine "Snake" ---
 continueRoutine = True

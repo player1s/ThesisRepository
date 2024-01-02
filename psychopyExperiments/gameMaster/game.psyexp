@@ -1104,7 +1104,6 @@
   </Routines>
   <Flow>
     <Routine name="Starter"/>
-    <Routine name="Baseline"/>
     <Routine name="InstructionsPVT"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
