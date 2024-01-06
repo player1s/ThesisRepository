@@ -11,7 +11,12 @@ Helper functions for analysis
 - get task duration
 - extract data segment based on time range
 - extract timestamp segment based on time range
-- reject high amplitude epochs
+- split into epochs and reject high amplitude epochs
+- extract frequency features in eeg data
+- calculate band ratios
+- butterworth band-pass filter
+- ppg setup
+- extract ppg features
 
 
 
@@ -23,7 +28,9 @@ Created on Thu Dec 21 10:46:28 2023
 import numpy as np
 import mne
 import pandas as pd
-
+from scipy.signal import welch, butter, filtfilt
+import peak_detection_tools as peak
+import feature_extraction_tools as feat
 
 
 
@@ -144,7 +151,7 @@ def bandpower(data, sf, band, method='multitaper', window_sec=None, relative=Fal
 
 
 
-def baseline_av(baseline, baseline_ts, details=False):
+def baseline_av(baseline, baseline_ts, threshold=100e-6, epoch_length=5, details=False):
     """
     Segment the baseline period into 5 second epochs and return the average of them.
     Reject any epoch with amplitude higher than 100uV.
@@ -165,12 +172,12 @@ def baseline_av(baseline, baseline_ts, details=False):
 
     """
 
-    baseline_epochs, baseline_epochs_ts, baseline_rejected_epochs = split_into_epochs_and_reject(baseline, baseline_ts, threshold=100e-6, epoch_length=5)
+    baseline_epochs, baseline_epochs_ts, baseline_rejected_epochs = split_into_epochs_and_reject(baseline, baseline_ts, threshold, epoch_length, sample_rate=250)
     baseline_average = np.mean(baseline_epochs, axis=0)
 
         
     if details == True:
-        print(f'{len(baseline_rejected_epochs)} epochs were rejected from the baseline due to high amplitude.')    
+        print(f'Baseline epochs: {baseline_rejected_epochs}. epoch=1 if rejected due to high amplitude.')    
     return baseline_average
 
 
@@ -319,55 +326,8 @@ def extract_segment_timestamps(start_time, end_time, timestamps):
 
 
 
-def reject_high_amplitude_epochs(data, timestamps):
-    # Calculate peak-to-peak amplitudes for each epoch
-    ptp_amplitudes = np.ptp(data, axis=2)
 
-    # Find epochs with peak-to-peak amplitude greater than 100e-6
-    high_amplitude_epochs = np.where(ptp_amplitudes > 100e-6)[0]
-
-    # Remove corresponding sections from the timestamps array
-    epochs, channels, timeseries = data.shape
-    timestamps_rejected = np.delete(timestamps, high_amplitude_epochs * timeseries)
-
-    # Remove epochs with high amplitudes from the EEG data
-    eeg_data_rejected = np.delete(data, high_amplitude_epochs, axis=0)
-
-    return eeg_data_rejected, timestamps_rejected
-
-
-
-def split_into_epochs(data_array, timestamps, epoch_length=5):
-    sample_rate = timestamps[-1] / (data_array.shape[1] - 1)  # Calculate sample rate
-
-    # Calculate number of samples in each 5-second epoch
-    samples_per_epoch = int(epoch_length * sample_rate)
-
-    # Find the total number of epochs
-    num_epochs = int(timestamps[-1] / epoch_length)
-
-    epoch_data = []
-    epoch_timestamps = []
-
-    for i in range(num_epochs):
-        start_time = i * epoch_length
-        end_time = (i + 1) * epoch_length
-
-        # Find indices corresponding to start and end times
-        start_idx = np.argmax(timestamps >= start_time)
-        end_idx = np.argmax(timestamps >= end_time) + 1
-
-        # Ensure the epoch is within the bounds of the data
-        if end_idx < data_array.shape[1]:
-            epoch_data.append(data_array[:, start_idx:end_idx])
-            epoch_timestamps.append(timestamps[start_idx:end_idx])
-
-    return epoch_data, epoch_timestamps
-
-
-
-def split_into_epochs_and_reject(data_array, timestamps, threshold=100e-6, epoch_length=5):
-    sample_rate = 250  # Sampling frequency in Hz
+def split_into_epochs_and_reject(data_array, timestamps, threshold, epoch_length, sample_rate):
     n_channels, data_length = data_array.shape
 
     # Calculate number of samples in each 5-second epoch
@@ -397,8 +357,145 @@ def split_into_epochs_and_reject(data_array, timestamps, threshold=100e-6, epoch
         if len(epoch_data_batch) == n_channels:
             epoch_data.append(np.array(epoch_data_batch))
             epoch_timestamps.append(epoch_timestamps_batch)
+            rejected_epochs.append(0)
+            
         else:
-            rejected_epochs.append(i)
+            rejected_epochs.append(1)
 
 
     return epoch_data, epoch_timestamps, rejected_epochs
+
+
+
+def frequency_features_eeg(epoched_data, fs, bands):
+    
+
+    band_powers = {band: [] for band in bands}
+
+    for epoch in epoched_data:
+        freqs, psd = welch(epoch, fs)
+        
+        for band, (fmin, fmax) in bands.items():
+            idx_band = np.where((freqs >= fmin) & (freqs <= fmax))[0]  # Get indices as 1D array
+            if len(idx_band) > 0:  # Check if idx_band is not empty
+                band_psd = psd[:,idx_band]
+                epoch_band_power = np.trapz(band_psd, freqs[idx_band])
+                total_power = np.trapz(psd, freqs)
+                band_powers[band].append(epoch_band_power/ total_power ) 
+         
+    return band_powers
+
+
+
+def calculate_band_ratios(epoched_data, fs):
+    
+    # Define the frequency bands
+    bands = {
+        'theta': (4, 7),
+        'alpha': (7, 13),
+        'beta': (14, 30)
+    }
+    
+    # Calculate band powers using the existing function
+    band_powers = frequency_features_eeg(epoched_data, fs, bands)
+    
+    # Calculate ratios based on the obtained band powers
+    ratios = {
+        'alpha/beta': np.array(band_powers['alpha']) / np.array(band_powers['beta']),
+        'theta/beta': np.array(band_powers['theta']) / np.array(band_powers['beta']),
+        '(theta+alpha)/beta': (np.array(band_powers['theta']) + np.array(band_powers['alpha'])) / np.array(band_powers['beta']),
+        '(theta+alpha)/(alpha+beta)': (np.array(band_powers['theta']) + np.array(band_powers['alpha'])) / (np.array(band_powers['alpha']) + np.array(band_powers['beta']))
+    }
+    
+    return ratios   
+
+
+
+def butter_bandpass(lowcut, highcut, fs, order=4):
+    """
+    Function to create a Butterworth bandpass filter
+
+    Parameters
+    ----------
+    lowcut : float
+        Low cut frequency of BP filter.
+    highcut : float
+        High cut frequency of BP filter.
+    fs : float
+        Sampling frequency of the signal.
+    order : int, optional
+        Order of the filter. The default is 4.
+        Higher orders provide steeper rolloff but may introduce more phase distortion or instability.
+
+    Returns
+    -------
+    b : numpy.ndarray
+        Filter coefficient (numerator) of the BP filter.
+        They represent the feedforward (zeros) filter taps.
+    a : numpy.ndarray
+        Filter coefficient (denominator) of the BP filter.
+        They represent the feedback (poles) filter taps.
+
+    """
+    nyquist = 0.5 * fs
+    low = lowcut / nyquist
+    high = highcut / nyquist
+    b, a = butter(order, [low, high], btype='band')
+    
+    return b, a
+
+
+
+def ppg_setup(signal, fs, lowcut=0.8, highcut=12):
+    """
+    Setup of the ppg signal.
+    Apply BP filtering
+
+    Parameters
+    ----------
+    signal : numpy.ndarray
+        Raw PPG signal.
+    fs : float
+        Sampling frequency of the signal.
+    lowcut : float, optional
+        Low cut frequency of BP filter. The default is 0.8.
+    highcut : float, optional
+        High cut frequency of BP filter. The default is 12.
+
+    Returns
+    -------
+    filtered_signal : numpy.ndarray
+        Filtered PPG signal.
+
+    """
+    # BP filter parameters
+    order = 4
+    b, a = butter_bandpass(lowcut, highcut, fs, order=order)
+    
+    filtered_signal = filtfilt(b, a, signal)
+    
+    return filtered_signal
+
+
+
+def extract_ppg_features(epoched_data, fs, features, td_win = 60):
+       
+    features_ppg = []
+    for epoch in epoched_data:
+        epoch_features = []
+        for channel_data in epoch:
+            peaklist = peak.threshold_peakdetection(channel_data, fs)
+            RR_list_e, RR_diff, RR_sqdiff = feat.calc_RRI(peaklist, fs)
+                
+            if features == 'time domain':
+                epoch_features.append(feat.calc_td_hrv(RR_list_e, RR_diff, RR_sqdiff, window_length=td_win))
+            elif features == 'frequency domain':
+                epoch_features.append(feat.calc_fd_hrv(RR_list_e))
+            elif features == 'non-linear':
+                epoch_features.append(feat.calc_nonli_hrv(RR_list_e))
+            else:
+                print("Invalid input for features. Try 'time domain', 'frequency domain' or 'non-linear'")
+
+        features_ppg.append(epoch_features)
+
+    return features_ppg          
